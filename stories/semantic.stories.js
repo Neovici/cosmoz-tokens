@@ -7,9 +7,7 @@ export default {
 
 const colorRow = (name, cssVar) => html`
 	<div class="story-row">
-		<div
-			style="width: 48px; height: 48px; border-radius: var(--cz-radius-md); background: var(${cssVar}); border: 1px solid var(--cz-color-border-secondary);"
-		></div>
+		<div class="story-swatch" style="background: var(${cssVar});"></div>
 		<span class="story-label">${name}</span>
 	</div>
 `;
@@ -24,16 +22,13 @@ export const TextColors = {
 		<div class="story-container">
 			<h1 class="story-title">Text Colors</h1>
 			<button
+				class="story-btn story-btn--secondary story-mb-6"
 				@click=${toggleDarkMode}
-				style="margin-bottom: 24px; padding: 8px 16px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-secondary); border: 1px solid var(--cz-color-border-primary); cursor: pointer; font-family: var(--cz-font-body); color: var(--cz-color-text-primary);"
 			>
 				Toggle Dark Mode
 			</button>
 			<div class="story-section">
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));"
-				>
+				<div class="story-grid story-grid--wide">
 					${colorRow('text-primary', '--cz-color-text-primary')}
 					${colorRow('text-secondary', '--cz-color-text-secondary')}
 					${colorRow('text-tertiary', '--cz-color-text-tertiary')}
@@ -57,17 +52,14 @@ export const BackgroundColors = {
 		<div class="story-container">
 			<h1 class="story-title">Background Colors</h1>
 			<button
+				class="story-btn story-btn--secondary story-mb-6"
 				@click=${toggleDarkMode}
-				style="margin-bottom: 24px; padding: 8px 16px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-secondary); border: 1px solid var(--cz-color-border-primary); cursor: pointer; font-family: var(--cz-font-body); color: var(--cz-color-text-primary);"
 			>
 				Toggle Dark Mode
 			</button>
 			<div class="story-section">
 				<h3 class="story-section-title">Base</h3>
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));"
-				>
+				<div class="story-grid story-grid--wide">
 					${colorRow('bg-primary', '--cz-color-bg-primary')}
 					${colorRow('bg-secondary', '--cz-color-bg-secondary')}
 					${colorRow('bg-tertiary', '--cz-color-bg-tertiary')}
@@ -78,10 +70,7 @@ export const BackgroundColors = {
 			</div>
 			<div class="story-section">
 				<h3 class="story-section-title">Brand</h3>
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));"
-				>
+				<div class="story-grid story-grid--wide">
 					${colorRow('bg-brand', '--cz-color-bg-brand')}
 					${colorRow('bg-brand-secondary', '--cz-color-bg-brand-secondary')}
 					${colorRow('bg-brand-solid', '--cz-color-bg-brand-solid')}
@@ -90,10 +79,7 @@ export const BackgroundColors = {
 			</div>
 			<div class="story-section">
 				<h3 class="story-section-title">Status</h3>
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));"
-				>
+				<div class="story-grid story-grid--wide">
 					${colorRow('bg-error', '--cz-color-bg-error')}
 					${colorRow('bg-error-solid', '--cz-color-bg-error-solid')}
 					${colorRow('bg-warning', '--cz-color-bg-warning')}
@@ -112,16 +98,13 @@ export const BorderColors = {
 		<div class="story-container">
 			<h1 class="story-title">Border Colors</h1>
 			<button
+				class="story-btn story-btn--secondary story-mb-6"
 				@click=${toggleDarkMode}
-				style="margin-bottom: 24px; padding: 8px 16px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-secondary); border: 1px solid var(--cz-color-border-primary); cursor: pointer; font-family: var(--cz-font-body); color: var(--cz-color-text-primary);"
 			>
 				Toggle Dark Mode
 			</button>
 			<div class="story-section">
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));"
-				>
+				<div class="story-grid story-grid--wide">
 					${colorRow('border-primary', '--cz-color-border-primary')}
 					${colorRow('border-secondary', '--cz-color-border-secondary')}
 					${colorRow('border-tertiary', '--cz-color-border-tertiary')}
@@ -139,20 +122,15 @@ export const ForegroundColors = {
 		${style}
 		<div class="story-container">
 			<h1 class="story-title">Foreground Colors</h1>
-			<p style="margin-bottom: 16px; color: var(--cz-color-text-secondary);">
-				For icons and decorative elements.
-			</p>
+			<p class="story-description">For icons and decorative elements.</p>
 			<button
+				class="story-btn story-btn--secondary story-mb-6"
 				@click=${toggleDarkMode}
-				style="margin-bottom: 24px; padding: 8px 16px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-secondary); border: 1px solid var(--cz-color-border-primary); cursor: pointer; font-family: var(--cz-font-body); color: var(--cz-color-text-primary);"
 			>
 				Toggle Dark Mode
 			</button>
 			<div class="story-section">
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));"
-				>
+				<div class="story-grid story-grid--wide">
 					${colorRow('fg-primary', '--cz-color-fg-primary')}
 					${colorRow('fg-secondary', '--cz-color-fg-secondary')}
 					${colorRow('fg-tertiary', '--cz-color-fg-tertiary')}
@@ -175,45 +153,27 @@ export const DarkModeDemo = {
 		<div class="story-container">
 			<h1 class="story-title">Dark Mode Demo</h1>
 			<button
+				class="story-btn story-btn--primary story-mb-6"
 				@click=${toggleDarkMode}
-				style="margin-bottom: 24px; padding: 10px 18px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-brand-solid); border: none; cursor: pointer; font-family: var(--cz-font-body); font-weight: var(--cz-font-weight-semibold); color: var(--cz-color-text-on-brand);"
 			>
 				Toggle Dark Mode
 			</button>
 			<div class="story-section">
-				<div
-					style="padding: 24px; border-radius: var(--cz-radius-xl); background: var(--cz-color-bg-secondary); border: 1px solid var(--cz-color-border-secondary);"
-				>
-					<h3
-						style="font-size: var(--cz-text-lg); font-weight: var(--cz-font-weight-semibold); color: var(--cz-color-text-primary); margin-bottom: 8px;"
-					>
-						Card Title
-					</h3>
-					<p
-						style="font-size: var(--cz-text-md); color: var(--cz-color-text-secondary); margin-bottom: 16px;"
-					>
+				<div class="story-card">
+					<h3 class="story-card-title">Card Title</h3>
+					<p class="story-card-text">
 						This is a demo card showing how semantic tokens adapt to dark mode
 						automatically.
 					</p>
-					<div style="display: flex; gap: 12px;">
-						<button
-							style="padding: 10px 18px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-brand-solid); border: none; cursor: pointer; font-family: var(--cz-font-body); font-weight: var(--cz-font-weight-semibold); color: var(--cz-color-text-on-brand);"
-						>
-							Primary
-						</button>
-						<button
-							style="padding: 10px 18px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-primary); box-shadow: var(--cz-shadow-xs-skeumorphic); border: 1px solid var(--cz-color-border-primary); cursor: pointer; font-family: var(--cz-font-body); font-weight: var(--cz-font-weight-semibold); color: var(--cz-color-text-primary);"
-						>
-							Secondary
-						</button>
+					<div class="story-flex story-gap-3">
+						<button class="story-btn story-btn--primary">Primary</button>
+						<button class="story-btn story-btn--secondary">Secondary</button>
 					</div>
 				</div>
 			</div>
-			<div class="story-section" style="margin-top: 24px;">
+			<div class="story-section story-mt-6">
 				<h3 class="story-section-title">Usage</h3>
-				<pre
-					style="padding: 16px; border-radius: var(--cz-radius-md); background: var(--cz-color-bg-tertiary); font-family: var(--cz-font-mono); font-size: var(--cz-text-sm); color: var(--cz-color-text-primary); overflow-x: auto;"
-				>
+				<pre class="story-code">
 // Add dark mode class to root
 document.documentElement.classList.add('dark-mode');
 

@@ -8,7 +8,8 @@ export default {
 const radiusSwatch = (name, cssVar) => html`
 	<div class="story-row">
 		<div
-			style="width: 64px; height: 64px; border-radius: var(${cssVar}); background: var(--cz-color-brand-100); border: 2px solid var(--cz-color-brand-500);"
+			class="story-swatch--lg"
+			style="border-radius: var(${cssVar}); background: var(--cz-color-brand-100); border: 2px solid var(--cz-color-brand-500);"
 		></div>
 		<span class="story-label">${name}</span>
 	</div>
@@ -20,10 +21,7 @@ export const BorderRadius = {
 		<div class="story-container">
 			<h1 class="story-title">Border Radius</h1>
 			<div class="story-section">
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-				>
+				<div class="story-grid story-grid--auto">
 					${radiusSwatch('--cz-radius-none (0px)', '--cz-radius-none')}
 					${radiusSwatch('--cz-radius-xxs (2px)', '--cz-radius-xxs')}
 					${radiusSwatch('--cz-radius-xs (4px)', '--cz-radius-xs')}
@@ -47,7 +45,7 @@ export const SpacingUnit = {
 		<div class="story-container">
 			<h1 class="story-title">Spacing Unit</h1>
 			<div class="story-section">
-				<p style="margin-bottom: 16px; color: var(--cz-color-text-secondary);">
+				<p class="story-description">
 					Base spacing unit:
 					<code style="font-family: var(--cz-font-mono);"
 						>--cz-spacing: 4px</code
@@ -60,9 +58,7 @@ export const SpacingUnit = {
 					>
 					for consistent spacing.
 				</p>
-				<div
-					style="margin-top: 24px; display: flex; flex-direction: column; gap: 8px;"
-				>
+				<div class="story-flex story-flex--col story-gap-2 story-mt-6">
 					${[1, 2, 3, 4, 5, 6, 8, 10, 12, 16].map(
 						(n) => html`
 							<div class="story-row">

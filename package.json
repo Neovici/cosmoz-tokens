@@ -23,6 +23,7 @@
   "exports": {
     ".": "./src/index.css",
     "./normalize": "./src/normalize.css.js",
+    "./utilities": "./src/utilities.css.js",
     "./primitives": "./src/primitives.css",
     "./typography": "./src/typography.css",
     "./spacing": "./src/spacing.css",

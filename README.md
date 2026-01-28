@@ -57,6 +57,44 @@ customElements.define(
 );
 ```
 
+### Using utilities in web components
+
+The utilities stylesheet provides common CSS utility classes as a `CSSStyleSheet` for use with Shadow DOM:
+
+```js
+import { component } from '@pionjs/pion';
+import { normalize } from '@neovici/cosmoz-tokens/normalize';
+import { utilities } from '@neovici/cosmoz-tokens/utilities';
+import { style } from './my-component.css.js';
+
+const MyComponent = () => {
+	return html`<div class="flex items-center gap-4 p-4">Hello World</div>`;
+};
+
+customElements.define(
+	'my-component',
+	component(MyComponent, {
+		styleSheets: [normalize, utilities, style],
+	}),
+);
+```
+
+Available utility classes:
+
+| Category | Classes                                                             |
+| -------- | ------------------------------------------------------------------- |
+| Display  | `flex`, `block`, `grid`, `hidden`                                   |
+| Flex     | `flex-col`, `flex-wrap`, `items-center`, `items-start`, `items-end` |
+| Justify  | `justify-center`, `justify-between`, `justify-start`, `justify-end` |
+| Gap      | `gap-1` to `gap-8` (uses `--cz-spacing` multiplier)                 |
+| Padding  | `p-1` to `p-8`, `px-*`, `py-*`                                      |
+| Margin   | `m-1` to `m-8`, `mx-*`, `my-*`, `mt-*`, `mb-*`, `ml-*`, `mr-*`      |
+| Sizing   | `w-full`, `h-full`                                                  |
+| Text     | `text-center`, `text-left`, `text-right`, `truncate`                |
+| Overflow | `overflow-hidden`, `overflow-auto`                                  |
+| Cursor   | `cursor-pointer`                                                    |
+| Pointer  | `pointer-events-none`                                               |
+
 ## Dark Mode
 
 Semantic tokens automatically adapt to dark mode. Enable it by adding a class or data attribute to the root element:

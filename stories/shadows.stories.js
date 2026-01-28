@@ -6,16 +6,15 @@ export default {
 };
 
 const shadowSwatch = (name, cssVar, description = '') => html`
-	<div style="display: flex; flex-direction: column; gap: 8px;">
-		<div
-			style="width: 120px; height: 80px; border-radius: var(--cz-radius-lg); background: var(--cz-color-bg-primary); box-shadow: var(${cssVar}); border: 1px solid var(--cz-color-border-secondary);"
-		></div>
-		<span class="story-label" style="min-width: auto;">${name}</span>
+	<div class="story-flex story-flex--col story-gap-2">
+		<div class="story-swatch--shadow" style="box-shadow: var(${cssVar});"></div>
+		<span class="story-label story-label--small">${name}</span>
 		${description
 			? html`<span
 					style="font-size: var(--cz-text-xs); color: var(--cz-color-text-tertiary);"
-					>${description}</span
-				>`
+				>
+					${description}
+				</span>`
 			: ''}
 	</div>
 `;
@@ -26,7 +25,7 @@ export const ShadowScale = {
 		<div class="story-container">
 			<h1 class="story-title">Shadow Scale</h1>
 			<div class="story-section">
-				<div style="display: flex; flex-wrap: wrap; gap: 32px;">
+				<div class="story-flex story-flex--wrap story-gap-8">
 					${shadowSwatch('--cz-shadow-xs', '--cz-shadow-xs', 'Subtle')}
 					${shadowSwatch('--cz-shadow-sm', '--cz-shadow-sm', 'Small')}
 					${shadowSwatch('--cz-shadow-md', '--cz-shadow-md', 'Medium')}
@@ -45,48 +44,32 @@ export const SkeumorphicShadows = {
 		${style}
 		<div class="story-container">
 			<h1 class="story-title">Skeumorphic Shadows</h1>
-			<p style="margin-bottom: 24px; color: var(--cz-color-text-secondary);">
+			<p class="story-description">
 				Special shadows for buttons and interactive elements with inset effects.
 			</p>
 			<div class="story-section">
-				<div style="display: flex; flex-wrap: wrap; gap: 32px;">
-					<div style="display: flex; flex-direction: column; gap: 8px;">
+				<div class="story-flex story-flex--wrap story-gap-8">
+					<div class="story-flex story-flex--col story-gap-2">
 						<button
-							style="
-								padding: 10px 18px;
-								border-radius: var(--cz-radius-md);
-								background: var(--cz-color-bg-primary);
-								box-shadow: var(--cz-shadow-skeumorphic);
-								border: 1px solid var(--cz-color-border-primary);
-								font-family: var(--cz-font-body);
-								font-size: var(--cz-text-sm);
-								font-weight: var(--cz-font-weight-semibold);
-								color: var(--cz-color-text-primary);
-								cursor: pointer;
-							"
+							class="story-btn story-btn--secondary"
+							style="box-shadow: var(--cz-shadow-skeumorphic);"
 						>
 							Skeumorphic
 						</button>
-						<span class="story-label">--cz-shadow-skeumorphic</span>
+						<span class="story-label story-label--small"
+							>--cz-shadow-skeumorphic</span
+						>
 					</div>
-					<div style="display: flex; flex-direction: column; gap: 8px;">
+					<div class="story-flex story-flex--col story-gap-2">
 						<button
-							style="
-								padding: 10px 18px;
-								border-radius: var(--cz-radius-md);
-								background: var(--cz-color-bg-primary);
-								box-shadow: var(--cz-shadow-xs-skeumorphic);
-								border: 1px solid var(--cz-color-border-primary);
-								font-family: var(--cz-font-body);
-								font-size: var(--cz-text-sm);
-								font-weight: var(--cz-font-weight-semibold);
-								color: var(--cz-color-text-primary);
-								cursor: pointer;
-							"
+							class="story-btn story-btn--secondary"
+							style="box-shadow: var(--cz-shadow-xs-skeumorphic);"
 						>
 							XS + Skeumorphic
 						</button>
-						<span class="story-label">--cz-shadow-xs-skeumorphic</span>
+						<span class="story-label story-label--small"
+							>--cz-shadow-xs-skeumorphic</span
+						>
 					</div>
 				</div>
 			</div>
@@ -99,46 +82,28 @@ export const FocusRings = {
 		${style}
 		<div class="story-container">
 			<h1 class="story-title">Focus Rings</h1>
-			<p style="margin-bottom: 24px; color: var(--cz-color-text-secondary);">
+			<p class="story-description">
 				Accessible focus indicators for interactive elements.
 			</p>
 			<div class="story-section">
-				<div style="display: flex; flex-wrap: wrap; gap: 32px;">
-					<div style="display: flex; flex-direction: column; gap: 8px;">
+				<div class="story-flex story-flex--wrap story-gap-8">
+					<div class="story-flex story-flex--col story-gap-2">
 						<input
 							type="text"
 							placeholder="Brand focus"
-							style="
-								padding: 10px 14px;
-								border-radius: var(--cz-radius-md);
-								background: var(--cz-color-bg-primary);
-								box-shadow: var(--cz-focus-ring);
-								border: 1px solid var(--cz-color-border-brand);
-								font-family: var(--cz-font-body);
-								font-size: var(--cz-text-md);
-								color: var(--cz-color-text-primary);
-								outline: none;
-							"
+							class="story-input story-input--focus"
 						/>
-						<span class="story-label">--cz-focus-ring</span>
+						<span class="story-label story-label--small">--cz-focus-ring</span>
 					</div>
-					<div style="display: flex; flex-direction: column; gap: 8px;">
+					<div class="story-flex story-flex--col story-gap-2">
 						<input
 							type="text"
 							placeholder="Error focus"
-							style="
-								padding: 10px 14px;
-								border-radius: var(--cz-radius-md);
-								background: var(--cz-color-bg-primary);
-								box-shadow: var(--cz-focus-ring-error);
-								border: 1px solid var(--cz-color-border-error);
-								font-family: var(--cz-font-body);
-								font-size: var(--cz-text-md);
-								color: var(--cz-color-text-primary);
-								outline: none;
-							"
+							class="story-input story-input--error"
 						/>
-						<span class="story-label">--cz-focus-ring-error</span>
+						<span class="story-label story-label--small"
+							>--cz-focus-ring-error</span
+						>
 					</div>
 				</div>
 			</div>
