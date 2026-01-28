@@ -1,4 +1,4 @@
-import{b as d}from"./iframe-VcrTb-bN.js";let i,p=0;function u(){return p++}const h=Symbol("haunted.hook"),g=Symbol("haunted.effects"),f=Symbol("haunted.layoutEffects"),b="haunted.context";Promise.resolve().then.bind(Promise.resolve());const v=(...t)=>{const r=new CSSStyleSheet;return r.replaceSync(t.join("")),r},m=(t,...r)=>t.flatMap((a,e)=>[a,r[e]||""]).join(""),y=m;class c{id;state;constructor(r,a){this.id=r,this.state=a}}function z(t,...r){let a=u(),e=i[h],o=e.get(a);return o||(o=new t(a,i,...r),e.set(a,o)),o.update(...r)}function s(t){return z.bind(null,t)}function n(t){return s(class extends c{callback;lastValues;values;_teardown;constructor(r,a,e,o){super(r,a),t(a,this)}update(r,a){this.callback=r,this.values=a}call(){const r=!this.values||this.hasChanged();this.lastValues=this.values,r&&this.run()}run(){this.teardown(),this._teardown=this.callback.call(this.state)}teardown(r){typeof this._teardown=="function"&&(this._teardown(),this._teardown=void 0),r&&(this.lastValues=this.values=void 0)}hasChanged(){return!this.lastValues||this.values.some((r,a)=>this.lastValues[a]!==r)}})}function l(t,r){t[g].push(r)}n(l);const x=t=>t instanceof Element?t:t.startNode||t.endNode||t.parentNode;s(class extends c{Context;value;_ranEffect;_unsubscribe;constructor(t,r,a){super(t,r),this._updater=this._updater.bind(this),this._ranEffect=!1,this._unsubscribe=null,l(r,this)}update(t){return this.Context!==t&&(this._subscribe(t),this.Context=t),this.value}call(){this._ranEffect||(this._ranEffect=!0,this._unsubscribe&&this._unsubscribe(),this._subscribe(this.Context),this.state.update())}_updater(t){this.value=t,this.state.update()}_subscribe(t){const r={Context:t,callback:this._updater};x(this.state.host).dispatchEvent(new CustomEvent(b,{detail:r,bubbles:!0,cancelable:!0,composed:!0}));const{unsubscribe:e=null,value:o}=r;this.value=e?o:t.defaultValue,this._unsubscribe=e}teardown(){this._unsubscribe&&this._unsubscribe()}});s(class extends c{value;values;constructor(t,r,a,e){super(t,r),this.value=a(),this.values=e}update(t,r){return this.hasChanged(r)&&(this.values=r,this.value=t()),this.value}hasChanged(t=[]){return t.some((r,a)=>this.values[a]!==r)}});function w(t,r){t[f].push(r)}n(w);s(class extends c{args;constructor(t,r,a){super(t,r),this.updater=this.updater.bind(this),typeof a=="function"&&(a=a()),this.makeArgs(a)}update(){return this.args}updater(t){const[r]=this.args;typeof t=="function"&&(t=t(r)),!Object.is(r,t)&&(this.makeArgs(t),this.state.update())}makeArgs(t){this.args=Object.freeze([t,this.updater])}});s(class extends c{reducer;currentState;constructor(t,r,a,e,o){super(t,r),this.dispatch=this.dispatch.bind(this),this.currentState=o!==void 0?o(e):e}update(t){return this.reducer=t,[this.currentState,this.dispatch]}dispatch(t){this.currentState=this.reducer(this.currentState,t),this.state.update()}});const k=/([A-Z])/gu;s(class extends c{property;eventName;constructor(t,r,a,e){if(super(t,r),this.state.virtual)throw new Error("Can't be used with virtual components.");this.updater=this.updater.bind(this),this.property=a,this.eventName=a.replace(k,"-$1").toLowerCase()+"-changed",this.state.host[this.property]==null&&(typeof e=="function"&&(e=e()),e!=null&&this.updateProp(e))}update(t,r){return[this.state.host[this.property],this.updater]}updater(t){const r=this.state.host[this.property];typeof t=="function"&&(t=t(r)),!Object.is(r,t)&&this.updateProp(t)}updateProp(t){this.notify(t).defaultPrevented||(this.state.host[this.property]=t)}notify(t){const r=new CustomEvent(this.eventName,{detail:{value:t,path:this.property},cancelable:!0});return this.state.host.dispatchEvent(r),r}});s(class extends c{update(){return this.state.host}});const _=y`
+import{b as l}from"./iframe-BS0TWTfn.js";let i,p=0;function u(){return p++}const h=Symbol("haunted.hook"),g=Symbol("haunted.effects"),f=Symbol("haunted.layoutEffects"),b="haunted.context";Promise.resolve().then.bind(Promise.resolve());const v=(...t)=>{const r=new CSSStyleSheet;return r.replaceSync(t.join("")),r},y=(t,...r)=>t.flatMap((e,a)=>[e,r[a]||""]).join(""),m=y;class o{id;state;constructor(r,e){this.id=r,this.state=e}}function z(t,...r){let e=u(),a=i[h],s=a.get(e);return s||(s=new t(e,i,...r),a.set(e,s)),s.update(...r)}function c(t){return z.bind(null,t)}function n(t){return c(class extends o{callback;lastValues;values;_teardown;constructor(r,e,a,s){super(r,e),t(e,this)}update(r,e){this.callback=r,this.values=e}call(){const r=!this.values||this.hasChanged();this.lastValues=this.values,r&&this.run()}run(){this.teardown(),this._teardown=this.callback.call(this.state)}teardown(r){typeof this._teardown=="function"&&(this._teardown(),this._teardown=void 0),r&&(this.lastValues=this.values=void 0)}hasChanged(){return!this.lastValues||this.values.some((r,e)=>this.lastValues[e]!==r)}})}function d(t,r){t[g].push(r)}n(d);const x=t=>t instanceof Element?t:t.startNode||t.endNode||t.parentNode;c(class extends o{Context;value;_ranEffect;_unsubscribe;constructor(t,r,e){super(t,r),this._updater=this._updater.bind(this),this._ranEffect=!1,this._unsubscribe=null,d(r,this)}update(t){return this.Context!==t&&(this._subscribe(t),this.Context=t),this.value}call(){this._ranEffect||(this._ranEffect=!0,this._unsubscribe&&this._unsubscribe(),this._subscribe(this.Context),this.state.update())}_updater(t){this.value=t,this.state.update()}_subscribe(t){const r={Context:t,callback:this._updater};x(this.state.host).dispatchEvent(new CustomEvent(b,{detail:r,bubbles:!0,cancelable:!0,composed:!0}));const{unsubscribe:a=null,value:s}=r;this.value=a?s:t.defaultValue,this._unsubscribe=a}teardown(){this._unsubscribe&&this._unsubscribe()}});c(class extends o{value;values;constructor(t,r,e,a){super(t,r),this.value=e(),this.values=a}update(t,r){return this.hasChanged(r)&&(this.values=r,this.value=t()),this.value}hasChanged(t=[]){return t.some((r,e)=>this.values[e]!==r)}});function w(t,r){t[f].push(r)}n(w);c(class extends o{args;constructor(t,r,e){super(t,r),this.updater=this.updater.bind(this),typeof e=="function"&&(e=e()),this.makeArgs(e)}update(){return this.args}updater(t){const[r]=this.args;typeof t=="function"&&(t=t(r)),!Object.is(r,t)&&(this.makeArgs(t),this.state.update())}makeArgs(t){this.args=Object.freeze([t,this.updater])}});c(class extends o{reducer;currentState;constructor(t,r,e,a,s){super(t,r),this.dispatch=this.dispatch.bind(this),this.currentState=s!==void 0?s(a):a}update(t){return this.reducer=t,[this.currentState,this.dispatch]}dispatch(t){this.currentState=this.reducer(this.currentState,t),this.state.update()}});const k=/([A-Z])/gu;c(class extends o{property;eventName;constructor(t,r,e,a){if(super(t,r),this.state.virtual)throw new Error("Can't be used with virtual components.");this.updater=this.updater.bind(this),this.property=e,this.eventName=e.replace(k,"-$1").toLowerCase()+"-changed",this.state.host[this.property]==null&&(typeof a=="function"&&(a=a()),a!=null&&this.updateProp(a))}update(t,r){return[this.state.host[this.property],this.updater]}updater(t){const r=this.state.host[this.property];typeof t=="function"&&(t=t(r)),!Object.is(r,t)&&this.updateProp(t)}updateProp(t){this.notify(t).defaultPrevented||(this.state.host[this.property]=t)}notify(t){const r=new CustomEvent(this.eventName,{detail:{value:t,path:this.property},cancelable:!0});return this.state.host.dispatchEvent(r),r}});c(class extends o{update(){return this.state.host}});const _=m`
 	/* Flexbox */
 	.flex {
 		display: flex;
@@ -29,7 +29,10 @@ import{b as d}from"./iframe-VcrTb-bN.js";let i,p=0;function u(){return p++}const
 		justify-content: flex-end;
 	}
 
-	/* Gap (using --cz-spacing) */
+	/* Gap (using --cz-spacing: 4px) */
+	.gap-0 {
+		gap: 0;
+	}
 	.gap-1 {
 		gap: calc(var(--cz-spacing) * 1);
 	}
@@ -42,63 +45,14 @@ import{b as d}from"./iframe-VcrTb-bN.js";let i,p=0;function u(){return p++}const
 	.gap-4 {
 		gap: calc(var(--cz-spacing) * 4);
 	}
+	.gap-5 {
+		gap: calc(var(--cz-spacing) * 5);
+	}
 	.gap-6 {
 		gap: calc(var(--cz-spacing) * 6);
 	}
 	.gap-8 {
 		gap: calc(var(--cz-spacing) * 8);
-	}
-
-	/* Margin */
-	.m-0 {
-		margin: 0;
-	}
-	.mb-1 {
-		margin-bottom: calc(var(--cz-spacing) * 1);
-	}
-	.mb-2 {
-		margin-bottom: calc(var(--cz-spacing) * 2);
-	}
-	.mb-3 {
-		margin-bottom: calc(var(--cz-spacing) * 3);
-	}
-	.mb-4 {
-		margin-bottom: calc(var(--cz-spacing) * 4);
-	}
-	.mb-6 {
-		margin-bottom: calc(var(--cz-spacing) * 6);
-	}
-	.mb-8 {
-		margin-bottom: calc(var(--cz-spacing) * 8);
-	}
-	.mt-4 {
-		margin-top: calc(var(--cz-spacing) * 4);
-	}
-	.mt-6 {
-		margin-top: calc(var(--cz-spacing) * 6);
-	}
-
-	/* Padding */
-	.p-2 {
-		padding: calc(var(--cz-spacing) * 2);
-	}
-	.p-4 {
-		padding: calc(var(--cz-spacing) * 4);
-	}
-	.p-6 {
-		padding: calc(var(--cz-spacing) * 6);
-	}
-	.px-4 {
-		padding-left: calc(var(--cz-spacing) * 4);
-		padding-right: calc(var(--cz-spacing) * 4);
-	}
-	.py-2 {
-		padding-top: calc(var(--cz-spacing) * 2);
-		padding-bottom: calc(var(--cz-spacing) * 2);
-	}
-	.py-3 {
-		padding-top: calc(var(--cz-spacing) * 3);
-		padding-bottom: calc(var(--cz-spacing) * 3);
 	}
 
 	/* Display */
@@ -108,67 +62,33 @@ import{b as d}from"./iframe-VcrTb-bN.js";let i,p=0;function u(){return p++}const
 	.block {
 		display: block;
 	}
-	.inline {
-		display: inline;
-	}
-	.inline-block {
-		display: inline-block;
-	}
 	.grid {
 		display: grid;
 	}
 
-	/* Width/Height */
+	/* Sizing */
 	.w-full {
 		width: 100%;
 	}
 	.h-full {
 		height: 100%;
 	}
-	.min-h-screen {
-		min-height: 100vh;
+
+	/* Position */
+	.relative {
+		position: relative;
+	}
+	.absolute {
+		position: absolute;
 	}
 
 	/* Text */
-	.text-center {
-		text-align: center;
-	}
-	.text-left {
-		text-align: left;
-	}
-	.text-right {
-		text-align: right;
-	}
 	.truncate {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
-
-	/* Overflow */
-	.overflow-hidden {
-		overflow: hidden;
-	}
-	.overflow-auto {
-		overflow: auto;
-	}
-	.overflow-x-auto {
-		overflow-x: auto;
-	}
-
-	/* Cursor */
-	.cursor-pointer {
-		cursor: pointer;
-	}
-	.cursor-not-allowed {
-		cursor: not-allowed;
-	}
-
-	/* Pointer events */
-	.pointer-events-none {
-		pointer-events: none;
-	}
-`;v(_);const E=d`
+`;v(_);const E=l`
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -406,6 +326,11 @@ import{b as d}from"./iframe-VcrTb-bN.js";let i,p=0;function u(){return p++}const
 			border: 1px dashed var(--cz-color-border-secondary);
 			border-radius: var(--cz-radius-md);
 			background: var(--cz-color-bg-secondary);
+		}
+
+		/* Padding utilities for stories */
+		.story-p-4 {
+			padding: calc(var(--cz-spacing) * 4);
 		}
 
 		.demo-text {
