@@ -1,7 +1,12 @@
 /**
  * Cosmoz Design Tokens - Utilities
- * Reusable utility classes for web component shadow DOMs.
+ *
+ * Minimal layout primitives for web component shadow DOMs.
  * Uses --cz-spacing for consistent spacing scale.
+ *
+ * Philosophy: This is intentionally a minimal set. Web components have scoped CSS,
+ * so you don't need utility classes for everything. Use CSS custom properties
+ * (tokens) directly in your component styles for margins, padding, colors, etc.
  */
 
 import { css, sheet } from '@pionjs/pion';
@@ -43,7 +48,10 @@ export const utilitiesCSS = css`
 		justify-content: flex-end;
 	}
 
-	/* Gap (using --cz-spacing) */
+	/* Gap (using --cz-spacing: 4px) */
+	.gap-0 {
+		gap: 0;
+	}
 	.gap-1 {
 		gap: calc(var(--cz-spacing) * 1);
 	}
@@ -56,63 +64,14 @@ export const utilitiesCSS = css`
 	.gap-4 {
 		gap: calc(var(--cz-spacing) * 4);
 	}
+	.gap-5 {
+		gap: calc(var(--cz-spacing) * 5);
+	}
 	.gap-6 {
 		gap: calc(var(--cz-spacing) * 6);
 	}
 	.gap-8 {
 		gap: calc(var(--cz-spacing) * 8);
-	}
-
-	/* Margin */
-	.m-0 {
-		margin: 0;
-	}
-	.mb-1 {
-		margin-bottom: calc(var(--cz-spacing) * 1);
-	}
-	.mb-2 {
-		margin-bottom: calc(var(--cz-spacing) * 2);
-	}
-	.mb-3 {
-		margin-bottom: calc(var(--cz-spacing) * 3);
-	}
-	.mb-4 {
-		margin-bottom: calc(var(--cz-spacing) * 4);
-	}
-	.mb-6 {
-		margin-bottom: calc(var(--cz-spacing) * 6);
-	}
-	.mb-8 {
-		margin-bottom: calc(var(--cz-spacing) * 8);
-	}
-	.mt-4 {
-		margin-top: calc(var(--cz-spacing) * 4);
-	}
-	.mt-6 {
-		margin-top: calc(var(--cz-spacing) * 6);
-	}
-
-	/* Padding */
-	.p-2 {
-		padding: calc(var(--cz-spacing) * 2);
-	}
-	.p-4 {
-		padding: calc(var(--cz-spacing) * 4);
-	}
-	.p-6 {
-		padding: calc(var(--cz-spacing) * 6);
-	}
-	.px-4 {
-		padding-left: calc(var(--cz-spacing) * 4);
-		padding-right: calc(var(--cz-spacing) * 4);
-	}
-	.py-2 {
-		padding-top: calc(var(--cz-spacing) * 2);
-		padding-bottom: calc(var(--cz-spacing) * 2);
-	}
-	.py-3 {
-		padding-top: calc(var(--cz-spacing) * 3);
-		padding-bottom: calc(var(--cz-spacing) * 3);
 	}
 
 	/* Display */
@@ -122,65 +81,31 @@ export const utilitiesCSS = css`
 	.block {
 		display: block;
 	}
-	.inline {
-		display: inline;
-	}
-	.inline-block {
-		display: inline-block;
-	}
 	.grid {
 		display: grid;
 	}
 
-	/* Width/Height */
+	/* Sizing */
 	.w-full {
 		width: 100%;
 	}
 	.h-full {
 		height: 100%;
 	}
-	.min-h-screen {
-		min-height: 100vh;
+
+	/* Position */
+	.relative {
+		position: relative;
+	}
+	.absolute {
+		position: absolute;
 	}
 
 	/* Text */
-	.text-center {
-		text-align: center;
-	}
-	.text-left {
-		text-align: left;
-	}
-	.text-right {
-		text-align: right;
-	}
 	.truncate {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
-	}
-
-	/* Overflow */
-	.overflow-hidden {
-		overflow: hidden;
-	}
-	.overflow-auto {
-		overflow: auto;
-	}
-	.overflow-x-auto {
-		overflow-x: auto;
-	}
-
-	/* Cursor */
-	.cursor-pointer {
-		cursor: pointer;
-	}
-	.cursor-not-allowed {
-		cursor: not-allowed;
-	}
-
-	/* Pointer events */
-	.pointer-events-none {
-		pointer-events: none;
 	}
 `;
 

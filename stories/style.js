@@ -249,6 +249,11 @@ export const style = html`
 			background: var(--cz-color-bg-secondary);
 		}
 
+		/* Padding utilities for stories */
+		.story-p-4 {
+			padding: calc(var(--cz-spacing) * 4);
+		}
+
 		.demo-text {
 			max-width: 200px;
 			padding: calc(var(--cz-spacing) * 2);

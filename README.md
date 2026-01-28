@@ -59,7 +59,11 @@ customElements.define(
 
 ### Using utilities in web components
 
-The utilities stylesheet provides common CSS utility classes as a `CSSStyleSheet` for use with Shadow DOM:
+The utilities stylesheet provides **layout primitives** as a `CSSStyleSheet` for use with Shadow DOM:
+
+> **Philosophy:** This is intentionally a minimal set. Web components have scoped CSS,
+> so you don't need utility classes for everything. Use CSS custom properties
+> (tokens) directly in your component styles for margins, padding, colors, etc.
 
 ```js
 import { component } from '@pionjs/pion';
@@ -68,7 +72,7 @@ import { utilities } from '@neovici/cosmoz-tokens/utilities';
 import { style } from './my-component.css.js';
 
 const MyComponent = () => {
-	return html`<div class="flex items-center gap-4 p-4">Hello World</div>`;
+	return html`<div class="flex items-center gap-4">Hello World</div>`;
 };
 
 customElements.define(
@@ -81,19 +85,14 @@ customElements.define(
 
 Available utility classes:
 
-| Category | Classes                                                             |
-| -------- | ------------------------------------------------------------------- |
-| Display  | `flex`, `block`, `grid`, `hidden`                                   |
-| Flex     | `flex-col`, `flex-wrap`, `items-center`, `items-start`, `items-end` |
-| Justify  | `justify-center`, `justify-between`, `justify-start`, `justify-end` |
-| Gap      | `gap-1` to `gap-8` (uses `--cz-spacing` multiplier)                 |
-| Padding  | `p-1` to `p-8`, `px-*`, `py-*`                                      |
-| Margin   | `m-1` to `m-8`, `mx-*`, `my-*`, `mt-*`, `mb-*`, `ml-*`, `mr-*`      |
-| Sizing   | `w-full`, `h-full`                                                  |
-| Text     | `text-center`, `text-left`, `text-right`, `truncate`                |
-| Overflow | `overflow-hidden`, `overflow-auto`                                  |
-| Cursor   | `cursor-pointer`                                                    |
-| Pointer  | `pointer-events-none`                                               |
+| Category | Classes                                                                                                                         |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Flexbox  | `flex`, `flex-col`, `flex-wrap`, `items-center`, `items-start`, `items-end`, `justify-center`, `justify-between`, `justify-end` |
+| Gap      | `gap-0`, `gap-1`, `gap-2`, `gap-3`, `gap-4`, `gap-5`, `gap-6`, `gap-8`                                                          |
+| Display  | `hidden`, `block`, `grid`                                                                                                       |
+| Sizing   | `w-full`, `h-full`                                                                                                              |
+| Position | `relative`, `absolute`                                                                                                          |
+| Text     | `truncate`                                                                                                                      |
 
 ## Dark Mode
 
