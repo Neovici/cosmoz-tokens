@@ -6,7 +6,13 @@
 
 import { css, sheet } from '@pionjs/pion';
 
-export const utilities = sheet(css`
+/**
+ * Raw CSS for utilities - can be used in Light DOM contexts
+ * @example
+ * import { utilitiesCSS } from '@neovici/cosmoz-tokens/utilities';
+ * html`<style>${utilitiesCSS}</style>`;
+ */
+export const utilitiesCSS = css`
 	/* Flexbox */
 	.flex {
 		display: flex;
@@ -176,4 +182,12 @@ export const utilities = sheet(css`
 	.pointer-events-none {
 		pointer-events: none;
 	}
-`);
+`;
+
+/**
+ * CSSStyleSheet for utilities - use with Shadow DOM components
+ * @example
+ * import { utilities } from '@neovici/cosmoz-tokens/utilities';
+ * customElements.define('my-el', component(MyEl, { styleSheets: [utilities] }));
+ */
+export const utilities = sheet(utilitiesCSS);

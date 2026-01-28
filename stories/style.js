@@ -214,5 +214,43 @@ export const style = html`
 			box-shadow: var(--cz-focus-ring-error);
 			border-color: var(--cz-color-border-error);
 		}
+
+		/* Demo boxes for utilities story */
+		.demo-box {
+			width: 40px;
+			height: 40px;
+			background: var(--cz-color-bg-brand-solid);
+			border-radius: var(--cz-radius-sm);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: var(--cz-color-text-on-brand);
+			font-size: var(--cz-text-xs);
+			font-weight: var(--cz-font-weight-semibold);
+		}
+
+		.demo-box--sm {
+			width: 24px;
+			height: 24px;
+		}
+
+		.demo-box--outline {
+			background: transparent;
+			border: 2px dashed var(--cz-color-border-brand);
+			color: var(--cz-color-text-brand);
+		}
+
+		.demo-container {
+			border: 1px dashed var(--cz-color-border-secondary);
+			border-radius: var(--cz-radius-md);
+			background: var(--cz-color-bg-secondary);
+		}
+
+		.demo-text {
+			max-width: 200px;
+			padding: calc(var(--cz-spacing) * 2);
+			background: var(--cz-color-bg-tertiary);
+			border-radius: var(--cz-radius-sm);
+		}
 	</style>
 `;
