@@ -1,6 +1,5 @@
 import { html } from 'lit-html';
-import { utilitiesCSS } from '../src/utilities.css.js';
-import { style } from './style.js';
+import { style, utilitiesCSS } from './style.js';
 
 export default {
 	title: 'Tokens/Utilities',

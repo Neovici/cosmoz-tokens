@@ -3,6 +3,9 @@ import { html } from 'lit-html';
 // Load all tokens
 import '../src/index.css';
 
+// Re-export utilities CSS for use in stories (avoids sed replacement issues in CI)
+export { utilitiesCSS } from '../src/utilities.css.js';
+
 /**
  * Shared style for all stories - loads Google Fonts and storybook-specific classes
  */
