@@ -1,4 +1,4 @@
-import{b as c}from"./lit-html-s0HVm7S4.js";import{s as a}from"./style-Btb-urNq.js";const A={title:"Tokens/Colors"},r=(o,d)=>c`
+import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js";const h={title:"Tokens/Colors"},r=(o,d)=>c`
     <div class="story-row">
         <div
             style="width: 48px; height: 48px; border-radius: var(--cz-radius-md); background: var(${d}); border: 1px solid var(--cz-color-border-secondary);"
@@ -71,7 +71,7 @@ import{b as c}from"./lit-html-s0HVm7S4.js";import{s as a}from"./style-Btb-urNq.j
             ${s("--cz-color-warning","Warning")}
             ${s("--cz-color-success","Success")}
         </div>
-    `};var $,y,h;l.parameters={...l.parameters,docs:{...($=l.parameters)==null?void 0:$.docs,source:{originalSource:`{
+    `};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -79,7 +79,7 @@ import{b as c}from"./lit-html-s0HVm7S4.js";import{s as a}from"./style-Btb-urNq.j
             \${colorScale('--cz-color-brand', 'Brand (Indigo-based)')}
         </div>
     \`
-}`,...(h=(y=l.parameters)==null?void 0:y.docs)==null?void 0:h.source}}};var m,v,u;e.parameters={...e.parameters,docs:{...(m=e.parameters)==null?void 0:m.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -87,7 +87,7 @@ import{b as c}from"./lit-html-s0HVm7S4.js";import{s as a}from"./style-Btb-urNq.j
             \${colorScale('--cz-color-gray', 'Gray')}
         </div>
     \`
-}`,...(u=(v=e.parameters)==null?void 0:v.docs)==null?void 0:u.source}}};var p,z,S;t.parameters={...t.parameters,docs:{...(p=t.parameters)==null?void 0:p.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -97,7 +97,7 @@ import{b as c}from"./lit-html-s0HVm7S4.js";import{s as a}from"./style-Btb-urNq.j
             \${colorScale('--cz-color-success', 'Success')}
         </div>
     \`
-}`,...(S=(z=t.parameters)==null?void 0:z.docs)==null?void 0:S.source}}};var g,C,b;n.parameters={...n.parameters,docs:{...(g=n.parameters)==null?void 0:g.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -115,7 +115,7 @@ import{b as c}from"./lit-html-s0HVm7S4.js";import{s as a}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(b=(C=n.parameters)==null?void 0:C.docs)==null?void 0:b.source}}};var w,B,k;i.parameters={...i.parameters,docs:{...(w=i.parameters)==null?void 0:w.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -127,4 +127,4 @@ import{b as c}from"./lit-html-s0HVm7S4.js";import{s as a}from"./style-Btb-urNq.j
             \${colorScale('--cz-color-success', 'Success')}
         </div>
     \`
-}`,...(k=(B=i.parameters)==null?void 0:B.docs)==null?void 0:k.source}}};const W=["BrandColors","GrayColors","StatusColors","BaseColors","AllColors"];export{i as AllColors,n as BaseColors,l as BrandColors,e as GrayColors,t as StatusColors,W as __namedExportsOrder,A as default};
+}`,...i.parameters?.docs?.source}}};const m=["BrandColors","GrayColors","StatusColors","BaseColors","AllColors"];export{i as AllColors,n as BaseColors,l as BrandColors,e as GrayColors,t as StatusColors,m as __namedExportsOrder,h as default};

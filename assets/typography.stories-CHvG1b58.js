@@ -1,4 +1,4 @@
-import{b as a}from"./lit-html-s0HVm7S4.js";import{s as l}from"./style-Btb-urNq.js";const b={title:"Tokens/Typography"},t={render:()=>a`
+import{b as a}from"./iframe-CYXJaHdM.js";import{s as l}from"./style-BTaPFGKl.js";const r={title:"Tokens/Typography"},t={render:()=>a`
         ${l}
         <div class="story-container">
             <h1 class="story-title">Font Families</h1>
@@ -189,7 +189,7 @@ import{b as a}from"./lit-html-s0HVm7S4.js";import{s as l}from"./style-Btb-urNq.j
                 </div>
             </div>
         </div>
-    `};var i,o,r;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`{
+    `};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -226,7 +226,7 @@ import{b as a}from"./lit-html-s0HVm7S4.js";import{s as l}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(r=(o=t.parameters)==null?void 0:o.docs)==null?void 0:r.source}}};var p,c,y;s.parameters={...s.parameters,docs:{...(p=s.parameters)==null?void 0:p.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -280,7 +280,7 @@ import{b as a}from"./lit-html-s0HVm7S4.js";import{s as l}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(y=(c=s.parameters)==null?void 0:c.docs)==null?void 0:y.source}}};var d,v,h;e.parameters={...e.parameters,docs:{...(d=e.parameters)==null?void 0:d.docs,source:{originalSource:`{
+}`,...s.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -343,7 +343,7 @@ import{b as a}from"./lit-html-s0HVm7S4.js";import{s as l}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(h=(v=e.parameters)==null?void 0:v.docs)==null?void 0:h.source}}};var z,x,g;n.parameters={...n.parameters,docs:{...(z=n.parameters)==null?void 0:z.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -388,4 +388,4 @@ import{b as a}from"./lit-html-s0HVm7S4.js";import{s as l}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(g=(x=n.parameters)==null?void 0:x.docs)==null?void 0:g.source}}};const w=["FontFamilies","TextSizes","DisplaySizes","FontWeights"];export{e as DisplaySizes,t as FontFamilies,n as FontWeights,s as TextSizes,w as __namedExportsOrder,b as default};
+}`,...n.parameters?.docs?.source}}};const p=["FontFamilies","TextSizes","DisplaySizes","FontWeights"];export{e as DisplaySizes,t as FontFamilies,n as FontWeights,s as TextSizes,p as __namedExportsOrder,r as default};

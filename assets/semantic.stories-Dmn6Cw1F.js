@@ -1,9 +1,9 @@
-import{b as o}from"./lit-html-s0HVm7S4.js";import{s as t}from"./style-Btb-urNq.js";const T={title:"Tokens/Semantic"},r=(k,R)=>o`
+import{b as o}from"./iframe-CYXJaHdM.js";import{s as t}from"./style-BTaPFGKl.js";const y={title:"Tokens/Semantic"},r=(l,i)=>o`
     <div class="story-row">
         <div
-            style="width: 48px; height: 48px; border-radius: var(--cz-radius-md); background: var(${R}); border: 1px solid var(--cz-color-border-secondary);"
+            style="width: 48px; height: 48px; border-radius: var(--cz-radius-md); background: var(${i}); border: 1px solid var(--cz-color-border-secondary);"
         ></div>
-        <span class="story-label">${k}</span>
+        <span class="story-label">${l}</span>
     </div>
 `,c=()=>{document.documentElement.classList.toggle("dark-mode")},e={render:()=>o`
         ${t}
@@ -192,7 +192,7 @@ document.documentElement.dataset.theme = 'dark';</pre
                 >
             </div>
         </div>
-    `};var l,i,b;e.parameters={...e.parameters,docs:{...(l=e.parameters)==null?void 0:l.docs,source:{originalSource:`{
+    `};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -223,7 +223,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...(b=(i=e.parameters)==null?void 0:i.docs)==null?void 0:b.source}}};var g,y,m;a.parameters={...a.parameters,docs:{...(g=a.parameters)==null?void 0:g.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -276,7 +276,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...(m=(y=a.parameters)==null?void 0:y.docs)==null?void 0:m.source}}};var p,v,u;n.parameters={...n.parameters,docs:{...(p=n.parameters)==null?void 0:p.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -302,7 +302,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...(u=(v=n.parameters)==null?void 0:v.docs)==null?void 0:u.source}}};var z,x,f;s.parameters={...s.parameters,docs:{...(z=s.parameters)==null?void 0:z.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -335,7 +335,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...(f=(x=s.parameters)==null?void 0:x.docs)==null?void 0:f.source}}};var $,w,h;d.parameters={...d.parameters,docs:{...($=d.parameters)==null?void 0:$.docs,source:{originalSource:`{
+}`,...s.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -389,4 +389,4 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...(h=(w=d.parameters)==null?void 0:w.docs)==null?void 0:h.source}}};const C=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{a as BackgroundColors,n as BorderColors,d as DarkModeDemo,s as ForegroundColors,e as TextColors,C as __namedExportsOrder,T as default};
+}`,...d.parameters?.docs?.source}}};const m=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{a as BackgroundColors,n as BorderColors,d as DarkModeDemo,s as ForegroundColors,e as TextColors,m as __namedExportsOrder,y as default};

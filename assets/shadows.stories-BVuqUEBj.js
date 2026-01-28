@@ -1,9 +1,9 @@
-import{b as o}from"./lit-html-s0HVm7S4.js";import{s as n}from"./style-Btb-urNq.js";const b={title:"Tokens/Shadows"},r=(m,z,c="")=>o`
+import{b as o}from"./iframe-CYXJaHdM.js";import{s as n}from"./style-BTaPFGKl.js";const p={title:"Tokens/Shadows"},r=(t,d,c="")=>o`
     <div style="display: flex; flex-direction: column; gap: 8px;">
         <div
-            style="width: 120px; height: 80px; border-radius: var(--cz-radius-lg); background: var(--cz-color-bg-primary); box-shadow: var(${z}); border: 1px solid var(--cz-color-border-secondary);"
+            style="width: 120px; height: 80px; border-radius: var(--cz-radius-lg); background: var(--cz-color-bg-primary); box-shadow: var(${d}); border: 1px solid var(--cz-color-border-secondary);"
         ></div>
-        <span class="story-label" style="min-width: auto;">${m}</span>
+        <span class="story-label" style="min-width: auto;">${t}</span>
         ${c?o`<span
                     style="font-size: var(--cz-text-xs); color: var(--cz-color-text-tertiary);"
                     >${c}</span
@@ -123,7 +123,7 @@ import{b as o}from"./lit-html-s0HVm7S4.js";import{s as n}from"./style-Btb-urNq.j
                 </div>
             </div>
         </div>
-    `};var t,d,i;a.parameters={...a.parameters,docs:{...(t=a.parameters)==null?void 0:t.docs,source:{originalSource:`{
+    `};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -141,7 +141,7 @@ import{b as o}from"./lit-html-s0HVm7S4.js";import{s as n}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(i=(d=a.parameters)==null?void 0:d.docs)==null?void 0:i.source}}};var l,p,x;s.parameters={...s.parameters,docs:{...(l=s.parameters)==null?void 0:l.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -193,7 +193,7 @@ import{b as o}from"./lit-html-s0HVm7S4.js";import{s as n}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(x=(p=s.parameters)==null?void 0:p.docs)==null?void 0:x.source}}};var v,y,h;e.parameters={...e.parameters,docs:{...(v=e.parameters)==null?void 0:v.docs,source:{originalSource:`{
+}`,...s.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -243,4 +243,4 @@ import{b as o}from"./lit-html-s0HVm7S4.js";import{s as n}from"./style-Btb-urNq.j
             </div>
         </div>
     \`
-}`,...(h=(y=e.parameters)==null?void 0:y.docs)==null?void 0:h.source}}};const f=["ShadowScale","SkeumorphicShadows","FocusRings"];export{e as FocusRings,a as ShadowScale,s as SkeumorphicShadows,f as __namedExportsOrder,b as default};
+}`,...e.parameters?.docs?.source}}};const x=["ShadowScale","SkeumorphicShadows","FocusRings"];export{e as FocusRings,a as ShadowScale,s as SkeumorphicShadows,x as __namedExportsOrder,p as default};
