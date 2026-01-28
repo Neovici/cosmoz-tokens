@@ -1,0 +1,22 @@
+/**
+ * Cosmoz Design Tokens - Spacing
+ * Border radius and spacing scale from Untitled UI
+ */
+
+:root {
+	/* Base spacing unit */
+	--cz-spacing: 4px;
+
+	/* Border radius scale */
+	--cz-radius-none: 0px;
+	--cz-radius-xxs: 2px;
+	--cz-radius-xs: 4px;
+	--cz-radius-sm: 6px;
+	--cz-radius-md: 8px;
+	--cz-radius-lg: 10px;
+	--cz-radius-xl: 12px;
+	--cz-radius-2xl: 16px;
+	--cz-radius-3xl: 20px;
+	--cz-radius-4xl: 24px;
+	--cz-radius-full: 9999px;
+}

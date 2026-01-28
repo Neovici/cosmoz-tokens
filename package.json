@@ -1,0 +1,88 @@
+{
+  "name": "@neovici/cosmoz-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for Cosmoz web components based on Untitled UI",
+  "keywords": [
+    "design-tokens",
+    "css-variables",
+    "web-components",
+    "untitled-ui"
+  ],
+  "homepage": "https://github.com/Neovici/cosmoz-tokens#readme",
+  "bugs": {
+    "url": "https://github.com/Neovici/cosmoz-tokens/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neovici/cosmoz-tokens.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Neovici Development",
+  "type": "module",
+  "main": "./src/index.css",
+  "exports": {
+    ".": "./src/index.css",
+    "./normalize": "./src/normalize.css.js",
+    "./primitives": "./src/primitives.css",
+    "./typography": "./src/typography.css",
+    "./spacing": "./src/spacing.css",
+    "./shadows": "./src/shadows.css",
+    "./semantic": "./src/semantic.css"
+  },
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "lint": "eslint --cache .",
+    "start": "wds",
+    "test": "wtr --coverage",
+    "test:watch": "wtr --watch",
+    "storybook:start": "storybook dev -p 8000",
+    "storybook:build": "storybook build",
+    "storybook:deploy": "storybook-to-ghpages",
+    "storybook:preview": "npm run storybook:build && http-server ./storybook-static/ --silent",
+    "prepare": "husky"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "branches": [
+      "main"
+    ],
+    "preset": "conventionalcommits"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@pionjs/pion": "^2.5.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "@neovici/cfg": "^2.8.0",
+    "@open-wc/testing": "^4.0.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "@storybook/web-components-vite": "^8.0.0",
+    "@web/dev-server": "^0.4.0",
+    "@web/test-runner": "^0.18.0",
+    "@web/test-runner-playwright": "^0.11.0",
+    "eslint": "^9.0.0",
+    "http-server": "^14.1.1",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "lit-html": "^3.0.0",
+    "semantic-release": "^24.0.0",
+    "storybook": "^8.0.0"
+  },
+  "overrides": {
+    "conventional-changelog-conventionalcommits": ">= 8.0.0"
+  }
+}

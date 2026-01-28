@@ -1,0 +1,10 @@
+/**
+ * Cosmoz Design Tokens
+ * Main entry point - imports all token files
+ */
+
+@import './primitives.css';
+@import './typography.css';
+@import './spacing.css';
+@import './shadows.css';
+@import './semantic.css';

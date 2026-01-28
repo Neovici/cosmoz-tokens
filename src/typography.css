@@ -1,0 +1,61 @@
+/**
+ * Cosmoz Design Tokens - Typography
+ * Font families, sizes, and line heights from Untitled UI
+ */
+
+:root {
+	/* Font families */
+	--cz-font-body:
+		var(--font-inter, 'Inter'), -apple-system, 'Segoe UI', Roboto, Arial,
+		sans-serif;
+	--cz-font-display:
+		'DM Sans', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+	--cz-font-mono:
+		ui-monospace, 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+		'Liberation Mono', 'Courier New', monospace;
+
+	/* Text sizes - based on 4px spacing unit */
+	--cz-text-xs: 12px;
+	--cz-text-xs-line-height: 18px;
+
+	--cz-text-sm: 14px;
+	--cz-text-sm-line-height: 20px;
+
+	--cz-text-md: 16px;
+	--cz-text-md-line-height: 24px;
+
+	--cz-text-lg: 18px;
+	--cz-text-lg-line-height: 28px;
+
+	--cz-text-xl: 20px;
+	--cz-text-xl-line-height: 30px;
+
+	/* Display sizes */
+	--cz-text-display-xs: 24px;
+	--cz-text-display-xs-line-height: 32px;
+
+	--cz-text-display-sm: 30px;
+	--cz-text-display-sm-line-height: 38px;
+
+	--cz-text-display-md: 36px;
+	--cz-text-display-md-line-height: 44px;
+	--cz-text-display-md-letter-spacing: -0.72px;
+
+	--cz-text-display-lg: 48px;
+	--cz-text-display-lg-line-height: 60px;
+	--cz-text-display-lg-letter-spacing: -0.96px;
+
+	--cz-text-display-xl: 60px;
+	--cz-text-display-xl-line-height: 72px;
+	--cz-text-display-xl-letter-spacing: -1.2px;
+
+	--cz-text-display-2xl: 72px;
+	--cz-text-display-2xl-line-height: 90px;
+	--cz-text-display-2xl-letter-spacing: -1.44px;
+
+	/* Font weights */
+	--cz-font-weight-regular: 400;
+	--cz-font-weight-medium: 500;
+	--cz-font-weight-semibold: 600;
+	--cz-font-weight-bold: 700;
+}

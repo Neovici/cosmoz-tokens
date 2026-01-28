@@ -1,0 +1,85 @@
+/**
+ * Cosmoz Design Tokens - Primitives
+ * Base color palette extracted from Untitled UI
+ */
+
+:root {
+	/* Base colors */
+	--cz-color-white: rgb(255 255 255);
+	--cz-color-black: rgb(0 0 0);
+	--cz-color-transparent: rgb(0 0 0 / 0);
+
+	/* Alpha colors - inverted in dark mode */
+	--cz-color-alpha-white: rgb(255 255 255);
+	--cz-color-alpha-black: rgb(0 0 0);
+
+	/* Brand colors - custom indigo based on #3f51b5 */
+	--cz-color-brand-25: rgb(245 246 251);
+	--cz-color-brand-50: rgb(235 238 249);
+	--cz-color-brand-100: rgb(215 221 243);
+	--cz-color-brand-200: rgb(179 190 234);
+	--cz-color-brand-300: rgb(138 156 221);
+	--cz-color-brand-400: rgb(100 120 207);
+	--cz-color-brand-500: rgb(77 95 194);
+	--cz-color-brand-600: rgb(63 81 181);
+	--cz-color-brand-700: rgb(53 68 151);
+	--cz-color-brand-800: rgb(44 56 121);
+	--cz-color-brand-900: rgb(37 47 96);
+	--cz-color-brand-950: rgb(24 30 61);
+
+	/* Gray colors */
+	--cz-color-gray-25: rgb(253 253 253);
+	--cz-color-gray-50: rgb(250 250 250);
+	--cz-color-gray-100: rgb(245 245 245);
+	--cz-color-gray-200: rgb(233 234 235);
+	--cz-color-gray-300: rgb(213 215 218);
+	--cz-color-gray-400: rgb(164 167 174);
+	--cz-color-gray-500: rgb(113 118 128);
+	--cz-color-gray-600: rgb(83 88 98);
+	--cz-color-gray-700: rgb(65 70 81);
+	--cz-color-gray-800: rgb(37 43 55);
+	--cz-color-gray-900: rgb(24 29 39);
+	--cz-color-gray-950: rgb(10 13 18);
+
+	/* Error colors */
+	--cz-color-error-25: rgb(255 251 250);
+	--cz-color-error-50: rgb(254 243 242);
+	--cz-color-error-100: rgb(254 228 226);
+	--cz-color-error-200: rgb(254 205 202);
+	--cz-color-error-300: rgb(253 162 155);
+	--cz-color-error-400: rgb(249 112 102);
+	--cz-color-error-500: rgb(240 68 56);
+	--cz-color-error-600: rgb(217 45 32);
+	--cz-color-error-700: rgb(180 35 24);
+	--cz-color-error-800: rgb(145 32 24);
+	--cz-color-error-900: rgb(122 39 26);
+	--cz-color-error-950: rgb(85 22 12);
+
+	/* Warning colors */
+	--cz-color-warning-25: rgb(255 252 245);
+	--cz-color-warning-50: rgb(255 250 235);
+	--cz-color-warning-100: rgb(254 240 199);
+	--cz-color-warning-200: rgb(254 223 137);
+	--cz-color-warning-300: rgb(254 200 75);
+	--cz-color-warning-400: rgb(253 176 34);
+	--cz-color-warning-500: rgb(247 144 9);
+	--cz-color-warning-600: rgb(220 104 3);
+	--cz-color-warning-700: rgb(181 71 8);
+	--cz-color-warning-800: rgb(147 55 13);
+	--cz-color-warning-900: rgb(122 46 14);
+	--cz-color-warning-950: rgb(78 29 9);
+
+	/* Success colors */
+	--cz-color-success-25: rgb(246 254 249);
+	--cz-color-success-50: rgb(236 253 243);
+	--cz-color-success-100: rgb(220 250 230);
+	--cz-color-success-200: rgb(171 239 198);
+	--cz-color-success-300: rgb(117 224 167);
+	--cz-color-success-400: rgb(71 205 137);
+	--cz-color-success-500: rgb(23 178 106);
+	--cz-color-success-600: rgb(7 148 85);
+	--cz-color-success-700: rgb(6 118 71);
+	--cz-color-success-800: rgb(8 93 58);
+	--cz-color-success-900: rgb(7 77 49);
+	--cz-color-success-950: rgb(5 51 33);
+}
