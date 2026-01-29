@@ -41,7 +41,7 @@ export const style = html`
 		}
 
 		.story-description {
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -138,7 +138,7 @@ export const style = html`
 		}
 
 		.story-card-text {
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -200,7 +200,7 @@ export const style = html`
 			background: var(--cz-color-bg-primary);
 			border: 1px solid var(--cz-color-border-primary);
 			font-family: var(--cz-font-body);
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
 			color: var(--cz-color-text-primary);
 			outline: none;
 		}

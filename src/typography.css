@@ -16,41 +16,41 @@
 
 	/* Text sizes */
 	--cz-text-xs: 0.75rem;
-	--cz-text-xs-line-height: 1.125rem;
+	--cz-text-xs-line-height: 1.5;
 
 	--cz-text-sm: 0.875rem;
-	--cz-text-sm-line-height: 1.25rem;
+	--cz-text-sm-line-height: 1.5;
 
-	--cz-text-md: 1rem;
-	--cz-text-md-line-height: 1.5rem;
+	--cz-text-base: 1rem;
+	--cz-text-base-line-height: 1.5;
 
 	--cz-text-lg: 1.125rem;
-	--cz-text-lg-line-height: 1.75rem;
+	--cz-text-lg-line-height: 1.5;
 
 	--cz-text-xl: 1.25rem;
-	--cz-text-xl-line-height: 1.875rem;
+	--cz-text-xl-line-height: 1.5;
 
 	/* Display sizes */
 	--cz-text-display-xs: 1.5rem;
-	--cz-text-display-xs-line-height: 2rem;
+	--cz-text-display-xs-line-height: 1.25;
 
 	--cz-text-display-sm: 1.875rem;
-	--cz-text-display-sm-line-height: 2.375rem;
+	--cz-text-display-sm-line-height: 1.25;
 
 	--cz-text-display-md: 2.25rem;
-	--cz-text-display-md-line-height: 2.75rem;
+	--cz-text-display-md-line-height: 1.25;
 	--cz-text-display-md-letter-spacing: -0.045rem;
 
 	--cz-text-display-lg: 3rem;
-	--cz-text-display-lg-line-height: 3.75rem;
+	--cz-text-display-lg-line-height: 1.25;
 	--cz-text-display-lg-letter-spacing: -0.06rem;
 
 	--cz-text-display-xl: 3.75rem;
-	--cz-text-display-xl-line-height: 4.5rem;
+	--cz-text-display-xl-line-height: 1.25;
 	--cz-text-display-xl-letter-spacing: -0.075rem;
 
 	--cz-text-display-2xl: 4.5rem;
-	--cz-text-display-2xl-line-height: 5.625rem;
+	--cz-text-display-2xl-line-height: 1.25;
 	--cz-text-display-2xl-letter-spacing: -0.09rem;
 
 	/* Font weights */

@@ -70,9 +70,9 @@ export const TextSizes = {
 				</div>
 
 				<div class="story-row">
-					<span class="story-label">--cz-text-md (1rem / 16px)</span>
+					<span class="story-label">--cz-text-base (1rem / 16px)</span>
 					<span
-						style="font-size: var(--cz-text-md); line-height: var(--cz-text-md-line-height);"
+						style="font-size: var(--cz-text-base); line-height: var(--cz-text-base-line-height);"
 					>
 						The quick brown fox jumps over the lazy dog.
 					</span>
