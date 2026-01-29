@@ -57,43 +57,6 @@ customElements.define(
 );
 ```
 
-### Using utilities in web components
-
-The utilities stylesheet provides **layout primitives** as a `CSSStyleSheet` for use with Shadow DOM:
-
-> **Philosophy:** This is intentionally a minimal set. Web components have scoped CSS,
-> so you don't need utility classes for everything. Use CSS custom properties
-> (tokens) directly in your component styles for margins, padding, colors, etc.
-
-```js
-import { component } from '@pionjs/pion';
-import { normalize } from '@neovici/cosmoz-tokens/normalize';
-import { utilities } from '@neovici/cosmoz-tokens/utilities';
-import { style } from './my-component.css.js';
-
-const MyComponent = () => {
-	return html`<div class="flex items-center gap-4">Hello World</div>`;
-};
-
-customElements.define(
-	'my-component',
-	component(MyComponent, {
-		styleSheets: [normalize, utilities, style],
-	}),
-);
-```
-
-Available utility classes:
-
-| Category | Classes                                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Flexbox  | `flex`, `flex-col`, `flex-wrap`, `items-center`, `items-start`, `items-end`, `justify-center`, `justify-between`, `justify-end` |
-| Gap      | `gap-0`, `gap-1`, `gap-2`, `gap-3`, `gap-4`, `gap-5`, `gap-6`, `gap-8`                                                          |
-| Display  | `hidden`, `block`, `grid`                                                                                                       |
-| Sizing   | `w-full`, `h-full`                                                                                                              |
-| Position | `relative`, `absolute`                                                                                                          |
-| Text     | `truncate`                                                                                                                      |
-
 ## Dark Mode
 
 Semantic tokens automatically adapt to dark mode. Enable it by adding a class or data attribute to the root element:
