@@ -1,3 +1,9 @@
+## [2.1.0](https://github.com/Neovici/cosmoz-tokens/compare/v2.0.1...v2.1.0) (2026-01-29)
+
+### Features
+
+* add vanilla HTML demo ([#11](https://github.com/Neovici/cosmoz-tokens/issues/11)) ([5dcb4f2](https://github.com/Neovici/cosmoz-tokens/commit/5dcb4f2300eeb3b590983d0f9a2907878ff41f47))
+
 ## [2.0.1](https://github.com/Neovici/cosmoz-tokens/compare/v2.0.0...v2.0.1) (2026-01-29)
 
 ### Bug Fixes
