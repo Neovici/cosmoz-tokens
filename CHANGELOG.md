@@ -1,3 +1,15 @@
+## [2.0.0](https://github.com/Neovici/cosmoz-tokens/compare/v1.2.0...v2.0.0) (2026-01-29)
+
+### ⚠ BREAKING CHANGES
+
+* The utilities export has been removed from @neovici/cosmoz-tokens.
+Web components should use CSS custom properties (tokens) directly in component styles
+for margins, padding, colors, etc. rather than utility classes.
+
+### Features
+
+* remove utilities module ([#10](https://github.com/Neovici/cosmoz-tokens/issues/10)) ([b296655](https://github.com/Neovici/cosmoz-tokens/commit/b29665591f1679f14e9cf48a27cea84924605a63))
+
 ## [1.2.0](https://github.com/Neovici/cosmoz-tokens/compare/v1.1.0...v1.2.0) (2026-01-29)
 
 ### Features
