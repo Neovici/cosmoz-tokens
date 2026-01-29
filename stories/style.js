@@ -85,11 +85,13 @@ export const style = html`
 			height: 48px;
 			border-radius: var(--cz-radius-md);
 			border: 1px solid var(--cz-color-border-secondary);
+			flex: none;
 		}
 
 		.story-swatch--lg {
 			width: 64px;
 			height: 64px;
+			flex: none;
 		}
 
 		.story-swatch--shadow {
@@ -97,6 +99,7 @@ export const style = html`
 			height: 80px;
 			border-radius: var(--cz-radius-lg);
 			background: var(--cz-color-bg-primary);
+			flex: none;
 		}
 
 		/* Buttons */
