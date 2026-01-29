@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/Neovici/cosmoz-tokens/compare/v1.1.0...v1.2.0) (2026-01-29)
+
+### Features
+
+* add TypeScript type declarations for normalize and utilities ([#9](https://github.com/Neovici/cosmoz-tokens/issues/9)) ([46ed05f](https://github.com/Neovici/cosmoz-tokens/commit/46ed05f72dd792df8253ed4ae8e3b16ebc2aedbd))
+
 ## [1.1.0](https://github.com/Neovici/cosmoz-tokens/compare/v1.0.0...v1.1.0) (2026-01-29)
 
 ### Features
