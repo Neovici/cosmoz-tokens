@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-B0moZ3qx.js";const a=r`
+import{b as r}from"./iframe-2NtOxuRr.js";const a=r`
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -133,7 +133,7 @@ import{b as r}from"./iframe-B0moZ3qx.js";const a=r`
 			line-height: var(--cz-text-lg-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 			color: var(--cz-color-text-primary);
-			margin-bottom: calc(var(--cz-spacing) * 2);
+			margin: 0;
 		}
 
 		.story-card-text {
