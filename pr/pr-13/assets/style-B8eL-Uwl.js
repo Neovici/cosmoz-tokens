@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
+import{b as r}from"./iframe-B0moZ3qx.js";const a=r`
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -27,6 +27,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 
 		.story-section-title {
 			font-size: var(--cz-text-lg);
+			line-height: var(--cz-text-lg-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 			color: var(--cz-color-text-secondary);
@@ -34,6 +35,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 
 		.story-description {
 			font-size: var(--cz-text-base);
+			line-height: var(--cz-text-base-line-height);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -62,6 +64,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 		/* Label */
 		.story-label {
 			font-size: var(--cz-text-sm);
+			line-height: var(--cz-text-sm-line-height);
 			color: var(--cz-color-text-tertiary);
 			font-family: var(--cz-font-mono);
 		}
@@ -100,6 +103,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 			cursor: pointer;
 			font-family: var(--cz-font-body);
 			font-size: var(--cz-text-sm);
+			line-height: var(--cz-text-sm-line-height);
 		}
 
 		.story-btn--secondary {
@@ -126,6 +130,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 
 		.story-card-title {
 			font-size: var(--cz-text-lg);
+			line-height: var(--cz-text-lg-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 			color: var(--cz-color-text-primary);
 			margin-bottom: calc(var(--cz-spacing) * 2);
@@ -133,6 +138,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 
 		.story-card-text {
 			font-size: var(--cz-text-base);
+			line-height: var(--cz-text-base-line-height);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -144,6 +150,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 			background: var(--cz-color-bg-tertiary);
 			font-family: var(--cz-font-mono);
 			font-size: var(--cz-text-sm);
+			line-height: var(--cz-text-sm-line-height);
 			color: var(--cz-color-text-primary);
 			overflow-x: auto;
 			white-space: pre;
@@ -195,6 +202,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 			border: 1px solid var(--cz-color-border-primary);
 			font-family: var(--cz-font-body);
 			font-size: var(--cz-text-base);
+			line-height: var(--cz-text-base-line-height);
 			color: var(--cz-color-text-primary);
 			outline: none;
 		}
@@ -220,6 +228,7 @@ import{b as r}from"./iframe-t4Bi73sQ.js";const a=r`
 			justify-content: center;
 			color: var(--cz-color-text-on-brand);
 			font-size: var(--cz-text-xs);
+			line-height: var(--cz-text-xs-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 		}
 
