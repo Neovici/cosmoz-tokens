@@ -164,10 +164,7 @@ document.documentElement.dataset.theme = 'dark';
 npm install
 
 # Run Storybook
-npm run storybook
-
-# Run tests
-npm test
+npm run storybook:start
 
 # Build Storybook
 npm run storybook:build
