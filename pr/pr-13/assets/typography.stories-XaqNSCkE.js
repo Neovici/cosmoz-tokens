@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-Cue1cWx3.js";import{s as l}from"./style-i9VN6ZV4.js";const r={title:"Tokens/Typography"},t={render:()=>a`
+import{b as a}from"./iframe-Be2I9fMZ.js";import{s as l}from"./style-ZRdilZ57.js";const r={title:"Tokens/Typography"},t={render:()=>a`
         ${l}
         <div class="story-container">
             <h1 class="story-title">Font Families</h1>
@@ -58,9 +58,9 @@ import{b as a}from"./iframe-Cue1cWx3.js";import{s as l}from"./style-i9VN6ZV4.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-md (1rem / 16px)</span>
+                    <span class="story-label">--cz-text-base (1rem / 16px)</span>
                     <span
-                        style="font-size: var(--cz-text-md); line-height: var(--cz-text-md-line-height);"
+                        style="font-size: var(--cz-text-base); line-height: var(--cz-text-base-line-height);"
                     >
                         The quick brown fox jumps over the lazy dog.
                     </span>
@@ -252,9 +252,9 @@ import{b as a}from"./iframe-Cue1cWx3.js";import{s as l}from"./style-i9VN6ZV4.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-md (1rem / 16px)</span>
+                    <span class="story-label">--cz-text-base (1rem / 16px)</span>
                     <span
-                        style="font-size: var(--cz-text-md); line-height: var(--cz-text-md-line-height);"
+                        style="font-size: var(--cz-text-base); line-height: var(--cz-text-base-line-height);"
                     >
                         The quick brown fox jumps over the lazy dog.
                     </span>

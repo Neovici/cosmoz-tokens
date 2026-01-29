@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-Cue1cWx3.js";const a=r`
+import{b as r}from"./iframe-Be2I9fMZ.js";const a=r`
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -33,7 +33,7 @@ import{b as r}from"./iframe-Cue1cWx3.js";const a=r`
 		}
 
 		.story-description {
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -130,7 +130,7 @@ import{b as r}from"./iframe-Cue1cWx3.js";const a=r`
 		}
 
 		.story-card-text {
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -192,7 +192,7 @@ import{b as r}from"./iframe-Cue1cWx3.js";const a=r`
 			background: var(--cz-color-bg-primary);
 			border: 1px solid var(--cz-color-border-primary);
 			font-family: var(--cz-font-body);
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
 			color: var(--cz-color-text-primary);
 			outline: none;
 		}
