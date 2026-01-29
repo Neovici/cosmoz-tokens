@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmoz Tokens Demo</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+
+  <!-- Cosmoz Tokens -->
+  <link rel="stylesheet" href="../src/index.css">
+
+  <style>
+    body {
+      font-family: var(--cz-font-body);
+      background: var(--cz-color-bg-primary);
+      color: var(--cz-color-text-primary);
+      padding: calc(var(--cz-spacing) * 6);
+      margin: 0;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    h1 {
+      font-family: var(--cz-font-display);
+      font-size: var(--cz-text-display-sm);
+      line-height: var(--cz-text-display-sm-line-height);
+      margin: 0 0 calc(var(--cz-spacing) * 6);
+    }
+
+    .card {
+      padding: calc(var(--cz-spacing) * 6);
+      border-radius: var(--cz-radius-xl);
+      background: var(--cz-color-bg-secondary);
+      border: 1px solid var(--cz-color-border-secondary);
+      box-shadow: var(--cz-shadow-md);
+      max-width: 400px;
+    }
+
+    .card h2 {
+      font-size: var(--cz-text-lg);
+      font-weight: var(--cz-font-weight-semibold);
+      margin: 0 0 calc(var(--cz-spacing) * 2);
+    }
+
+    .card p {
+      color: var(--cz-color-text-secondary);
+      font-size: var(--cz-text-sm);
+      line-height: var(--cz-text-sm-line-height);
+      margin: 0 0 calc(var(--cz-spacing) * 4);
+    }
+
+    .btn {
+      background: var(--cz-color-bg-brand-solid);
+      color: var(--cz-color-fg-white);
+      border: none;
+      padding: calc(var(--cz-spacing) * 2.5) calc(var(--cz-spacing) * 4);
+      border-radius: var(--cz-radius-md);
+      font-family: var(--cz-font-body);
+      font-size: var(--cz-text-sm);
+      font-weight: var(--cz-font-weight-semibold);
+      cursor: pointer;
+      box-shadow: var(--cz-shadow-xs);
+    }
+
+    .btn:focus {
+      outline: none;
+      box-shadow: var(--cz-focus-ring);
+    }
+  </style>
+</head>
+<body>
+  <h1>Cosmoz Tokens</h1>
+
+  <button class="btn" onclick="document.documentElement.classList.toggle('dark-mode')">
+    Toggle Dark Mode
+  </button>
+
+  <div class="card" style="margin-top: calc(var(--cz-spacing) * 6);">
+    <h2>Example Card</h2>
+    <p>This card uses semantic tokens that automatically adapt to dark mode. Try toggling the theme!</p>
+    <button class="btn">Action</button>
+  </div>
+</body>
+</html>
