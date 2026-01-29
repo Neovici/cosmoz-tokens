@@ -1,7 +1,7 @@
-import{b as r}from"./iframe-DEArP0b6.js";import{s}from"./style-NqBPnQHh.js";const g={title:"Tokens/Semantic"},o=(l,i)=>r`
+import{b as r}from"./iframe-BQ2h2Vr0.js";import{s}from"./style-BsAruWP_.js";const b={title:"Tokens/Semantic"},o=d=>r`
     <div class="story-row">
-        <div class="story-swatch" style="background: var(${i});"></div>
-        <span class="story-label">${l}</span>
+        <div class="story-swatch" style="background: var(${d});"></div>
+        <span class="story-label">${d}</span>
     </div>
 `,t=()=>{document.documentElement.classList.toggle("dark-mode")},c={render:()=>r`
         ${s}
@@ -15,21 +15,21 @@ import{b as r}from"./iframe-DEArP0b6.js";import{s}from"./style-NqBPnQHh.js";cons
             </button>
             <div class="story-section">
                 <div class="story-grid story-grid--wide">
-                    ${o("text-primary","--cz-color-text-primary")}
-                    ${o("text-secondary","--cz-color-text-secondary")}
-                    ${o("text-tertiary","--cz-color-text-tertiary")}
-                    ${o("text-quaternary","--cz-color-text-quaternary")}
-                    ${o("text-disabled","--cz-color-text-disabled")}
-                    ${o("text-placeholder","--cz-color-text-placeholder")}
-                    ${o("text-error","--cz-color-text-error")}
-                    ${o("text-warning","--cz-color-text-warning")}
-                    ${o("text-success","--cz-color-text-success")}
-                    ${o("text-brand","--cz-color-text-brand")}
-                    ${o("text-on-brand","--cz-color-text-on-brand")}
+                    ${o("--cz-color-text-primary")}
+                    ${o("--cz-color-text-secondary")}
+                    ${o("--cz-color-text-tertiary")}
+                    ${o("--cz-color-text-quaternary")}
+                    ${o("--cz-color-text-disabled")}
+                    ${o("--cz-color-text-placeholder")}
+                    ${o("--cz-color-text-error")}
+                    ${o("--cz-color-text-warning")}
+                    ${o("--cz-color-text-success")}
+                    ${o("--cz-color-text-brand")}
+                    ${o("--cz-color-text-on-brand")}
                 </div>
             </div>
         </div>
-    `},e={render:()=>r`
+    `},n={render:()=>r`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Background Colors</h1>
@@ -42,36 +42,36 @@ import{b as r}from"./iframe-DEArP0b6.js";import{s}from"./style-NqBPnQHh.js";cons
             <div class="story-section">
                 <h3 class="story-section-title">Base</h3>
                 <div class="story-grid story-grid--wide">
-                    ${o("bg-primary","--cz-color-bg-primary")}
-                    ${o("bg-secondary","--cz-color-bg-secondary")}
-                    ${o("bg-tertiary","--cz-color-bg-tertiary")}
-                    ${o("bg-quaternary","--cz-color-bg-quaternary")}
-                    ${o("bg-disabled","--cz-color-bg-disabled")}
-                    ${o("bg-overlay","--cz-color-bg-overlay")}
+                    ${o("--cz-color-bg-primary")}
+                    ${o("--cz-color-bg-secondary")}
+                    ${o("--cz-color-bg-tertiary")}
+                    ${o("--cz-color-bg-quaternary")}
+                    ${o("--cz-color-bg-disabled")}
+                    ${o("--cz-color-bg-overlay")}
                 </div>
             </div>
             <div class="story-section">
                 <h3 class="story-section-title">Brand</h3>
                 <div class="story-grid story-grid--wide">
-                    ${o("bg-brand","--cz-color-bg-brand")}
-                    ${o("bg-brand-secondary","--cz-color-bg-brand-secondary")}
-                    ${o("bg-brand-solid","--cz-color-bg-brand-solid")}
-                    ${o("bg-brand-section","--cz-color-bg-brand-section")}
+                    ${o("--cz-color-bg-brand")}
+                    ${o("--cz-color-bg-brand-secondary")}
+                    ${o("--cz-color-bg-brand-solid")}
+                    ${o("--cz-color-bg-brand-section")}
                 </div>
             </div>
             <div class="story-section">
                 <h3 class="story-section-title">Status</h3>
                 <div class="story-grid story-grid--wide">
-                    ${o("bg-error","--cz-color-bg-error")}
-                    ${o("bg-error-solid","--cz-color-bg-error-solid")}
-                    ${o("bg-warning","--cz-color-bg-warning")}
-                    ${o("bg-warning-solid","--cz-color-bg-warning-solid")}
-                    ${o("bg-success","--cz-color-bg-success")}
-                    ${o("bg-success-solid","--cz-color-bg-success-solid")}
+                    ${o("--cz-color-bg-error")}
+                    ${o("--cz-color-bg-error-solid")}
+                    ${o("--cz-color-bg-warning")}
+                    ${o("--cz-color-bg-warning-solid")}
+                    ${o("--cz-color-bg-success")}
+                    ${o("--cz-color-bg-success-solid")}
                 </div>
             </div>
         </div>
-    `},n={render:()=>r`
+    `},e={render:()=>r`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Border Colors</h1>
@@ -83,16 +83,16 @@ import{b as r}from"./iframe-DEArP0b6.js";import{s}from"./style-NqBPnQHh.js";cons
             </button>
             <div class="story-section">
                 <div class="story-grid story-grid--wide">
-                    ${o("border-primary","--cz-color-border-primary")}
-                    ${o("border-secondary","--cz-color-border-secondary")}
-                    ${o("border-tertiary","--cz-color-border-tertiary")}
-                    ${o("border-disabled","--cz-color-border-disabled")}
-                    ${o("border-error","--cz-color-border-error")}
-                    ${o("border-brand","--cz-color-border-brand")}
+                    ${o("--cz-color-border-primary")}
+                    ${o("--cz-color-border-secondary")}
+                    ${o("--cz-color-border-tertiary")}
+                    ${o("--cz-color-border-disabled")}
+                    ${o("--cz-color-border-error")}
+                    ${o("--cz-color-border-brand")}
                 </div>
             </div>
         </div>
-    `},a={render:()=>r`
+    `},l={render:()=>r`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Foreground Colors</h1>
@@ -105,20 +105,19 @@ import{b as r}from"./iframe-DEArP0b6.js";import{s}from"./style-NqBPnQHh.js";cons
             </button>
             <div class="story-section">
                 <div class="story-grid story-grid--wide">
-                    ${o("fg-primary","--cz-color-fg-primary")}
-                    ${o("fg-secondary","--cz-color-fg-secondary")}
-                    ${o("fg-tertiary","--cz-color-fg-tertiary")}
-                    ${o("fg-quaternary","--cz-color-fg-quaternary")}
-                    ${o("fg-disabled","--cz-color-fg-disabled")}
-                    ${o("fg-white","--cz-color-fg-white")}
-                    ${o("fg-brand","--cz-color-fg-brand")}
-                    ${o("fg-error","--cz-color-fg-error")}
-                    ${o("fg-warning","--cz-color-fg-warning")}
-                    ${o("fg-success","--cz-color-fg-success")}
+                    ${o("--cz-color-fg-primary")}
+                    ${o("--cz-color-fg-secondary")}
+                    ${o("--cz-color-fg-tertiary")}
+                    ${o("--cz-color-fg-quaternary")}
+                    ${o("--cz-color-fg-disabled")}
+                    ${o("--cz-color-fg-white")} ${o("--cz-color-fg-brand")}
+                    ${o("--cz-color-fg-error")}
+                    ${o("--cz-color-fg-warning")}
+                    ${o("--cz-color-fg-success")}
                 </div>
             </div>
         </div>
-    `},d={render:()=>r`
+    `},a={render:()=>r`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Dark Mode Demo</h1>
@@ -165,22 +164,22 @@ document.documentElement.dataset.theme = 'dark';</pre
             </button>
             <div class="story-section">
                 <div class="story-grid story-grid--wide">
-                    \${colorRow('text-primary', '--cz-color-text-primary')}
-                    \${colorRow('text-secondary', '--cz-color-text-secondary')}
-                    \${colorRow('text-tertiary', '--cz-color-text-tertiary')}
-                    \${colorRow('text-quaternary', '--cz-color-text-quaternary')}
-                    \${colorRow('text-disabled', '--cz-color-text-disabled')}
-                    \${colorRow('text-placeholder', '--cz-color-text-placeholder')}
-                    \${colorRow('text-error', '--cz-color-text-error')}
-                    \${colorRow('text-warning', '--cz-color-text-warning')}
-                    \${colorRow('text-success', '--cz-color-text-success')}
-                    \${colorRow('text-brand', '--cz-color-text-brand')}
-                    \${colorRow('text-on-brand', '--cz-color-text-on-brand')}
+                    \${colorRow('--cz-color-text-primary')}
+                    \${colorRow('--cz-color-text-secondary')}
+                    \${colorRow('--cz-color-text-tertiary')}
+                    \${colorRow('--cz-color-text-quaternary')}
+                    \${colorRow('--cz-color-text-disabled')}
+                    \${colorRow('--cz-color-text-placeholder')}
+                    \${colorRow('--cz-color-text-error')}
+                    \${colorRow('--cz-color-text-warning')}
+                    \${colorRow('--cz-color-text-success')}
+                    \${colorRow('--cz-color-text-brand')}
+                    \${colorRow('--cz-color-text-on-brand')}
                 </div>
             </div>
         </div>
     \`
-}`,...c.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+}`,...c.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -194,37 +193,37 @@ document.documentElement.dataset.theme = 'dark';</pre
             <div class="story-section">
                 <h3 class="story-section-title">Base</h3>
                 <div class="story-grid story-grid--wide">
-                    \${colorRow('bg-primary', '--cz-color-bg-primary')}
-                    \${colorRow('bg-secondary', '--cz-color-bg-secondary')}
-                    \${colorRow('bg-tertiary', '--cz-color-bg-tertiary')}
-                    \${colorRow('bg-quaternary', '--cz-color-bg-quaternary')}
-                    \${colorRow('bg-disabled', '--cz-color-bg-disabled')}
-                    \${colorRow('bg-overlay', '--cz-color-bg-overlay')}
+                    \${colorRow('--cz-color-bg-primary')}
+                    \${colorRow('--cz-color-bg-secondary')}
+                    \${colorRow('--cz-color-bg-tertiary')}
+                    \${colorRow('--cz-color-bg-quaternary')}
+                    \${colorRow('--cz-color-bg-disabled')}
+                    \${colorRow('--cz-color-bg-overlay')}
                 </div>
             </div>
             <div class="story-section">
                 <h3 class="story-section-title">Brand</h3>
                 <div class="story-grid story-grid--wide">
-                    \${colorRow('bg-brand', '--cz-color-bg-brand')}
-                    \${colorRow('bg-brand-secondary', '--cz-color-bg-brand-secondary')}
-                    \${colorRow('bg-brand-solid', '--cz-color-bg-brand-solid')}
-                    \${colorRow('bg-brand-section', '--cz-color-bg-brand-section')}
+                    \${colorRow('--cz-color-bg-brand')}
+                    \${colorRow('--cz-color-bg-brand-secondary')}
+                    \${colorRow('--cz-color-bg-brand-solid')}
+                    \${colorRow('--cz-color-bg-brand-section')}
                 </div>
             </div>
             <div class="story-section">
                 <h3 class="story-section-title">Status</h3>
                 <div class="story-grid story-grid--wide">
-                    \${colorRow('bg-error', '--cz-color-bg-error')}
-                    \${colorRow('bg-error-solid', '--cz-color-bg-error-solid')}
-                    \${colorRow('bg-warning', '--cz-color-bg-warning')}
-                    \${colorRow('bg-warning-solid', '--cz-color-bg-warning-solid')}
-                    \${colorRow('bg-success', '--cz-color-bg-success')}
-                    \${colorRow('bg-success-solid', '--cz-color-bg-success-solid')}
+                    \${colorRow('--cz-color-bg-error')}
+                    \${colorRow('--cz-color-bg-error-solid')}
+                    \${colorRow('--cz-color-bg-warning')}
+                    \${colorRow('--cz-color-bg-warning-solid')}
+                    \${colorRow('--cz-color-bg-success')}
+                    \${colorRow('--cz-color-bg-success-solid')}
                 </div>
             </div>
         </div>
     \`
-}`,...e.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -237,17 +236,17 @@ document.documentElement.dataset.theme = 'dark';</pre
             </button>
             <div class="story-section">
                 <div class="story-grid story-grid--wide">
-                    \${colorRow('border-primary', '--cz-color-border-primary')}
-                    \${colorRow('border-secondary', '--cz-color-border-secondary')}
-                    \${colorRow('border-tertiary', '--cz-color-border-tertiary')}
-                    \${colorRow('border-disabled', '--cz-color-border-disabled')}
-                    \${colorRow('border-error', '--cz-color-border-error')}
-                    \${colorRow('border-brand', '--cz-color-border-brand')}
+                    \${colorRow('--cz-color-border-primary')}
+                    \${colorRow('--cz-color-border-secondary')}
+                    \${colorRow('--cz-color-border-tertiary')}
+                    \${colorRow('--cz-color-border-disabled')}
+                    \${colorRow('--cz-color-border-error')}
+                    \${colorRow('--cz-color-border-brand')}
                 </div>
             </div>
         </div>
     \`
-}`,...n.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -261,21 +260,20 @@ document.documentElement.dataset.theme = 'dark';</pre
             </button>
             <div class="story-section">
                 <div class="story-grid story-grid--wide">
-                    \${colorRow('fg-primary', '--cz-color-fg-primary')}
-                    \${colorRow('fg-secondary', '--cz-color-fg-secondary')}
-                    \${colorRow('fg-tertiary', '--cz-color-fg-tertiary')}
-                    \${colorRow('fg-quaternary', '--cz-color-fg-quaternary')}
-                    \${colorRow('fg-disabled', '--cz-color-fg-disabled')}
-                    \${colorRow('fg-white', '--cz-color-fg-white')}
-                    \${colorRow('fg-brand', '--cz-color-fg-brand')}
-                    \${colorRow('fg-error', '--cz-color-fg-error')}
-                    \${colorRow('fg-warning', '--cz-color-fg-warning')}
-                    \${colorRow('fg-success', '--cz-color-fg-success')}
+                    \${colorRow('--cz-color-fg-primary')}
+                    \${colorRow('--cz-color-fg-secondary')}
+                    \${colorRow('--cz-color-fg-tertiary')}
+                    \${colorRow('--cz-color-fg-quaternary')}
+                    \${colorRow('--cz-color-fg-disabled')}
+                    \${colorRow('--cz-color-fg-white')} \${colorRow('--cz-color-fg-brand')}
+                    \${colorRow('--cz-color-fg-error')}
+                    \${colorRow('--cz-color-fg-warning')}
+                    \${colorRow('--cz-color-fg-success')}
                 </div>
             </div>
         </div>
     \`
-}`,...a.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -311,4 +309,4 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...d.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{e as BackgroundColors,n as BorderColors,d as DarkModeDemo,a as ForegroundColors,c as TextColors,$ as __namedExportsOrder,g as default};
+}`,...a.parameters?.docs?.source}}};const g=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,e as BorderColors,a as DarkModeDemo,l as ForegroundColors,c as TextColors,g as __namedExportsOrder,b as default};

@@ -1,23 +1,18 @@
-import{b as c}from"./iframe-DEArP0b6.js";import{s as a}from"./style-NqBPnQHh.js";const h={title:"Tokens/Colors"},r=(o,d)=>c`
+import{b as c}from"./iframe-BQ2h2Vr0.js";import{s as a}from"./style-BsAruWP_.js";const h={title:"Tokens/Colors"},r=o=>c`
     <div class="story-row">
-        <div class="story-swatch" style="background: var(${d});"></div>
+        <div class="story-swatch" style="background: var(${o});"></div>
         <span class="story-label">${o}</span>
     </div>
 `,s=(o,d)=>c`
     <div class="story-section">
         <h3 class="story-section-title">${d}</h3>
         <div class="story-grid story-grid--auto">
-            ${r("25",`${o}-25`)} ${r("50",`${o}-50`)}
-            ${r("100",`${o}-100`)}
-            ${r("200",`${o}-200`)}
-            ${r("300",`${o}-300`)}
-            ${r("400",`${o}-400`)}
-            ${r("500",`${o}-500`)}
-            ${r("600",`${o}-600`)}
-            ${r("700",`${o}-700`)}
-            ${r("800",`${o}-800`)}
-            ${r("900",`${o}-900`)}
-            ${r("950",`${o}-950`)}
+            ${r(`${o}-25`)} ${r(`${o}-50`)}
+            ${r(`${o}-100`)} ${r(`${o}-200`)}
+            ${r(`${o}-300`)} ${r(`${o}-400`)}
+            ${r(`${o}-500`)} ${r(`${o}-600`)}
+            ${r(`${o}-700`)} ${r(`${o}-800`)}
+            ${r(`${o}-900`)} ${r(`${o}-950`)}
         </div>
     </div>
 `,l={render:()=>c`
@@ -46,10 +41,9 @@ import{b as c}from"./iframe-DEArP0b6.js";import{s as a}from"./style-NqBPnQHh.js"
             <h1 class="story-title">Base Colors</h1>
             <div class="story-section">
                 <div class="story-grid story-grid--auto">
-                    ${r("white","--cz-color-white")}
-                    ${r("black","--cz-color-black")}
-                    ${r("alpha-white","--cz-color-alpha-white")}
-                    ${r("alpha-black","--cz-color-alpha-black")}
+                    ${r("--cz-color-white")} ${r("--cz-color-black")}
+                    ${r("--cz-color-alpha-white")}
+                    ${r("--cz-color-alpha-black")}
                 </div>
             </div>
         </div>
@@ -96,10 +90,9 @@ import{b as c}from"./iframe-DEArP0b6.js";import{s as a}from"./style-NqBPnQHh.js"
             <h1 class="story-title">Base Colors</h1>
             <div class="story-section">
                 <div class="story-grid story-grid--auto">
-                    \${colorSwatch('white', '--cz-color-white')}
-                    \${colorSwatch('black', '--cz-color-black')}
-                    \${colorSwatch('alpha-white', '--cz-color-alpha-white')}
-                    \${colorSwatch('alpha-black', '--cz-color-alpha-black')}
+                    \${colorSwatch('--cz-color-white')} \${colorSwatch('--cz-color-black')}
+                    \${colorSwatch('--cz-color-alpha-white')}
+                    \${colorSwatch('--cz-color-alpha-black')}
                 </div>
             </div>
         </div>
