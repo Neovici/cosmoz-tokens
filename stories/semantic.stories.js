@@ -5,10 +5,10 @@ export default {
 	title: 'Tokens/Semantic',
 };
 
-const colorRow = (name, cssVar) => html`
+const colorRow = (cssVar) => html`
 	<div class="story-row">
 		<div class="story-swatch" style="background: var(${cssVar});"></div>
-		<span class="story-label">${name}</span>
+		<span class="story-label">${cssVar}</span>
 	</div>
 `;
 
@@ -29,17 +29,17 @@ export const TextColors = {
 			</button>
 			<div class="story-section">
 				<div class="story-grid story-grid--wide">
-					${colorRow('text-primary', '--cz-color-text-primary')}
-					${colorRow('text-secondary', '--cz-color-text-secondary')}
-					${colorRow('text-tertiary', '--cz-color-text-tertiary')}
-					${colorRow('text-quaternary', '--cz-color-text-quaternary')}
-					${colorRow('text-disabled', '--cz-color-text-disabled')}
-					${colorRow('text-placeholder', '--cz-color-text-placeholder')}
-					${colorRow('text-error', '--cz-color-text-error')}
-					${colorRow('text-warning', '--cz-color-text-warning')}
-					${colorRow('text-success', '--cz-color-text-success')}
-					${colorRow('text-brand', '--cz-color-text-brand')}
-					${colorRow('text-on-brand', '--cz-color-text-on-brand')}
+					${colorRow('--cz-color-text-primary')}
+					${colorRow('--cz-color-text-secondary')}
+					${colorRow('--cz-color-text-tertiary')}
+					${colorRow('--cz-color-text-quaternary')}
+					${colorRow('--cz-color-text-disabled')}
+					${colorRow('--cz-color-text-placeholder')}
+					${colorRow('--cz-color-text-error')}
+					${colorRow('--cz-color-text-warning')}
+					${colorRow('--cz-color-text-success')}
+					${colorRow('--cz-color-text-brand')}
+					${colorRow('--cz-color-text-on-brand')}
 				</div>
 			</div>
 		</div>
@@ -60,32 +60,32 @@ export const BackgroundColors = {
 			<div class="story-section">
 				<h3 class="story-section-title">Base</h3>
 				<div class="story-grid story-grid--wide">
-					${colorRow('bg-primary', '--cz-color-bg-primary')}
-					${colorRow('bg-secondary', '--cz-color-bg-secondary')}
-					${colorRow('bg-tertiary', '--cz-color-bg-tertiary')}
-					${colorRow('bg-quaternary', '--cz-color-bg-quaternary')}
-					${colorRow('bg-disabled', '--cz-color-bg-disabled')}
-					${colorRow('bg-overlay', '--cz-color-bg-overlay')}
+					${colorRow('--cz-color-bg-primary')}
+					${colorRow('--cz-color-bg-secondary')}
+					${colorRow('--cz-color-bg-tertiary')}
+					${colorRow('--cz-color-bg-quaternary')}
+					${colorRow('--cz-color-bg-disabled')}
+					${colorRow('--cz-color-bg-overlay')}
 				</div>
 			</div>
 			<div class="story-section">
 				<h3 class="story-section-title">Brand</h3>
 				<div class="story-grid story-grid--wide">
-					${colorRow('bg-brand', '--cz-color-bg-brand')}
-					${colorRow('bg-brand-secondary', '--cz-color-bg-brand-secondary')}
-					${colorRow('bg-brand-solid', '--cz-color-bg-brand-solid')}
-					${colorRow('bg-brand-section', '--cz-color-bg-brand-section')}
+					${colorRow('--cz-color-bg-brand')}
+					${colorRow('--cz-color-bg-brand-secondary')}
+					${colorRow('--cz-color-bg-brand-solid')}
+					${colorRow('--cz-color-bg-brand-section')}
 				</div>
 			</div>
 			<div class="story-section">
 				<h3 class="story-section-title">Status</h3>
 				<div class="story-grid story-grid--wide">
-					${colorRow('bg-error', '--cz-color-bg-error')}
-					${colorRow('bg-error-solid', '--cz-color-bg-error-solid')}
-					${colorRow('bg-warning', '--cz-color-bg-warning')}
-					${colorRow('bg-warning-solid', '--cz-color-bg-warning-solid')}
-					${colorRow('bg-success', '--cz-color-bg-success')}
-					${colorRow('bg-success-solid', '--cz-color-bg-success-solid')}
+					${colorRow('--cz-color-bg-error')}
+					${colorRow('--cz-color-bg-error-solid')}
+					${colorRow('--cz-color-bg-warning')}
+					${colorRow('--cz-color-bg-warning-solid')}
+					${colorRow('--cz-color-bg-success')}
+					${colorRow('--cz-color-bg-success-solid')}
 				</div>
 			</div>
 		</div>
@@ -105,12 +105,12 @@ export const BorderColors = {
 			</button>
 			<div class="story-section">
 				<div class="story-grid story-grid--wide">
-					${colorRow('border-primary', '--cz-color-border-primary')}
-					${colorRow('border-secondary', '--cz-color-border-secondary')}
-					${colorRow('border-tertiary', '--cz-color-border-tertiary')}
-					${colorRow('border-disabled', '--cz-color-border-disabled')}
-					${colorRow('border-error', '--cz-color-border-error')}
-					${colorRow('border-brand', '--cz-color-border-brand')}
+					${colorRow('--cz-color-border-primary')}
+					${colorRow('--cz-color-border-secondary')}
+					${colorRow('--cz-color-border-tertiary')}
+					${colorRow('--cz-color-border-disabled')}
+					${colorRow('--cz-color-border-error')}
+					${colorRow('--cz-color-border-brand')}
 				</div>
 			</div>
 		</div>
@@ -131,16 +131,15 @@ export const ForegroundColors = {
 			</button>
 			<div class="story-section">
 				<div class="story-grid story-grid--wide">
-					${colorRow('fg-primary', '--cz-color-fg-primary')}
-					${colorRow('fg-secondary', '--cz-color-fg-secondary')}
-					${colorRow('fg-tertiary', '--cz-color-fg-tertiary')}
-					${colorRow('fg-quaternary', '--cz-color-fg-quaternary')}
-					${colorRow('fg-disabled', '--cz-color-fg-disabled')}
-					${colorRow('fg-white', '--cz-color-fg-white')}
-					${colorRow('fg-brand', '--cz-color-fg-brand')}
-					${colorRow('fg-error', '--cz-color-fg-error')}
-					${colorRow('fg-warning', '--cz-color-fg-warning')}
-					${colorRow('fg-success', '--cz-color-fg-success')}
+					${colorRow('--cz-color-fg-primary')}
+					${colorRow('--cz-color-fg-secondary')}
+					${colorRow('--cz-color-fg-tertiary')}
+					${colorRow('--cz-color-fg-quaternary')}
+					${colorRow('--cz-color-fg-disabled')}
+					${colorRow('--cz-color-fg-white')} ${colorRow('--cz-color-fg-brand')}
+					${colorRow('--cz-color-fg-error')}
+					${colorRow('--cz-color-fg-warning')}
+					${colorRow('--cz-color-fg-success')}
 				</div>
 			</div>
 		</div>
