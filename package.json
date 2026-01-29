@@ -26,10 +26,6 @@
       "types": "./src/normalize.css.d.ts",
       "default": "./src/normalize.css.js"
     },
-    "./utilities": {
-      "types": "./src/utilities.css.d.ts",
-      "default": "./src/utilities.css.js"
-    },
     "./primitives": "./src/primitives.css",
     "./typography": "./src/typography.css",
     "./spacing": "./src/spacing.css",
