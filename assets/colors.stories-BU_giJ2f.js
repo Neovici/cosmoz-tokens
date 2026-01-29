@@ -1,17 +1,12 @@
-import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js";const h={title:"Tokens/Colors"},r=(o,d)=>c`
+import{b as c}from"./iframe-BS0TWTfn.js";import{s as a}from"./style-D-jK6d7J.js";const h={title:"Tokens/Colors"},r=(o,d)=>c`
     <div class="story-row">
-        <div
-            style="width: 48px; height: 48px; border-radius: var(--cz-radius-md); background: var(${d}); border: 1px solid var(--cz-color-border-secondary);"
-        ></div>
+        <div class="story-swatch" style="background: var(${d});"></div>
         <span class="story-label">${o}</span>
     </div>
 `,s=(o,d)=>c`
     <div class="story-section">
         <h3 class="story-section-title">${d}</h3>
-        <div
-            class="story-grid"
-            style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-        >
+        <div class="story-grid story-grid--auto">
             ${r("25",`${o}-25`)} ${r("50",`${o}-50`)}
             ${r("100",`${o}-100`)}
             ${r("200",`${o}-200`)}
@@ -31,13 +26,13 @@ import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js"
             <h1 class="story-title">Brand Colors</h1>
             ${s("--cz-color-brand","Brand (Indigo-based)")}
         </div>
-    `},e={render:()=>c`
+    `},t={render:()=>c`
         ${a}
         <div class="story-container">
             <h1 class="story-title">Gray Colors</h1>
             ${s("--cz-color-gray","Gray")}
         </div>
-    `},t={render:()=>c`
+    `},e={render:()=>c`
         ${a}
         <div class="story-container">
             <h1 class="story-title">Status Colors</h1>
@@ -50,10 +45,7 @@ import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js"
         <div class="story-container">
             <h1 class="story-title">Base Colors</h1>
             <div class="story-section">
-                <div
-                    class="story-grid"
-                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-                >
+                <div class="story-grid story-grid--auto">
                     ${r("white","--cz-color-white")}
                     ${r("black","--cz-color-black")}
                     ${r("alpha-white","--cz-color-alpha-white")}
@@ -79,7 +71,7 @@ import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js"
             \${colorScale('--cz-color-brand', 'Brand (Indigo-based)')}
         </div>
     \`
-}`,...l.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -87,7 +79,7 @@ import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js"
             \${colorScale('--cz-color-gray', 'Gray')}
         </div>
     \`
-}`,...e.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -97,16 +89,13 @@ import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js"
             \${colorScale('--cz-color-success', 'Success')}
         </div>
     \`
-}`,...t.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
             <h1 class="story-title">Base Colors</h1>
             <div class="story-section">
-                <div
-                    class="story-grid"
-                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-                >
+                <div class="story-grid story-grid--auto">
                     \${colorSwatch('white', '--cz-color-white')}
                     \${colorSwatch('black', '--cz-color-black')}
                     \${colorSwatch('alpha-white', '--cz-color-alpha-white')}
@@ -127,4 +116,4 @@ import{b as c}from"./iframe-CYXJaHdM.js";import{s as a}from"./style-BTaPFGKl.js"
             \${colorScale('--cz-color-success', 'Success')}
         </div>
     \`
-}`,...i.parameters?.docs?.source}}};const m=["BrandColors","GrayColors","StatusColors","BaseColors","AllColors"];export{i as AllColors,n as BaseColors,l as BrandColors,e as GrayColors,t as StatusColors,m as __namedExportsOrder,h as default};
+}`,...i.parameters?.docs?.source}}};const v=["BrandColors","GrayColors","StatusColors","BaseColors","AllColors"];export{i as AllColors,n as BaseColors,l as BrandColors,t as GrayColors,e as StatusColors,v as __namedExportsOrder,h as default};

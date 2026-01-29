@@ -1,19 +1,17 @@
-import{b as i}from"./iframe-CYXJaHdM.js";import{s as n}from"./style-BTaPFGKl.js";const e={title:"Tokens/Spacing"},s=(a,d)=>i`
+import{b as i}from"./iframe-BS0TWTfn.js";import{s as d}from"./style-D-jK6d7J.js";const l={title:"Tokens/Spacing"},s=(r,n)=>i`
     <div class="story-row">
         <div
-            style="width: 64px; height: 64px; border-radius: var(${d}); background: var(--cz-color-brand-100); border: 2px solid var(--cz-color-brand-500);"
+            class="story-swatch--lg"
+            style="border-radius: var(${n}); background: var(--cz-color-brand-100); border: 2px solid var(--cz-color-brand-500);"
         ></div>
-        <span class="story-label">${a}</span>
+        <span class="story-label">${r}</span>
     </div>
-`,r={render:()=>i`
-        ${n}
+`,a={render:()=>i`
+        ${d}
         <div class="story-container">
             <h1 class="story-title">Border Radius</h1>
             <div class="story-section">
-                <div
-                    class="story-grid"
-                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-                >
+                <div class="story-grid story-grid--auto">
                     ${s("--cz-radius-none (0px)","--cz-radius-none")}
                     ${s("--cz-radius-xxs (2px)","--cz-radius-xxs")}
                     ${s("--cz-radius-xs (4px)","--cz-radius-xs")}
@@ -29,11 +27,11 @@ import{b as i}from"./iframe-CYXJaHdM.js";import{s as n}from"./style-BTaPFGKl.js"
             </div>
         </div>
     `},c={render:()=>i`
-        ${n}
+        ${d}
         <div class="story-container">
             <h1 class="story-title">Spacing Unit</h1>
             <div class="story-section">
-                <p style="margin-bottom: 16px; color: var(--cz-color-text-secondary);">
+                <p class="story-description">
                     Base spacing unit:
                     <code style="font-family: var(--cz-font-mono);"
                         >--cz-spacing: 4px</code
@@ -46,30 +44,25 @@ import{b as i}from"./iframe-CYXJaHdM.js";import{s as n}from"./style-BTaPFGKl.js"
                     >
                     for consistent spacing.
                 </p>
-                <div
-                    style="margin-top: 24px; display: flex; flex-direction: column; gap: 8px;"
-                >
-                    ${[1,2,3,4,5,6,8,10,12,16].map(a=>i`
+                <div class="story-flex story-flex--col story-gap-2 story-mt-6">
+                    ${[1,2,3,4,5,6,8,10,12,16].map(r=>i`
                             <div class="story-row">
                                 <div
-                                    style="height: 24px; width: calc(var(--cz-spacing) * ${a}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
+                                    style="height: 24px; width: calc(var(--cz-spacing) * ${r}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
                                 ></div>
-                                <span class="story-label">${a}x = ${a*4}px</span>
+                                <span class="story-label">${r}x = ${r*4}px</span>
                             </div>
                         `)}
                 </div>
             </div>
         </div>
-    `};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+    `};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
             <h1 class="story-title">Border Radius</h1>
             <div class="story-section">
-                <div
-                    class="story-grid"
-                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-                >
+                <div class="story-grid story-grid--auto">
                     \${radiusSwatch('--cz-radius-none (0px)', '--cz-radius-none')}
                     \${radiusSwatch('--cz-radius-xxs (2px)', '--cz-radius-xxs')}
                     \${radiusSwatch('--cz-radius-xs (4px)', '--cz-radius-xs')}
@@ -85,13 +78,13 @@ import{b as i}from"./iframe-CYXJaHdM.js";import{s as n}from"./style-BTaPFGKl.js"
             </div>
         </div>
     \`
-}`,...r.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
             <h1 class="story-title">Spacing Unit</h1>
             <div class="story-section">
-                <p style="margin-bottom: 16px; color: var(--cz-color-text-secondary);">
+                <p class="story-description">
                     Base spacing unit:
                     <code style="font-family: var(--cz-font-mono);"
                         >--cz-spacing: 4px</code
@@ -104,9 +97,7 @@ import{b as i}from"./iframe-CYXJaHdM.js";import{s as n}from"./style-BTaPFGKl.js"
                     >
                     for consistent spacing.
                 </p>
-                <div
-                    style="margin-top: 24px; display: flex; flex-direction: column; gap: 8px;"
-                >
+                <div class="story-flex story-flex--col story-gap-2 story-mt-6">
                     \${[1, 2, 3, 4, 5, 6, 8, 10, 12, 16].map(n => html\`
                             <div class="story-row">
                                 <div
@@ -119,4 +110,4 @@ import{b as i}from"./iframe-CYXJaHdM.js";import{s as n}from"./style-BTaPFGKl.js"
             </div>
         </div>
     \`
-}`,...c.parameters?.docs?.source}}};const l=["BorderRadius","SpacingUnit"];export{r as BorderRadius,c as SpacingUnit,l as __namedExportsOrder,e as default};
+}`,...c.parameters?.docs?.source}}};const e=["BorderRadius","SpacingUnit"];export{a as BorderRadius,c as SpacingUnit,e as __namedExportsOrder,l as default};
