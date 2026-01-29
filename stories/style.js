@@ -71,7 +71,6 @@ export const style = html`
 		.story-label {
 			font-size: var(--cz-text-sm);
 			color: var(--cz-color-text-tertiary);
-			min-width: 180px;
 			font-family: var(--cz-font-mono);
 		}
 
