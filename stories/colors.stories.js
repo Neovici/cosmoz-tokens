@@ -7,9 +7,7 @@ export default {
 
 const colorSwatch = (name, cssVar) => html`
 	<div class="story-row">
-		<div
-			style="width: 48px; height: 48px; border-radius: var(--cz-radius-md); background: var(${cssVar}); border: 1px solid var(--cz-color-border-secondary);"
-		></div>
+		<div class="story-swatch" style="background: var(${cssVar});"></div>
 		<span class="story-label">${name}</span>
 	</div>
 `;
@@ -17,10 +15,7 @@ const colorSwatch = (name, cssVar) => html`
 const colorScale = (prefix, label) => html`
 	<div class="story-section">
 		<h3 class="story-section-title">${label}</h3>
-		<div
-			class="story-grid"
-			style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-		>
+		<div class="story-grid story-grid--auto">
 			${colorSwatch('25', `${prefix}-25`)} ${colorSwatch('50', `${prefix}-50`)}
 			${colorSwatch('100', `${prefix}-100`)}
 			${colorSwatch('200', `${prefix}-200`)}
@@ -74,10 +69,7 @@ export const BaseColors = {
 		<div class="story-container">
 			<h1 class="story-title">Base Colors</h1>
 			<div class="story-section">
-				<div
-					class="story-grid"
-					style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));"
-				>
+				<div class="story-grid story-grid--auto">
 					${colorSwatch('white', '--cz-color-white')}
 					${colorSwatch('black', '--cz-color-black')}
 					${colorSwatch('alpha-white', '--cz-color-alpha-white')}

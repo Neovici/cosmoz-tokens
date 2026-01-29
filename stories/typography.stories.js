@@ -50,7 +50,7 @@ export const TextSizes = {
 		<div class="story-container">
 			<h1 class="story-title">Text Sizes</h1>
 
-			<div class="story-grid" style="gap: 24px;">
+			<div class="story-grid story-gap-6">
 				<div class="story-row">
 					<span class="story-label">--cz-text-xs (12px)</span>
 					<span
@@ -106,7 +106,7 @@ export const DisplaySizes = {
 		<div class="story-container">
 			<h1 class="story-title">Display Sizes</h1>
 
-			<div class="story-grid" style="gap: 32px;">
+			<div class="story-grid story-gap-8">
 				<div>
 					<p class="story-label">--cz-text-display-xs (24px)</p>
 					<p
@@ -171,7 +171,7 @@ export const FontWeights = {
 		<div class="story-container">
 			<h1 class="story-title">Font Weights</h1>
 
-			<div class="story-grid" style="gap: 16px;">
+			<div class="story-grid story-gap-4">
 				<div class="story-row">
 					<span class="story-label">--cz-font-weight-regular (400)</span>
 					<span
