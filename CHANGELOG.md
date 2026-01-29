@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/Neovici/cosmoz-tokens/compare/v2.0.0...v2.0.1) (2026-01-29)
+
+### Bug Fixes
+
+* **storybook:** display full CSS variable names for easy lookup ([#12](https://github.com/Neovici/cosmoz-tokens/issues/12)) ([e7076a3](https://github.com/Neovici/cosmoz-tokens/commit/e7076a346cfff7c87cd2548bbc304ed68971dec2))
+
 ## [2.0.0](https://github.com/Neovici/cosmoz-tokens/compare/v1.2.0...v2.0.0) (2026-01-29)
 
 ### ⚠ BREAKING CHANGES

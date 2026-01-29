@@ -1,6 +1,6 @@
 {
   "name": "@neovici/cosmoz-tokens",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Design tokens for Cosmoz web components based on Untitled UI",
   "keywords": [
     "design-tokens",
