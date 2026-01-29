@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-Be2I9fMZ.js";const a=r`
+import{b as r}from"./iframe-CyWqAqNl.js";const a=r`
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -77,11 +77,13 @@ import{b as r}from"./iframe-Be2I9fMZ.js";const a=r`
 			height: 48px;
 			border-radius: var(--cz-radius-md);
 			border: 1px solid var(--cz-color-border-secondary);
+			flex: none;
 		}
 
 		.story-swatch--lg {
 			width: 64px;
 			height: 64px;
+			flex: none;
 		}
 
 		.story-swatch--shadow {
@@ -89,6 +91,7 @@ import{b as r}from"./iframe-Be2I9fMZ.js";const a=r`
 			height: 80px;
 			border-radius: var(--cz-radius-lg);
 			background: var(--cz-color-bg-primary);
+			flex: none;
 		}
 
 		/* Buttons */
