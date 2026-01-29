@@ -141,7 +141,7 @@ export const style = html`
 			line-height: var(--cz-text-lg-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 			color: var(--cz-color-text-primary);
-			margin-bottom: calc(var(--cz-spacing) * 2);
+			margin: 0;
 		}
 
 		.story-card-text {
