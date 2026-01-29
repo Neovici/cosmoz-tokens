@@ -5,10 +5,10 @@ export default {
 	title: 'Tokens/Colors',
 };
 
-const colorSwatch = (name, cssVar) => html`
+const colorSwatch = (cssVar) => html`
 	<div class="story-row">
 		<div class="story-swatch" style="background: var(${cssVar});"></div>
-		<span class="story-label">${name}</span>
+		<span class="story-label">${cssVar}</span>
 	</div>
 `;
 
@@ -16,17 +16,12 @@ const colorScale = (prefix, label) => html`
 	<div class="story-section">
 		<h3 class="story-section-title">${label}</h3>
 		<div class="story-grid story-grid--auto">
-			${colorSwatch('25', `${prefix}-25`)} ${colorSwatch('50', `${prefix}-50`)}
-			${colorSwatch('100', `${prefix}-100`)}
-			${colorSwatch('200', `${prefix}-200`)}
-			${colorSwatch('300', `${prefix}-300`)}
-			${colorSwatch('400', `${prefix}-400`)}
-			${colorSwatch('500', `${prefix}-500`)}
-			${colorSwatch('600', `${prefix}-600`)}
-			${colorSwatch('700', `${prefix}-700`)}
-			${colorSwatch('800', `${prefix}-800`)}
-			${colorSwatch('900', `${prefix}-900`)}
-			${colorSwatch('950', `${prefix}-950`)}
+			${colorSwatch(`${prefix}-25`)} ${colorSwatch(`${prefix}-50`)}
+			${colorSwatch(`${prefix}-100`)} ${colorSwatch(`${prefix}-200`)}
+			${colorSwatch(`${prefix}-300`)} ${colorSwatch(`${prefix}-400`)}
+			${colorSwatch(`${prefix}-500`)} ${colorSwatch(`${prefix}-600`)}
+			${colorSwatch(`${prefix}-700`)} ${colorSwatch(`${prefix}-800`)}
+			${colorSwatch(`${prefix}-900`)} ${colorSwatch(`${prefix}-950`)}
 		</div>
 	</div>
 `;
@@ -70,10 +65,9 @@ export const BaseColors = {
 			<h1 class="story-title">Base Colors</h1>
 			<div class="story-section">
 				<div class="story-grid story-grid--auto">
-					${colorSwatch('white', '--cz-color-white')}
-					${colorSwatch('black', '--cz-color-black')}
-					${colorSwatch('alpha-white', '--cz-color-alpha-white')}
-					${colorSwatch('alpha-black', '--cz-color-alpha-black')}
+					${colorSwatch('--cz-color-white')} ${colorSwatch('--cz-color-black')}
+					${colorSwatch('--cz-color-alpha-white')}
+					${colorSwatch('--cz-color-alpha-black')}
 				</div>
 			</div>
 		</div>
