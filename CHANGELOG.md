@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/Neovici/cosmoz-tokens/compare/v1.0.0...v1.1.0) (2026-01-29)
+
+### Features
+
+* add utilities CSS stylesheet ([#7](https://github.com/Neovici/cosmoz-tokens/issues/7)) ([e5dd287](https://github.com/Neovici/cosmoz-tokens/commit/e5dd287a4d7d50baede62999849f02d4660a4ff6))
+
 ## 1.0.0 (2026-01-28)
 
 ### Features
