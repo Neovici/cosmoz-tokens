@@ -33,7 +33,7 @@
     "./semantic": "./src/semantic.css",
     "./skeumorphic": {
       "types": "./src/skeumorphic.css.d.ts",
-      "default": "./src/skeumorphic.css.ts"
+      "default": "./src/skeumorphic.css.js"
     }
   },
   "files": [
