@@ -1,3 +1,21 @@
+## [3.0.0](https://github.com/Neovici/cosmoz-tokens/compare/v2.1.0...v3.0.0) (2026-01-30)
+
+### ⚠ BREAKING CHANGES
+
+* --cz-text-md renamed to --cz-text-base
+
+* fix(storybook): prevent swatches from shrinking in flex containers
+
+* fix(storybook): remove min-width from story-label for better layout
+
+* fix(storybook): add missing line-height to all typography classes
+
+* fix(storybook): reset margin on card title
+
+### Features
+
+* use rem units for typography and spacing for better accessibility ([#13](https://github.com/Neovici/cosmoz-tokens/issues/13)) ([6d2409f](https://github.com/Neovici/cosmoz-tokens/commit/6d2409f36323b62e074879bae19c99366e1d661c))
+
 ## [2.1.0](https://github.com/Neovici/cosmoz-tokens/compare/v2.0.1...v2.1.0) (2026-01-29)
 
 ### Features
