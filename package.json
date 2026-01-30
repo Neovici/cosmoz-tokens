@@ -30,7 +30,11 @@
     "./typography": "./src/typography.css",
     "./spacing": "./src/spacing.css",
     "./shadows": "./src/shadows.css",
-    "./semantic": "./src/semantic.css"
+    "./semantic": "./src/semantic.css",
+    "./skeumorphic": {
+      "types": "./src/skeumorphic.css.d.ts",
+      "default": "./src/skeumorphic.css.ts"
+    }
   },
   "files": [
     "src/"
