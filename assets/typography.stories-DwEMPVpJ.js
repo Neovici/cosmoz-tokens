@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js";const r={title:"Tokens/Typography"},t={render:()=>a`
+import{b as a}from"./iframe-2NtOxuRr.js";import{s as l}from"./style-C7fwHPS-.js";const r={title:"Tokens/Typography"},t={render:()=>a`
         ${l}
         <div class="story-container">
             <h1 class="story-title">Font Families</h1>
@@ -40,7 +40,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
 
             <div class="story-grid story-gap-6">
                 <div class="story-row">
-                    <span class="story-label">--cz-text-xs (12px)</span>
+                    <span class="story-label">--cz-text-xs (0.75rem / 12px)</span>
                     <span
                         style="font-size: var(--cz-text-xs); line-height: var(--cz-text-xs-line-height);"
                     >
@@ -49,7 +49,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-sm (14px)</span>
+                    <span class="story-label">--cz-text-sm (0.875rem / 14px)</span>
                     <span
                         style="font-size: var(--cz-text-sm); line-height: var(--cz-text-sm-line-height);"
                     >
@@ -58,16 +58,16 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-md (16px)</span>
+                    <span class="story-label">--cz-text-base (1rem / 16px)</span>
                     <span
-                        style="font-size: var(--cz-text-md); line-height: var(--cz-text-md-line-height);"
+                        style="font-size: var(--cz-text-base); line-height: var(--cz-text-base-line-height);"
                     >
                         The quick brown fox jumps over the lazy dog.
                     </span>
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-lg (18px)</span>
+                    <span class="story-label">--cz-text-lg (1.125rem / 18px)</span>
                     <span
                         style="font-size: var(--cz-text-lg); line-height: var(--cz-text-lg-line-height);"
                     >
@@ -76,7 +76,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-xl (20px)</span>
+                    <span class="story-label">--cz-text-xl (1.25rem / 20px)</span>
                     <span
                         style="font-size: var(--cz-text-xl); line-height: var(--cz-text-xl-line-height);"
                     >
@@ -92,7 +92,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
 
             <div class="story-grid story-gap-8">
                 <div>
-                    <p class="story-label">--cz-text-display-xs (24px)</p>
+                    <p class="story-label">--cz-text-display-xs (1.5rem / 24px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-xs); line-height: var(--cz-text-display-xs-line-height);"
                     >
@@ -101,7 +101,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-sm (30px)</p>
+                    <p class="story-label">--cz-text-display-sm (1.875rem / 30px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-sm); line-height: var(--cz-text-display-sm-line-height);"
                     >
@@ -110,7 +110,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-md (36px)</p>
+                    <p class="story-label">--cz-text-display-md (2.25rem / 36px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-md); line-height: var(--cz-text-display-md-line-height); letter-spacing: var(--cz-text-display-md-letter-spacing);"
                     >
@@ -119,7 +119,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-lg (48px)</p>
+                    <p class="story-label">--cz-text-display-lg (3rem / 48px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-lg); line-height: var(--cz-text-display-lg-line-height); letter-spacing: var(--cz-text-display-lg-letter-spacing);"
                     >
@@ -128,7 +128,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-xl (60px)</p>
+                    <p class="story-label">--cz-text-display-xl (3.75rem / 60px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-xl); line-height: var(--cz-text-display-xl-line-height); letter-spacing: var(--cz-text-display-xl-letter-spacing);"
                     >
@@ -137,7 +137,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-2xl (72px)</p>
+                    <p class="story-label">--cz-text-display-2xl (4.5rem / 72px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-2xl); line-height: var(--cz-text-display-2xl-line-height); letter-spacing: var(--cz-text-display-2xl-letter-spacing);"
                     >
@@ -234,7 +234,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
 
             <div class="story-grid story-gap-6">
                 <div class="story-row">
-                    <span class="story-label">--cz-text-xs (12px)</span>
+                    <span class="story-label">--cz-text-xs (0.75rem / 12px)</span>
                     <span
                         style="font-size: var(--cz-text-xs); line-height: var(--cz-text-xs-line-height);"
                     >
@@ -243,7 +243,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-sm (14px)</span>
+                    <span class="story-label">--cz-text-sm (0.875rem / 14px)</span>
                     <span
                         style="font-size: var(--cz-text-sm); line-height: var(--cz-text-sm-line-height);"
                     >
@@ -252,16 +252,16 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-md (16px)</span>
+                    <span class="story-label">--cz-text-base (1rem / 16px)</span>
                     <span
-                        style="font-size: var(--cz-text-md); line-height: var(--cz-text-md-line-height);"
+                        style="font-size: var(--cz-text-base); line-height: var(--cz-text-base-line-height);"
                     >
                         The quick brown fox jumps over the lazy dog.
                     </span>
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-lg (18px)</span>
+                    <span class="story-label">--cz-text-lg (1.125rem / 18px)</span>
                     <span
                         style="font-size: var(--cz-text-lg); line-height: var(--cz-text-lg-line-height);"
                     >
@@ -270,7 +270,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div class="story-row">
-                    <span class="story-label">--cz-text-xl (20px)</span>
+                    <span class="story-label">--cz-text-xl (1.25rem / 20px)</span>
                     <span
                         style="font-size: var(--cz-text-xl); line-height: var(--cz-text-xl-line-height);"
                     >
@@ -288,7 +288,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
 
             <div class="story-grid story-gap-8">
                 <div>
-                    <p class="story-label">--cz-text-display-xs (24px)</p>
+                    <p class="story-label">--cz-text-display-xs (1.5rem / 24px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-xs); line-height: var(--cz-text-display-xs-line-height);"
                     >
@@ -297,7 +297,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-sm (30px)</p>
+                    <p class="story-label">--cz-text-display-sm (1.875rem / 30px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-sm); line-height: var(--cz-text-display-sm-line-height);"
                     >
@@ -306,7 +306,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-md (36px)</p>
+                    <p class="story-label">--cz-text-display-md (2.25rem / 36px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-md); line-height: var(--cz-text-display-md-line-height); letter-spacing: var(--cz-text-display-md-letter-spacing);"
                     >
@@ -315,7 +315,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-lg (48px)</p>
+                    <p class="story-label">--cz-text-display-lg (3rem / 48px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-lg); line-height: var(--cz-text-display-lg-line-height); letter-spacing: var(--cz-text-display-lg-letter-spacing);"
                     >
@@ -324,7 +324,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-xl (60px)</p>
+                    <p class="story-label">--cz-text-display-xl (3.75rem / 60px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-xl); line-height: var(--cz-text-display-xl-line-height); letter-spacing: var(--cz-text-display-xl-letter-spacing);"
                     >
@@ -333,7 +333,7 @@ import{b as a}from"./iframe-BQ2h2Vr0.js";import{s as l}from"./style-BsAruWP_.js"
                 </div>
 
                 <div>
-                    <p class="story-label">--cz-text-display-2xl (72px)</p>
+                    <p class="story-label">--cz-text-display-2xl (4.5rem / 72px)</p>
                     <p
                         style="font-family: var(--cz-font-display); font-size: var(--cz-text-display-2xl); line-height: var(--cz-text-display-2xl-line-height); letter-spacing: var(--cz-text-display-2xl-letter-spacing);"
                     >
