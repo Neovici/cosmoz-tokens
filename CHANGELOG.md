@@ -1,3 +1,9 @@
+## [3.2.0](https://github.com/Neovici/cosmoz-tokens/compare/v3.1.1...v3.2.0) (2026-01-30)
+
+### Features
+
+* add truncate CSS utility for text ellipsis ([#15](https://github.com/Neovici/cosmoz-tokens/issues/15)) ([0882727](https://github.com/Neovici/cosmoz-tokens/commit/0882727e4998fdcddfa3987c37dc4767884a8831))
+
 ## [3.1.1](https://github.com/Neovici/cosmoz-tokens/compare/v3.1.0...v3.1.1) (2026-01-30)
 
 ### Bug Fixes
