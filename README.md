@@ -57,6 +57,43 @@ customElements.define(
 );
 ```
 
+### CSS Utilities
+
+Reusable Lit CSS template literals for common styling patterns.
+
+#### Skeuomorphic Highlight
+
+Adds a subtle "lit from above" inner highlight effect to buttons using a `::before` pseudo-element with a gradient mask:
+
+```js
+import { skeumorphicHighlight } from '@neovici/cosmoz-tokens/skeumorphic';
+
+const styles = css`
+	.button {
+		${skeumorphicHighlight}
+	}
+`;
+```
+
+Customization via CSS custom properties:
+
+- `--skeumorphic-color`: Border color (default: `rgba(255, 255, 255, 0.12)`)
+- `--skeumorphic-radius`: Inner border radius (default: `calc(var(--cz-radius-md) - 1px)`)
+
+#### Truncate
+
+Truncate text with ellipsis (equivalent to Tailwind's `truncate`):
+
+```js
+import { truncate } from '@neovici/cosmoz-tokens/truncate';
+
+const styles = css`
+	.label {
+		${truncate}
+	}
+`;
+```
+
 ## Dark Mode
 
 Semantic tokens automatically adapt to dark mode. Enable it by adding a class or data attribute to the root element:
