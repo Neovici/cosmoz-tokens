@@ -35,13 +35,15 @@ export const style = html`
 
 		.story-section-title {
 			font-size: var(--cz-text-lg);
+			line-height: var(--cz-text-lg-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 			color: var(--cz-color-text-secondary);
 		}
 
 		.story-description {
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
+			line-height: var(--cz-text-base-line-height);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -70,8 +72,8 @@ export const style = html`
 		/* Label */
 		.story-label {
 			font-size: var(--cz-text-sm);
+			line-height: var(--cz-text-sm-line-height);
 			color: var(--cz-color-text-tertiary);
-			min-width: 180px;
 			font-family: var(--cz-font-mono);
 		}
 
@@ -85,11 +87,13 @@ export const style = html`
 			height: 48px;
 			border-radius: var(--cz-radius-md);
 			border: 1px solid var(--cz-color-border-secondary);
+			flex: none;
 		}
 
 		.story-swatch--lg {
 			width: 64px;
 			height: 64px;
+			flex: none;
 		}
 
 		.story-swatch--shadow {
@@ -97,6 +101,7 @@ export const style = html`
 			height: 80px;
 			border-radius: var(--cz-radius-lg);
 			background: var(--cz-color-bg-primary);
+			flex: none;
 		}
 
 		/* Buttons */
@@ -106,6 +111,7 @@ export const style = html`
 			cursor: pointer;
 			font-family: var(--cz-font-body);
 			font-size: var(--cz-text-sm);
+			line-height: var(--cz-text-sm-line-height);
 		}
 
 		.story-btn--secondary {
@@ -132,13 +138,15 @@ export const style = html`
 
 		.story-card-title {
 			font-size: var(--cz-text-lg);
+			line-height: var(--cz-text-lg-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 			color: var(--cz-color-text-primary);
-			margin-bottom: calc(var(--cz-spacing) * 2);
+			margin: 0;
 		}
 
 		.story-card-text {
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
+			line-height: var(--cz-text-base-line-height);
 			color: var(--cz-color-text-secondary);
 			margin-bottom: calc(var(--cz-spacing) * 4);
 		}
@@ -150,6 +158,7 @@ export const style = html`
 			background: var(--cz-color-bg-tertiary);
 			font-family: var(--cz-font-mono);
 			font-size: var(--cz-text-sm);
+			line-height: var(--cz-text-sm-line-height);
 			color: var(--cz-color-text-primary);
 			overflow-x: auto;
 			white-space: pre;
@@ -200,7 +209,8 @@ export const style = html`
 			background: var(--cz-color-bg-primary);
 			border: 1px solid var(--cz-color-border-primary);
 			font-family: var(--cz-font-body);
-			font-size: var(--cz-text-md);
+			font-size: var(--cz-text-base);
+			line-height: var(--cz-text-base-line-height);
 			color: var(--cz-color-text-primary);
 			outline: none;
 		}
@@ -226,6 +236,7 @@ export const style = html`
 			justify-content: center;
 			color: var(--cz-color-text-on-brand);
 			font-size: var(--cz-text-xs);
+			line-height: var(--cz-text-xs-line-height);
 			font-weight: var(--cz-font-weight-semibold);
 		}
 

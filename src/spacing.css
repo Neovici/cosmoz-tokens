@@ -5,18 +5,18 @@
 
 :root {
 	/* Base spacing unit */
-	--cz-spacing: 4px;
+	--cz-spacing: 0.25rem;
 
 	/* Border radius scale */
-	--cz-radius-none: 0px;
-	--cz-radius-xxs: 2px;
-	--cz-radius-xs: 4px;
-	--cz-radius-sm: 6px;
-	--cz-radius-md: 8px;
-	--cz-radius-lg: 10px;
-	--cz-radius-xl: 12px;
-	--cz-radius-2xl: 16px;
-	--cz-radius-3xl: 20px;
-	--cz-radius-4xl: 24px;
+	--cz-radius-none: 0;
+	--cz-radius-xxs: 0.125rem;
+	--cz-radius-xs: 0.25rem;
+	--cz-radius-sm: 0.375rem;
+	--cz-radius-md: 0.5rem;
+	--cz-radius-lg: 0.625rem;
+	--cz-radius-xl: 0.75rem;
+	--cz-radius-2xl: 1rem;
+	--cz-radius-3xl: 1.25rem;
+	--cz-radius-4xl: 1.5rem;
 	--cz-radius-full: 9999px;
 }

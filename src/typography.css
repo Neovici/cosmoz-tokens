@@ -14,44 +14,44 @@
 		ui-monospace, 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas,
 		'Liberation Mono', 'Courier New', monospace;
 
-	/* Text sizes - based on 4px spacing unit */
-	--cz-text-xs: 12px;
-	--cz-text-xs-line-height: 18px;
+	/* Text sizes */
+	--cz-text-xs: 0.75rem;
+	--cz-text-xs-line-height: 1.5;
 
-	--cz-text-sm: 14px;
-	--cz-text-sm-line-height: 20px;
+	--cz-text-sm: 0.875rem;
+	--cz-text-sm-line-height: 1.5;
 
-	--cz-text-md: 16px;
-	--cz-text-md-line-height: 24px;
+	--cz-text-base: 1rem;
+	--cz-text-base-line-height: 1.5;
 
-	--cz-text-lg: 18px;
-	--cz-text-lg-line-height: 28px;
+	--cz-text-lg: 1.125rem;
+	--cz-text-lg-line-height: 1.5;
 
-	--cz-text-xl: 20px;
-	--cz-text-xl-line-height: 30px;
+	--cz-text-xl: 1.25rem;
+	--cz-text-xl-line-height: 1.5;
 
 	/* Display sizes */
-	--cz-text-display-xs: 24px;
-	--cz-text-display-xs-line-height: 32px;
+	--cz-text-display-xs: 1.5rem;
+	--cz-text-display-xs-line-height: 1.25;
 
-	--cz-text-display-sm: 30px;
-	--cz-text-display-sm-line-height: 38px;
+	--cz-text-display-sm: 1.875rem;
+	--cz-text-display-sm-line-height: 1.25;
 
-	--cz-text-display-md: 36px;
-	--cz-text-display-md-line-height: 44px;
-	--cz-text-display-md-letter-spacing: -0.72px;
+	--cz-text-display-md: 2.25rem;
+	--cz-text-display-md-line-height: 1.25;
+	--cz-text-display-md-letter-spacing: -0.045rem;
 
-	--cz-text-display-lg: 48px;
-	--cz-text-display-lg-line-height: 60px;
-	--cz-text-display-lg-letter-spacing: -0.96px;
+	--cz-text-display-lg: 3rem;
+	--cz-text-display-lg-line-height: 1.25;
+	--cz-text-display-lg-letter-spacing: -0.06rem;
 
-	--cz-text-display-xl: 60px;
-	--cz-text-display-xl-line-height: 72px;
-	--cz-text-display-xl-letter-spacing: -1.2px;
+	--cz-text-display-xl: 3.75rem;
+	--cz-text-display-xl-line-height: 1.25;
+	--cz-text-display-xl-letter-spacing: -0.075rem;
 
-	--cz-text-display-2xl: 72px;
-	--cz-text-display-2xl-line-height: 90px;
-	--cz-text-display-2xl-letter-spacing: -1.44px;
+	--cz-text-display-2xl: 4.5rem;
+	--cz-text-display-2xl-line-height: 1.25;
+	--cz-text-display-2xl-letter-spacing: -0.09rem;
 
 	/* Font weights */
 	--cz-font-weight-regular: 400;
