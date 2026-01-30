@@ -1,3 +1,9 @@
+## [3.1.0](https://github.com/Neovici/cosmoz-tokens/compare/v3.0.0...v3.1.0) (2026-01-30)
+
+### Features
+
+* add skeumorphicHighlight CSS utility for inner button highlight ([#14](https://github.com/Neovici/cosmoz-tokens/issues/14)) ([cd01101](https://github.com/Neovici/cosmoz-tokens/commit/cd011013a8c14e4f6ab03331c224432ab61abd44))
+
 ## [3.0.0](https://github.com/Neovici/cosmoz-tokens/compare/v2.1.0...v3.0.0) (2026-01-30)
 
 ### ⚠ BREAKING CHANGES
