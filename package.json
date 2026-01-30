@@ -34,6 +34,10 @@
     "./skeumorphic": {
       "types": "./src/skeumorphic.css.d.ts",
       "default": "./src/skeumorphic.css.js"
+    },
+    "./truncate": {
+      "types": "./src/truncate.css.d.ts",
+      "default": "./src/truncate.css.js"
     }
   },
   "files": [
