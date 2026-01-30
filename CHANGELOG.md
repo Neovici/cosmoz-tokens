@@ -1,3 +1,9 @@
+## [3.1.1](https://github.com/Neovici/cosmoz-tokens/compare/v3.1.0...v3.1.1) (2026-01-30)
+
+### Bug Fixes
+
+* rename skeumorphic.css.ts to .css.js ([#16](https://github.com/Neovici/cosmoz-tokens/issues/16)) ([02df63a](https://github.com/Neovici/cosmoz-tokens/commit/02df63a34b42f0566bdbddd8ad8d60c52cd99dfe))
+
 ## [3.1.0](https://github.com/Neovici/cosmoz-tokens/compare/v3.0.0...v3.1.0) (2026-01-30)
 
 ### Features
