@@ -2,24 +2,65 @@
  * Cosmoz Design Tokens - Normalize
  * Re-usable normalize stylesheet for web component shadow DOMs.
  * Based on Tailwind's preflight.css, adapted for shadow DOM usage.
+ *
+ * Note: We intentionally avoid resetting margin/padding/border on * selector
+ * to prevent conflicts with child web components whose :host styles would
+ * be overridden by the parent's * selector.
  */
 
 import { css, sheet } from '@pionjs/pion';
 
 export const normalize = sheet(css`
 	/*
-	 * 1. Prevent padding and border from affecting element width.
-	 * 2. Remove default margins and padding.
-	 * 3. Reset all borders.
+	 * Use border-box sizing for all elements.
+	 * This is safe and doesn't conflict with child component styles.
 	 */
 	*,
-	::after,
 	::before,
+	::after,
 	::backdrop,
 	::file-selector-button {
 		box-sizing: border-box;
+	}
+
+	/*
+	 * Reset margins and padding on elements that typically have browser defaults.
+	 * This is more targeted than using * to avoid affecting custom elements.
+	 */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	blockquote,
+	pre,
+	ul,
+	ol,
+	li,
+	dl,
+	dt,
+	dd,
+	figure,
+	figcaption,
+	fieldset,
+	legend,
+	form,
+	hr,
+	table,
+	th,
+	td {
 		margin: 0;
 		padding: 0;
+	}
+
+	/*
+	 * Reset borders on elements that typically have them.
+	 */
+	fieldset,
+	hr,
+	iframe {
 		border: 0 solid;
 	}
 
@@ -118,9 +159,11 @@ export const normalize = sheet(css`
 	}
 
 	/*
+	 * Reset form controls:
 	 * 1. Inherit font styles in all browsers.
-	 * 2. Remove border radius.
-	 * 3. Remove background color.
+	 * 2. Remove default margins, padding, and borders.
+	 * 3. Remove border radius.
+	 * 4. Remove background color.
 	 */
 	button,
 	input,
@@ -128,6 +171,9 @@ export const normalize = sheet(css`
 	optgroup,
 	textarea,
 	::file-selector-button {
+		margin: 0;
+		padding: 0;
+		border: 0 solid;
 		font: inherit;
 		font-feature-settings: inherit;
 		font-variation-settings: inherit;
