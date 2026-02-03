@@ -1,3 +1,9 @@
+## [3.2.1](https://github.com/Neovici/cosmoz-tokens/compare/v3.2.0...v3.2.1) (2026-02-03)
+
+### Bug Fixes
+
+* use targeted element resets instead of * selector in normalize ([#18](https://github.com/Neovici/cosmoz-tokens/issues/18)) ([c3306fc](https://github.com/Neovici/cosmoz-tokens/commit/c3306fc521d5e74f53aa82592630fe10b02d47fc))
+
 ## [3.2.0](https://github.com/Neovici/cosmoz-tokens/compare/v3.1.1...v3.2.0) (2026-01-30)
 
 ### Features
