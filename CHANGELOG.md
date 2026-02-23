@@ -1,3 +1,9 @@
+## [3.3.0](https://github.com/Neovici/cosmoz-tokens/compare/v3.2.1...v3.3.0) (2026-02-23)
+
+### Features
+
+* add Danube color scheme as default brand palette ([#24](https://github.com/Neovici/cosmoz-tokens/issues/24)) ([cd69d5f](https://github.com/Neovici/cosmoz-tokens/commit/cd69d5ff72a164f9bfb520acbbbf738f57f6993b))
+
 ## [3.2.1](https://github.com/Neovici/cosmoz-tokens/compare/v3.2.0...v3.2.1) (2026-02-03)
 
 ### Bug Fixes
