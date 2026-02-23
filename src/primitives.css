@@ -13,19 +13,33 @@
 	--cz-color-alpha-white: rgb(255 255 255);
 	--cz-color-alpha-black: rgb(0 0 0);
 
-	/* Brand colors - custom indigo based on #3f51b5 */
-	--cz-color-brand-25: rgb(245 246 251);
-	--cz-color-brand-50: rgb(235 238 249);
-	--cz-color-brand-100: rgb(215 221 243);
-	--cz-color-brand-200: rgb(179 190 234);
-	--cz-color-brand-300: rgb(138 156 221);
-	--cz-color-brand-400: rgb(100 120 207);
-	--cz-color-brand-500: rgb(77 95 194);
-	--cz-color-brand-600: rgb(63 81 181);
-	--cz-color-brand-700: rgb(53 68 151);
-	--cz-color-brand-800: rgb(44 56 121);
-	--cz-color-brand-900: rgb(37 47 96);
-	--cz-color-brand-950: rgb(24 30 61);
+	/* Danube colors */
+	--cz-danube-25: rgb(251 252 254);
+	--cz-danube-50: rgb(222 230 246);
+	--cz-danube-100: rgb(195 209 237);
+	--cz-danube-200: rgb(169 189 226);
+	--cz-danube-300: rgb(144 169 215);
+	--cz-danube-400: rgb(120 150 202);
+	--cz-danube-500: rgb(95 129 189);
+	--cz-danube-600: rgb(73 109 172);
+	--cz-danube-700: rgb(64 93 144);
+	--cz-danube-800: rgb(54 76 116);
+	--cz-danube-900: rgb(43 59 89);
+	--cz-danube-950: rgb(31 42 62);
+
+	/* Brand colors - Danube */
+	--cz-color-brand-25: var(--cz-danube-25);
+	--cz-color-brand-50: var(--cz-danube-50);
+	--cz-color-brand-100: var(--cz-danube-100);
+	--cz-color-brand-200: var(--cz-danube-200);
+	--cz-color-brand-300: var(--cz-danube-300);
+	--cz-color-brand-400: var(--cz-danube-400);
+	--cz-color-brand-500: var(--cz-danube-500);
+	--cz-color-brand-600: var(--cz-danube-600);
+	--cz-color-brand-700: var(--cz-danube-700);
+	--cz-color-brand-800: var(--cz-danube-800);
+	--cz-color-brand-900: var(--cz-danube-900);
+	--cz-color-brand-950: var(--cz-danube-950);
 
 	/* Gray colors */
 	--cz-color-gray-25: rgb(253 253 253);
