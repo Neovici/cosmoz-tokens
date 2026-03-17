@@ -1,3 +1,9 @@
+## [3.3.1](https://github.com/Neovici/cosmoz-tokens/compare/v3.3.0...v3.3.1) (2026-03-17)
+
+### Bug Fixes
+
+* set brand semantics keeping the complementary colors ([cc3c801](https://github.com/Neovici/cosmoz-tokens/commit/cc3c8018a1696c7652f2773a1ab2d5096c786c06))
+
 ## [3.3.0](https://github.com/Neovici/cosmoz-tokens/compare/v3.2.1...v3.3.0) (2026-02-23)
 
 ### Features
