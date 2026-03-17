@@ -20,7 +20,7 @@
 	--cz-color-text-success: var(--cz-color-success-600);
 	--cz-color-text-brand: var(--cz-color-brand-600);
 	--cz-color-text-brand-hover: var(--cz-color-brand-700);
-	--cz-color-text-on-brand: var(--cz-color-white);
+	--cz-color-text-on-brand: var(--cz-color-brand-950);
 	--cz-color-text-on-brand-secondary: var(--cz-color-brand-200);
 
 	/* Background colors */
@@ -106,7 +106,7 @@
 	--cz-color-text-success: var(--cz-color-success-400);
 	--cz-color-text-brand: var(--cz-color-brand-400);
 	--cz-color-text-brand-hover: var(--cz-color-brand-300);
-	--cz-color-text-on-brand: var(--cz-color-gray-50);
+	--cz-color-text-on-brand: var(--cz-color-brand-50);
 	--cz-color-text-on-brand-secondary: var(--cz-color-gray-300);
 
 	/* Background colors */
