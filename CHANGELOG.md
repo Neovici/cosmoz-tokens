@@ -1,3 +1,9 @@
+## [3.3.2](https://github.com/Neovici/cosmoz-tokens/compare/v3.3.1...v3.3.2) (2026-03-17)
+
+### Bug Fixes
+
+* revert text on brand change ([d570b06](https://github.com/Neovici/cosmoz-tokens/commit/d570b066568584a69bfa7f07646fbf3021456a3f))
+
 ## [3.3.1](https://github.com/Neovici/cosmoz-tokens/compare/v3.3.0...v3.3.1) (2026-03-17)
 
 ### Bug Fixes
