@@ -1,3 +1,9 @@
+## [3.4.0](https://github.com/Neovici/cosmoz-tokens/compare/v3.3.2...v3.4.0) (2026-04-07)
+
+### Features
+
+* update color contrast for status tokens ([#25](https://github.com/Neovici/cosmoz-tokens/issues/25)) ([d755261](https://github.com/Neovici/cosmoz-tokens/commit/d755261468282b62ed28478c40c0af9c04da3217))
+
 ## [3.3.2](https://github.com/Neovici/cosmoz-tokens/compare/v3.3.1...v3.3.2) (2026-03-17)
 
 ### Bug Fixes
