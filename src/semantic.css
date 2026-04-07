@@ -14,10 +14,10 @@
 	--cz-color-text-disabled: var(--cz-color-gray-500);
 	--cz-color-text-placeholder: var(--cz-color-gray-500);
 	--cz-color-text-placeholder-subtle: var(--cz-color-gray-300);
-	--cz-color-text-error: var(--cz-color-error-600);
-	--cz-color-text-error-hover: var(--cz-color-error-700);
-	--cz-color-text-warning: var(--cz-color-warning-600);
-	--cz-color-text-success: var(--cz-color-success-600);
+	--cz-color-text-error: var(--cz-color-error-700);
+	--cz-color-text-error-hover: var(--cz-color-error-800);
+	--cz-color-text-warning: var(--cz-color-warning-700);
+	--cz-color-text-success: var(--cz-color-success-700);
 	--cz-color-text-brand: var(--cz-color-brand-600);
 	--cz-color-text-brand-hover: var(--cz-color-brand-700);
 	--cz-color-text-on-brand: var(--cz-color-white);
