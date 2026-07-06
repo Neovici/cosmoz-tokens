@@ -1,4 +1,4 @@
-import{b as l}from"./iframe-Dv-O8Sxd.js";import{s as e}from"./style-Dw5Oh81S.js";const h={title:"Tokens/Colors"},r=c=>l`
+import{b as l}from"./iframe-I8H1cjWY.js";import{s as e}from"./style-Dt9nmzzS.js";const h={title:"Tokens/Colors"},r=c=>l`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${c});"></div>
         <span class="story-label">${c}</span>
@@ -94,7 +94,7 @@ import{b as l}from"./iframe-Dv-O8Sxd.js";import{s as e}from"./style-Dw5Oh81S.js"
             ${o("--cz-color-error","Error")}
             ${o("--cz-color-warning","Warning")}
             ${o("--cz-color-success","Success")}
-            ${o("--cz-color-slate","Slate")}
+            ${o("--cz-color-sky","Info")}
             ${o("--cz-color-orange","Orange")}
             ${o("--cz-color-amber","Amber")}
             ${o("--cz-color-yellow","Yellow")}
@@ -208,7 +208,7 @@ import{b as l}from"./iframe-Dv-O8Sxd.js";import{s as e}from"./style-Dw5Oh81S.js"
             \${colorScale('--cz-color-error', 'Error')}
             \${colorScale('--cz-color-warning', 'Warning')}
             \${colorScale('--cz-color-success', 'Success')}
-            \${colorScale('--cz-color-slate', 'Slate')}
+            \${colorScale('--cz-color-sky', 'Info')}
             \${colorScale('--cz-color-orange', 'Orange')}
             \${colorScale('--cz-color-amber', 'Amber')}
             \${colorScale('--cz-color-yellow', 'Yellow')}
