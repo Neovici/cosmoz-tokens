@@ -22,6 +22,9 @@
 	--cz-color-text-brand-hover: var(--cz-color-brand-700);
 	--cz-color-text-on-brand: var(--cz-color-white);
 	--cz-color-text-on-brand-secondary: var(--cz-color-brand-200);
+	--cz-color-text-info: var(--cz-color-info-700);
+	--cz-color-text-info-hover: var(--cz-color-info-800);
+	--cz-color-text-on-info: var(--cz-color-white);
 
 	/* Background colors */
 	--cz-color-bg-primary: var(--cz-color-white);
@@ -50,6 +53,10 @@
 	--cz-color-bg-success: var(--cz-color-success-50);
 	--cz-color-bg-success-secondary: var(--cz-color-success-100);
 	--cz-color-bg-success-solid: var(--cz-color-success-600);
+	--cz-color-bg-info: var(--cz-color-info-50);
+	--cz-color-bg-info-secondary: var(--cz-color-info-100);
+	--cz-color-bg-info-solid: var(--cz-color-info-600);
+	--cz-color-bg-info-solid-hover: var(--cz-color-info-700);
 
 	/* Border colors */
 	--cz-color-border-primary: var(--cz-color-gray-300);
@@ -61,6 +68,8 @@
 	--cz-color-border-error-subtle: var(--cz-color-error-300);
 	--cz-color-border-brand: var(--cz-color-brand-500);
 	--cz-color-border-brand-alt: var(--cz-color-brand-600);
+	--cz-color-border-info: var(--cz-color-info-500);
+	--cz-color-border-info-subtle: var(--cz-color-info-300);
 
 	/* Foreground colors (icons, decorative elements) */
 	--cz-color-fg-primary: var(--cz-color-gray-900);
@@ -81,6 +90,8 @@
 	--cz-color-fg-warning-secondary: var(--cz-color-warning-500);
 	--cz-color-fg-success: var(--cz-color-success-600);
 	--cz-color-fg-success-secondary: var(--cz-color-success-500);
+	--cz-color-fg-info: var(--cz-color-info-600);
+	--cz-color-fg-info-secondary: var(--cz-color-info-500);
 }
 
 /* Dark mode - both selectors for backward compatibility */
@@ -108,6 +119,9 @@
 	--cz-color-text-brand-hover: var(--cz-color-brand-300);
 	--cz-color-text-on-brand: var(--cz-color-gray-50);
 	--cz-color-text-on-brand-secondary: var(--cz-color-gray-300);
+	--cz-color-text-info: var(--cz-color-info-400);
+	--cz-color-text-info-hover: var(--cz-color-info-300);
+	--cz-color-text-on-info: var(--cz-color-gray-50);
 
 	/* Background colors */
 	--cz-color-bg-primary: var(--cz-color-gray-950);
@@ -136,6 +150,10 @@
 	--cz-color-bg-success: var(--cz-color-success-950);
 	--cz-color-bg-success-secondary: var(--cz-color-success-600);
 	--cz-color-bg-success-solid: var(--cz-color-success-600);
+	--cz-color-bg-info: var(--cz-color-info-950);
+	--cz-color-bg-info-secondary: var(--cz-color-info-600);
+	--cz-color-bg-info-solid: var(--cz-color-info-600);
+	--cz-color-bg-info-solid-hover: var(--cz-color-info-500);
 
 	/* Border colors */
 	--cz-color-border-primary: var(--cz-color-gray-700);
@@ -147,6 +165,8 @@
 	--cz-color-border-error-subtle: var(--cz-color-error-500);
 	--cz-color-border-brand: var(--cz-color-brand-400);
 	--cz-color-border-brand-alt: var(--cz-color-gray-700);
+	--cz-color-border-info: var(--cz-color-info-400);
+	--cz-color-border-info-subtle: var(--cz-color-info-500);
 
 	/* Foreground colors */
 	--cz-color-fg-primary: var(--cz-color-white);
@@ -167,8 +187,11 @@
 	--cz-color-fg-warning-secondary: var(--cz-color-warning-400);
 	--cz-color-fg-success: var(--cz-color-success-500);
 	--cz-color-fg-success-secondary: var(--cz-color-success-400);
+	--cz-color-fg-info: var(--cz-color-info-500);
+	--cz-color-fg-info-secondary: var(--cz-color-info-400);
 
 	/* Focus ring adjustments for dark mode */
 	--cz-focus-ring: 0 0 0 4px var(--cz-color-brand-800);
 	--cz-focus-ring-error: 0 0 0 4px var(--cz-color-error-800);
+	--cz-focus-ring-info: 0 0 0 4px var(--cz-color-info-800);
 }

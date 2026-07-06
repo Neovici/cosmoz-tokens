@@ -54,6 +54,7 @@ export const StatusColors = {
 			${colorScale('--cz-color-error', 'Error')}
 			${colorScale('--cz-color-warning', 'Warning')}
 			${colorScale('--cz-color-success', 'Success')}
+			${colorScale('--cz-color-info', 'Info')}
 		</div>
 	`,
 };
@@ -74,6 +75,59 @@ export const BaseColors = {
 	`,
 };
 
+export const NeutralColors = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Neutral Colors</h1>
+			${colorScale('--cz-color-slate', 'Slate')}
+		</div>
+	`,
+};
+
+export const WarmColors = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Warm Colors</h1>
+			${colorScale('--cz-color-orange', 'Orange')}
+			${colorScale('--cz-color-amber', 'Amber')}
+			${colorScale('--cz-color-yellow', 'Yellow')}
+			${colorScale('--cz-color-lime', 'Lime')}
+			${colorScale('--cz-color-rose', 'Rose')}
+		</div>
+	`,
+};
+
+export const CoolColors = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Cool Colors</h1>
+			${colorScale('--cz-color-green', 'Green')}
+			${colorScale('--cz-color-emerald', 'Emerald')}
+			${colorScale('--cz-color-teal', 'Teal')}
+			${colorScale('--cz-color-cyan', 'Cyan')}
+			${colorScale('--cz-color-sky', 'Sky')}
+			${colorScale('--cz-color-blue', 'Blue')}
+		</div>
+	`,
+};
+
+export const PurpleColors = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Purple Colors</h1>
+			${colorScale('--cz-color-indigo', 'Indigo')}
+			${colorScale('--cz-color-violet', 'Violet')}
+			${colorScale('--cz-color-purple', 'Purple')}
+			${colorScale('--cz-color-fuchsia', 'Fuchsia')}
+			${colorScale('--cz-color-pink', 'Pink')}
+		</div>
+	`,
+};
+
 export const AllColors = {
 	render: () => html`
 		${style}
@@ -84,6 +138,23 @@ export const AllColors = {
 			${colorScale('--cz-color-error', 'Error')}
 			${colorScale('--cz-color-warning', 'Warning')}
 			${colorScale('--cz-color-success', 'Success')}
+			${colorScale('--cz-color-info', 'Info')}
+			${colorScale('--cz-color-orange', 'Orange')}
+			${colorScale('--cz-color-amber', 'Amber')}
+			${colorScale('--cz-color-yellow', 'Yellow')}
+			${colorScale('--cz-color-lime', 'Lime')}
+			${colorScale('--cz-color-green', 'Green')}
+			${colorScale('--cz-color-emerald', 'Emerald')}
+			${colorScale('--cz-color-teal', 'Teal')}
+			${colorScale('--cz-color-cyan', 'Cyan')}
+			${colorScale('--cz-color-sky', 'Sky')}
+			${colorScale('--cz-color-blue', 'Blue')}
+			${colorScale('--cz-color-indigo', 'Indigo')}
+			${colorScale('--cz-color-violet', 'Violet')}
+			${colorScale('--cz-color-purple', 'Purple')}
+			${colorScale('--cz-color-fuchsia', 'Fuchsia')}
+			${colorScale('--cz-color-pink', 'Pink')}
+			${colorScale('--cz-color-rose', 'Rose')}
 		</div>
 	`,
 };
