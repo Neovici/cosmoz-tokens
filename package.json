@@ -50,21 +50,8 @@
     "storybook:build": "storybook build",
     "storybook:deploy": "storybook-to-ghpages",
     "storybook:preview": "npm run storybook:build && http-server ./storybook-static/ --silent",
-    "prepare": "husky"
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/github",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "branches": [
-      "main"
-    ],
-    "preset": "conventionalcommits"
+    "prepare": "husky",
+    "changeset": "changeset"
   },
   "publishConfig": {
     "access": "public"
@@ -73,11 +60,10 @@
     "@pionjs/pion": "^2.5.2"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.0",
     "@commitlint/cli": "^20.0.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@neovici/cfg": "^2.8.0",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/git": "^10.0.0",
     "@storybook/addon-a11y": "^10.3.4",
     "@storybook/web-components-vite": "^10.0.0",
     "@web/dev-server": "^0.4.0",
@@ -86,10 +72,6 @@
     "husky": "^9.0.0",
     "lint-staged": "^16.0.0",
     "lit-html": "^3.0.0",
-    "semantic-release": "^25.0.0",
     "storybook": "^10.0.0"
-  },
-  "overrides": {
-    "conventional-changelog-conventionalcommits": ">= 8.0.0"
   }
 }
