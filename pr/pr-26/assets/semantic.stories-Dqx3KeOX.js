@@ -1,15 +1,15 @@
-import{b as r}from"./iframe-BFNekO-2.js";import{s}from"./style-Dq94YcrS.js";const b={title:"Tokens/Semantic"},o=d=>r`
+import{b as r}from"./iframe-B_4uBPEb.js";import{s as c}from"./style-D0C0uF6W.js";const g={title:"Tokens/Semantic"},o=a=>r`
     <div class="story-row">
-        <div class="story-swatch" style="background: var(${d});"></div>
-        <span class="story-label">${d}</span>
+        <div class="story-swatch" style="background: var(${a});"></div>
+        <span class="story-label">${a}</span>
     </div>
-`,t=()=>{document.documentElement.classList.toggle("dark-mode")},c={render:()=>r`
-        ${s}
+`,s=()=>{document.documentElement.classList.toggle("dark-mode")},t={render:()=>r`
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Text Colors</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${t}
+                @click=${s}
             >
                 Toggle Dark Mode
             </button>
@@ -26,16 +26,19 @@ import{b as r}from"./iframe-BFNekO-2.js";import{s}from"./style-Dq94YcrS.js";cons
                     ${o("--cz-color-text-success")}
                     ${o("--cz-color-text-brand")}
                     ${o("--cz-color-text-on-brand")}
+                    ${o("--cz-color-text-info")}
+                    ${o("--cz-color-text-info-hover")}
+                    ${o("--cz-color-text-on-info")}
                 </div>
             </div>
         </div>
     `},n={render:()=>r`
-        ${s}
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Background Colors</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${t}
+                @click=${s}
             >
                 Toggle Dark Mode
             </button>
@@ -70,14 +73,23 @@ import{b as r}from"./iframe-BFNekO-2.js";import{s}from"./style-Dq94YcrS.js";cons
                     ${o("--cz-color-bg-success-solid")}
                 </div>
             </div>
+            <div class="story-section">
+                <h3 class="story-section-title">Info</h3>
+                <div class="story-grid story-grid--wide">
+                    ${o("--cz-color-bg-info")}
+                    ${o("--cz-color-bg-info-secondary")}
+                    ${o("--cz-color-bg-info-solid")}
+                    ${o("--cz-color-bg-info-solid-hover")}
+                </div>
+            </div>
         </div>
     `},e={render:()=>r`
-        ${s}
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Border Colors</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${t}
+                @click=${s}
             >
                 Toggle Dark Mode
             </button>
@@ -89,17 +101,19 @@ import{b as r}from"./iframe-BFNekO-2.js";import{s}from"./style-Dq94YcrS.js";cons
                     ${o("--cz-color-border-disabled")}
                     ${o("--cz-color-border-error")}
                     ${o("--cz-color-border-brand")}
+                    ${o("--cz-color-border-info")}
+                    ${o("--cz-color-border-info-subtle")}
                 </div>
             </div>
         </div>
     `},l={render:()=>r`
-        ${s}
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Foreground Colors</h1>
             <p class="story-description">For icons and decorative elements.</p>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${t}
+                @click=${s}
             >
                 Toggle Dark Mode
             </button>
@@ -113,17 +127,18 @@ import{b as r}from"./iframe-BFNekO-2.js";import{s}from"./style-Dq94YcrS.js";cons
                     ${o("--cz-color-fg-white")} ${o("--cz-color-fg-brand")}
                     ${o("--cz-color-fg-error")}
                     ${o("--cz-color-fg-warning")}
-                    ${o("--cz-color-fg-success")}
+                    ${o("--cz-color-fg-success")} ${o("--cz-color-fg-info")}
+                    ${o("--cz-color-fg-info-secondary")}
                 </div>
             </div>
         </div>
-    `},a={render:()=>r`
-        ${s}
+    `},d={render:()=>r`
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Dark Mode Demo</h1>
             <button
                 class="story-btn story-btn--primary story-mb-6"
-                @click=${t}
+                @click=${s}
             >
                 Toggle Dark Mode
             </button>
@@ -151,7 +166,7 @@ document.documentElement.dataset.theme = 'dark';</pre
                 >
             </div>
         </div>
-    `};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+    `};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -175,11 +190,14 @@ document.documentElement.dataset.theme = 'dark';</pre
                     \${colorRow('--cz-color-text-success')}
                     \${colorRow('--cz-color-text-brand')}
                     \${colorRow('--cz-color-text-on-brand')}
+                    \${colorRow('--cz-color-text-info')}
+                    \${colorRow('--cz-color-text-info-hover')}
+                    \${colorRow('--cz-color-text-on-info')}
                 </div>
             </div>
         </div>
     \`
-}`,...c.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -221,6 +239,15 @@ document.documentElement.dataset.theme = 'dark';</pre
                     \${colorRow('--cz-color-bg-success-solid')}
                 </div>
             </div>
+            <div class="story-section">
+                <h3 class="story-section-title">Info</h3>
+                <div class="story-grid story-grid--wide">
+                    \${colorRow('--cz-color-bg-info')}
+                    \${colorRow('--cz-color-bg-info-secondary')}
+                    \${colorRow('--cz-color-bg-info-solid')}
+                    \${colorRow('--cz-color-bg-info-solid-hover')}
+                </div>
+            </div>
         </div>
     \`
 }`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
@@ -242,6 +269,8 @@ document.documentElement.dataset.theme = 'dark';</pre
                     \${colorRow('--cz-color-border-disabled')}
                     \${colorRow('--cz-color-border-error')}
                     \${colorRow('--cz-color-border-brand')}
+                    \${colorRow('--cz-color-border-info')}
+                    \${colorRow('--cz-color-border-info-subtle')}
                 </div>
             </div>
         </div>
@@ -268,12 +297,13 @@ document.documentElement.dataset.theme = 'dark';</pre
                     \${colorRow('--cz-color-fg-white')} \${colorRow('--cz-color-fg-brand')}
                     \${colorRow('--cz-color-fg-error')}
                     \${colorRow('--cz-color-fg-warning')}
-                    \${colorRow('--cz-color-fg-success')}
+                    \${colorRow('--cz-color-fg-success')} \${colorRow('--cz-color-fg-info')}
+                    \${colorRow('--cz-color-fg-info-secondary')}
                 </div>
             </div>
         </div>
     \`
-}`,...l.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -309,4 +339,4 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...a.parameters?.docs?.source}}};const g=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,e as BorderColors,a as DarkModeDemo,l as ForegroundColors,c as TextColors,g as __namedExportsOrder,b as default};
+}`,...d.parameters?.docs?.source}}};const b=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,e as BorderColors,d as DarkModeDemo,l as ForegroundColors,t as TextColors,b as __namedExportsOrder,g as default};
