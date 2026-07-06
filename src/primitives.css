@@ -96,4 +96,256 @@
 	--cz-color-success-800: rgb(8 93 58);
 	--cz-color-success-900: rgb(7 77 49);
 	--cz-color-success-950: rgb(5 51 33);
+
+	/* Info colors - Sky */
+	--cz-color-info-25: var(--cz-color-sky-25);
+	--cz-color-info-50: var(--cz-color-sky-50);
+	--cz-color-info-100: var(--cz-color-sky-100);
+	--cz-color-info-200: var(--cz-color-sky-200);
+	--cz-color-info-300: var(--cz-color-sky-300);
+	--cz-color-info-400: var(--cz-color-sky-400);
+	--cz-color-info-500: var(--cz-color-sky-500);
+	--cz-color-info-600: var(--cz-color-sky-600);
+	--cz-color-info-700: var(--cz-color-sky-700);
+	--cz-color-info-800: var(--cz-color-sky-800);
+	--cz-color-info-900: var(--cz-color-sky-900);
+	--cz-color-info-950: var(--cz-color-sky-950);
+
+	/* Slate colors (blue-gray neutral) */
+	--cz-color-slate-25: rgb(248 250 252);
+	--cz-color-slate-50: rgb(248 250 252);
+	--cz-color-slate-100: rgb(241 245 249);
+	--cz-color-slate-200: rgb(226 232 240);
+	--cz-color-slate-300: rgb(203 213 225);
+	--cz-color-slate-400: rgb(148 163 184);
+	--cz-color-slate-500: rgb(100 116 139);
+	--cz-color-slate-600: rgb(71 85 105);
+	--cz-color-slate-700: rgb(51 65 85);
+	--cz-color-slate-800: rgb(30 41 59);
+	--cz-color-slate-900: rgb(15 23 42);
+	--cz-color-slate-950: rgb(2 6 23);
+
+	/* Orange colors */
+	--cz-color-orange-25: rgb(255 247 237);
+	--cz-color-orange-50: rgb(255 247 237);
+	--cz-color-orange-100: rgb(255 237 213);
+	--cz-color-orange-200: rgb(254 215 170);
+	--cz-color-orange-300: rgb(253 186 116);
+	--cz-color-orange-400: rgb(251 146 60);
+	--cz-color-orange-500: rgb(249 115 22);
+	--cz-color-orange-600: rgb(234 88 12);
+	--cz-color-orange-700: rgb(194 65 12);
+	--cz-color-orange-800: rgb(154 52 18);
+	--cz-color-orange-900: rgb(124 45 18);
+	--cz-color-orange-950: rgb(67 20 7);
+
+	/* Amber colors */
+	--cz-color-amber-25: rgb(255 251 235);
+	--cz-color-amber-50: rgb(255 251 235);
+	--cz-color-amber-100: rgb(254 243 199);
+	--cz-color-amber-200: rgb(254 230 138);
+	--cz-color-amber-300: rgb(252 211 77);
+	--cz-color-amber-400: rgb(251 191 36);
+	--cz-color-amber-500: rgb(245 158 11);
+	--cz-color-amber-600: rgb(217 119 6);
+	--cz-color-amber-700: rgb(180 83 9);
+	--cz-color-amber-800: rgb(146 64 14);
+	--cz-color-amber-900: rgb(120 53 15);
+	--cz-color-amber-950: rgb(69 26 3);
+
+	/* Yellow colors */
+	--cz-color-yellow-25: rgb(254 252 232);
+	--cz-color-yellow-50: rgb(254 252 232);
+	--cz-color-yellow-100: rgb(254 249 195);
+	--cz-color-yellow-200: rgb(254 240 138);
+	--cz-color-yellow-300: rgb(253 224 71);
+	--cz-color-yellow-400: rgb(250 204 21);
+	--cz-color-yellow-500: rgb(234 179 8);
+	--cz-color-yellow-600: rgb(202 138 4);
+	--cz-color-yellow-700: rgb(161 98 7);
+	--cz-color-yellow-800: rgb(133 77 14);
+	--cz-color-yellow-900: rgb(113 63 18);
+	--cz-color-yellow-950: rgb(66 32 6);
+
+	/* Lime colors */
+	--cz-color-lime-25: rgb(247 254 231);
+	--cz-color-lime-50: rgb(247 254 231);
+	--cz-color-lime-100: rgb(236 252 203);
+	--cz-color-lime-200: rgb(217 249 157);
+	--cz-color-lime-300: rgb(190 242 100);
+	--cz-color-lime-400: rgb(163 230 53);
+	--cz-color-lime-500: rgb(132 204 22);
+	--cz-color-lime-600: rgb(101 163 13);
+	--cz-color-lime-700: rgb(77 124 15);
+	--cz-color-lime-800: rgb(63 98 18);
+	--cz-color-lime-900: rgb(54 83 20);
+	--cz-color-lime-950: rgb(26 46 5);
+
+	/* Green colors */
+	--cz-color-green-25: rgb(240 253 244);
+	--cz-color-green-50: rgb(240 253 244);
+	--cz-color-green-100: rgb(220 252 231);
+	--cz-color-green-200: rgb(187 247 208);
+	--cz-color-green-300: rgb(134 239 172);
+	--cz-color-green-400: rgb(74 222 128);
+	--cz-color-green-500: rgb(34 197 94);
+	--cz-color-green-600: rgb(22 163 74);
+	--cz-color-green-700: rgb(21 128 61);
+	--cz-color-green-800: rgb(22 101 52);
+	--cz-color-green-900: rgb(20 83 45);
+	--cz-color-green-950: rgb(5 46 22);
+
+	/* Emerald colors */
+	--cz-color-emerald-25: rgb(236 253 245);
+	--cz-color-emerald-50: rgb(236 253 245);
+	--cz-color-emerald-100: rgb(209 250 229);
+	--cz-color-emerald-200: rgb(167 243 208);
+	--cz-color-emerald-300: rgb(110 231 183);
+	--cz-color-emerald-400: rgb(52 211 153);
+	--cz-color-emerald-500: rgb(16 185 129);
+	--cz-color-emerald-600: rgb(5 150 105);
+	--cz-color-emerald-700: rgb(4 120 87);
+	--cz-color-emerald-800: rgb(6 95 70);
+	--cz-color-emerald-900: rgb(6 78 59);
+	--cz-color-emerald-950: rgb(2 44 34);
+
+	/* Teal colors */
+	--cz-color-teal-25: rgb(240 253 250);
+	--cz-color-teal-50: rgb(240 253 250);
+	--cz-color-teal-100: rgb(204 251 241);
+	--cz-color-teal-200: rgb(153 246 228);
+	--cz-color-teal-300: rgb(94 234 212);
+	--cz-color-teal-400: rgb(45 212 191);
+	--cz-color-teal-500: rgb(20 184 166);
+	--cz-color-teal-600: rgb(13 148 136);
+	--cz-color-teal-700: rgb(15 118 110);
+	--cz-color-teal-800: rgb(17 94 89);
+	--cz-color-teal-900: rgb(19 78 74);
+	--cz-color-teal-950: rgb(4 47 46);
+
+	/* Cyan colors */
+	--cz-color-cyan-25: rgb(236 254 255);
+	--cz-color-cyan-50: rgb(236 254 255);
+	--cz-color-cyan-100: rgb(207 250 254);
+	--cz-color-cyan-200: rgb(165 243 252);
+	--cz-color-cyan-300: rgb(103 232 249);
+	--cz-color-cyan-400: rgb(34 211 238);
+	--cz-color-cyan-500: rgb(6 182 212);
+	--cz-color-cyan-600: rgb(8 145 178);
+	--cz-color-cyan-700: rgb(14 116 144);
+	--cz-color-cyan-800: rgb(21 94 117);
+	--cz-color-cyan-900: rgb(22 78 99);
+	--cz-color-cyan-950: rgb(8 51 68);
+
+	/* Sky colors */
+	--cz-color-sky-25: rgb(240 249 255);
+	--cz-color-sky-50: rgb(240 249 255);
+	--cz-color-sky-100: rgb(224 242 254);
+	--cz-color-sky-200: rgb(186 230 253);
+	--cz-color-sky-300: rgb(125 211 252);
+	--cz-color-sky-400: rgb(56 189 248);
+	--cz-color-sky-500: rgb(14 165 233);
+	--cz-color-sky-600: rgb(2 132 199);
+	--cz-color-sky-700: rgb(3 105 161);
+	--cz-color-sky-800: rgb(7 89 133);
+	--cz-color-sky-900: rgb(12 74 110);
+	--cz-color-sky-950: rgb(8 47 73);
+
+	/* Blue colors */
+	--cz-color-blue-25: rgb(239 246 255);
+	--cz-color-blue-50: rgb(239 246 255);
+	--cz-color-blue-100: rgb(219 234 254);
+	--cz-color-blue-200: rgb(191 219 254);
+	--cz-color-blue-300: rgb(147 197 253);
+	--cz-color-blue-400: rgb(96 165 250);
+	--cz-color-blue-500: rgb(59 130 246);
+	--cz-color-blue-600: rgb(37 99 235);
+	--cz-color-blue-700: rgb(29 78 216);
+	--cz-color-blue-800: rgb(30 64 175);
+	--cz-color-blue-900: rgb(30 58 138);
+	--cz-color-blue-950: rgb(23 37 84);
+
+	/* Indigo colors */
+	--cz-color-indigo-25: rgb(238 242 255);
+	--cz-color-indigo-50: rgb(238 242 255);
+	--cz-color-indigo-100: rgb(224 231 255);
+	--cz-color-indigo-200: rgb(199 210 254);
+	--cz-color-indigo-300: rgb(165 180 252);
+	--cz-color-indigo-400: rgb(129 140 248);
+	--cz-color-indigo-500: rgb(99 102 241);
+	--cz-color-indigo-600: rgb(79 70 229);
+	--cz-color-indigo-700: rgb(67 56 202);
+	--cz-color-indigo-800: rgb(55 48 163);
+	--cz-color-indigo-900: rgb(49 46 129);
+	--cz-color-indigo-950: rgb(30 27 75);
+
+	/* Violet colors */
+	--cz-color-violet-25: rgb(245 243 255);
+	--cz-color-violet-50: rgb(245 243 255);
+	--cz-color-violet-100: rgb(237 233 254);
+	--cz-color-violet-200: rgb(221 214 254);
+	--cz-color-violet-300: rgb(196 181 253);
+	--cz-color-violet-400: rgb(167 139 250);
+	--cz-color-violet-500: rgb(139 92 246);
+	--cz-color-violet-600: rgb(124 58 237);
+	--cz-color-violet-700: rgb(109 40 217);
+	--cz-color-violet-800: rgb(91 33 182);
+	--cz-color-violet-900: rgb(76 29 149);
+	--cz-color-violet-950: rgb(46 16 101);
+
+	/* Purple colors */
+	--cz-color-purple-25: rgb(250 245 255);
+	--cz-color-purple-50: rgb(250 245 255);
+	--cz-color-purple-100: rgb(243 232 255);
+	--cz-color-purple-200: rgb(233 213 255);
+	--cz-color-purple-300: rgb(216 180 254);
+	--cz-color-purple-400: rgb(192 132 252);
+	--cz-color-purple-500: rgb(168 85 247);
+	--cz-color-purple-600: rgb(147 51 234);
+	--cz-color-purple-700: rgb(126 34 206);
+	--cz-color-purple-800: rgb(107 33 168);
+	--cz-color-purple-900: rgb(88 28 135);
+	--cz-color-purple-950: rgb(59 7 100);
+
+	/* Fuchsia colors */
+	--cz-color-fuchsia-25: rgb(253 244 255);
+	--cz-color-fuchsia-50: rgb(253 244 255);
+	--cz-color-fuchsia-100: rgb(250 232 255);
+	--cz-color-fuchsia-200: rgb(245 208 254);
+	--cz-color-fuchsia-300: rgb(240 171 252);
+	--cz-color-fuchsia-400: rgb(232 121 249);
+	--cz-color-fuchsia-500: rgb(217 70 239);
+	--cz-color-fuchsia-600: rgb(192 38 211);
+	--cz-color-fuchsia-700: rgb(162 28 175);
+	--cz-color-fuchsia-800: rgb(134 25 143);
+	--cz-color-fuchsia-900: rgb(112 26 117);
+	--cz-color-fuchsia-950: rgb(74 4 78);
+
+	/* Pink colors */
+	--cz-color-pink-25: rgb(253 242 248);
+	--cz-color-pink-50: rgb(253 242 248);
+	--cz-color-pink-100: rgb(252 231 243);
+	--cz-color-pink-200: rgb(251 207 232);
+	--cz-color-pink-300: rgb(249 168 212);
+	--cz-color-pink-400: rgb(244 114 182);
+	--cz-color-pink-500: rgb(236 72 153);
+	--cz-color-pink-600: rgb(219 39 119);
+	--cz-color-pink-700: rgb(190 24 93);
+	--cz-color-pink-800: rgb(157 23 77);
+	--cz-color-pink-900: rgb(131 24 67);
+	--cz-color-pink-950: rgb(80 7 36);
+
+	/* Rose colors */
+	--cz-color-rose-25: rgb(255 241 242);
+	--cz-color-rose-50: rgb(255 241 242);
+	--cz-color-rose-100: rgb(255 228 230);
+	--cz-color-rose-200: rgb(254 205 211);
+	--cz-color-rose-300: rgb(253 164 175);
+	--cz-color-rose-400: rgb(251 113 133);
+	--cz-color-rose-500: rgb(244 63 94);
+	--cz-color-rose-600: rgb(225 29 72);
+	--cz-color-rose-700: rgb(190 18 60);
+	--cz-color-rose-800: rgb(159 18 57);
+	--cz-color-rose-900: rgb(136 19 55);
+	--cz-color-rose-950: rgb(76 5 25);
 }
