@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-Daj7zGhW.js";const a=r`
+import{b as r}from"./iframe-Dv-O8Sxd.js";const a=r`
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');

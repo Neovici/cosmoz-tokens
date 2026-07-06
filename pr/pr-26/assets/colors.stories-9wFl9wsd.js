@@ -1,11 +1,11 @@
-import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js";const v={title:"Tokens/Colors"},r=c=>l`
+import{b as l}from"./iframe-Dv-O8Sxd.js";import{s as e}from"./style-Dw5Oh81S.js";const h={title:"Tokens/Colors"},r=c=>l`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${c});"></div>
         <span class="story-label">${c}</span>
     </div>
-`,o=(c,u)=>l`
+`,o=(c,m)=>l`
     <div class="story-section">
-        <h3 class="story-section-title">${u}</h3>
+        <h3 class="story-section-title">${m}</h3>
         <div class="story-grid story-grid--auto">
             ${r(`${c}-25`)} ${r(`${c}-50`)}
             ${r(`${c}-100`)} ${r(`${c}-200`)}
@@ -34,14 +34,9 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             ${o("--cz-color-error","Error")}
             ${o("--cz-color-warning","Warning")}
             ${o("--cz-color-success","Success")}
+            ${o("--cz-color-sky","Info")}
         </div>
     `},t={render:()=>l`
-        ${e}
-        <div class="story-container">
-            <h1 class="story-title">Info Colors</h1>
-            ${o("--cz-color-sky","Sky (Info)")}
-        </div>
-    `},i={render:()=>l`
         ${e}
         <div class="story-container">
             <h1 class="story-title">Base Colors</h1>
@@ -53,7 +48,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
                 </div>
             </div>
         </div>
-    `},d={render:()=>l`
+    `},i={render:()=>l`
         ${e}
         <div class="story-container">
             <h1 class="story-title">Neutral Colors</h1>
@@ -69,7 +64,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             ${o("--cz-color-lime","Lime")}
             ${o("--cz-color-rose","Rose")}
         </div>
-    `},y={render:()=>l`
+    `},d={render:()=>l`
         ${e}
         <div class="story-container">
             <h1 class="story-title">Cool Colors</h1>
@@ -90,7 +85,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             ${o("--cz-color-fuchsia","Fuchsia")}
             ${o("--cz-color-pink","Pink")}
         </div>
-    `},m={render:()=>l`
+    `},y={render:()=>l`
         ${e}
         <div class="story-container">
             <h1 class="story-title">All Primitive Colors</h1>
@@ -141,17 +136,10 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             \${colorScale('--cz-color-error', 'Error')}
             \${colorScale('--cz-color-warning', 'Warning')}
             \${colorScale('--cz-color-success', 'Success')}
+            \${colorScale('--cz-color-sky', 'Info')}
         </div>
     \`
 }`,...n.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
-  render: () => html\`
-        \${style}
-        <div class="story-container">
-            <h1 class="story-title">Info Colors</h1>
-            \${colorScale('--cz-color-sky', 'Sky (Info)')}
-        </div>
-    \`
-}`,...t.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -165,7 +153,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             </div>
         </div>
     \`
-}`,...i.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -173,7 +161,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             \${colorScale('--cz-color-slate', 'Slate')}
         </div>
     \`
-}`,...d.parameters?.docs?.source}}};$.parameters={...$.parameters,docs:{...$.parameters?.docs,source:{originalSource:`{
+}`,...i.parameters?.docs?.source}}};$.parameters={...$.parameters,docs:{...$.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -185,7 +173,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             \${colorScale('--cz-color-rose', 'Rose')}
         </div>
     \`
-}`,...$.parameters?.docs?.source}}};y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:`{
+}`,...$.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -198,7 +186,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             \${colorScale('--cz-color-blue', 'Blue')}
         </div>
     \`
-}`,...y.parameters?.docs?.source}}};z.parameters={...z.parameters,docs:{...z.parameters?.docs,source:{originalSource:`{
+}`,...d.parameters?.docs?.source}}};z.parameters={...z.parameters,docs:{...z.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -210,7 +198,7 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             \${colorScale('--cz-color-pink', 'Pink')}
         </div>
     \`
-}`,...z.parameters?.docs?.source}}};m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{
+}`,...z.parameters?.docs?.source}}};y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -239,4 +227,4 @@ import{b as l}from"./iframe-Daj7zGhW.js";import{s as e}from"./style-BQCfpM4Z.js"
             \${colorScale('--cz-color-rose', 'Rose')}
         </div>
     \`
-}`,...m.parameters?.docs?.source}}};const p=["BrandColors","GrayColors","StatusColors","InfoColors","BaseColors","NeutralColors","WarmColors","CoolColors","PurpleColors","AllColors"];export{m as AllColors,i as BaseColors,s as BrandColors,y as CoolColors,a as GrayColors,t as InfoColors,d as NeutralColors,z as PurpleColors,n as StatusColors,$ as WarmColors,p as __namedExportsOrder,v as default};
+}`,...y.parameters?.docs?.source}}};const v=["BrandColors","GrayColors","StatusColors","BaseColors","NeutralColors","WarmColors","CoolColors","PurpleColors","AllColors"];export{y as AllColors,t as BaseColors,s as BrandColors,d as CoolColors,a as GrayColors,i as NeutralColors,z as PurpleColors,n as StatusColors,$ as WarmColors,v as __namedExportsOrder,h as default};
