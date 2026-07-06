@@ -1,4 +1,4 @@
-import{b as l}from"./iframe-I8H1cjWY.js";import{s as e}from"./style-Dt9nmzzS.js";const h={title:"Tokens/Colors"},r=c=>l`
+import{b as l}from"./iframe-BjyA7004.js";import{s as e}from"./style-DiAPjXN8.js";const h={title:"Tokens/Colors"},r=c=>l`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${c});"></div>
         <span class="story-label">${c}</span>
@@ -34,7 +34,7 @@ import{b as l}from"./iframe-I8H1cjWY.js";import{s as e}from"./style-Dt9nmzzS.js"
             ${o("--cz-color-error","Error")}
             ${o("--cz-color-warning","Warning")}
             ${o("--cz-color-success","Success")}
-            ${o("--cz-color-sky","Info")}
+            ${o("--cz-color-info","Info")}
         </div>
     `},t={render:()=>l`
         ${e}
@@ -94,7 +94,7 @@ import{b as l}from"./iframe-I8H1cjWY.js";import{s as e}from"./style-Dt9nmzzS.js"
             ${o("--cz-color-error","Error")}
             ${o("--cz-color-warning","Warning")}
             ${o("--cz-color-success","Success")}
-            ${o("--cz-color-sky","Info")}
+            ${o("--cz-color-info","Info")}
             ${o("--cz-color-orange","Orange")}
             ${o("--cz-color-amber","Amber")}
             ${o("--cz-color-yellow","Yellow")}
@@ -136,7 +136,7 @@ import{b as l}from"./iframe-I8H1cjWY.js";import{s as e}from"./style-Dt9nmzzS.js"
             \${colorScale('--cz-color-error', 'Error')}
             \${colorScale('--cz-color-warning', 'Warning')}
             \${colorScale('--cz-color-success', 'Success')}
-            \${colorScale('--cz-color-sky', 'Info')}
+            \${colorScale('--cz-color-info', 'Info')}
         </div>
     \`
 }`,...n.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
@@ -208,7 +208,7 @@ import{b as l}from"./iframe-I8H1cjWY.js";import{s as e}from"./style-Dt9nmzzS.js"
             \${colorScale('--cz-color-error', 'Error')}
             \${colorScale('--cz-color-warning', 'Warning')}
             \${colorScale('--cz-color-success', 'Success')}
-            \${colorScale('--cz-color-sky', 'Info')}
+            \${colorScale('--cz-color-info', 'Info')}
             \${colorScale('--cz-color-orange', 'Orange')}
             \${colorScale('--cz-color-amber', 'Amber')}
             \${colorScale('--cz-color-yellow', 'Yellow')}
