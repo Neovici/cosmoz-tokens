@@ -207,7 +207,8 @@ export const style = html`
 			padding: calc(var(--cz-spacing) * 2.5) calc(var(--cz-spacing) * 3.5);
 			border-radius: var(--cz-radius-md);
 			background: var(--cz-color-bg-primary);
-			border: 1px solid var(--cz-color-border-primary);
+			border: none;
+			box-shadow: inset 0 0 0 1px var(--cz-color-border-primary);
 			font-family: var(--cz-font-body);
 			font-size: var(--cz-text-base);
 			line-height: var(--cz-text-base-line-height);
@@ -217,12 +218,10 @@ export const style = html`
 
 		.story-input--focus {
 			box-shadow: var(--cz-focus-ring);
-			border-color: var(--cz-color-border-brand);
 		}
 
 		.story-input--error {
 			box-shadow: var(--cz-focus-ring-error);
-			border-color: var(--cz-color-border-error);
 		}
 
 		/* Demo boxes for utilities story */

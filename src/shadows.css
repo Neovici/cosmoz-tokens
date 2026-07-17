@@ -33,6 +33,7 @@
 	--cz-shadow-xs-skeumorphic: var(--cz-shadow-skeumorphic), var(--cz-shadow-xs);
 
 	/* Focus ring shadows */
-	--cz-focus-ring: 0 0 0 4px var(--cz-color-brand-100);
-	--cz-focus-ring-error: 0 0 0 4px var(--cz-color-error-100);
+	--cz-focus-ring: inset 0 0 0 2px var(--cz-color-brand-100);
+	--cz-focus-ring-error: inset 0 0 0 2px var(--cz-color-error-100);
+	--cz-focus-ring-info: inset 0 0 0 2px var(--cz-color-info-100);
 }

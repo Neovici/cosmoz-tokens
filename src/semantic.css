@@ -191,7 +191,7 @@
 	--cz-color-fg-info-secondary: var(--cz-color-info-400);
 
 	/* Focus ring adjustments for dark mode */
-	--cz-focus-ring: 0 0 0 4px var(--cz-color-brand-800);
-	--cz-focus-ring-error: 0 0 0 4px var(--cz-color-error-800);
-	--cz-focus-ring-info: 0 0 0 4px var(--cz-color-info-800);
+	--cz-focus-ring: inset 0 0 0 2px var(--cz-color-brand-800);
+	--cz-focus-ring-error: inset 0 0 0 2px var(--cz-color-error-800);
+	--cz-focus-ring-info: inset 0 0 0 2px var(--cz-color-info-800);
 }
