@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 3.5.1
+
+### Patch Changes
+
+- 464cc12: Use inset box-shadows for input focus rings to prevent overflow
+
 ## 3.5.0
 
 ### Minor Changes
