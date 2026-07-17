@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-BjyA7004.js";const a=r`
+import{b as r}from"./iframe-KIPk5bJ_.js";const o=r`
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -199,7 +199,8 @@ import{b as r}from"./iframe-BjyA7004.js";const a=r`
 			padding: calc(var(--cz-spacing) * 2.5) calc(var(--cz-spacing) * 3.5);
 			border-radius: var(--cz-radius-md);
 			background: var(--cz-color-bg-primary);
-			border: 1px solid var(--cz-color-border-primary);
+			border: none;
+			box-shadow: inset 0 0 0 1px var(--cz-color-border-primary);
 			font-family: var(--cz-font-body);
 			font-size: var(--cz-text-base);
 			line-height: var(--cz-text-base-line-height);
@@ -209,12 +210,10 @@ import{b as r}from"./iframe-BjyA7004.js";const a=r`
 
 		.story-input--focus {
 			box-shadow: var(--cz-focus-ring);
-			border-color: var(--cz-color-border-brand);
 		}
 
 		.story-input--error {
 			box-shadow: var(--cz-focus-ring-error);
-			border-color: var(--cz-color-border-error);
 		}
 
 		/* Demo boxes for utilities story */
@@ -261,4 +260,4 @@ import{b as r}from"./iframe-BjyA7004.js";const a=r`
 			border-radius: var(--cz-radius-sm);
 		}
 	</style>
-`;export{a as s};
+`;export{o as s};
