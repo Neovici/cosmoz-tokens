@@ -37,3 +37,16 @@
 	--cz-focus-ring-error: inset 0 0 0 2px var(--cz-color-error-100);
 	--cz-focus-ring-info: inset 0 0 0 2px var(--cz-color-info-100);
 }
+
+:root[data-theme='dark'] {
+	/*
+	 * The light-theme skeumorphic ring is near-black, so on a dark surface it
+	 * disappears and the ::before highlight is left acting as the border. Flip
+	 * the ring to light so it stays the edge, and drop the highlight, which
+	 * would otherwise draw a second border just inside it.
+	 */
+	--cz-shadow-skeumorphic:
+		0px 0px 0px 1px rgba(255, 255, 255, 0.12) inset,
+		0px -2px 0px 0px rgba(10, 13, 18, 0.2) inset;
+	--skeumorphic-color: transparent;
+}
