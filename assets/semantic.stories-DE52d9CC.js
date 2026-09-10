@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-KIPk5bJ_.js";import{s as c}from"./style-Bn5ULb_j.js";const g={title:"Tokens/Semantic"},o=a=>r`
+import{b as r}from"./iframe-DGoKD3B1.js";import{s as c}from"./style-CVDI7EsK.js";const g={title:"Tokens/Semantic"},o=a=>r`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${a});"></div>
         <span class="story-label">${a}</span>

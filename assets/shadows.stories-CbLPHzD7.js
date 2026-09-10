@@ -1,4 +1,4 @@
-import{b as o}from"./iframe-KIPk5bJ_.js";import{s as e}from"./style-Bn5ULb_j.js";const y={title:"Tokens/Shadows"},s=(c,n,l="")=>o`
+import{b as o}from"./iframe-DGoKD3B1.js";import{s as e}from"./style-CVDI7EsK.js";const y={title:"Tokens/Shadows"},s=(c,n,l="")=>o`
     <div class="story-flex story-flex--col story-gap-2">
         <div class="story-swatch--shadow" style="box-shadow: var(${n});"></div>
         <span class="story-label story-label--small">${c}</span>
