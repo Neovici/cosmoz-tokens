@@ -1,5 +1,13 @@
 # @neovici/cosmoz-tokens
 
+## 3.5.2
+
+### Patch Changes
+
+- 05dd6d2: Give the skeumorphic tokens dark-theme values. The ring is near-black, so on a
+  dark surface it disappeared and the `::before` highlight was left acting as the
+  border — doubling up with any border the consumer drew itself.
+
 ## 3.5.1
 
 ### Patch Changes
