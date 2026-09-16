@@ -13,7 +13,10 @@ const colorRow = (cssVar) => html`
 `;
 
 const toggleDarkMode = () => {
-	document.documentElement.classList.toggle('dark-mode');
+	const root = document.documentElement;
+	const dark = root.style.colorScheme !== 'dark';
+	root.style.colorScheme = dark ? 'dark' : 'light';
+	root.classList.toggle('dark-mode', dark);
 };
 
 export const TextColors = {
@@ -188,11 +191,11 @@ export const DarkModeDemo = {
 			<div class="story-section story-mt-6">
 				<h3 class="story-section-title">Usage</h3>
 				<pre class="story-code">
-// Add dark mode class to root
-document.documentElement.classList.add('dark-mode');
+// Tokens follow color-scheme — set it on the root:
+document.documentElement.style.colorScheme = 'dark';
 
-// Or use data attribute
-document.documentElement.dataset.theme = 'dark';</pre
+// Or let the OS decide:
+// document.documentElement.style.colorScheme = 'light dark';</pre
 				>
 			</div>
 		</div>

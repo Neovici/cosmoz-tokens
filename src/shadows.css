@@ -1,6 +1,10 @@
 /**
  * Cosmoz Design Tokens - Shadows
  * Shadow tokens from Untitled UI
+ *
+ * Non-color shadow/focus-ring values cannot use light-dark() directly
+ * (it only accepts colors), so the theme-varying parts are split into
+ * color tokens which are assembled into static shadow values.
  */
 
 :root {
@@ -26,27 +30,44 @@
 		0px 32px 64px -12px rgba(10, 13, 18, 0.14),
 		0px 5px 5px -2.5px rgba(10, 13, 18, 0.04);
 
-	/* Skeumorphic shadows (for buttons) */
+	/* Skeumorphic shadows (for buttons) — ring and highlight colors flip
+	   with color-scheme via the light-dark() color tokens above the
+	   assembled shadow values. */
+	--cz-color-skeumorphic-ring: light-dark(
+		rgba(10, 13, 18, 0.18),
+		rgba(255, 255, 255, 0.12)
+	);
+	--cz-color-skeumorphic-highlight: light-dark(
+		rgba(10, 13, 18, 0.05),
+		rgba(10, 13, 18, 0.2)
+	);
 	--cz-shadow-skeumorphic:
-		0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset,
-		0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset;
+		0px 0px 0px 1px var(--cz-color-skeumorphic-ring) inset,
+		0px -2px 0px 0px var(--cz-color-skeumorphic-highlight) inset;
 	--cz-shadow-xs-skeumorphic: var(--cz-shadow-skeumorphic), var(--cz-shadow-xs);
 
-	/* Focus ring shadows */
-	--cz-focus-ring: inset 0 0 0 2px var(--cz-color-brand-100);
-	--cz-focus-ring-error: inset 0 0 0 2px var(--cz-color-error-100);
-	--cz-focus-ring-info: inset 0 0 0 2px var(--cz-color-info-100);
-}
-
-:root[data-theme='dark'] {
 	/*
 	 * The light-theme skeumorphic ring is near-black, so on a dark surface it
 	 * disappears and the ::before highlight is left acting as the border. Flip
-	 * the ring to light so it stays the edge, and drop the highlight, which
-	 * would otherwise draw a second border just inside it.
+	 * the highlight border color to light and drop it in dark mode, where it
+	 * would otherwise draw a second border just inside the ring.
 	 */
-	--cz-shadow-skeumorphic:
-		0px 0px 0px 1px rgba(255, 255, 255, 0.12) inset,
-		0px -2px 0px 0px rgba(10, 13, 18, 0.2) inset;
-	--skeumorphic-color: transparent;
+	--skeumorphic-color: light-dark(rgba(255, 255, 255, 0.12), transparent);
+
+	/* Focus ring shadows — colors are theme-varying, shapes are static */
+	--cz-color-focus-ring: light-dark(
+		var(--cz-color-brand-100),
+		var(--cz-color-brand-800)
+	);
+	--cz-color-focus-ring-error: light-dark(
+		var(--cz-color-error-100),
+		var(--cz-color-error-800)
+	);
+	--cz-color-focus-ring-info: light-dark(
+		var(--cz-color-info-100),
+		var(--cz-color-info-800)
+	);
+	--cz-focus-ring: inset 0 0 0 2px var(--cz-color-focus-ring);
+	--cz-focus-ring-error: inset 0 0 0 2px var(--cz-color-focus-ring-error);
+	--cz-focus-ring-info: inset 0 0 0 2px var(--cz-color-focus-ring-info);
 }

@@ -28,7 +28,10 @@ const contrastPair = (label, textVar, bgVar, borderVar) => html`
 `;
 
 const toggleDarkMode = () => {
-	document.documentElement.classList.toggle('dark-mode');
+	const root = document.documentElement;
+	const dark = root.style.colorScheme !== 'dark';
+	root.style.colorScheme = dark ? 'dark' : 'light';
+	root.classList.toggle('dark-mode', dark);
 };
 
 export const TextOnStatusBackgrounds = {
