@@ -1,4 +1,4 @@
-import{b as r}from"./iframe-PraCSU0q.js";import{s as c}from"./style-Di-QHIp0.js";const g={title:"Tokens/Semantic"},o=a=>r`
+import{b as r}from"./iframe-zZMStqo0.js";import{s as c}from"./style-thMw6DxF.js";const b={title:"Tokens/Semantic"},o=a=>r`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${a});"></div>
         <span class="story-label">${a}</span>
@@ -25,7 +25,10 @@ import{b as r}from"./iframe-PraCSU0q.js";import{s as c}from"./style-Di-QHIp0.js"
                     ${o("--cz-color-text-warning")}
                     ${o("--cz-color-text-success")}
                     ${o("--cz-color-text-brand")}
+                    ${o("--cz-color-text-brand-hover")}
+                    ${o("--cz-color-text-brand-pressed")}
                     ${o("--cz-color-text-on-brand")}
+                    ${o("--cz-color-text-on-brand-secondary")}
                     ${o("--cz-color-text-info")}
                     ${o("--cz-color-text-info-hover")}
                     ${o("--cz-color-text-on-info")}
@@ -189,7 +192,10 @@ document.documentElement.dataset.theme = 'dark';</pre
                     \${colorRow('--cz-color-text-warning')}
                     \${colorRow('--cz-color-text-success')}
                     \${colorRow('--cz-color-text-brand')}
+                    \${colorRow('--cz-color-text-brand-hover')}
+                    \${colorRow('--cz-color-text-brand-pressed')}
                     \${colorRow('--cz-color-text-on-brand')}
+                    \${colorRow('--cz-color-text-on-brand-secondary')}
                     \${colorRow('--cz-color-text-info')}
                     \${colorRow('--cz-color-text-info-hover')}
                     \${colorRow('--cz-color-text-on-info')}
@@ -339,4 +345,4 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...d.parameters?.docs?.source}}};const b=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,e as BorderColors,d as DarkModeDemo,l as ForegroundColors,t as TextColors,b as __namedExportsOrder,g as default};
+}`,...d.parameters?.docs?.source}}};const g=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,e as BorderColors,d as DarkModeDemo,l as ForegroundColors,t as TextColors,g as __namedExportsOrder,b as default};
