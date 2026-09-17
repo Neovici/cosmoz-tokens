@@ -1,15 +1,15 @@
-import{b as r}from"./iframe-DGoKD3B1.js";import{s as c}from"./style-CVDI7EsK.js";const g={title:"Tokens/Semantic"},o=a=>r`
+import{b as c}from"./iframe-CVCGxonw.js";import{s}from"./style-ObvsmUkm.js";const b={title:"Tokens/Semantic"},o=r=>c`
     <div class="story-row">
-        <div class="story-swatch" style="background: var(${a});"></div>
-        <span class="story-label">${a}</span>
+        <div class="story-swatch" style="background: var(${r});"></div>
+        <span class="story-label">${r}</span>
     </div>
-`,s=()=>{document.documentElement.classList.toggle("dark-mode")},t={render:()=>r`
-        ${c}
+`,t=()=>{const r=document.documentElement,a=r.style.colorScheme!=="dark";r.style.colorScheme=a?"dark":"light",r.classList.toggle("dark-mode",a)},n={render:()=>c`
+        ${s}
         <div class="story-container">
             <h1 class="story-title">Text Colors</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${s}
+                @click=${t}
             >
                 Toggle Dark Mode
             </button>
@@ -32,13 +32,13 @@ import{b as r}from"./iframe-DGoKD3B1.js";import{s as c}from"./style-CVDI7EsK.js"
                 </div>
             </div>
         </div>
-    `},n={render:()=>r`
-        ${c}
+    `},e={render:()=>c`
+        ${s}
         <div class="story-container">
             <h1 class="story-title">Background Colors</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${s}
+                @click=${t}
             >
                 Toggle Dark Mode
             </button>
@@ -83,13 +83,13 @@ import{b as r}from"./iframe-DGoKD3B1.js";import{s as c}from"./style-CVDI7EsK.js"
                 </div>
             </div>
         </div>
-    `},e={render:()=>r`
-        ${c}
+    `},l={render:()=>c`
+        ${s}
         <div class="story-container">
             <h1 class="story-title">Border Colors</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${s}
+                @click=${t}
             >
                 Toggle Dark Mode
             </button>
@@ -106,14 +106,14 @@ import{b as r}from"./iframe-DGoKD3B1.js";import{s as c}from"./style-CVDI7EsK.js"
                 </div>
             </div>
         </div>
-    `},l={render:()=>r`
-        ${c}
+    `},d={render:()=>c`
+        ${s}
         <div class="story-container">
             <h1 class="story-title">Foreground Colors</h1>
             <p class="story-description">For icons and decorative elements.</p>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${s}
+                @click=${t}
             >
                 Toggle Dark Mode
             </button>
@@ -132,13 +132,13 @@ import{b as r}from"./iframe-DGoKD3B1.js";import{s as c}from"./style-CVDI7EsK.js"
                 </div>
             </div>
         </div>
-    `},d={render:()=>r`
-        ${c}
+    `},i={render:()=>c`
+        ${s}
         <div class="story-container">
             <h1 class="story-title">Dark Mode Demo</h1>
             <button
                 class="story-btn story-btn--primary story-mb-6"
-                @click=${s}
+                @click=${t}
             >
                 Toggle Dark Mode
             </button>
@@ -158,15 +158,15 @@ import{b as r}from"./iframe-DGoKD3B1.js";import{s as c}from"./style-CVDI7EsK.js"
             <div class="story-section story-mt-6">
                 <h3 class="story-section-title">Usage</h3>
                 <pre class="story-code">
-// Add dark mode class to root
-document.documentElement.classList.add('dark-mode');
+// Tokens follow color-scheme — set it on the root:
+document.documentElement.style.colorScheme = 'dark';
 
-// Or use data attribute
-document.documentElement.dataset.theme = 'dark';</pre
+// Or let the OS decide:
+// document.documentElement.style.colorScheme = 'light dark';</pre
                 >
             </div>
         </div>
-    `};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+    `};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -197,7 +197,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...t.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -250,7 +250,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -275,7 +275,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...e.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -303,7 +303,7 @@ document.documentElement.dataset.theme = 'dark';</pre
             </div>
         </div>
     \`
-}`,...l.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+}`,...d.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -330,13 +330,13 @@ document.documentElement.dataset.theme = 'dark';</pre
             <div class="story-section story-mt-6">
                 <h3 class="story-section-title">Usage</h3>
                 <pre class="story-code">
-// Add dark mode class to root
-document.documentElement.classList.add('dark-mode');
+// Tokens follow color-scheme — set it on the root:
+document.documentElement.style.colorScheme = 'dark';
 
-// Or use data attribute
-document.documentElement.dataset.theme = 'dark';</pre
+// Or let the OS decide:
+// document.documentElement.style.colorScheme = 'light dark';</pre
                 >
             </div>
         </div>
     \`
-}`,...d.parameters?.docs?.source}}};const b=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,e as BorderColors,d as DarkModeDemo,l as ForegroundColors,t as TextColors,b as __namedExportsOrder,g as default};
+}`,...i.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{e as BackgroundColors,l as BorderColors,i as DarkModeDemo,d as ForegroundColors,n as TextColors,$ as __namedExportsOrder,b as default};

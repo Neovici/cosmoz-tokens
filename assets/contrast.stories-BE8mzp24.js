@@ -1,37 +1,37 @@
-import{b as n}from"./iframe-DGoKD3B1.js";import{s as a}from"./style-CVDI7EsK.js";const g={title:"A11y/Contrast"},o=(e,t,s,c)=>n`
+import{b as e}from"./iframe-CVCGxonw.js";import{s as a}from"./style-ObvsmUkm.js";const g={title:"A11y/Contrast"},s=(o,r,c,n)=>e`
     <div
         style="
-            background: var(${s});
-            color: var(${t});
+            background: var(${c});
+            color: var(${r});
             padding: 16px 20px;
             border-radius: var(--cz-radius-md);
-            border: 1px solid var(${c});
+            border: 1px solid var(${n});
             margin-bottom: 8px;
         "
     >
-        <strong style="font-size: var(--cz-text-base);">${e}</strong>
+        <strong style="font-size: var(--cz-text-base);">${o}</strong>
         <br />
         <span style="font-size: var(--cz-text-sm); opacity: 1;">
-            ${t} on ${s} with ${c} border
+            ${r} on ${c} with ${n} border
         </span>
     </div>
-`,i=()=>{document.documentElement.classList.toggle("dark-mode")},r={render:()=>n`
+`,l=()=>{const o=document.documentElement,r=o.style.colorScheme!=="dark";o.style.colorScheme=r?"dark":"light",o.classList.toggle("dark-mode",r)},t={render:()=>e`
         ${a}
         <div class="story-container">
             <h1 class="story-title">Text on Status Backgrounds</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${i}
+                @click=${l}
             >
                 Toggle Dark Mode
             </button>
             <div class="story-section">
-                ${o("Error text on error bg","--cz-color-text-error","--cz-color-bg-error","--cz-color-error-200")}
-                ${o("Warning text on warning bg","--cz-color-text-warning","--cz-color-bg-warning","--cz-color-warning-200")}
-                ${o("Success text on success bg","--cz-color-text-success","--cz-color-bg-success","--cz-color-success-200")}
+                ${s("Error text on error bg","--cz-color-text-error","--cz-color-bg-error","--cz-color-error-200")}
+                ${s("Warning text on warning bg","--cz-color-text-warning","--cz-color-bg-warning","--cz-color-warning-200")}
+                ${s("Success text on success bg","--cz-color-text-success","--cz-color-bg-success","--cz-color-success-200")}
             </div>
         </div>
-    `};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+    `};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -49,4 +49,4 @@ import{b as n}from"./iframe-DGoKD3B1.js";import{s as a}from"./style-CVDI7EsK.js"
             </div>
         </div>
     \`
-}`,...r.parameters?.docs?.source}}};const u=["TextOnStatusBackgrounds"];export{r as TextOnStatusBackgrounds,u as __namedExportsOrder,g as default};
+}`,...t.parameters?.docs?.source}}};const u=["TextOnStatusBackgrounds"];export{t as TextOnStatusBackgrounds,u as __namedExportsOrder,g as default};
