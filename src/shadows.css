@@ -46,6 +46,21 @@
 		0px -2px 0px 0px var(--cz-color-skeumorphic-highlight) inset;
 	--cz-shadow-xs-skeumorphic: var(--cz-shadow-skeumorphic), var(--cz-shadow-xs);
 
+	/* Pressed / selected 3D sink (for buttons) — shade colors flip with
+	   color-scheme via the light-dark() color tokens above the assembled
+	   shadow values. */
+	--cz-color-pressed-shade: light-dark(
+		rgba(10, 13, 18, 0.12),
+		rgba(0, 0, 0, 0.4)
+	);
+	--cz-color-pressed-shade-strong: light-dark(
+		rgba(10, 13, 18, 0.2),
+		rgba(0, 0, 0, 0.55)
+	);
+	--cz-shadow-pressed-3d: 0px 2px 3px 0px var(--cz-color-pressed-shade) inset;
+	--cz-shadow-pressed-3d-solid: 0px 2px 3px 0px
+		var(--cz-color-pressed-shade-strong) inset;
+
 	/*
 	 * The light-theme skeumorphic ring is near-black, so on a dark surface it
 	 * disappears and the ::before highlight is left acting as the border. Flip

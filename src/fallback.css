@@ -95,5 +95,7 @@
 		--cz-shadow-xs-skeumorphic:
 			var(--cz-shadow-skeumorphic), var(--cz-shadow-xs);
 		--skeumorphic-color: rgba(255, 255, 255, 0.12);
+		--cz-shadow-pressed-3d: 0px 2px 3px 0px rgba(10, 13, 18, 0.12) inset;
+		--cz-shadow-pressed-3d-solid: 0px 2px 3px 0px rgba(10, 13, 18, 0.2) inset;
 	}
 }
