@@ -1,4 +1,4 @@
-import{b as c}from"./iframe-CVCGxonw.js";import{s}from"./style-ObvsmUkm.js";const b={title:"Tokens/Semantic"},o=r=>c`
+import{b as c}from"./iframe-D1lYN-79.js";import{s}from"./style-Miz_-HoS.js";const b={title:"Tokens/Semantic"},o=r=>c`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${r});"></div>
         <span class="story-label">${r}</span>
@@ -24,6 +24,7 @@ import{b as c}from"./iframe-CVCGxonw.js";import{s}from"./style-ObvsmUkm.js";cons
                     ${o("--cz-color-text-error")}
                     ${o("--cz-color-text-warning")}
                     ${o("--cz-color-text-success")}
+                    ${o("--cz-color-text-processing")}
                     ${o("--cz-color-text-brand")}
                     ${o("--cz-color-text-on-brand")}
                     ${o("--cz-color-text-info")}
@@ -71,6 +72,8 @@ import{b as c}from"./iframe-CVCGxonw.js";import{s}from"./style-ObvsmUkm.js";cons
                     ${o("--cz-color-bg-warning-solid")}
                     ${o("--cz-color-bg-success")}
                     ${o("--cz-color-bg-success-solid")}
+                    ${o("--cz-color-bg-processing")}
+                    ${o("--cz-color-bg-processing-solid")}
                 </div>
             </div>
             <div class="story-section">
@@ -127,7 +130,9 @@ import{b as c}from"./iframe-CVCGxonw.js";import{s}from"./style-ObvsmUkm.js";cons
                     ${o("--cz-color-fg-white")} ${o("--cz-color-fg-brand")}
                     ${o("--cz-color-fg-error")}
                     ${o("--cz-color-fg-warning")}
-                    ${o("--cz-color-fg-success")} ${o("--cz-color-fg-info")}
+                    ${o("--cz-color-fg-success")}
+                    ${o("--cz-color-fg-processing")}
+                    ${o("--cz-color-fg-info")}
                     ${o("--cz-color-fg-info-secondary")}
                 </div>
             </div>
@@ -188,6 +193,7 @@ document.documentElement.style.colorScheme = 'dark';
                     \${colorRow('--cz-color-text-error')}
                     \${colorRow('--cz-color-text-warning')}
                     \${colorRow('--cz-color-text-success')}
+                    \${colorRow('--cz-color-text-processing')}
                     \${colorRow('--cz-color-text-brand')}
                     \${colorRow('--cz-color-text-on-brand')}
                     \${colorRow('--cz-color-text-info')}
@@ -237,6 +243,8 @@ document.documentElement.style.colorScheme = 'dark';
                     \${colorRow('--cz-color-bg-warning-solid')}
                     \${colorRow('--cz-color-bg-success')}
                     \${colorRow('--cz-color-bg-success-solid')}
+                    \${colorRow('--cz-color-bg-processing')}
+                    \${colorRow('--cz-color-bg-processing-solid')}
                 </div>
             </div>
             <div class="story-section">
@@ -297,7 +305,9 @@ document.documentElement.style.colorScheme = 'dark';
                     \${colorRow('--cz-color-fg-white')} \${colorRow('--cz-color-fg-brand')}
                     \${colorRow('--cz-color-fg-error')}
                     \${colorRow('--cz-color-fg-warning')}
-                    \${colorRow('--cz-color-fg-success')} \${colorRow('--cz-color-fg-info')}
+                    \${colorRow('--cz-color-fg-success')}
+                    \${colorRow('--cz-color-fg-processing')}
+                    \${colorRow('--cz-color-fg-info')}
                     \${colorRow('--cz-color-fg-info-secondary')}
                 </div>
             </div>
