@@ -18,6 +18,7 @@
 		--cz-color-text-error-hover: var(--cz-color-error-800);
 		--cz-color-text-warning: var(--cz-color-warning-700);
 		--cz-color-text-success: var(--cz-color-success-700);
+		--cz-color-text-processing: var(--cz-color-indigo-700);
 		--cz-color-text-brand: var(--cz-color-brand-600);
 		--cz-color-text-brand-hover: var(--cz-color-brand-700);
 		--cz-color-text-on-brand: var(--cz-color-white);
@@ -51,6 +52,9 @@
 		--cz-color-bg-success: var(--cz-color-success-50);
 		--cz-color-bg-success-secondary: var(--cz-color-success-100);
 		--cz-color-bg-success-solid: var(--cz-color-success-600);
+		--cz-color-bg-processing: var(--cz-color-indigo-50);
+		--cz-color-bg-processing-secondary: var(--cz-color-indigo-100);
+		--cz-color-bg-processing-solid: var(--cz-color-indigo-600);
 		--cz-color-bg-info: var(--cz-color-info-50);
 		--cz-color-bg-info-secondary: var(--cz-color-info-100);
 		--cz-color-bg-info-solid: var(--cz-color-info-600);
@@ -84,6 +88,8 @@
 		--cz-color-fg-warning-secondary: var(--cz-color-warning-500);
 		--cz-color-fg-success: var(--cz-color-success-600);
 		--cz-color-fg-success-secondary: var(--cz-color-success-500);
+		--cz-color-fg-processing: var(--cz-color-indigo-600);
+		--cz-color-fg-processing-secondary: var(--cz-color-indigo-500);
 		--cz-color-fg-info: var(--cz-color-info-600);
 		--cz-color-fg-info-secondary: var(--cz-color-info-500);
 		--cz-focus-ring: inset 0 0 0 2px var(--cz-color-brand-100);

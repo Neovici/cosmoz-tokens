@@ -41,6 +41,7 @@ export const TextColors = {
 					${colorRow('--cz-color-text-error')}
 					${colorRow('--cz-color-text-warning')}
 					${colorRow('--cz-color-text-success')}
+					${colorRow('--cz-color-text-processing')}
 					${colorRow('--cz-color-text-brand')}
 					${colorRow('--cz-color-text-on-brand')}
 					${colorRow('--cz-color-text-info')}
@@ -92,6 +93,8 @@ export const BackgroundColors = {
 					${colorRow('--cz-color-bg-warning-solid')}
 					${colorRow('--cz-color-bg-success')}
 					${colorRow('--cz-color-bg-success-solid')}
+					${colorRow('--cz-color-bg-processing')}
+					${colorRow('--cz-color-bg-processing-solid')}
 				</div>
 			</div>
 			<div class="story-section">
@@ -156,7 +159,9 @@ export const ForegroundColors = {
 					${colorRow('--cz-color-fg-white')} ${colorRow('--cz-color-fg-brand')}
 					${colorRow('--cz-color-fg-error')}
 					${colorRow('--cz-color-fg-warning')}
-					${colorRow('--cz-color-fg-success')} ${colorRow('--cz-color-fg-info')}
+					${colorRow('--cz-color-fg-success')}
+					${colorRow('--cz-color-fg-processing')}
+					${colorRow('--cz-color-fg-info')}
 					${colorRow('--cz-color-fg-info-secondary')}
 				</div>
 			</div>

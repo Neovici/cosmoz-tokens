@@ -64,6 +64,10 @@
 		var(--cz-color-success-700),
 		var(--cz-color-success-400)
 	);
+	--cz-color-text-processing: light-dark(
+		var(--cz-color-indigo-700),
+		var(--cz-color-indigo-400)
+	);
 	--cz-color-text-brand: light-dark(
 		var(--cz-color-brand-600),
 		var(--cz-color-brand-400)
@@ -202,6 +206,18 @@
 		var(--cz-color-success-600),
 		var(--cz-color-success-600)
 	);
+	--cz-color-bg-processing: light-dark(
+		var(--cz-color-indigo-50),
+		var(--cz-color-indigo-950)
+	);
+	--cz-color-bg-processing-secondary: light-dark(
+		var(--cz-color-indigo-100),
+		var(--cz-color-indigo-600)
+	);
+	--cz-color-bg-processing-solid: light-dark(
+		var(--cz-color-indigo-600),
+		var(--cz-color-indigo-600)
+	);
 	--cz-color-bg-info: light-dark(
 		var(--cz-color-info-50),
 		var(--cz-color-info-950)
@@ -334,6 +350,14 @@
 	--cz-color-fg-success-secondary: light-dark(
 		var(--cz-color-success-500),
 		var(--cz-color-success-400)
+	);
+	--cz-color-fg-processing: light-dark(
+		var(--cz-color-indigo-600),
+		var(--cz-color-indigo-500)
+	);
+	--cz-color-fg-processing-secondary: light-dark(
+		var(--cz-color-indigo-500),
+		var(--cz-color-indigo-400)
 	);
 	--cz-color-fg-info: light-dark(
 		var(--cz-color-info-600),
