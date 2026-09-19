@@ -2,9 +2,9 @@
  * Cosmoz Design Tokens - Shadows
  * Shadow tokens from Untitled UI
  *
- * Non-color shadow/focus-ring values cannot use light-dark() directly
- * (it only accepts colors), so the theme-varying parts are split into
- * color tokens which are assembled into static shadow values.
+ * Shadow and focus-ring values can't hold light-dark() directly (it only
+ * accepts colors), so theme-varying parts are split into color tokens
+ * and assembled into the static values below.
  */
 
 :root {
@@ -58,14 +58,12 @@
 		var(--cz-color-pressed-shade-strong) inset;
 
 	/*
-	 * The light-theme skeumorphic ring is near-black, so on a dark surface it
-	 * disappears and the ::before highlight is left acting as the border. Flip
-	 * the highlight border color to light and drop it in dark mode, where it
-	 * would otherwise draw a second border just inside the ring.
+	 * Border color for the ::before highlight; light in light mode, off in
+	 * dark mode where it would double up the ring.
 	 */
 	--skeumorphic-color: light-dark(rgba(255, 255, 255, 0.12), transparent);
 
-	/* Focus ring shadows — colors are theme-varying, shapes are static */
+	/* Focus ring shadows */
 	--cz-color-focus-ring: light-dark(
 		var(--cz-color-brand-100),
 		var(--cz-color-brand-800)
