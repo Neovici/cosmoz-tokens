@@ -30,9 +30,7 @@
 		0px 32px 64px -12px rgba(10, 13, 18, 0.14),
 		0px 5px 5px -2.5px rgba(10, 13, 18, 0.04);
 
-	/* Skeumorphic shadows (for buttons) — ring and highlight colors flip
-	   with color-scheme via the light-dark() color tokens above the
-	   assembled shadow values. */
+	/* Skeumorphic shadows (for buttons) */
 	--cz-color-skeumorphic-ring: light-dark(
 		rgba(10, 13, 18, 0.18),
 		rgba(255, 255, 255, 0.12)
@@ -46,9 +44,7 @@
 		0px -2px 0px 0px var(--cz-color-skeumorphic-highlight) inset;
 	--cz-shadow-xs-skeumorphic: var(--cz-shadow-skeumorphic), var(--cz-shadow-xs);
 
-	/* Pressed / selected 3D sink (for buttons) — shade colors flip with
-	   color-scheme via the light-dark() color tokens above the assembled
-	   shadow values. */
+	/* Pressed / selected 3D sink (for buttons) */
 	--cz-color-pressed-shade: light-dark(
 		rgba(10, 13, 18, 0.12),
 		rgba(0, 0, 0, 0.4)
