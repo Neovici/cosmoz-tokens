@@ -124,7 +124,7 @@ document.documentElement.dataset.theme = 'dark';
 
 | Token                             | Description                     |
 | --------------------------------- | ------------------------------- |
-| `--cz-font-body`                  | Body font (Inter)               |
+| `--cz-font-body`                  | Body font (Geist)               |
 | `--cz-font-display`               | Display font (DM Sans)          |
 | `--cz-font-mono`                  | Monospace font                  |
 | `--cz-text-{xs-xl}`               | Text sizes with line heights    |
