@@ -1,10 +1,10 @@
-import{b as a}from"./iframe-PdqJe8zs.js";import{s as l}from"./style-DgtGvq3R.js";const r={title:"Tokens/Typography"},t={render:()=>a`
+import{b as a}from"./iframe-ByUfyszJ.js";import{s as l}from"./style-D3f4cLZ3.js";const r={title:"Tokens/Typography"},t={render:()=>a`
         ${l}
         <div class="story-container">
             <h1 class="story-title">Font Families</h1>
 
             <div class="story-section">
-                <h3 class="story-section-title">Body (Inter)</h3>
+                <h3 class="story-section-title">Body (Geist)</h3>
                 <p
                     style="font-family: var(--cz-font-body); font-size: var(--cz-text-lg);"
                 >
@@ -196,7 +196,7 @@ import{b as a}from"./iframe-PdqJe8zs.js";import{s as l}from"./style-DgtGvq3R.js"
             <h1 class="story-title">Font Families</h1>
 
             <div class="story-section">
-                <h3 class="story-section-title">Body (Inter)</h3>
+                <h3 class="story-section-title">Body (Geist)</h3>
                 <p
                     style="font-family: var(--cz-font-body); font-size: var(--cz-text-lg);"
                 >
