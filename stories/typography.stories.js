@@ -12,7 +12,7 @@ export const FontFamilies = {
 			<h1 class="story-title">Font Families</h1>
 
 			<div class="story-section">
-				<h3 class="story-section-title">Body (Inter)</h3>
+				<h3 class="story-section-title">Body (Geist)</h3>
 				<p
 					style="font-family: var(--cz-font-body); font-size: var(--cz-text-lg);"
 				>
