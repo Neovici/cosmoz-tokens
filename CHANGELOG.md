@@ -1,5 +1,25 @@
 # @neovici/cosmoz-tokens
 
+## 4.2.0
+
+### Minor Changes
+
+- cc4c82b: Switch the body font from Inter to Geist.
+
+  `--cz-font-body` is the default font token. Geist has a tailed `l` that
+  clearly separates it from `I` — useful where Inter's bare stem confuses
+  invoice numbers and article codes.
+
+  Font files remain the consuming app's responsibility; this package ships
+  tokens only.
+
+- ddf307c: Add `--cz-shadow-pressed-3d` and `--cz-shadow-pressed-3d-solid`, an inset
+  top shadow that gives buttons a pressed-in feel.
+
+  Shade colors follow the theme via `light-dark()` tokens
+  (`--cz-color-pressed-shade(-strong)`); `fallback.css` carries static light
+  values for older browsers.
+
 ## 4.1.0
 
 ### Minor Changes
