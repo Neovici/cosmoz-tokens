@@ -280,6 +280,30 @@
 		var(--cz-color-info-300),
 		var(--cz-color-info-500)
 	);
+	--cz-color-border-warning: light-dark(
+		var(--cz-color-warning-500),
+		var(--cz-color-warning-400)
+	);
+	--cz-color-border-warning-subtle: light-dark(
+		var(--cz-color-warning-300),
+		var(--cz-color-warning-500)
+	);
+	--cz-color-border-success: light-dark(
+		var(--cz-color-success-500),
+		var(--cz-color-success-400)
+	);
+	--cz-color-border-success-subtle: light-dark(
+		var(--cz-color-success-300),
+		var(--cz-color-success-500)
+	);
+	--cz-color-border-processing: light-dark(
+		var(--cz-color-indigo-500),
+		var(--cz-color-indigo-400)
+	);
+	--cz-color-border-processing-subtle: light-dark(
+		var(--cz-color-indigo-300),
+		var(--cz-color-indigo-500)
+	);
 
 	/* Foreground colors (icons, decorative elements) */
 	--cz-color-fg-primary: light-dark(
