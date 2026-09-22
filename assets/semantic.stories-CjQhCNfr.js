@@ -1,9 +1,9 @@
-import{b as c}from"./iframe-ByUfyszJ.js";import{s}from"./style-D3f4cLZ3.js";const b={title:"Tokens/Semantic"},o=r=>c`
+import{b as c}from"./iframe-BgLYpsQu.js";import{s}from"./style-CVlh5GBL.js";const b={title:"Tokens/Semantic"},o=r=>c`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${r});"></div>
         <span class="story-label">${r}</span>
     </div>
-`,t=()=>{const r=document.documentElement,a=r.style.colorScheme!=="dark";r.style.colorScheme=a?"dark":"light",r.classList.toggle("dark-mode",a)},n={render:()=>c`
+`,t=()=>{const r=document.documentElement,a=r.style.colorScheme!=="dark";r.style.colorScheme=a?"dark":"light",r.classList.toggle("dark-mode",a)},e={render:()=>c`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Text Colors</h1>
@@ -33,7 +33,7 @@ import{b as c}from"./iframe-ByUfyszJ.js";import{s}from"./style-D3f4cLZ3.js";cons
                 </div>
             </div>
         </div>
-    `},e={render:()=>c`
+    `},n={render:()=>c`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Background Colors</h1>
@@ -103,9 +103,16 @@ import{b as c}from"./iframe-ByUfyszJ.js";import{s}from"./style-D3f4cLZ3.js";cons
                     ${o("--cz-color-border-tertiary")}
                     ${o("--cz-color-border-disabled")}
                     ${o("--cz-color-border-error")}
+                    ${o("--cz-color-border-error-subtle")}
                     ${o("--cz-color-border-brand")}
                     ${o("--cz-color-border-info")}
                     ${o("--cz-color-border-info-subtle")}
+                    ${o("--cz-color-border-warning")}
+                    ${o("--cz-color-border-warning-subtle")}
+                    ${o("--cz-color-border-success")}
+                    ${o("--cz-color-border-success-subtle")}
+                    ${o("--cz-color-border-processing")}
+                    ${o("--cz-color-border-processing-subtle")}
                 </div>
             </div>
         </div>
@@ -171,7 +178,7 @@ document.documentElement.style.colorScheme = 'dark';
                 >
             </div>
         </div>
-    `};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+    `};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -203,7 +210,7 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -258,7 +265,7 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...e.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -276,9 +283,16 @@ document.documentElement.style.colorScheme = 'dark';
                     \${colorRow('--cz-color-border-tertiary')}
                     \${colorRow('--cz-color-border-disabled')}
                     \${colorRow('--cz-color-border-error')}
+                    \${colorRow('--cz-color-border-error-subtle')}
                     \${colorRow('--cz-color-border-brand')}
                     \${colorRow('--cz-color-border-info')}
                     \${colorRow('--cz-color-border-info-subtle')}
+                    \${colorRow('--cz-color-border-warning')}
+                    \${colorRow('--cz-color-border-warning-subtle')}
+                    \${colorRow('--cz-color-border-success')}
+                    \${colorRow('--cz-color-border-success-subtle')}
+                    \${colorRow('--cz-color-border-processing')}
+                    \${colorRow('--cz-color-border-processing-subtle')}
                 </div>
             </div>
         </div>
@@ -349,4 +363,4 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...i.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{e as BackgroundColors,l as BorderColors,i as DarkModeDemo,d as ForegroundColors,n as TextColors,$ as __namedExportsOrder,b as default};
+}`,...i.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,l as BorderColors,i as DarkModeDemo,d as ForegroundColors,e as TextColors,$ as __namedExportsOrder,b as default};
