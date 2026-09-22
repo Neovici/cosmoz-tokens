@@ -128,9 +128,16 @@ export const BorderColors = {
 					${colorRow('--cz-color-border-tertiary')}
 					${colorRow('--cz-color-border-disabled')}
 					${colorRow('--cz-color-border-error')}
+					${colorRow('--cz-color-border-error-subtle')}
 					${colorRow('--cz-color-border-brand')}
 					${colorRow('--cz-color-border-info')}
 					${colorRow('--cz-color-border-info-subtle')}
+					${colorRow('--cz-color-border-warning')}
+					${colorRow('--cz-color-border-warning-subtle')}
+					${colorRow('--cz-color-border-success')}
+					${colorRow('--cz-color-border-success-subtle')}
+					${colorRow('--cz-color-border-processing')}
+					${colorRow('--cz-color-border-processing-subtle')}
 				</div>
 			</div>
 		</div>

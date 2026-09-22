@@ -70,6 +70,12 @@
 		--cz-color-border-brand-alt: var(--cz-color-brand-600);
 		--cz-color-border-info: var(--cz-color-info-500);
 		--cz-color-border-info-subtle: var(--cz-color-info-300);
+		--cz-color-border-warning: var(--cz-color-warning-500);
+		--cz-color-border-warning-subtle: var(--cz-color-warning-300);
+		--cz-color-border-success: var(--cz-color-success-500);
+		--cz-color-border-success-subtle: var(--cz-color-success-300);
+		--cz-color-border-processing: var(--cz-color-indigo-500);
+		--cz-color-border-processing-subtle: var(--cz-color-indigo-300);
 		--cz-color-fg-primary: var(--cz-color-gray-900);
 		--cz-color-fg-secondary: var(--cz-color-gray-700);
 		--cz-color-fg-secondary-hover: var(--cz-color-gray-800);
