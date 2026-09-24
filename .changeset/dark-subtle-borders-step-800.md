@@ -1,5 +1,5 @@
 ---
-'@neovici/cosmoz-tokens': patch
+'@neovici/cosmoz-tokens': minor
 ---
 
 Take the dark `border-*-subtle` colours down to step 800
