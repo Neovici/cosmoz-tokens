@@ -262,11 +262,15 @@
 	);
 	--cz-color-border-error-subtle: light-dark(
 		var(--cz-color-error-300),
-		var(--cz-color-error-500)
+		var(--cz-color-error-800)
 	);
 	--cz-color-border-brand: light-dark(
 		var(--cz-color-brand-500),
 		var(--cz-color-brand-400)
+	);
+	--cz-color-border-brand-subtle: light-dark(
+		var(--cz-color-brand-300),
+		var(--cz-color-brand-800)
 	);
 	--cz-color-border-brand-alt: light-dark(
 		var(--cz-color-brand-600),
@@ -278,7 +282,7 @@
 	);
 	--cz-color-border-info-subtle: light-dark(
 		var(--cz-color-info-300),
-		var(--cz-color-info-500)
+		var(--cz-color-info-800)
 	);
 	--cz-color-border-warning: light-dark(
 		var(--cz-color-warning-500),
@@ -286,7 +290,7 @@
 	);
 	--cz-color-border-warning-subtle: light-dark(
 		var(--cz-color-warning-300),
-		var(--cz-color-warning-500)
+		var(--cz-color-warning-800)
 	);
 	--cz-color-border-success: light-dark(
 		var(--cz-color-success-500),
@@ -294,7 +298,7 @@
 	);
 	--cz-color-border-success-subtle: light-dark(
 		var(--cz-color-success-300),
-		var(--cz-color-success-500)
+		var(--cz-color-success-800)
 	);
 	--cz-color-border-processing: light-dark(
 		var(--cz-color-indigo-500),
@@ -302,7 +306,7 @@
 	);
 	--cz-color-border-processing-subtle: light-dark(
 		var(--cz-color-indigo-300),
-		var(--cz-color-indigo-500)
+		var(--cz-color-indigo-800)
 	);
 
 	/* Foreground colors (icons, decorative elements) */

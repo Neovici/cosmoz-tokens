@@ -67,6 +67,7 @@
 		--cz-color-border-error: var(--cz-color-error-500);
 		--cz-color-border-error-subtle: var(--cz-color-error-300);
 		--cz-color-border-brand: var(--cz-color-brand-500);
+		--cz-color-border-brand-subtle: var(--cz-color-brand-300);
 		--cz-color-border-brand-alt: var(--cz-color-brand-600);
 		--cz-color-border-info: var(--cz-color-info-500);
 		--cz-color-border-info-subtle: var(--cz-color-info-300);
