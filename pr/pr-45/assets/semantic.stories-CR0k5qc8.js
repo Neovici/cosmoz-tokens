@@ -1,4 +1,4 @@
-import{b as c}from"./iframe-DcpHGGsB.js";import{s}from"./style-DfmtlXqE.js";const b={title:"Tokens/Semantic"},o=r=>c`
+import{b as c}from"./iframe-CbIKKix8.js";import{s}from"./style-C92-ffMR.js";const g={title:"Tokens/Semantic"},o=r=>c`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${r});"></div>
         <span class="story-label">${r}</span>
@@ -105,6 +105,7 @@ import{b as c}from"./iframe-DcpHGGsB.js";import{s}from"./style-DfmtlXqE.js";cons
                     ${o("--cz-color-border-error")}
                     ${o("--cz-color-border-error-subtle")}
                     ${o("--cz-color-border-brand")}
+                    ${o("--cz-color-border-brand-subtle")}
                     ${o("--cz-color-border-info")}
                     ${o("--cz-color-border-info-subtle")}
                     ${o("--cz-color-border-warning")}
@@ -285,6 +286,7 @@ document.documentElement.style.colorScheme = 'dark';
                     \${colorRow('--cz-color-border-error')}
                     \${colorRow('--cz-color-border-error-subtle')}
                     \${colorRow('--cz-color-border-brand')}
+                    \${colorRow('--cz-color-border-brand-subtle')}
                     \${colorRow('--cz-color-border-info')}
                     \${colorRow('--cz-color-border-info-subtle')}
                     \${colorRow('--cz-color-border-warning')}
@@ -363,4 +365,4 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...i.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,l as BorderColors,i as DarkModeDemo,d as ForegroundColors,e as TextColors,$ as __namedExportsOrder,b as default};
+}`,...i.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,l as BorderColors,i as DarkModeDemo,d as ForegroundColors,e as TextColors,$ as __namedExportsOrder,g as default};
