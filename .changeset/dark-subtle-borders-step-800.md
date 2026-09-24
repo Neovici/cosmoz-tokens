@@ -25,3 +25,8 @@ away:
 | processing | `rgb(58,57,141)` | `rgb(99,102,241)` | `rgb(55,48,163)` |
 
 So components can drop their local colour transforms and read the token.
+
+Also adds the one missing member of the family, `--cz-color-border-brand-subtle`
+(`brand-300` light, `brand-800` dark), so a brand-tinted surface has a hairline
+to pair with `--cz-color-bg-brand` instead of reaching for the loud
+`--cz-color-border-brand`.

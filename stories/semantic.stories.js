@@ -130,6 +130,7 @@ export const BorderColors = {
 					${colorRow('--cz-color-border-error')}
 					${colorRow('--cz-color-border-error-subtle')}
 					${colorRow('--cz-color-border-brand')}
+					${colorRow('--cz-color-border-brand-subtle')}
 					${colorRow('--cz-color-border-info')}
 					${colorRow('--cz-color-border-info-subtle')}
 					${colorRow('--cz-color-border-warning')}
