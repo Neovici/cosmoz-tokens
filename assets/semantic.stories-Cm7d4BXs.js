@@ -1,4 +1,4 @@
-import{b as c}from"./iframe-CbIKKix8.js";import{s}from"./style-C92-ffMR.js";const g={title:"Tokens/Semantic"},o=r=>c`
+import{b as c}from"./iframe-CwLGg-VB.js";import{s}from"./style-uOOr_0Pp.js";const g={title:"Tokens/Semantic"},o=r=>c`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${r});"></div>
         <span class="story-label">${r}</span>
@@ -58,6 +58,7 @@ import{b as c}from"./iframe-CbIKKix8.js";import{s}from"./style-C92-ffMR.js";cons
                 <h3 class="story-section-title">Brand</h3>
                 <div class="story-grid story-grid--wide">
                     ${o("--cz-color-bg-brand")}
+                    ${o("--cz-color-bg-brand-subtle")}
                     ${o("--cz-color-bg-brand-secondary")}
                     ${o("--cz-color-bg-brand-solid")}
                     ${o("--cz-color-bg-brand-section")}
@@ -237,6 +238,7 @@ document.documentElement.style.colorScheme = 'dark';
                 <h3 class="story-section-title">Brand</h3>
                 <div class="story-grid story-grid--wide">
                     \${colorRow('--cz-color-bg-brand')}
+                    \${colorRow('--cz-color-bg-brand-subtle')}
                     \${colorRow('--cz-color-bg-brand-secondary')}
                     \${colorRow('--cz-color-bg-brand-solid')}
                     \${colorRow('--cz-color-bg-brand-section')}
