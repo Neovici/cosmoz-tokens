@@ -38,6 +38,7 @@
 		--cz-color-bg-disabled-subtle: var(--cz-color-gray-50);
 		--cz-color-bg-overlay: var(--cz-color-gray-950);
 		--cz-color-bg-brand: var(--cz-color-brand-50);
+		--cz-color-bg-brand-subtle: var(--cz-color-brand-50);
 		--cz-color-bg-brand-secondary: var(--cz-color-brand-100);
 		--cz-color-bg-brand-solid: var(--cz-color-brand-600);
 		--cz-color-bg-brand-solid-hover: var(--cz-color-brand-700);

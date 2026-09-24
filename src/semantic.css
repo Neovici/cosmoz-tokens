@@ -11,7 +11,8 @@
  * the @supports block in fallback.css.
  */
 :root {
-	/* Text colors */
+	/* Text colors. <status> is meant to sit on the matching
+	 * --cz-color-bg-<status>; on a solid fill use --cz-color-text-on-<status>. */
 	--cz-color-text-primary: light-dark(
 		var(--cz-color-gray-900),
 		var(--cz-color-gray-50)
@@ -101,7 +102,12 @@
 	--cz-color-alpha-white: light-dark(rgb(255 255 255), rgb(12 14 18));
 	--cz-color-alpha-black: light-dark(rgb(0 0 0), rgb(255 255 255));
 
-	/* Background colors */
+	/* Background colors.
+	 * <status>            tinted surface; text of the matching --cz-color-text-<status>
+	 *                     sits on it (that pairing is contrast-checked)
+	 * <status>-secondary  the same surface one step stronger, for hover or nesting
+	 * <status>-solid      filled; pair with --cz-color-text-on-<status> or -white
+	 */
 	--cz-color-bg-primary: light-dark(
 		var(--cz-color-white),
 		var(--cz-color-gray-950)
@@ -146,9 +152,17 @@
 		var(--cz-color-gray-950),
 		var(--cz-color-gray-800)
 	);
+	/* Exception to the rule above: mid-tone in dark, so it stands out *from* the
+	 * page rather than sitting behind text. This is the selection/highlight/hover
+	 * surface. For a brand chip or callout that carries text, use -subtle. */
 	--cz-color-bg-brand: light-dark(
 		var(--cz-color-brand-50),
 		var(--cz-color-brand-500)
+	);
+	/* What bg-<status> is for the other statuses: the surface text sits on. */
+	--cz-color-bg-brand-subtle: light-dark(
+		var(--cz-color-brand-50),
+		var(--cz-color-brand-950)
 	);
 	--cz-color-bg-brand-secondary: light-dark(
 		var(--cz-color-brand-100),
@@ -235,7 +249,12 @@
 		var(--cz-color-info-500)
 	);
 
-	/* Border colors */
+	/* Border colors.
+	 * <status>         the border is itself the signal -- an outlined input in an
+	 *                  error state, a focus ring on an otherwise neutral control
+	 * <status>-subtle  a hairline around a surface that already carries the status;
+	 *                  the partner of --cz-color-bg-<status>
+	 */
 	--cz-color-border-primary: light-dark(
 		var(--cz-color-gray-300),
 		var(--cz-color-gray-700)
