@@ -150,6 +150,10 @@
 		var(--cz-color-brand-50),
 		var(--cz-color-brand-500)
 	);
+	--cz-color-bg-brand-subtle: light-dark(
+		var(--cz-color-brand-50),
+		var(--cz-color-brand-950)
+	);
 	--cz-color-bg-brand-secondary: light-dark(
 		var(--cz-color-brand-100),
 		var(--cz-color-brand-600)

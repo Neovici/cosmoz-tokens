@@ -79,6 +79,7 @@ export const BackgroundColors = {
 				<h3 class="story-section-title">Brand</h3>
 				<div class="story-grid story-grid--wide">
 					${colorRow('--cz-color-bg-brand')}
+					${colorRow('--cz-color-bg-brand-subtle')}
 					${colorRow('--cz-color-bg-brand-secondary')}
 					${colorRow('--cz-color-bg-brand-solid')}
 					${colorRow('--cz-color-bg-brand-section')}
