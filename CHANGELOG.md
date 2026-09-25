@@ -1,5 +1,22 @@
 # @neovici/cosmoz-tokens
 
+## 4.6.0
+
+### Minor Changes
+
+- 8df6b54: Re-point the brand scale from Danube blue to the gray scale
+
+  `--cz-color-brand-{25-950}` now resolve to `--cz-color-gray-{25-950}`, so
+  every brand-derived semantic token (solid fills, brand text, selected
+  surfaces, focus rings) turns neutral. The `--cz-danube-*` primitives stay
+  available for direct use.
+
+- c544943: Use a Slate brand scale instead of plain gray
+
+  Adds `--cz-slate-{25-950}` primitives and maps `--cz-color-brand-{25-950}`
+  onto them. Brand surfaces stay neutral but keep a cool cast, so links and
+  selected states still stand apart from body text.
+
 ## 4.5.0
 
 ### Minor Changes
