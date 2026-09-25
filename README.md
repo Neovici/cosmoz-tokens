@@ -110,15 +110,15 @@ document.documentElement.dataset.theme = 'dark';
 
 ### Colors (Primitives)
 
-| Token                         | Description                    |
-| ----------------------------- | ------------------------------ |
-| `--cz-color-brand-{25-950}`   | Brand color scale (gray-based) |
-| `--cz-color-gray-{25-950}`    | Gray scale                     |
-| `--cz-color-error-{25-950}`   | Error/danger colors            |
-| `--cz-color-warning-{25-950}` | Warning colors                 |
-| `--cz-color-success-{25-950}` | Success colors                 |
-| `--cz-color-white`            | Pure white                     |
-| `--cz-color-black`            | Pure black                     |
+| Token                         | Description               |
+| ----------------------------- | ------------------------- |
+| `--cz-color-brand-{25-950}`   | Brand color scale (slate) |
+| `--cz-color-gray-{25-950}`    | Gray scale                |
+| `--cz-color-error-{25-950}`   | Error/danger colors       |
+| `--cz-color-warning-{25-950}` | Warning colors            |
+| `--cz-color-success-{25-950}` | Success colors            |
+| `--cz-color-white`            | Pure white                |
+| `--cz-color-black`            | Pure black                |
 
 ### Typography
 
