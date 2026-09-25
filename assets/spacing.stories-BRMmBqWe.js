@@ -1,12 +1,12 @@
-import{b as i}from"./iframe-8GbysRcP.js";import{s as d}from"./style-DpwdOX3P.js";const e={title:"Tokens/Spacing"},s=(r,n)=>i`
+import{b as a}from"./iframe-BHkY6Qfl.js";import{s as d}from"./style-C_yl78xy.js";const p={title:"Tokens/Spacing"},s=(r,o)=>a`
     <div class="story-row">
         <div
             class="story-swatch--lg"
-            style="border-radius: var(${n}); background: var(--cz-color-brand-100); border: 2px solid var(--cz-color-brand-500);"
+            style="border-radius: var(${o}); background: var(--cz-color-brand-100); border: 2px solid var(--cz-color-brand-500);"
         ></div>
         <span class="story-label">${r}</span>
     </div>
-`,a={render:()=>i`
+`,c={render:()=>a`
         ${d}
         <div class="story-container">
             <h1 class="story-title">Border Radius</h1>
@@ -26,7 +26,7 @@ import{b as i}from"./iframe-8GbysRcP.js";import{s as d}from"./style-DpwdOX3P.js"
                 </div>
             </div>
         </div>
-    `},c={render:()=>i`
+    `},i={render:()=>a`
         ${d}
         <div class="story-container">
             <h1 class="story-title">Spacing Unit</h1>
@@ -45,7 +45,7 @@ import{b as i}from"./iframe-8GbysRcP.js";import{s as d}from"./style-DpwdOX3P.js"
                     for consistent spacing.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    ${[1,2,3,4,5,6,8,10,12,16].map(r=>i`
+                    ${[1,2,3,4,5,6,8,10,12,16].map(r=>a`
                             <div class="story-row">
                                 <div
                                     style="height: 24px; width: calc(var(--cz-spacing) * ${r}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
@@ -58,7 +58,31 @@ import{b as i}from"./iframe-8GbysRcP.js";import{s as d}from"./style-DpwdOX3P.js"
                 </div>
             </div>
         </div>
-    `};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+    `},t=(r,o)=>a`
+    <div class="story-row">
+        <div
+            style="height: var(--cz-control-height-${r}); width: 96px; background: var(--cz-color-brand-100); border: 1px solid var(--cz-color-brand-500); border-radius: var(--cz-radius-md); box-sizing: border-box;"
+        ></div>
+        <span class="story-label"
+            >--cz-control-height-${r} (${o/16}rem / ${o}px)</span
+        >
+    </div>
+`,n={render:()=>a`
+        ${d}
+        <div class="story-container">
+            <h1 class="story-title">Control Height</h1>
+            <div class="story-section">
+                <p class="story-description">
+                    Shared heights for buttons, inputs and other form controls, so
+                    controls of the same size line up.
+                </p>
+                <div class="story-flex story-flex--col story-gap-2 story-mt-6">
+                    ${t("sm",28)} ${t("md",32)}
+                    ${t("lg",36)} ${t("xl",40)}
+                </div>
+            </div>
+        </div>
+    `};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -80,7 +104,7 @@ import{b as i}from"./iframe-8GbysRcP.js";import{s as d}from"./style-DpwdOX3P.js"
             </div>
         </div>
     \`
-}`,...a.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+}`,...c.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -114,4 +138,21 @@ import{b as i}from"./iframe-8GbysRcP.js";import{s as d}from"./style-DpwdOX3P.js"
             </div>
         </div>
     \`
-}`,...c.parameters?.docs?.source}}};const l=["BorderRadius","SpacingUnit"];export{a as BorderRadius,c as SpacingUnit,l as __namedExportsOrder,e as default};
+}`,...i.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+  render: () => html\`
+        \${style}
+        <div class="story-container">
+            <h1 class="story-title">Control Height</h1>
+            <div class="story-section">
+                <p class="story-description">
+                    Shared heights for buttons, inputs and other form controls, so
+                    controls of the same size line up.
+                </p>
+                <div class="story-flex story-flex--col story-gap-2 story-mt-6">
+                    \${controlHeight('sm', 28)} \${controlHeight('md', 32)}
+                    \${controlHeight('lg', 36)} \${controlHeight('xl', 40)}
+                </div>
+            </div>
+        </div>
+    \`
+}`,...n.parameters?.docs?.source}}};const u=["BorderRadius","SpacingUnit","ControlHeight"];export{c as BorderRadius,n as ControlHeight,i as SpacingUnit,u as __namedExportsOrder,p as default};
