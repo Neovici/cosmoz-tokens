@@ -27,19 +27,19 @@
 	--cz-danube-900: rgb(43 59 89);
 	--cz-danube-950: rgb(31 42 62);
 
-	/* Brand colors - Danube */
-	--cz-color-brand-25: var(--cz-danube-25);
-	--cz-color-brand-50: var(--cz-danube-50);
-	--cz-color-brand-100: var(--cz-danube-100);
-	--cz-color-brand-200: var(--cz-danube-200);
-	--cz-color-brand-300: var(--cz-danube-300);
-	--cz-color-brand-400: var(--cz-danube-400);
-	--cz-color-brand-500: var(--cz-danube-500);
-	--cz-color-brand-600: var(--cz-danube-600);
-	--cz-color-brand-700: var(--cz-danube-700);
-	--cz-color-brand-800: var(--cz-danube-800);
-	--cz-color-brand-900: var(--cz-danube-900);
-	--cz-color-brand-950: var(--cz-danube-950);
+	/* Brand colors - Gray */
+	--cz-color-brand-25: var(--cz-color-gray-25);
+	--cz-color-brand-50: var(--cz-color-gray-50);
+	--cz-color-brand-100: var(--cz-color-gray-100);
+	--cz-color-brand-200: var(--cz-color-gray-200);
+	--cz-color-brand-300: var(--cz-color-gray-300);
+	--cz-color-brand-400: var(--cz-color-gray-400);
+	--cz-color-brand-500: var(--cz-color-gray-500);
+	--cz-color-brand-600: var(--cz-color-gray-600);
+	--cz-color-brand-700: var(--cz-color-gray-700);
+	--cz-color-brand-800: var(--cz-color-gray-800);
+	--cz-color-brand-900: var(--cz-color-gray-900);
+	--cz-color-brand-950: var(--cz-color-gray-950);
 
 	/* Gray colors */
 	--cz-color-gray-25: rgb(253 253 253);
