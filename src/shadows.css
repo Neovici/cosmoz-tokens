@@ -63,20 +63,29 @@
 	 */
 	--skeumorphic-color: light-dark(rgba(255, 255, 255, 0.12), transparent);
 
-	/* Focus ring shadows */
+	/*
+	 * Focus ring shadows. Inset so overflow can't clip them (#29); the inner
+	 * surface band keeps the ring visible on solid fills of the same hue.
+	 */
 	--cz-color-focus-ring: light-dark(
-		var(--cz-color-brand-100),
-		var(--cz-color-brand-800)
+		var(--cz-color-brand-500),
+		var(--cz-color-brand-400)
 	);
 	--cz-color-focus-ring-error: light-dark(
-		var(--cz-color-error-100),
-		var(--cz-color-error-800)
+		var(--cz-color-error-500),
+		var(--cz-color-error-400)
 	);
 	--cz-color-focus-ring-info: light-dark(
-		var(--cz-color-info-100),
-		var(--cz-color-info-800)
+		var(--cz-color-info-500),
+		var(--cz-color-info-400)
 	);
-	--cz-focus-ring: inset 0 0 0 2px var(--cz-color-focus-ring);
-	--cz-focus-ring-error: inset 0 0 0 2px var(--cz-color-focus-ring-error);
-	--cz-focus-ring-info: inset 0 0 0 2px var(--cz-color-focus-ring-info);
+	--cz-focus-ring:
+		inset 0 0 0 1px var(--cz-color-focus-ring),
+		inset 0 0 0 2px var(--cz-color-bg-primary);
+	--cz-focus-ring-error:
+		inset 0 0 0 1px var(--cz-color-focus-ring-error),
+		inset 0 0 0 2px var(--cz-color-bg-primary);
+	--cz-focus-ring-info:
+		inset 0 0 0 1px var(--cz-color-focus-ring-info),
+		inset 0 0 0 2px var(--cz-color-bg-primary);
 }
