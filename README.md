@@ -21,7 +21,7 @@ This imports all token files:
 
 - Primitives (colors)
 - Typography (fonts, sizes)
-- Spacing (border radius)
+- Spacing (border radius, control heights)
 - Shadows
 - Semantic tokens (with dark mode support)
 
@@ -133,10 +133,11 @@ document.documentElement.dataset.theme = 'dark';
 
 ### Spacing
 
-| Token                     | Description             |
-| ------------------------- | ----------------------- |
-| `--cz-spacing`            | Base spacing unit (4px) |
-| `--cz-radius-{none-full}` | Border radius scale     |
+| Token                         | Description                     |
+| ----------------------------- | ------------------------------- |
+| `--cz-spacing`                | Base spacing unit (4px)         |
+| `--cz-radius-{none-full}`     | Border radius scale             |
+| `--cz-control-height-{sm-xl}` | Control heights (28/32/36/40px) |
 
 ### Shadows
 

@@ -76,3 +76,33 @@ export const SpacingUnit = {
 		</div>
 	`,
 };
+
+const controlHeight = (size, px) => html`
+	<div class="story-row">
+		<div
+			style="height: var(--cz-control-height-${size}); width: 96px; background: var(--cz-color-brand-100); border: 1px solid var(--cz-color-brand-500); border-radius: var(--cz-radius-md); box-sizing: border-box;"
+		></div>
+		<span class="story-label"
+			>--cz-control-height-${size} (${px / 16}rem / ${px}px)</span
+		>
+	</div>
+`;
+
+export const ControlHeight = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Control Height</h1>
+			<div class="story-section">
+				<p class="story-description">
+					Shared heights for buttons, inputs and other form controls, so
+					controls of the same size line up.
+				</p>
+				<div class="story-flex story-flex--col story-gap-2 story-mt-6">
+					${controlHeight('sm', 28)} ${controlHeight('md', 32)}
+					${controlHeight('lg', 36)} ${controlHeight('xl', 40)}
+				</div>
+			</div>
+		</div>
+	`,
+};

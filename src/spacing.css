@@ -1,6 +1,6 @@
 /**
  * Cosmoz Design Tokens - Spacing
- * Border radius and spacing scale from Untitled UI
+ * Spacing, border radius and control height scales
  */
 
 :root {
@@ -19,4 +19,10 @@
 	--cz-radius-3xl: 1.25rem;
 	--cz-radius-4xl: 1.5rem;
 	--cz-radius-full: 9999px;
+
+	/* Control heights, shared by buttons, inputs and other form controls */
+	--cz-control-height-sm: 1.75rem;
+	--cz-control-height-md: 2rem;
+	--cz-control-height-lg: 2.25rem;
+	--cz-control-height-xl: 2.5rem;
 }
