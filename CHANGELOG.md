@@ -1,5 +1,14 @@
 # @neovici/cosmoz-tokens
 
+## 4.8.0
+
+### Minor Changes
+
+- 4da8aa0: Add `--cz-control-height-{sm,md,lg,xl}` (28/32/36/40px)
+
+  Shared heights for buttons, inputs and other form controls, so a `md` button
+  and a default input line up without each component hard-coding its own size.
+
 ## 4.7.0
 
 ### Minor Changes
