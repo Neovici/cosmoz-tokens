@@ -101,14 +101,14 @@
 		--cz-color-fg-info: var(--cz-color-info-600);
 		--cz-color-fg-info-secondary: var(--cz-color-info-500);
 		--cz-focus-ring:
-			inset 0 0 0 2px var(--cz-color-brand-500),
-			inset 0 0 0 4px var(--cz-color-bg-primary);
+			inset 0 0 0 1px var(--cz-color-brand-500),
+			inset 0 0 0 2px var(--cz-color-bg-primary);
 		--cz-focus-ring-error:
-			inset 0 0 0 2px var(--cz-color-error-500),
-			inset 0 0 0 4px var(--cz-color-bg-primary);
+			inset 0 0 0 1px var(--cz-color-error-500),
+			inset 0 0 0 2px var(--cz-color-bg-primary);
 		--cz-focus-ring-info:
-			inset 0 0 0 2px var(--cz-color-info-500),
-			inset 0 0 0 4px var(--cz-color-bg-primary);
+			inset 0 0 0 1px var(--cz-color-info-500),
+			inset 0 0 0 2px var(--cz-color-bg-primary);
 		--cz-shadow-skeumorphic:
 			0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset,
 			0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset;

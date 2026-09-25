@@ -80,12 +80,12 @@
 		var(--cz-color-info-400)
 	);
 	--cz-focus-ring:
-		inset 0 0 0 2px var(--cz-color-focus-ring),
-		inset 0 0 0 4px var(--cz-color-bg-primary);
+		inset 0 0 0 1px var(--cz-color-focus-ring),
+		inset 0 0 0 2px var(--cz-color-bg-primary);
 	--cz-focus-ring-error:
-		inset 0 0 0 2px var(--cz-color-focus-ring-error),
-		inset 0 0 0 4px var(--cz-color-bg-primary);
+		inset 0 0 0 1px var(--cz-color-focus-ring-error),
+		inset 0 0 0 2px var(--cz-color-bg-primary);
 	--cz-focus-ring-info:
-		inset 0 0 0 2px var(--cz-color-focus-ring-info),
-		inset 0 0 0 4px var(--cz-color-bg-primary);
+		inset 0 0 0 1px var(--cz-color-focus-ring-info),
+		inset 0 0 0 2px var(--cz-color-bg-primary);
 }
