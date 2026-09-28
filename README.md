@@ -111,15 +111,20 @@ document.documentElement.dataset.theme = 'dark';
 ### Galaxy materials
 
 Import `@neovici/cosmoz-tokens/galaxy` after the base tokens and enable
-`data-galaxy` on the document root with `color-scheme: dark`. Removing the
-attribute restores the base palette.
+`data-galaxy` on the document root with `color-scheme: dark` for Galaxy or
+`color-scheme: light` for the silver and steel-blue Galaxy Light palette. Removing
+the attribute restores the base palette.
 
 Semantic `--cz-color-*` properties remain colors. Composite backgrounds use
 `--cz-material-background` for panels and `--cz-material-overlay-background`
 for dialogs; `--cz-material-blur`, `--cz-material-edge` and
 `--cz-material-shadow` complete the surface. Controls can use
 `--cz-control-sheen` or `--cz-control-background`. Canvas and chrome ornament
-materials are `--cz-canvas-background` and `--cz-orb-background`.
+materials are `--cz-canvas-background` and `--cz-orb-background`. Badges and icons
+use optional `--cz-badge-*`, `--cz-status-dot-*` and `--cz-icon-*` materials.
+`--cz-material-inset-background` provides subtle inset panels.
+`--cz-text-emphasis-gradient` is for large headings only; consumers must restore
+solid text in forced colors and increased-contrast modes.
 
 The stylesheet falls back to opaque materials without backdrop-filter support,
 disables transparency for reduced-transparency or increased-contrast preferences,

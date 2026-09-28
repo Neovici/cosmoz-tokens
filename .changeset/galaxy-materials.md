@@ -2,4 +2,4 @@
 '@neovici/cosmoz-tokens': minor
 ---
 
-Add opt-in Galaxy palette, glass and chrome materials, with opaque and forced-color fallbacks.
+Add opt-in Galaxy and Galaxy Light palettes, glass, chrome, icon and status materials, with opaque and forced-color fallbacks.

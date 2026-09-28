@@ -1,60 +1,71 @@
 /**
- * Galaxy: an opt-in dark material system. Colors remain colors; composite
+ * Galaxy: opt-in light and dark materials. Colors remain colors; composite
  * materials have their own tokens so tables, charts and native controls can
  * use the same semantic palette without receiving invalid gradient values.
- * Enable with data-theme="dark" data-galaxy on the document root.
+ * Enable data-galaxy with the matching light/dark color-scheme on the root.
  */
 :root[data-galaxy] {
-	--cz-color-bg-primary: #131c32;
-	--cz-color-bg-secondary: #10182c;
-	--cz-color-bg-secondary-subtle: #0e1629;
-	--cz-color-bg-tertiary: #202d47;
-	--cz-color-bg-quaternary: #334461;
-	--cz-color-bg-primary-hover: #263652;
-	--cz-color-bg-secondary-hover: #263652;
-	--cz-color-bg-disabled: #20293d;
-	--cz-color-bg-disabled-subtle: #151d30;
-	--cz-color-bg-overlay: #030715;
-	--cz-color-text-primary: #f0f5ff;
-	--cz-color-text-secondary: #c3cfe6;
-	--cz-color-text-secondary-hover: #f0f5ff;
-	--cz-color-text-tertiary: #a2b3d0;
-	--cz-color-text-tertiary-hover: #d5e3ff;
-	--cz-color-text-quaternary: #95a7c6;
-	--cz-color-text-placeholder: #95a7c6;
-	--cz-color-text-disabled: #71819e;
-	--cz-color-border-primary: #526581;
-	--cz-color-border-secondary: #32425e;
-	--cz-color-border-tertiary: #293650;
+	--cz-color-bg-primary: light-dark(#fcfdff, #131c32);
+	--cz-color-bg-secondary: light-dark(#f4f6f8, #10182c);
+	--cz-color-bg-secondary-subtle: light-dark(#f8f9fb, #0e1629);
+	--cz-color-bg-tertiary: light-dark(#e9edf2, #202d47);
+	--cz-color-bg-quaternary: light-dark(#d5dce5, #334461);
+	--cz-color-bg-primary-hover: light-dark(#e9edf3, #263652);
+	--cz-color-bg-secondary-hover: light-dark(#e4e9f0, #263652);
+	--cz-color-bg-disabled: light-dark(#e9edf1, #20293d);
+	--cz-color-bg-disabled-subtle: light-dark(#f3f5f7, #151d30);
+	--cz-color-bg-overlay: light-dark(#253041, #030715);
+	--cz-color-text-primary: light-dark(#202936, #f0f5ff);
+	--cz-color-text-secondary: light-dark(#465364, #c3cfe6);
+	--cz-color-text-secondary-hover: light-dark(#202936, #f0f5ff);
+	--cz-color-text-tertiary: light-dark(#5f6d7e, #a2b3d0);
+	--cz-color-text-tertiary-hover: light-dark(#374457, #d5e3ff);
+	--cz-color-text-quaternary: light-dark(#667386, #95a7c6);
+	--cz-color-text-placeholder: light-dark(#667386, #95a7c6);
+	--cz-color-text-disabled: light-dark(#8b96a5, #71819e);
+	--cz-color-border-primary: light-dark(#a6b2c2, #526581);
+	--cz-color-border-secondary: light-dark(#d2d9e3, #32425e);
+	--cz-color-border-tertiary: light-dark(#e4e9ef, #293650);
 	--cz-color-fg-primary: var(--cz-color-text-primary);
 	--cz-color-fg-secondary: var(--cz-color-text-secondary);
 	--cz-color-fg-tertiary: var(--cz-color-text-tertiary);
 	--cz-color-fg-quaternary: var(--cz-color-text-quaternary);
-	--cz-color-text-brand: #bdb4ff;
-	--cz-color-text-brand-hover: #ddd7ff;
-	--cz-color-fg-brand: #b4a5ff;
-	--cz-color-fg-brand-secondary: #a897ff;
-	--cz-color-bg-brand: #2b254e;
-	--cz-color-bg-brand-secondary: #3b3266;
-	--cz-color-bg-brand-solid: #6650cc;
-	--cz-color-bg-brand-solid-hover: #7660db;
-	--cz-color-border-brand: #b8aaff;
-	--cz-color-focus-ring: #c5baff;
-	--cz-color-text-processing: #bdb4ff;
-	--cz-color-fg-processing: #b4a5ff;
-	--cz-color-bg-processing: #282346;
-	--cz-color-text-success: #7ee3bf;
-	--cz-color-fg-success: #64dbb0;
-	--cz-color-bg-success: #12372f;
-	--cz-color-text-error: #ffa6ba;
-	--cz-color-fg-error: #ff8eab;
-	--cz-color-bg-error: #422135;
-	--cz-color-text-warning: #f6cf8c;
-	--cz-color-fg-warning: #f6c477;
-	--cz-color-bg-warning: #3a2e1f;
-	--cz-color-text-info: #8bd9fa;
-	--cz-color-fg-info: #79d2f7;
-	--cz-color-bg-info: #153345;
+	--cz-color-text-brand: light-dark(#405d81, #bdb4ff);
+	--cz-color-text-brand-hover: light-dark(#304764, #ddd7ff);
+	--cz-color-fg-brand: light-dark(#4c6788, #b4a5ff);
+	--cz-color-fg-brand-secondary: light-dark(#65809f, #a897ff);
+	--cz-color-bg-brand: light-dark(#e8eef5, #2b254e);
+	--cz-color-bg-brand-secondary: light-dark(#d6e2ef, #3b3266);
+	--cz-color-bg-brand-solid: light-dark(#405e82, #6650cc);
+	--cz-color-bg-brand-solid-hover: light-dark(#334c6b, #7660db);
+	--cz-color-border-brand: light-dark(#8098b5, #b8aaff);
+	--cz-color-focus-ring: light-dark(#708fb4, #c5baff);
+	--cz-color-text-processing: light-dark(#355b98, #bdb4ff);
+	--cz-color-fg-processing: light-dark(#5074a6, #b4a5ff);
+	--cz-color-bg-processing: light-dark(#e8effb, #282346);
+	--cz-color-text-success: light-dark(#176750, #7ee3bf);
+	--cz-color-fg-success: light-dark(#26896a, #64dbb0);
+	--cz-color-bg-success: light-dark(#e1f3e9, #12372f);
+	--cz-color-text-error: light-dark(#b42318, #ffa6ba);
+	--cz-color-fg-error: light-dark(#d92d20, #ff8eab);
+	--cz-color-bg-error: light-dark(#fff0ee, #422135);
+	--cz-color-text-warning: light-dark(#855011, #f6cf8c);
+	--cz-color-fg-warning: light-dark(#ad7324, #f6c477);
+	--cz-color-bg-warning: light-dark(#fff0d8, #3a2e1f);
+	--cz-color-text-info: light-dark(#28677e, #8bd9fa);
+	--cz-color-fg-info: light-dark(#3b839d, #79d2f7);
+	--cz-color-bg-info: light-dark(#e3f2f9, #153345);
+
+	--cz-color-bg-brand-subtle: light-dark(#edf2f7, #2b254e);
+	--cz-color-fg-error-secondary: var(--cz-color-fg-error);
+	--cz-color-fg-warning-secondary: var(--cz-color-fg-warning);
+	--cz-color-fg-success-secondary: var(--cz-color-fg-success);
+	--cz-color-fg-processing-secondary: var(--cz-color-fg-processing);
+	--cz-color-border-brand-subtle: light-dark(#b5c7dd, #6e5f9e);
+	--cz-color-border-error-subtle: light-dark(#f4b7b0, #824058);
+	--cz-color-border-warning-subtle: light-dark(#ddc18d, #85633e);
+	--cz-color-border-success-subtle: light-dark(#9fcfbb, #387765);
+	--cz-color-border-processing-subtle: light-dark(#b7c8e4, #675990);
 
 	--cz-radius-md: 0.75rem;
 	--cz-radius-lg: 0.875rem;
@@ -62,105 +73,221 @@
 	--cz-radius-2xl: 1.5rem;
 	--cz-radius-3xl: 1.75rem;
 
-	/* The canvas is deliberately static: no full-screen animated filters. */
-	--cz-canvas-color: #090e20;
+	/* Static aurora, with a pearlescent inversion in the light color scheme. */
+	--cz-canvas-color: light-dark(#f2f5f8, #090e20);
 	--cz-canvas-background:
-		radial-gradient(ellipse at 88% -12%, #493f77 0%, transparent 49%),
-		radial-gradient(ellipse at 12% 88%, #123d50 0%, transparent 48%),
-		radial-gradient(ellipse at 62% 110%, #252956 0%, transparent 50%),
+		radial-gradient(
+			ellipse at 88% -12%,
+			light-dark(#dce4ee, #493f77) 0%,
+			transparent 49%
+		),
+		radial-gradient(
+			ellipse at 8% 82%,
+			light-dark(#e9eef3, #123d50) 0%,
+			transparent 48%
+		),
+		radial-gradient(
+			ellipse at 62% 110%,
+			light-dark(#dce7f0, #252956) 0%,
+			transparent 50%
+		),
 		var(--cz-canvas-color);
 	--cz-material-sheen: linear-gradient(
 		135deg in oklab,
-		rgb(229 240 255 / 12%),
-		rgb(211 226 255 / 2%) 38%,
-		rgb(143 172 255 / 5%) 72%,
-		rgb(175 236 255 / 10%)
+		light-dark(rgb(255 255 255 / 90%), rgb(229 240 255 / 12%)),
+		light-dark(rgb(255 255 255 / 16%), rgb(211 226 255 / 2%)) 38%,
+		light-dark(rgb(199 211 230 / 9%), rgb(143 172 255 / 5%)) 72%,
+		light-dark(rgb(241 246 255 / 55%), rgb(175 236 255 / 10%))
 	);
-	--cz-material-edge: rgb(205 225 255 / 23%);
-	--cz-material-highlight: rgb(227 243 255 / 35%);
+	--cz-material-edge: light-dark(
+		rgb(115 134 159 / 24%),
+		rgb(205 225 255 / 23%)
+	);
+	--cz-material-highlight: light-dark(
+		rgb(255 255 255 / 96%),
+		rgb(227 243 255 / 35%)
+	);
 	--cz-material-shadow:
 		inset 0 1px 0 var(--cz-material-highlight),
-		inset 0 -1px 0 rgb(116 160 235 / 9%), 0 12px 32px -16px rgb(0 3 16 / 65%);
-	--cz-material-surface: #172238;
-	--cz-material-overlay: #182339;
+		inset 0 -1px 0 light-dark(rgb(122 141 167 / 12%), rgb(116 160 235 / 9%)),
+		0 12px 32px -16px light-dark(rgb(57 78 110 / 18%), rgb(0 3 16 / 65%));
+	--cz-material-surface: light-dark(#fafcff, #172238);
+	--cz-material-overlay: light-dark(#fcfdff, #182339);
 	--cz-material-blur: none;
 	--cz-material-background: var(--cz-material-sheen) var(--cz-material-surface);
 	--cz-material-overlay-background: var(--cz-material-sheen)
 		var(--cz-material-overlay);
+	--cz-text-emphasis-gradient: linear-gradient(
+		115deg in oklab,
+		light-dark(#202936, #f0f5ff),
+		light-dark(#4f6079, #c6ddff) 62%,
+		light-dark(#405b7c, #d3c9ff)
+	);
+	--cz-material-inset-background: linear-gradient(
+		155deg in oklab,
+		light-dark(rgb(255 255 255 / 88%), rgb(209 226 255 / 8%)),
+		light-dark(rgb(224 233 245 / 48%), rgb(21 32 54 / 30%))
+	);
 	--cz-control-sheen: linear-gradient(
 		175deg in oklab,
-		rgb(242 248 255 / 22%),
+		rgb(255 255 255 / 22%),
 		transparent 48%,
-		rgb(3 7 20 / 12%)
+		light-dark(rgb(38 54 78 / 10%), rgb(3 7 20 / 12%))
 	);
 	--cz-control-background: linear-gradient(
 		180deg in oklab,
-		rgb(6 13 30 / 35%),
-		rgb(67 93 132 / 12%)
+		light-dark(rgb(223 231 240 / 55%), rgb(6 13 30 / 35%)),
+		light-dark(rgb(255 255 255 / 82%), rgb(67 93 132 / 12%))
 	);
+	--cz-button-font-weight: 600;
+	--cz-button-active-color: var(--cz-color-bg-brand-solid-hover);
+	--cz-button-sheen: linear-gradient(
+		180deg in oklab,
+		rgb(255 255 255 / 20%),
+		transparent 48%,
+		rgb(3 12 28 / 12%)
+	);
+	--cz-button-rest-shadow:
+		inset 0 0 0 1px var(--cz-material-edge),
+		inset 0 1px 0 var(--cz-material-highlight),
+		inset 0 -1px 0 light-dark(rgb(35 56 84 / 18%), rgb(1 5 16 / 40%)),
+		0 2px 3px light-dark(rgb(48 70 100 / 15%), rgb(0 3 16 / 30%));
+	--cz-button-shadow: var(--cz-button-rest-shadow);
+	--cz-button-hover-shadow:
+		var(--cz-button-rest-shadow),
+		0 4px 8px light-dark(rgb(48 70 100 / 14%), rgb(0 3 16 / 35%));
+	--cz-button-pressed-shadow:
+		inset 0 1px 3px light-dark(rgb(20 40 70 / 24%), rgb(0 3 16 / 45%)),
+		inset 0 0 0 1px var(--cz-material-edge);
 	--cz-selection-background: linear-gradient(
 		110deg in oklab,
-		rgb(142 116 255 / 30%),
-		rgb(101 186 220 / 13%)
+		light-dark(rgb(205 214 229 / 55%), rgb(142 116 255 / 30%)),
+		light-dark(rgb(213 226 242 / 38%), rgb(101 186 220 / 13%))
 	);
 	--cz-selection-shadow:
 		inset 0 0 0 1px var(--cz-material-edge),
-		inset 0 1px 0 var(--cz-material-highlight), 0 4px 12px rgb(0 3 16 / 20%);
+		inset 0 1px 0 var(--cz-material-highlight),
+		0 4px 12px light-dark(rgb(68 89 118 / 9%), rgb(0 3 16 / 20%));
+
+	/* Small machined surfaces: no backdrop filters on icons or status cells. */
+	--cz-icon-background: linear-gradient(
+		145deg in oklab,
+		light-dark(#fff, #68709a),
+		light-dark(#e5eaf1, #242d50) 48%,
+		light-dark(#e2e8f1, #433557)
+	);
+	--cz-icon-shadow:
+		inset 0 1px 0 var(--cz-material-highlight),
+		inset 0 0 0 1px var(--cz-material-edge),
+		0 3px 8px light-dark(rgb(68 89 118 / 15%), rgb(0 3 16 / 32%));
+	--cz-icon-color: light-dark(#56657c, #e4ddff);
+	--cz-icon-filter: drop-shadow(
+		0 1px 0 light-dark(rgb(255 255 255 / 95%), rgb(7 10 28 / 55%))
+	);
+	--cz-badge-radius: 999px;
+	--cz-badge-sheen: linear-gradient(
+		165deg in oklab,
+		light-dark(rgb(255 255 255 / 85%), rgb(235 243 255 / 16%)),
+		transparent 52%,
+		light-dark(rgb(94 114 140 / 6%), rgb(10 16 36 / 18%))
+	);
+	--cz-badge-shadow:
+		inset 0 1px 0 var(--cz-material-highlight),
+		0 2px 4px light-dark(rgb(67 86 115 / 10%), rgb(0 3 16 / 24%));
+	--cz-badge-dot-display: block;
+	--cz-status-dot-sheen: radial-gradient(
+		circle at 32% 25%,
+		rgb(255 255 255 / 75%),
+		transparent 56%
+	);
+	--cz-status-dot-shadow: 0 0 0 2px
+		color-mix(in oklab, currentColor 10%, transparent);
+
 	--cz-chrome-gradient: linear-gradient(
 		125deg in oklab,
 		#f4f9ff 5%,
-		#a2bddf 26%,
+		light-dark(#b9c5d5, #a2bddf) 26%,
 		#fff 38%,
-		#8993c8 58%,
-		#cdefff 76%,
-		#9d8bd1
+		light-dark(#8d9bb2, #8993c8) 58%,
+		light-dark(#eef3fa, #cdefff) 76%,
+		light-dark(#849db9, #9d8bd1)
 	);
 	--cz-orb-background:
-		radial-gradient(circle at 32% 22%, #fff 0%, #d8e8ff 5%, transparent 28%),
-		radial-gradient(circle at 75% 78%, #b69bff 0%, transparent 44%),
+		radial-gradient(
+			circle at 32% 22%,
+			#fff 0%,
+			light-dark(#f6f9ff, #d8e8ff) 5%,
+			transparent 28%
+		),
+		radial-gradient(
+			circle at 75% 78%,
+			light-dark(#aebfd7, #b69bff) 0%,
+			transparent 44%
+		),
 		conic-gradient(
 			from 35deg,
-			#7884b2,
-			#e6faff,
-			#91a4dc,
-			#35466c,
-			#c8c1fb,
-			#7884b2
+			light-dark(#9caec4, #7884b2),
+			#f8faff,
+			light-dark(#c2cddd, #91a4dc),
+			light-dark(#63738b, #35466c),
+			light-dark(#d4e1f0, #e4d3f6),
+			light-dark(#9caec4, #7884b2)
 		);
 	--cz-orb-shadow:
-		inset -12px -18px 25px rgb(7 12 32 / 65%),
-		inset 2px 3px 5px rgb(255 255 255 / 70%), 0 12px 34px rgb(5 10 26 / 50%),
-		0 0 48px rgb(130 118 255 / 20%);
+		inset -12px -18px 25px light-dark(rgb(55 72 98 / 32%), rgb(7 12 32 / 65%)),
+		inset 2px 3px 5px rgb(255 255 255 / 80%),
+		0 12px 34px light-dark(rgb(68 89 118 / 20%), rgb(5 10 26 / 50%)),
+		0 0 48px light-dark(rgb(166 193 222 / 18%), rgb(130 118 255 / 20%));
 	--cz-shadow-xs:
-		inset 0 1px 0 rgb(231 243 255 / 15%), 0 2px 4px rgb(2 6 20 / 20%);
+		inset 0 1px 0 var(--cz-material-highlight),
+		0 2px 4px light-dark(rgb(65 85 113 / 12%), rgb(2 6 20 / 20%));
 	--cz-shadow-sm: var(--cz-material-shadow);
-	--cz-shadow-md: var(--cz-material-shadow), 0 12px 24px rgb(2 6 20 / 25%);
-	--cz-shadow-lg: var(--cz-material-shadow), 0 20px 40px rgb(2 6 20 / 35%);
+	--cz-shadow-md:
+		var(--cz-material-shadow),
+		0 12px 24px light-dark(rgb(65 85 113 / 10%), rgb(2 6 20 / 25%));
+	--cz-shadow-lg:
+		var(--cz-material-shadow),
+		0 20px 40px light-dark(rgb(65 85 113 / 15%), rgb(2 6 20 / 35%));
 	--cz-shadow-xl: var(--cz-shadow-lg);
-	--cz-shadow-2xl: var(--cz-material-shadow), 0 32px 80px rgb(0 3 16 / 65%);
+	--cz-shadow-2xl:
+		var(--cz-material-shadow),
+		0 32px 80px light-dark(rgb(49 67 94 / 22%), rgb(0 3 16 / 65%));
 	--cz-shadow-skeumorphic:
 		inset 0 0 0 1px var(--cz-material-edge),
 		inset 0 1px 0 var(--cz-material-highlight),
-		inset 0 -2px 0 rgb(5 11 30 / 28%);
+		inset 0 -2px 0 light-dark(rgb(54 70 98 / 13%), rgb(5 11 30 / 28%));
 }
 
-/* Opaque is the default, glass is an enhancement. Blur is reserved for
- * surfaces and overlays; never apply it to every row, cell or icon. */
+/* Large surfaces only. Opaque materials remain the unsupported-filter fallback. */
 @supports (backdrop-filter: blur(1px)) {
 	:root[data-galaxy] {
-		--cz-material-surface: rgb(21 32 54 / 76%);
-		--cz-material-overlay: rgb(23 33 56 / 94%);
+		--cz-material-surface: light-dark(
+			rgb(250 252 255 / 78%),
+			rgb(21 32 54 / 76%)
+		);
+		--cz-material-overlay: light-dark(
+			rgb(250 252 255 / 94%),
+			rgb(23 33 56 / 94%)
+		);
 		--cz-material-blur: blur(18px) saturate(135%);
 	}
 }
 
 @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
 	:root[data-galaxy] {
-		--cz-material-surface: #172238;
-		--cz-material-overlay: #182339;
+		--cz-material-surface: light-dark(#fafcff, #172238);
+		--cz-material-overlay: light-dark(#fcfdff, #182339);
 		--cz-material-blur: none;
 		--cz-material-sheen: none;
+		--cz-material-inset-background: var(--cz-color-bg-secondary);
+		--cz-text-emphasis-gradient: none;
 		--cz-material-edge: var(--cz-color-border-primary);
+		--cz-badge-sheen: none;
+		--cz-control-sheen: none;
+		--cz-button-sheen: none;
+		--cz-control-background: var(--cz-color-bg-primary);
+		--cz-icon-background: var(--cz-color-bg-secondary);
+		--cz-icon-filter: none;
 	}
 }
 
@@ -180,10 +307,18 @@
 		--cz-material-overlay: Canvas;
 		--cz-material-blur: none;
 		--cz-material-sheen: none;
+		--cz-material-inset-background: var(--cz-color-bg-secondary);
+		--cz-text-emphasis-gradient: none;
 		--cz-material-edge: CanvasText;
 		--cz-control-sheen: none;
+		--cz-button-sheen: none;
 		--cz-control-background: Canvas;
 		--cz-selection-background: Highlight;
+		--cz-icon-background: Canvas;
+		--cz-icon-color: CanvasText;
+		--cz-icon-filter: none;
+		--cz-badge-sheen: none;
+		--cz-status-dot-sheen: none;
 		--cz-orb-background: none;
 		--cz-orb-shadow: none;
 	}
