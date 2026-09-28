@@ -38,7 +38,8 @@
     "./truncate": {
       "types": "./src/truncate.css.d.ts",
       "default": "./src/truncate.css.js"
-    }
+    },
+    "./galaxy": "./src/galaxy.css"
   },
   "files": [
     "src/"
@@ -51,7 +52,8 @@
     "storybook:deploy": "storybook-to-ghpages",
     "storybook:preview": "npm run storybook:build && http-server ./storybook-static/ --silent",
     "prepare": "husky",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "test": "web-test-runner"
   },
   "publishConfig": {
     "access": "public"
@@ -67,6 +69,8 @@
     "@storybook/addon-a11y": "^10.3.4",
     "@storybook/web-components-vite": "^10.0.0",
     "@web/dev-server": "^0.4.0",
+    "@web/test-runner": "^0.20.2",
+    "@web/test-runner-playwright": "^0.11.1",
     "eslint": "^9.0.0",
     "http-server": "^14.1.1",
     "husky": "^9.0.0",

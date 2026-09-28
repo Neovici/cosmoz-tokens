@@ -108,6 +108,23 @@ document.documentElement.dataset.theme = 'dark';
 
 ## Token Reference
 
+### Galaxy materials
+
+Import `@neovici/cosmoz-tokens/galaxy` after the base tokens and enable
+`data-galaxy` on the document root with `color-scheme: dark`. Removing the
+attribute restores the base palette.
+
+Semantic `--cz-color-*` properties remain colors. Composite backgrounds use
+`--cz-material-background` for panels and `--cz-material-overlay-background`
+for dialogs; `--cz-material-blur`, `--cz-material-edge` and
+`--cz-material-shadow` complete the surface. Controls can use
+`--cz-control-sheen` or `--cz-control-background`. Canvas and chrome ornament
+materials are `--cz-canvas-background` and `--cz-orb-background`.
+
+The stylesheet falls back to opaque materials without backdrop-filter support,
+disables transparency for reduced-transparency or increased-contrast preferences,
+and uses system colors in forced-color mode. It adds no animation.
+
 ### Colors (Primitives)
 
 | Token                         | Description               |

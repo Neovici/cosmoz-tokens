@@ -1,0 +1,190 @@
+/**
+ * Galaxy: an opt-in dark material system. Colors remain colors; composite
+ * materials have their own tokens so tables, charts and native controls can
+ * use the same semantic palette without receiving invalid gradient values.
+ * Enable with data-theme="dark" data-galaxy on the document root.
+ */
+:root[data-galaxy] {
+	--cz-color-bg-primary: #131c32;
+	--cz-color-bg-secondary: #10182c;
+	--cz-color-bg-secondary-subtle: #0e1629;
+	--cz-color-bg-tertiary: #202d47;
+	--cz-color-bg-quaternary: #334461;
+	--cz-color-bg-primary-hover: #263652;
+	--cz-color-bg-secondary-hover: #263652;
+	--cz-color-bg-disabled: #20293d;
+	--cz-color-bg-disabled-subtle: #151d30;
+	--cz-color-bg-overlay: #030715;
+	--cz-color-text-primary: #f0f5ff;
+	--cz-color-text-secondary: #c3cfe6;
+	--cz-color-text-secondary-hover: #f0f5ff;
+	--cz-color-text-tertiary: #a2b3d0;
+	--cz-color-text-tertiary-hover: #d5e3ff;
+	--cz-color-text-quaternary: #95a7c6;
+	--cz-color-text-placeholder: #95a7c6;
+	--cz-color-text-disabled: #71819e;
+	--cz-color-border-primary: #526581;
+	--cz-color-border-secondary: #32425e;
+	--cz-color-border-tertiary: #293650;
+	--cz-color-fg-primary: var(--cz-color-text-primary);
+	--cz-color-fg-secondary: var(--cz-color-text-secondary);
+	--cz-color-fg-tertiary: var(--cz-color-text-tertiary);
+	--cz-color-fg-quaternary: var(--cz-color-text-quaternary);
+	--cz-color-text-brand: #bdb4ff;
+	--cz-color-text-brand-hover: #ddd7ff;
+	--cz-color-fg-brand: #b4a5ff;
+	--cz-color-fg-brand-secondary: #a897ff;
+	--cz-color-bg-brand: #2b254e;
+	--cz-color-bg-brand-secondary: #3b3266;
+	--cz-color-bg-brand-solid: #6650cc;
+	--cz-color-bg-brand-solid-hover: #7660db;
+	--cz-color-border-brand: #b8aaff;
+	--cz-color-focus-ring: #c5baff;
+	--cz-color-text-processing: #bdb4ff;
+	--cz-color-fg-processing: #b4a5ff;
+	--cz-color-bg-processing: #282346;
+	--cz-color-text-success: #7ee3bf;
+	--cz-color-fg-success: #64dbb0;
+	--cz-color-bg-success: #12372f;
+	--cz-color-text-error: #ffa6ba;
+	--cz-color-fg-error: #ff8eab;
+	--cz-color-bg-error: #422135;
+	--cz-color-text-warning: #f6cf8c;
+	--cz-color-fg-warning: #f6c477;
+	--cz-color-bg-warning: #3a2e1f;
+	--cz-color-text-info: #8bd9fa;
+	--cz-color-fg-info: #79d2f7;
+	--cz-color-bg-info: #153345;
+
+	--cz-radius-md: 0.75rem;
+	--cz-radius-lg: 0.875rem;
+	--cz-radius-xl: 1.25rem;
+	--cz-radius-2xl: 1.5rem;
+	--cz-radius-3xl: 1.75rem;
+
+	/* The canvas is deliberately static: no full-screen animated filters. */
+	--cz-canvas-color: #090e20;
+	--cz-canvas-background:
+		radial-gradient(ellipse at 88% -12%, #493f77 0%, transparent 49%),
+		radial-gradient(ellipse at 12% 88%, #123d50 0%, transparent 48%),
+		radial-gradient(ellipse at 62% 110%, #252956 0%, transparent 50%),
+		var(--cz-canvas-color);
+	--cz-material-sheen: linear-gradient(
+		135deg in oklab,
+		rgb(229 240 255 / 12%),
+		rgb(211 226 255 / 2%) 38%,
+		rgb(143 172 255 / 5%) 72%,
+		rgb(175 236 255 / 10%)
+	);
+	--cz-material-edge: rgb(205 225 255 / 23%);
+	--cz-material-highlight: rgb(227 243 255 / 35%);
+	--cz-material-shadow:
+		inset 0 1px 0 var(--cz-material-highlight),
+		inset 0 -1px 0 rgb(116 160 235 / 9%), 0 12px 32px -16px rgb(0 3 16 / 65%);
+	--cz-material-surface: #172238;
+	--cz-material-overlay: #182339;
+	--cz-material-blur: none;
+	--cz-material-background: var(--cz-material-sheen) var(--cz-material-surface);
+	--cz-material-overlay-background: var(--cz-material-sheen)
+		var(--cz-material-overlay);
+	--cz-control-sheen: linear-gradient(
+		175deg in oklab,
+		rgb(242 248 255 / 22%),
+		transparent 48%,
+		rgb(3 7 20 / 12%)
+	);
+	--cz-control-background: linear-gradient(
+		180deg in oklab,
+		rgb(6 13 30 / 35%),
+		rgb(67 93 132 / 12%)
+	);
+	--cz-selection-background: linear-gradient(
+		110deg in oklab,
+		rgb(142 116 255 / 30%),
+		rgb(101 186 220 / 13%)
+	);
+	--cz-selection-shadow:
+		inset 0 0 0 1px var(--cz-material-edge),
+		inset 0 1px 0 var(--cz-material-highlight), 0 4px 12px rgb(0 3 16 / 20%);
+	--cz-chrome-gradient: linear-gradient(
+		125deg in oklab,
+		#f4f9ff 5%,
+		#a2bddf 26%,
+		#fff 38%,
+		#8993c8 58%,
+		#cdefff 76%,
+		#9d8bd1
+	);
+	--cz-orb-background:
+		radial-gradient(circle at 32% 22%, #fff 0%, #d8e8ff 5%, transparent 28%),
+		radial-gradient(circle at 75% 78%, #b69bff 0%, transparent 44%),
+		conic-gradient(
+			from 35deg,
+			#7884b2,
+			#e6faff,
+			#91a4dc,
+			#35466c,
+			#c8c1fb,
+			#7884b2
+		);
+	--cz-orb-shadow:
+		inset -12px -18px 25px rgb(7 12 32 / 65%),
+		inset 2px 3px 5px rgb(255 255 255 / 70%), 0 12px 34px rgb(5 10 26 / 50%),
+		0 0 48px rgb(130 118 255 / 20%);
+	--cz-shadow-xs:
+		inset 0 1px 0 rgb(231 243 255 / 15%), 0 2px 4px rgb(2 6 20 / 20%);
+	--cz-shadow-sm: var(--cz-material-shadow);
+	--cz-shadow-md: var(--cz-material-shadow), 0 12px 24px rgb(2 6 20 / 25%);
+	--cz-shadow-lg: var(--cz-material-shadow), 0 20px 40px rgb(2 6 20 / 35%);
+	--cz-shadow-xl: var(--cz-shadow-lg);
+	--cz-shadow-2xl: var(--cz-material-shadow), 0 32px 80px rgb(0 3 16 / 65%);
+	--cz-shadow-skeumorphic:
+		inset 0 0 0 1px var(--cz-material-edge),
+		inset 0 1px 0 var(--cz-material-highlight),
+		inset 0 -2px 0 rgb(5 11 30 / 28%);
+}
+
+/* Opaque is the default, glass is an enhancement. Blur is reserved for
+ * surfaces and overlays; never apply it to every row, cell or icon. */
+@supports (backdrop-filter: blur(1px)) {
+	:root[data-galaxy] {
+		--cz-material-surface: rgb(21 32 54 / 76%);
+		--cz-material-overlay: rgb(23 33 56 / 94%);
+		--cz-material-blur: blur(18px) saturate(135%);
+	}
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+	:root[data-galaxy] {
+		--cz-material-surface: #172238;
+		--cz-material-overlay: #182339;
+		--cz-material-blur: none;
+		--cz-material-sheen: none;
+		--cz-material-edge: var(--cz-color-border-primary);
+	}
+}
+
+@media (forced-colors: active) {
+	:root[data-galaxy] {
+		--cz-color-text-primary: CanvasText;
+		--cz-color-text-secondary: CanvasText;
+		--cz-color-text-tertiary: CanvasText;
+		--cz-color-text-quaternary: CanvasText;
+		--cz-color-text-brand: LinkText;
+		--cz-color-fg-primary: CanvasText;
+		--cz-color-fg-secondary: CanvasText;
+		--cz-color-fg-tertiary: CanvasText;
+		--cz-color-fg-quaternary: CanvasText;
+		--cz-canvas-background: Canvas;
+		--cz-material-surface: Canvas;
+		--cz-material-overlay: Canvas;
+		--cz-material-blur: none;
+		--cz-material-sheen: none;
+		--cz-material-edge: CanvasText;
+		--cz-control-sheen: none;
+		--cz-control-background: Canvas;
+		--cz-selection-background: Highlight;
+		--cz-orb-background: none;
+		--cz-orb-shadow: none;
+	}
+}
