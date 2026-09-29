@@ -1,9 +1,7 @@
 # Token guidelines
 
 Why the color tokens are organized the way they are, and the rules for
-changing them. The same layering decisions have been re-argued more
-than once in review; this file exists so that argument happens here,
-once, instead of in every pull request.
+changing them.
 
 First, some words. A **token** is a named color, like
 `--cz-color-bg-brand`. Tokens live in two groups:
