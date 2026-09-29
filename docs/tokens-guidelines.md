@@ -19,13 +19,14 @@ not reference each other.
 
 **From components, prefer semantic tokens.** When an intent token
 matches the use case (`bg-brand`, `text-tertiary`, `border-error`), use
-it — semantics get you dark-mode pairs and stay correct across re-themes.
-Ramps are public API and referencing one directly is fine — often the
-right call — when you need a specific raw step: status colors in cells
-(`success-600`, `warning-500`), or any other case with no matching
-semantic token. Keep in mind a raw ramp step is fixed: it does not
-respond to dark mode, while semantic tokens do, so a directly used ramp
-step means "this hue is intentional, not mode-adaptive". The one real
+it — a semantic token is the shared, reviewed light/dark pair for that
+purpose. Ramps are public API and referencing one directly is fine —
+often the right call — when you need a specific raw step (status colors
+in cells: `success-600`, `warning-500`), and raw steps can be wrapped in
+`light-dark()` in component styles when they must adapt to dark mode
+(`cosmoz-button` does this across its variants). If several components
+end up re-declaring the same `light-dark()` pair, that is the signal the
+semantic layer is missing a token — add it there instead. The one real
 prohibition is on the semantic layer's internals: never introduce an
 `rgb()` value there, and never point one semantic token at another.
 
