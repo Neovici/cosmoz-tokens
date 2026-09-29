@@ -8,7 +8,6 @@ which each re-litigated the same layering decisions.
 
 - **Primitives** (`primitives.css`) are the palette and the theme knobs:
   raw 25–950 ramps (`gray`, `slate`, `error`, `info`, …) plus base colors.
-  Never reference them directly from components.
 - **Semantics** (`semantic.css`, `fallback.css`, `shadows.css`) are intent:
   what a token is _for_ (`bg-brand`, `text-error`, `--cz-focus-ring`).
   Every semantic value references a primitive — a semantic token is a
@@ -17,6 +16,18 @@ which each re-litigated the same layering decisions.
 The dependency goes one way: `semantic → primitive`. A semantic token
 should never hard-code an `rgb()` value, and two semantic tokens should
 not reference each other.
+
+**From components, prefer semantic tokens.** When an intent token
+matches the use case (`bg-brand`, `text-tertiary`, `border-error`), use
+it — semantics get you dark-mode pairs and stay correct across re-themes.
+Ramps are public API and referencing one directly is fine — often the
+right call — when you need a specific raw step: status colors in cells
+(`success-600`, `warning-500`), or any other case with no matching
+semantic token. Keep in mind a raw ramp step is fixed: it does not
+respond to dark mode, while semantic tokens do, so a directly used ramp
+step means "this hue is intentional, not mode-adaptive". The one real
+prohibition is on the semantic layer's internals: never introduce an
+`rgb()` value there, and never point one semantic token at another.
 
 ## 2. The brand ramp is a theme knob
 

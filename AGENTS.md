@@ -8,9 +8,11 @@ The token layers and their rules are documented in
 [docs/tokens-guidelines.md](docs/tokens-guidelines.md). Read it before
 changing `src/*.css`. Non-negotiables, in short:
 
-- Primitives are the palette; semantics are intent. Semantic tokens
-  reference primitives — never hard-code colors in `semantic.css`, never
-  re-point single semantic tokens to a different ramp to "fix" a color.
+- Primitives are the palette; semantics are intent. In components,
+  prefer a semantic token when one matches; referencing a raw ramp step
+  (`--cz-color-success-600`) is fine when that exact hue is intended.
+  Never hard-code colors in `semantic.css`, and never re-point single
+  semantic tokens to a different ramp to "fix" a color.
 - `--cz-color-brand-*` is the theme knob. Changing the brand color means
   changing the alias ramp in `primitives.css`, not the brand semantic
   tokens (see guidelines §2).
