@@ -45,13 +45,13 @@
 	--cz-color-bg-processing: light-dark(#e8effb, #20354c);
 	--cz-color-text-success: light-dark(#176750, #7ee3bf);
 	--cz-color-fg-success: light-dark(#26896a, #64dbb0);
-	--cz-color-bg-success: light-dark(#e1f3e9, #12372f);
-	--cz-color-text-error: light-dark(#b42318, #ffa6ba);
-	--cz-color-fg-error: light-dark(#d92d20, #ff8eab);
-	--cz-color-bg-error: light-dark(#fff0ee, #422135);
+	--cz-color-bg-success: light-dark(#e1f3e9, #19332f);
+	--cz-color-text-error: light-dark(#b42318, #ffb4a7);
+	--cz-color-fg-error: light-dark(#d92d20, #f99688);
+	--cz-color-bg-error: light-dark(#fff0ee, #34272d);
 	--cz-color-text-warning: light-dark(#855011, #f6cf8c);
 	--cz-color-fg-warning: light-dark(#ad7324, #f6c477);
-	--cz-color-bg-warning: light-dark(#fff0d8, #3a2e1f);
+	--cz-color-bg-warning: light-dark(#fff0d8, #332e25);
 	--cz-color-text-info: light-dark(#28677e, #8bd9fa);
 	--cz-color-fg-info: light-dark(#3b839d, #79d2f7);
 	--cz-color-bg-info: light-dark(#e3f2f9, #153345);
@@ -62,15 +62,15 @@
 	--cz-color-fg-success-secondary: var(--cz-color-fg-success);
 	--cz-color-fg-processing-secondary: var(--cz-color-fg-processing);
 	--cz-color-border-brand-subtle: light-dark(#b5c7dd, #4c6a8e);
-	--cz-color-border-error-subtle: light-dark(#f4b7b0, #824058);
+	--cz-color-border-error-subtle: light-dark(#f4b7b0, #785052);
 	--cz-color-border-warning-subtle: light-dark(#ddc18d, #85633e);
 	--cz-color-border-success-subtle: light-dark(#9fcfbb, #387765);
 	--cz-color-border-processing-subtle: light-dark(#b7c8e4, #4b6a8a);
 
-	--cz-radius-md: 0.75rem;
+	--cz-radius-md: 0.625rem;
 	--cz-radius-lg: 0.875rem;
-	--cz-radius-xl: 1.25rem;
-	--cz-radius-2xl: 1.5rem;
+	--cz-radius-xl: 1rem;
+	--cz-radius-2xl: 1.25rem;
 	--cz-radius-3xl: 1.75rem;
 
 	/* Static aurora, with a pearlescent inversion in the light color scheme. */
@@ -94,29 +94,41 @@
 		var(--cz-canvas-color);
 	--cz-material-sheen: linear-gradient(
 		135deg in oklab,
-		light-dark(rgb(255 255 255 / 90%), rgb(229 240 255 / 12%)),
+		light-dark(rgb(255 255 255 / 90%), rgb(229 240 255 / 6%)),
 		light-dark(rgb(255 255 255 / 16%), rgb(211 226 255 / 2%)) 38%,
-		light-dark(rgb(199 211 230 / 9%), rgb(143 172 255 / 5%)) 72%,
-		light-dark(rgb(241 246 255 / 55%), rgb(175 236 255 / 10%))
+		light-dark(rgb(199 211 230 / 4%), rgb(143 172 255 / 2%)) 72%,
+		light-dark(rgb(241 246 255 / 32%), rgb(175 236 255 / 4%))
 	);
 	--cz-material-edge: light-dark(
-		rgb(115 134 159 / 24%),
-		rgb(205 225 255 / 23%)
+		rgb(115 134 159 / 18%),
+		rgb(205 225 255 / 13%)
 	);
 	--cz-material-highlight: light-dark(
 		rgb(255 255 255 / 96%),
-		rgb(227 243 255 / 35%)
+		rgb(227 243 255 / 16%)
 	);
 	--cz-material-shadow:
 		inset 0 1px 0 var(--cz-material-highlight),
-		inset 0 -1px 0 light-dark(rgb(122 141 167 / 12%), rgb(116 160 235 / 9%)),
-		0 12px 32px -16px light-dark(rgb(57 78 110 / 18%), rgb(0 3 16 / 65%));
+		0 8px 24px -12px light-dark(rgb(57 78 110 / 16%), rgb(0 3 16 / 50%));
 	--cz-material-surface: light-dark(#fafcff, #172238);
 	--cz-material-overlay: light-dark(#fcfdff, #182339);
 	--cz-material-blur: none;
 	--cz-material-background: var(--cz-material-sheen) var(--cz-material-surface);
 	--cz-material-overlay-background: var(--cz-material-sheen)
 		var(--cz-material-overlay);
+	/* A quiet horizon for a hero surface; working cards keep a lower contrast sheen. */
+	--cz-material-hero-background:
+		radial-gradient(
+			ellipse at 96% 120%,
+			light-dark(rgb(148 196 215 / 28%), rgb(77 159 190 / 22%)),
+			transparent 55%
+		),
+		radial-gradient(
+			ellipse at 72% -90%,
+			light-dark(rgb(176 190 212 / 25%), rgb(111 142 196 / 16%)),
+			transparent 65%
+		),
+		var(--cz-material-background);
 	--cz-text-emphasis-gradient: linear-gradient(
 		115deg in oklab,
 		light-dark(#202936, #f0f5ff),
@@ -125,8 +137,8 @@
 	);
 	--cz-material-inset-background: linear-gradient(
 		155deg in oklab,
-		light-dark(rgb(255 255 255 / 88%), rgb(209 226 255 / 8%)),
-		light-dark(rgb(224 233 245 / 48%), rgb(21 32 54 / 30%))
+		light-dark(rgb(255 255 255 / 88%), rgb(209 226 255 / 4%)),
+		light-dark(rgb(224 233 245 / 28%), rgb(21 32 54 / 30%))
 	);
 	--cz-control-sheen: linear-gradient(
 		175deg in oklab,
@@ -172,14 +184,14 @@
 	/* Small machined surfaces: no backdrop filters on icons or status cells. */
 	--cz-icon-background: linear-gradient(
 		145deg in oklab,
-		light-dark(#fff, #57718e),
-		light-dark(#e5eaf1, #273c55) 48%,
-		light-dark(#e2e8f1, #27394d)
+		light-dark(#fff, #3b526d),
+		light-dark(#e5eaf1, #25364c) 48%,
+		light-dark(#e2e8f1, #203044)
 	);
 	--cz-icon-shadow:
 		inset 0 1px 0 var(--cz-material-highlight),
 		inset 0 0 0 1px var(--cz-material-edge),
-		0 3px 8px light-dark(rgb(68 89 118 / 15%), rgb(0 3 16 / 32%));
+		0 3px 8px light-dark(rgb(68 89 118 / 9%), rgb(0 3 16 / 20%));
 	--cz-icon-color: light-dark(#56657c, #dcecff);
 	--cz-icon-filter: drop-shadow(
 		0 1px 0 light-dark(rgb(255 255 255 / 95%), rgb(7 10 28 / 55%))
@@ -187,7 +199,7 @@
 	--cz-badge-radius: 999px;
 	--cz-badge-sheen: linear-gradient(
 		165deg in oklab,
-		light-dark(rgb(255 255 255 / 85%), rgb(235 243 255 / 16%)),
+		light-dark(rgb(255 255 255 / 85%), rgb(235 243 255 / 10%)),
 		transparent 52%,
 		light-dark(rgb(94 114 140 / 6%), rgb(10 16 36 / 18%))
 	);
@@ -262,14 +274,14 @@
 @supports (backdrop-filter: blur(1px)) {
 	:root[data-galaxy] {
 		--cz-material-surface: light-dark(
-			rgb(250 252 255 / 78%),
-			rgb(21 32 54 / 76%)
+			rgb(250 252 255 / 90%),
+			rgb(21 32 54 / 88%)
 		);
 		--cz-material-overlay: light-dark(
 			rgb(250 252 255 / 94%),
 			rgb(23 33 56 / 94%)
 		);
-		--cz-material-blur: blur(18px) saturate(135%);
+		--cz-material-blur: blur(16px) saturate(115%);
 	}
 }
 
@@ -279,6 +291,7 @@
 		--cz-material-overlay: light-dark(#fcfdff, #182339);
 		--cz-material-blur: none;
 		--cz-material-sheen: none;
+		--cz-material-hero-background: var(--cz-material-surface);
 		--cz-material-inset-background: var(--cz-color-bg-secondary);
 		--cz-text-emphasis-gradient: none;
 		--cz-material-edge: var(--cz-color-border-primary);
@@ -307,6 +320,7 @@
 		--cz-material-overlay: Canvas;
 		--cz-material-blur: none;
 		--cz-material-sheen: none;
+		--cz-material-hero-background: var(--cz-material-surface);
 		--cz-material-inset-background: var(--cz-color-bg-secondary);
 		--cz-text-emphasis-gradient: none;
 		--cz-material-edge: CanvasText;
