@@ -30,19 +30,19 @@
 	--cz-color-fg-secondary: var(--cz-color-text-secondary);
 	--cz-color-fg-tertiary: var(--cz-color-text-tertiary);
 	--cz-color-fg-quaternary: var(--cz-color-text-quaternary);
-	--cz-color-text-brand: light-dark(#405d81, #bdb4ff);
-	--cz-color-text-brand-hover: light-dark(#304764, #ddd7ff);
-	--cz-color-fg-brand: light-dark(#4c6788, #b4a5ff);
-	--cz-color-fg-brand-secondary: light-dark(#65809f, #a897ff);
-	--cz-color-bg-brand: light-dark(#e8eef5, #2b254e);
-	--cz-color-bg-brand-secondary: light-dark(#d6e2ef, #3b3266);
-	--cz-color-bg-brand-solid: light-dark(#405e82, #6650cc);
-	--cz-color-bg-brand-solid-hover: light-dark(#334c6b, #7660db);
-	--cz-color-border-brand: light-dark(#8098b5, #b8aaff);
-	--cz-color-focus-ring: light-dark(#708fb4, #c5baff);
-	--cz-color-text-processing: light-dark(#355b98, #bdb4ff);
-	--cz-color-fg-processing: light-dark(#5074a6, #b4a5ff);
-	--cz-color-bg-processing: light-dark(#e8effb, #282346);
+	--cz-color-text-brand: light-dark(#405d81, #aacbec);
+	--cz-color-text-brand-hover: light-dark(#304764, #d9eaff);
+	--cz-color-fg-brand: light-dark(#4c6788, #9fbfdf);
+	--cz-color-fg-brand-secondary: light-dark(#65809f, #89adcf);
+	--cz-color-bg-brand: light-dark(#e8eef5, #1f3049);
+	--cz-color-bg-brand-secondary: light-dark(#d6e2ef, #304762);
+	--cz-color-bg-brand-solid: light-dark(#405e82, #3c6088);
+	--cz-color-bg-brand-solid-hover: light-dark(#334c6b, #486f99);
+	--cz-color-border-brand: light-dark(#8098b5, #91b6db);
+	--cz-color-focus-ring: light-dark(#708fb4, #a8cbee);
+	--cz-color-text-processing: light-dark(#355b98, #aacbec);
+	--cz-color-fg-processing: light-dark(#5074a6, #9fbfdf);
+	--cz-color-bg-processing: light-dark(#e8effb, #20354c);
 	--cz-color-text-success: light-dark(#176750, #7ee3bf);
 	--cz-color-fg-success: light-dark(#26896a, #64dbb0);
 	--cz-color-bg-success: light-dark(#e1f3e9, #12372f);
@@ -56,16 +56,16 @@
 	--cz-color-fg-info: light-dark(#3b839d, #79d2f7);
 	--cz-color-bg-info: light-dark(#e3f2f9, #153345);
 
-	--cz-color-bg-brand-subtle: light-dark(#edf2f7, #2b254e);
+	--cz-color-bg-brand-subtle: light-dark(#edf2f7, #1f3049);
 	--cz-color-fg-error-secondary: var(--cz-color-fg-error);
 	--cz-color-fg-warning-secondary: var(--cz-color-fg-warning);
 	--cz-color-fg-success-secondary: var(--cz-color-fg-success);
 	--cz-color-fg-processing-secondary: var(--cz-color-fg-processing);
-	--cz-color-border-brand-subtle: light-dark(#b5c7dd, #6e5f9e);
+	--cz-color-border-brand-subtle: light-dark(#b5c7dd, #4c6a8e);
 	--cz-color-border-error-subtle: light-dark(#f4b7b0, #824058);
 	--cz-color-border-warning-subtle: light-dark(#ddc18d, #85633e);
 	--cz-color-border-success-subtle: light-dark(#9fcfbb, #387765);
-	--cz-color-border-processing-subtle: light-dark(#b7c8e4, #675990);
+	--cz-color-border-processing-subtle: light-dark(#b7c8e4, #4b6a8a);
 
 	--cz-radius-md: 0.75rem;
 	--cz-radius-lg: 0.875rem;
@@ -78,7 +78,7 @@
 	--cz-canvas-background:
 		radial-gradient(
 			ellipse at 88% -12%,
-			light-dark(#dce4ee, #493f77) 0%,
+			light-dark(#dce4ee, #2c4565) 0%,
 			transparent 49%
 		),
 		radial-gradient(
@@ -88,7 +88,7 @@
 		),
 		radial-gradient(
 			ellipse at 62% 110%,
-			light-dark(#dce7f0, #252956) 0%,
+			light-dark(#dce7f0, #233d51) 0%,
 			transparent 50%
 		),
 		var(--cz-canvas-color);
@@ -121,7 +121,7 @@
 		115deg in oklab,
 		light-dark(#202936, #f0f5ff),
 		light-dark(#4f6079, #c6ddff) 62%,
-		light-dark(#405b7c, #d3c9ff)
+		light-dark(#405b7c, #badbed)
 	);
 	--cz-material-inset-background: linear-gradient(
 		155deg in oklab,
@@ -161,7 +161,7 @@
 		inset 0 0 0 1px var(--cz-material-edge);
 	--cz-selection-background: linear-gradient(
 		110deg in oklab,
-		light-dark(rgb(205 214 229 / 55%), rgb(142 116 255 / 30%)),
+		light-dark(rgb(205 214 229 / 55%), rgb(135 171 211 / 24%)),
 		light-dark(rgb(213 226 242 / 38%), rgb(101 186 220 / 13%))
 	);
 	--cz-selection-shadow:
@@ -172,15 +172,15 @@
 	/* Small machined surfaces: no backdrop filters on icons or status cells. */
 	--cz-icon-background: linear-gradient(
 		145deg in oklab,
-		light-dark(#fff, #68709a),
-		light-dark(#e5eaf1, #242d50) 48%,
-		light-dark(#e2e8f1, #433557)
+		light-dark(#fff, #57718e),
+		light-dark(#e5eaf1, #273c55) 48%,
+		light-dark(#e2e8f1, #27394d)
 	);
 	--cz-icon-shadow:
 		inset 0 1px 0 var(--cz-material-highlight),
 		inset 0 0 0 1px var(--cz-material-edge),
 		0 3px 8px light-dark(rgb(68 89 118 / 15%), rgb(0 3 16 / 32%));
-	--cz-icon-color: light-dark(#56657c, #e4ddff);
+	--cz-icon-color: light-dark(#56657c, #dcecff);
 	--cz-icon-filter: drop-shadow(
 		0 1px 0 light-dark(rgb(255 255 255 / 95%), rgb(7 10 28 / 55%))
 	);
