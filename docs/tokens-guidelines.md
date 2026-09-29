@@ -54,9 +54,8 @@ every such property in the component's docs (`@cssprop`).
 ## 2. The brand scale is the "brand color" switch
 
 `--cz-color-brand-*` is not its own palette: each of its steps is a
-shortcut to another scale (`info-*` points at sky the same way). The
-brand color has been changed more than once this way, and each change
-was small: edit the shortcuts, everything downstream follows.
+shortcut to another scale (`info-*` points at sky the same way). That
+makes the brand scale the one place where the brand color is decided.
 
 What follows from this:
 
