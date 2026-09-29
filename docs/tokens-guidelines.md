@@ -1,8 +1,9 @@
 # Token guidelines
 
 Why the color tokens are organized the way they are, and the rules for
-changing them. Several pull requests re-argued the same decisions
-(#51, #57, #59); this file exists so nobody has to re-argue them.
+changing them. The same layering decisions have been re-argued more
+than once in review; this file exists so that argument happens here,
+once, instead of in every pull request.
 
 First, some words. A **token** is a named color, like
 `--cz-color-bg-brand`. Tokens live in two groups:
@@ -65,8 +66,7 @@ What follows from this:
 - **Never fix one brand token by pointing it at another scale
   directly.** That cuts the token loose from the switch. When the
   brand color changes later, that token quietly stays behind, and
-  someone has to find and fix each loose token in two files (#59 is
-  the cautionary example).
+  someone has to find and fix each loose token in two files.
 - Need a **second** accent color? Create a second family of named jobs
   (text/bg/border/fg together). Do not smuggle a second color into the
   brand tokens.
