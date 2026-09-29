@@ -106,6 +106,14 @@ document.documentElement.classList.add('dark-mode');
 document.documentElement.dataset.theme = 'dark';
 ```
 
+## Design principles
+
+The tokens have two layers — primitives (the palette) and semantics (the
+intent) — and the brand ramp doubles as the theme knob. The reasoning and
+the rules for changing tokens are documented in
+[docs/tokens-guidelines.md](docs/tokens-guidelines.md); read it before
+re-pointing or re-theming anything.
+
 ## Token Reference
 
 ### Colors (Primitives)
