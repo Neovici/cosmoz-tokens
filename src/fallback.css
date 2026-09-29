@@ -40,8 +40,8 @@
 		--cz-color-bg-brand: var(--cz-color-brand-50);
 		--cz-color-bg-brand-subtle: var(--cz-color-brand-50);
 		--cz-color-bg-brand-secondary: var(--cz-color-brand-100);
-		--cz-color-bg-brand-solid: var(--cz-color-brand-600);
-		--cz-color-bg-brand-solid-hover: var(--cz-color-brand-700);
+		--cz-color-bg-brand-solid: var(--cz-color-gray-700);
+		--cz-color-bg-brand-solid-hover: var(--cz-color-gray-800);
 		--cz-color-bg-brand-section: var(--cz-color-brand-800);
 		--cz-color-bg-error: var(--cz-color-error-50);
 		--cz-color-bg-error-secondary: var(--cz-color-error-100);
