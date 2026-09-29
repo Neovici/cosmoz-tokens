@@ -81,6 +81,17 @@ If you pin a ramp:
   the pin must survive a brand re-theme.
 - Leave a comment on the token saying what breaks without the pin.
 
+**Pin, not fork.** A pin and a fork both make a semantic token skip the
+brand ramp; only one is legitimate. A pin encodes a purpose-level
+requirement that stays coherent under re-theming: links must remain
+distinguishable from body text _whatever_ brand becomes, so
+`text-brand` points at slate and keeps that contract if brand turns
+blue. A fork (`bg-brand → gray-50`, #59) encodes a palette-level wish —
+it refuses the re-theme silently, leaving selected surfaces gray while
+links and focus switch, and the one-file re-theme must then be hunted
+down token by token. The test: if the reason starts with "this looks
+better as", it is a fork; propose changing the ramp instead.
+
 ## 4. Naming grammar
 
 `--cz-color-<role>-<status>[-<modifier>]`
