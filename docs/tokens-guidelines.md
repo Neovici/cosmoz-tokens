@@ -154,7 +154,8 @@ This is the standard setup — the W3C Design Tokens spec, Material 3,
 Shopify Polaris, GitHub Primer and Radix Colors all use the same ideas:
 raw colors plus named jobs, references pointing one way only, a scale
 that acts as the theme switch, and step numbers picked by job. Those
-systems are also ahead cosmoz in three places, roughly in value order:
+systems are also ahead of cosmoz in three places, roughly in value
+order:
 
 1. **Component overrides are a habit, not a rule.** Other systems make
    component-specific tokens a formal third group. Cosmoz gets the same
