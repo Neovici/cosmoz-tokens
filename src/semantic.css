@@ -69,6 +69,9 @@
 		var(--cz-color-indigo-700),
 		var(--cz-color-indigo-400)
 	);
+	/* Only brand text, borders and focus use the Slate scale, so links and
+	 * focus stand apart from neutral text. Brand fills and icons are gray:
+	 * slate there reads as blue against the gray surfaces. */
 	--cz-color-text-brand: light-dark(
 		var(--cz-color-brand-600),
 		var(--cz-color-brand-400)
@@ -82,7 +85,7 @@
 		var(--cz-color-gray-50)
 	);
 	--cz-color-text-on-brand-secondary: light-dark(
-		var(--cz-color-brand-200),
+		var(--cz-color-gray-200),
 		var(--cz-color-gray-300)
 	);
 	--cz-color-text-info: light-dark(
@@ -156,20 +159,18 @@
 	 * page rather than sitting behind text. This is the selection/highlight/hover
 	 * surface. For a brand chip or callout that carries text, use -subtle. */
 	--cz-color-bg-brand: light-dark(
-		var(--cz-color-brand-50),
-		var(--cz-color-brand-500)
+		var(--cz-color-gray-50),
+		var(--cz-color-gray-500)
 	);
 	/* What bg-<status> is for the other statuses: the surface text sits on. */
 	--cz-color-bg-brand-subtle: light-dark(
-		var(--cz-color-brand-50),
-		var(--cz-color-brand-950)
+		var(--cz-color-gray-50),
+		var(--cz-color-gray-950)
 	);
 	--cz-color-bg-brand-secondary: light-dark(
-		var(--cz-color-brand-100),
-		var(--cz-color-brand-600)
+		var(--cz-color-gray-100),
+		var(--cz-color-gray-600)
 	);
-	/* Solid fills are neutral gray, not brand: a slate fill reads as a lone blue
-	 * patch against the gray surfaces. Brand text and chips stay slate. */
 	--cz-color-bg-brand-solid: light-dark(
 		var(--cz-color-gray-700),
 		var(--cz-color-gray-700)
@@ -179,7 +180,7 @@
 		var(--cz-color-gray-600)
 	);
 	--cz-color-bg-brand-section: light-dark(
-		var(--cz-color-brand-800),
+		var(--cz-color-gray-800),
 		var(--cz-color-gray-900)
 	);
 	--cz-color-bg-error: light-dark(
@@ -294,7 +295,7 @@
 		var(--cz-color-brand-800)
 	);
 	--cz-color-border-brand-alt: light-dark(
-		var(--cz-color-brand-600),
+		var(--cz-color-gray-600),
 		var(--cz-color-gray-700)
 	);
 	--cz-color-border-info: light-dark(
@@ -369,12 +370,12 @@
 	);
 	--cz-color-fg-white: light-dark(var(--cz-color-white), var(--cz-color-white));
 	--cz-color-fg-brand: light-dark(
-		var(--cz-color-brand-600),
-		var(--cz-color-brand-500)
+		var(--cz-color-gray-600),
+		var(--cz-color-gray-500)
 	);
 	--cz-color-fg-brand-secondary: light-dark(
-		var(--cz-color-brand-500),
-		var(--cz-color-brand-500)
+		var(--cz-color-gray-500),
+		var(--cz-color-gray-500)
 	);
 	--cz-color-fg-error: light-dark(
 		var(--cz-color-error-600),

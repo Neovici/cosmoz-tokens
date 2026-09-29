@@ -22,7 +22,7 @@
 		--cz-color-text-brand: var(--cz-color-brand-600);
 		--cz-color-text-brand-hover: var(--cz-color-brand-700);
 		--cz-color-text-on-brand: var(--cz-color-white);
-		--cz-color-text-on-brand-secondary: var(--cz-color-brand-200);
+		--cz-color-text-on-brand-secondary: var(--cz-color-gray-200);
 		--cz-color-text-info: var(--cz-color-info-700);
 		--cz-color-text-info-hover: var(--cz-color-info-800);
 		--cz-color-text-on-info: var(--cz-color-white);
@@ -37,12 +37,12 @@
 		--cz-color-bg-disabled: var(--cz-color-gray-100);
 		--cz-color-bg-disabled-subtle: var(--cz-color-gray-50);
 		--cz-color-bg-overlay: var(--cz-color-gray-950);
-		--cz-color-bg-brand: var(--cz-color-brand-50);
-		--cz-color-bg-brand-subtle: var(--cz-color-brand-50);
-		--cz-color-bg-brand-secondary: var(--cz-color-brand-100);
+		--cz-color-bg-brand: var(--cz-color-gray-50);
+		--cz-color-bg-brand-subtle: var(--cz-color-gray-50);
+		--cz-color-bg-brand-secondary: var(--cz-color-gray-100);
 		--cz-color-bg-brand-solid: var(--cz-color-gray-700);
 		--cz-color-bg-brand-solid-hover: var(--cz-color-gray-800);
-		--cz-color-bg-brand-section: var(--cz-color-brand-800);
+		--cz-color-bg-brand-section: var(--cz-color-gray-800);
 		--cz-color-bg-error: var(--cz-color-error-50);
 		--cz-color-bg-error-secondary: var(--cz-color-error-100);
 		--cz-color-bg-error-solid: var(--cz-color-error-600);
@@ -69,7 +69,7 @@
 		--cz-color-border-error-subtle: var(--cz-color-error-300);
 		--cz-color-border-brand: var(--cz-color-brand-500);
 		--cz-color-border-brand-subtle: var(--cz-color-brand-300);
-		--cz-color-border-brand-alt: var(--cz-color-brand-600);
+		--cz-color-border-brand-alt: var(--cz-color-gray-600);
 		--cz-color-border-info: var(--cz-color-info-500);
 		--cz-color-border-info-subtle: var(--cz-color-info-300);
 		--cz-color-border-warning: var(--cz-color-warning-500);
@@ -88,8 +88,8 @@
 		--cz-color-fg-disabled: var(--cz-color-gray-400);
 		--cz-color-fg-disabled-subtle: var(--cz-color-gray-300);
 		--cz-color-fg-white: var(--cz-color-white);
-		--cz-color-fg-brand: var(--cz-color-brand-600);
-		--cz-color-fg-brand-secondary: var(--cz-color-brand-500);
+		--cz-color-fg-brand: var(--cz-color-gray-600);
+		--cz-color-fg-brand-secondary: var(--cz-color-gray-500);
 		--cz-color-fg-error: var(--cz-color-error-600);
 		--cz-color-fg-error-secondary: var(--cz-color-error-500);
 		--cz-color-fg-warning: var(--cz-color-warning-600);
