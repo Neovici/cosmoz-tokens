@@ -1,8 +1,8 @@
 # Token guidelines
 
 Why the color tokens are organized the way they are, and the rules for
-changing them. Three pull requests (#51, #57, #59) re-argued the same
-decisions — this file exists so nobody has to re-argue them.
+changing them. Several pull requests re-argued the same decisions
+(#51, #57, #59); this file exists so nobody has to re-argue them.
 
 First, some words. A **token** is a named color, like
 `--cz-color-bg-brand`. Tokens live in two groups:
@@ -51,36 +51,40 @@ every such property in the component's docs (`@cssprop`).
 
 ## 2. The brand scale is the "brand color" switch
 
-`--cz-color-brand-*` is not its own palette: each of its 13 steps is a
-shortcut to another scale (today `slate`; before that `gray`; before
-that, Danube blue). The info colors point at sky the same way. That
-shortcut setup has already survived two brand changes — that is the
-proof it works.
+`--cz-color-brand-*` is not its own palette: each of its steps is a
+shortcut to another scale (`info-*` points at sky the same way). The
+brand color has been changed more than once this way, and each change
+was small: edit the shortcuts, everything downstream follows.
 
 What follows from this:
 
-- **To change the brand color, change what the shortcuts point at** — 13
-  lines in `primitives.css`. Every brand-styled thing (backgrounds,
-  text, borders, icons, focus ring) follows automatically.
-- **Never fix one brand token by pointing it at `gray-*` or `slate-*`
-  directly.** That cuts the token loose from the switch. When the brand
-  color changes later, that token quietly stays behind, and someone has
-  to find and fix each loose token in two files (#59 did this).
+- **To change the brand color, change what the shortcuts point at** —
+  a few lines in `primitives.css`. Every brand-styled thing
+  (backgrounds, text, borders, icons, focus ring) follows
+  automatically.
+- **Never fix one brand token by pointing it at another scale
+  directly.** That cuts the token loose from the switch. When the
+  brand color changes later, that token quietly stays behind, and
+  someone has to find and fix each loose token in two files (#59 is
+  the cautionary example).
 - Need a **second** accent color? Create a second family of named jobs
   (text/bg/border/fg together). Do not smuggle a second color into the
   brand tokens.
 
 ## 3. Some tokens skip the brand scale — on purpose
 
-A few tokens must stay slate no matter what brand is: `text-brand`,
-`text-brand-hover`, `border-brand`, `border-brand-subtle` and the focus
-ring. Why: links and focus outlines must stay easy to tell apart from
-normal text, even if the brand color is ever something neutral.
+A few tokens must stay slatelike no matter what brand is: link text
+(`text-brand`, `text-brand-hover`), brand hairlines
+(`border-brand`, `border-brand-subtle`) and the focus ring. Why: links
+and focus outlines must stay easy to tell apart from normal text, even
+if the brand color is ever something neutral. (If the brand color is
+neutral, these tokens skip to the nearest still-distinct scale.)
 
 If you make a token skip the brand scale:
 
-- Point at the real scale (`--cz-color-slate-*`), not `brand-*`, so the
-  token keeps its promise even after a brand change.
+- Point at the real scale it needs (`--cz-color-slate-*` at the time of
+  writing), not `brand-*`, so the token keeps its promise even after a
+  brand change.
 - Leave a comment on the token saying what would break without it.
 
 **Skip on purpose, not by accident.** Skipping looks the same in code
@@ -115,8 +119,9 @@ not change this one token — change the brand scale instead.
   dark. They are chosen so both are readable. Change one half — check
   the other, and check text against its background (Stories →
   Contrast).
-- Old browsers get the light colors from `fallback.css`. Every change
-  in `semantic.css` must be copied there — same numbers, two files.
+- Browsers without `light-dark()` get the light colors from
+  `fallback.css`. Every change in `semantic.css` must be copied there —
+  same numbers, two files.
 - Which step number to pick depends on the job, not the color:
 
   | Job              | Light step | Dark step |
@@ -137,34 +142,29 @@ not change this one token — change the brand scale instead.
 ## 6. Housekeeping
 
 - A color scale nobody uses: delete it, or write down why it is kept.
-  Never leave it half-decided (the `--cz-danube-*` scale is currently
-  unused since brand moved to slate).
-- Define each scale once (slate is currently written down twice with
-  the same values — merge them).
+  Never leave it half-decided.
+- Define each scale once — the same values must not ship under two
+  names.
 - Every value change gets a changeset. Renaming or removing a published
   token breaks other apps, so that means a major version bump.
 
 ## 7. How this compares to other design systems
 
-This is the standard setup as of 2025–2026 — the W3C Design Tokens
-spec, Material 3, Shopify Polaris, GitHub Primer and Radix Colors all
-use the same ideas: raw colors plus named jobs, references pointing one
-way only, a scale that acts as the theme switch, and step numbers
-picked by job.
-
-Known gaps, most useful first:
+This is the standard setup — the W3C Design Tokens spec, Material 3,
+Shopify Polaris, GitHub Primer and Radix Colors all use the same ideas:
+raw colors plus named jobs, references pointing one way only, a scale
+that acts as the theme switch, and step numbers picked by job. Those
+systems are also ahead cosmoz in three places, roughly in value order:
 
 1. **Component overrides are a habit, not a rule.** Other systems make
    component-specific tokens a formal third group. Cosmoz gets the same
-   effect with the CSS-property pattern from section 1 — it works, it
-   is just used unevenly. Use it on purpose instead of collecting
-   copied `light-dark()` blocks.
+   effect with the CSS-property pattern from section 1 — use it on
+   purpose instead of collecting copied `light-dark()` blocks.
 2. **Nothing is checked automatically.** The token files are
-   hand-maintained CSS. A machine-readable source (the W3C JSON format)
-   that generates the CSS, plus automatic checks in CI (references
-   point the right way, no unused scales, `semantic.css` and
-   `fallback.css` in sync) would enforce sections 2 and 6 without a
-   reviewer catching mistakes.
+   hand-maintained CSS. A machine-readable source that generates the
+   CSS, plus automatic checks in CI (references point the right way, no
+   unused scales, `semantic.css` and `fallback.css` in sync) would
+   enforce sections 2 and 6 without a reviewer catching mistakes.
 3. **Readability is checked by eye.** The Contrast story exists and the
    a11y addon is installed; the text/background pairs listed in section
    5 should be tested automatically in CI instead.
