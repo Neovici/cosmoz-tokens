@@ -168,13 +168,15 @@
 		var(--cz-color-brand-100),
 		var(--cz-color-brand-600)
 	);
+	/* Solid fills are neutral gray, not brand: a slate fill reads as a lone blue
+	 * patch against the gray surfaces. Brand text and chips stay slate. */
 	--cz-color-bg-brand-solid: light-dark(
-		var(--cz-color-brand-600),
-		var(--cz-color-brand-600)
+		var(--cz-color-gray-700),
+		var(--cz-color-gray-700)
 	);
 	--cz-color-bg-brand-solid-hover: light-dark(
-		var(--cz-color-brand-700),
-		var(--cz-color-brand-500)
+		var(--cz-color-gray-800),
+		var(--cz-color-gray-600)
 	);
 	--cz-color-bg-brand-section: light-dark(
 		var(--cz-color-brand-800),
