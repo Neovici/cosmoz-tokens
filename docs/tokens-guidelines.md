@@ -1,10 +1,13 @@
 # Token guidelines
 
 Why the color tokens are organized the way they are, and the rules for
-changing them.
+changing them. (Tokens for typography, spacing and shadows follow the
+same spirit: raw values given names. Their files are simple enough not
+to need their own rules yet.)
 
-First, some words. A **token** is a named color, like
-`--cz-color-bg-brand`. Tokens live in two groups:
+First, some words. A **token** is a named design value — a color, a
+font size, a spacing unit. This file is about the color tokens. They
+live in two groups:
 
 ## 1. Two groups, one direction
 
