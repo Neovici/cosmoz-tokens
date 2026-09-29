@@ -26,9 +26,25 @@ in cells: `success-600`, `warning-500`), and raw steps can be wrapped in
 `light-dark()` in component styles when they must adapt to dark mode
 (`cosmoz-button` does this across its variants). If several components
 end up re-declaring the same `light-dark()` pair, that is the signal the
-semantic layer is missing a token — add it there instead. The one real
-prohibition is on the semantic layer's internals: never introduce an
-`rgb()` value there, and never point one semantic token at another.
+semantic layer is missing a token — add it there instead.
+
+**Component tokens** complete the picture: a component can expose its
+own custom properties that default to a token, so consumers can restyle
+one instance without forking the component. This is the established
+pattern in cosmoz components — e.g. `cosmoz-tab-card`:
+
+```css
+/* in the component */
+color: var(--cosmoz-tab-card-heading-color, var(--cz-color-text-primary));
+```
+
+The wrapper name carries the component's intent; the fallback stays a
+semantic (or, deliberately, a primitive) token. Document each `@cssprop`
+in the component's JSDoc like `cosmoz-tab-card` does.
+
+The one real prohibition is on the semantic layer's internals: never
+introduce an `rgb()` value there, and never point one semantic token at
+another.
 
 ## 2. The brand ramp is a theme knob
 
@@ -115,3 +131,36 @@ If you pin a ramp:
   and `--cz-color-slate-*`, identical values); consolidate.
 - Every value change ships with a changeset. Breaking changes (removing
   or renaming published tokens) bump the major version.
+
+## 7. Relation to industry practice
+
+The model here matches the mainstream of design-token systems as of
+2025–2026 — W3C/DTCG Design Tokens Format (aliasing and reference
+direction are spec-level concepts), Material 3 (reference → system →
+component), Shopify Polaris, GitHub Primer, Radix Colors (step
+semantics), and the three-tier writeups that dominate current
+architecture literature.
+
+- **Two layers with one-way references** is the canonical alias model.
+- **The brand ramp as theme knob** (§2) is how multi-brand/theming
+  systems are expected to work: change the palette, everything
+  downstream follows. The per-token fork (#59) is the industry-documented
+  failure mode of tokens that carry both paint and purpose.
+- **Naming grammar, role-first steps, documented exceptions** (§4–5)
+  follow role-based naming as in Polaris/SLDS and Radix' step docs.
+
+Known gaps, roughly in value order:
+
+1. **Component tokens are a convention, not a tier.** Mainstream systems
+   define a third tier (`--cz-button-bg-active` referencing semantics).
+   Cosmoz reaches the same effect with `@cssprop` wrappers (§1) — the
+   pattern works but is unevenly applied. Promote it consciously instead
+   of accumulating state-level `light-dark()` blocks.
+2. **No machine-readable source or CI validation.** Tokens are
+   hand-maintained CSS. A DTCG JSON source that generates the CSS, plus
+   CI checks (reference direction, unused ramps, `semantic.css` ↔
+   `fallback.css` parity) would enforce §2 and §6 automatically instead
+   of by review.
+3. **Contrast is asked, not gated.** The Contrast story exists and
+   `@storybook/addon-a11y` is installed; the documented text/bg pairings
+   should be asserted in CI rather than checked by eye (§5).
