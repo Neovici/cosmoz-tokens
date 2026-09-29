@@ -1,124 +1,125 @@
 # Token guidelines
 
-Why the tokens are structured the way they are, and the rules that keep
-future changes from mixing the layers. Motivated by PRs #51, #57 and #59,
-which each re-litigated the same layering decisions.
+Why the color tokens are organized the way they are, and the rules for
+changing them. Three pull requests (#51, #57, #59) re-argued the same
+decisions — this file exists so nobody has to re-argue them.
 
-## 1. Two layers, one direction
+First, some words. A **token** is a named color, like
+`--cz-color-bg-brand`. Tokens live in two groups:
 
-- **Primitives** (`primitives.css`) are the palette and the theme knobs:
-  raw 25–950 ramps (`gray`, `slate`, `error`, `info`, …) plus base colors.
-- **Semantics** (`semantic.css`, `fallback.css`, `shadows.css`) are intent:
-  what a token is _for_ (`bg-brand`, `text-error`, `--cz-focus-ring`).
-  Every semantic value references a primitive — a semantic token is a
-  decision about purpose, not about paint.
+## 1. Two groups, one direction
 
-The dependency goes one way: `semantic → primitive`. A semantic token
-should never hard-code an `rgb()` value, and two semantic tokens should
-not reference each other.
+- **Raw colors** (`primitives.css`) — the paint shelf. Full scales of
+  numbered colors from 25 (almost white) to 950 (almost black):
+  `gray`, `slate`, `error`, `info`, and so on. Their names say what a
+  color _looks like_, never where to use it.
+- **Named jobs** (`semantic.css`, `fallback.css`, `shadows.css`) —
+  tokens named after the thing they paint: the selected row
+  (`bg-brand`), error text (`text-error`), the focus ring
+  (`--cz-focus-ring`).
 
-**From components, prefer semantic tokens.** When an intent token
-matches the use case (`bg-brand`, `text-tertiary`, `border-error`), use
-it — a semantic token is the shared, reviewed light/dark pair for that
-purpose. Ramps are public API and referencing one directly is fine —
-often the right call — when you need a specific raw step (status colors
-in cells: `success-600`, `warning-500`), and raw steps can be wrapped in
-`light-dark()` in component styles when they must adapt to dark mode
-(`cosmoz-button` does this across its variants). If several components
-end up re-declaring the same `light-dark()` pair, that is the signal the
-semantic layer is missing a token — add it there instead.
+Every named job points at a raw color. That one-way street
+(`semantic → primitive`) is what makes theming work.
 
-**Component tokens** complete the picture: a component can expose its
-own custom properties that default to a token, so consumers can restyle
-one instance without forking the component. This is the established
-pattern in cosmoz components — e.g. `cosmoz-tab-card`:
+Two things are never allowed inside `semantic.css` and `fallback.css`:
+
+- actual color values (`rgb(...)` or `#...`), and
+- one named-job token pointing at another.
+
+**In components: use named jobs first — raw colors are allowed too.**
+If a token exists for your job (`bg-brand`, `text-tertiary`), use it;
+it carries a ready-made, checked pair of light and dark colors. If you
+need one exact raw color (for example, status dot colors in a table:
+`success-600`), pointing straight at the raw scale is fine — it is
+meant to be used. Wrap it in `light-dark(...)` if the color must change
+in dark mode (`cosmoz-button` does this). If two components end up
+copying the same `light-dark(...)` pair, that means the shared token is
+missing — add the token instead of the copies.
+
+**Letting apps restyle one piece of a component.** A component can
+define its own CSS property that defaults to a token. Apps can then
+change colors for that one component without editing it. `cosmoz-tab-card`
+does it like this:
 
 ```css
-/* in the component */
+/* inside the component */
 color: var(--cosmoz-tab-card-heading-color, var(--cz-color-text-primary));
 ```
 
-The wrapper name carries the component's intent; the fallback stays a
-semantic (or, deliberately, a primitive) token. Document each `@cssprop`
-in the component's JSDoc like `cosmoz-tab-card` does.
+The property name says what it is for; the default is a token. Describe
+every such property in the component's docs (`@cssprop`).
 
-The one real prohibition is on the semantic layer's internals: never
-introduce an `rgb()` value there, and never point one semantic token at
-another.
+## 2. The brand scale is the "brand color" switch
 
-## 2. The brand ramp is a theme knob
+`--cz-color-brand-*` is not its own palette: each of its 13 steps is a
+shortcut to another scale (today `slate`; before that `gray`; before
+that, Danube blue). The info colors point at sky the same way. That
+shortcut setup has already survived two brand changes — that is the
+proof it works.
 
-`--cz-color-brand-*` is an alias ramp: each step maps 1:1 onto one source
-scale (`info-*` aliases `sky-*` the same way). History: brand was Danube
-blue, was re-pointed to gray in 4.6.0, then to slate. That history is the
-proof this works.
+What follows from this:
 
-Consequences:
+- **To change the brand color, change what the shortcuts point at** — 13
+  lines in `primitives.css`. Every brand-styled thing (backgrounds,
+  text, borders, icons, focus ring) follows automatically.
+- **Never fix one brand token by pointing it at `gray-*` or `slate-*`
+  directly.** That cuts the token loose from the switch. When the brand
+  color changes later, that token quietly stays behind, and someone has
+  to find and fix each loose token in two files (#59 did this).
+- Need a **second** accent color? Create a second family of named jobs
+  (text/bg/border/fg together). Do not smuggle a second color into the
+  brand tokens.
 
-- Re-theming brand means editing the alias lines in `primitives.css`.
-  Nothing else changes; `bg-*`, `text-*`, `border-*`, `fg-*` and the
-  focus ring all follow.
-- Re-pointing individual semantic tokens from `brand-*` to `gray-*` or
-  `slate-*` — per token, per mode — is never the fix for "brand looks
-  wrong here". It forks the ramp, and every future re-theme then has to
-  be repeated per token in `semantic.css` _and_ `fallback.css` (the
-  failure mode of #59).
-- If the brand color itself should change, change `brand-*`.
-- If a second accent hue is genuinely needed, add a separate semantic
-  series defined for `text`/`bg`/`border`/`fg` together — do not mix a
-  second ramp into existing `-brand` tokens.
+## 3. Some tokens skip the brand scale — on purpose
 
-## 3. Pinning a hue instead of `brand-*` is a semantic claim
+A few tokens must stay slate no matter what brand is: `text-brand`,
+`text-brand-hover`, `border-brand`, `border-brand-subtle` and the focus
+ring. Why: links and focus outlines must stay easy to tell apart from
+normal text, even if the brand color is ever something neutral.
 
-Some tokens must keep slate no matter what brand becomes:
-`text-brand(-hover)`, `border-brand(-subtle)` and the focus ring. Reason:
-links and focus must stay distinguishable from body text even if brand is
-ever a neutral gray.
+If you make a token skip the brand scale:
 
-If you pin a ramp:
+- Point at the real scale (`--cz-color-slate-*`), not `brand-*`, so the
+  token keeps its promise even after a brand change.
+- Leave a comment on the token saying what would break without it.
 
-- Reference the concrete scale (`--cz-color-slate-*`), not `brand-*` —
-  the pin must survive a brand re-theme.
-- Leave a comment on the token saying what breaks without the pin.
+**Skip on purpose, not by accident.** Skipping looks the same in code
+either way — the difference is the reason. Skipping for a _job_ ("links
+must stay readable next to text, whatever the brand color becomes")
+survives a brand change: the promise still holds. Skipping for a _color
+wish_ ("this should look gray today") only works until the brand color
+changes — then half the app follows the new brand and half does not.
+The quick test: if your reason starts with "it looks better as…", do
+not change this one token — change the brand scale instead.
 
-**Pin, not fork.** A pin and a fork both make a semantic token skip the
-brand ramp; only one is legitimate. A pin encodes a purpose-level
-requirement that stays coherent under re-theming: links must remain
-distinguishable from body text _whatever_ brand becomes, so
-`text-brand` points at slate and keeps that contract if brand turns
-blue. A fork (`bg-brand → gray-50`, #59) encodes a palette-level wish —
-it refuses the re-theme silently, leaving selected surfaces gray while
-links and focus switch, and the one-file re-theme must then be hunted
-down token by token. The test: if the reason starts with "this looks
-better as", it is a fork; propose changing the ramp instead.
+## 4. Names follow a pattern
 
-## 4. Naming grammar
+`--cz-color-<what it paints>-<situation>[-<extra>]`
 
-`--cz-color-<role>-<status>[-<modifier>]`
+- What it paints: `text` | `bg` | `border` | `fg` (`fg` = icons and
+  decoration).
+- Extras:
+  - `-secondary` — the same thing, one step stronger (hover, nesting).
+  - `-subtle` — the thin or weak version of the same situation.
+  - `-solid` — a filled block; pair it with `text-on-<situation>` or
+    `-white`.
+  - `-hover` and `on-` — mean what they say.
+- Any token that breaks the pattern gets a comment right there
+  explaining itself (for example `bg-brand` is the selection highlight —
+  mid-tone in dark mode so it stands out _from_ the page; and focus
+  rings are drawn inside the element so nothing can clip them).
 
-- Role: `text` | `bg` | `border` | `fg` (`fg` = icons and decorative
-  elements).
-- Modifiers:
-  - `-secondary` — same surface one step stronger, for hover or nesting.
-  - `-subtle` — hairline/tint partner of the status surface.
-  - `-solid` — filled; pair with `text-on-<status>` or `-white`.
-  - `-hover` / `on-` — self-describing.
-- Documented exceptions carry a comment at the token, e.g. `bg-brand` is
-  the selection/highlight surface (mid-tone in dark so it stands out
-  _from_ the page; chips that carry text use `-subtle`), and focus rings
-  are inset so overflow cannot clip them (`shadows.css`).
+## 5. Picking the step number; light and dark
 
-## 5. Steps and modes
+- Every named-job token is a `light-dark()` pair: one light color, one
+  dark. They are chosen so both are readable. Change one half — check
+  the other, and check text against its background (Stories →
+  Contrast).
+- Old browsers get the light colors from `fallback.css`. Every change
+  in `semantic.css` must be copied there — same numbers, two files.
+- Which step number to pick depends on the job, not the color:
 
-- `light-dark()` pairs are chosen for contrast between the two modes.
-  When adjusting one mode, check the other. Text sits on its matching
-  `bg-*` — keep the pairing contrast-verified (Stories → Contrast).
-- Browsers without `light-dark()` get the light theme via the `@supports`
-  block in `fallback.css`; every `semantic.css` value change must be
-  mirrored there.
-- Steps are role-first, not hue-first:
-
-  | Role             | Light step | Dark step |
+  | Job              | Light step | Dark step |
   | ---------------- | ---------- | --------- |
   | Body text        | 900        | 50        |
   | Secondary text   | 700        | 300       |
@@ -130,48 +131,40 @@ better as", it is a fork; propose changing the ramp instead.
   | Solid fill       | 600        | 600       |
   | Icon (mid)       | 600/500    | 500/400   |
 
-  Verify a change with dark mode toggled in Stories → Semantic, on gray
-  surfaces and on solid fills.
+  Check your change in Storybook with dark mode on and off, on plain
+  gray surfaces and on filled ones.
 
-## 6. Hygiene
+## 6. Housekeeping
 
-- Unused ramps: delete them or give them a documented job. Decide — do
-  not leave them silently in between (the `--cz-danube-*` ramp is
-  currently unused since brand moved to slate).
-- One concept, one definition. Slate currently ships twice (`--cz-slate-*`
-  and `--cz-color-slate-*`, identical values); consolidate.
-- Every value change ships with a changeset. Breaking changes (removing
-  or renaming published tokens) bump the major version.
+- A color scale nobody uses: delete it, or write down why it is kept.
+  Never leave it half-decided (the `--cz-danube-*` scale is currently
+  unused since brand moved to slate).
+- Define each scale once (slate is currently written down twice with
+  the same values — merge them).
+- Every value change gets a changeset. Renaming or removing a published
+  token breaks other apps, so that means a major version bump.
 
-## 7. Relation to industry practice
+## 7. How this compares to other design systems
 
-The model here matches the mainstream of design-token systems as of
-2025–2026 — W3C/DTCG Design Tokens Format (aliasing and reference
-direction are spec-level concepts), Material 3 (reference → system →
-component), Shopify Polaris, GitHub Primer, Radix Colors (step
-semantics), and the three-tier writeups that dominate current
-architecture literature.
+This is the standard setup as of 2025–2026 — the W3C Design Tokens
+spec, Material 3, Shopify Polaris, GitHub Primer and Radix Colors all
+use the same ideas: raw colors plus named jobs, references pointing one
+way only, a scale that acts as the theme switch, and step numbers
+picked by job.
 
-- **Two layers with one-way references** is the canonical alias model.
-- **The brand ramp as theme knob** (§2) is how multi-brand/theming
-  systems are expected to work: change the palette, everything
-  downstream follows. The per-token fork (#59) is the industry-documented
-  failure mode of tokens that carry both paint and purpose.
-- **Naming grammar, role-first steps, documented exceptions** (§4–5)
-  follow role-based naming as in Polaris/SLDS and Radix' step docs.
+Known gaps, most useful first:
 
-Known gaps, roughly in value order:
-
-1. **Component tokens are a convention, not a tier.** Mainstream systems
-   define a third tier (`--cz-button-bg-active` referencing semantics).
-   Cosmoz reaches the same effect with `@cssprop` wrappers (§1) — the
-   pattern works but is unevenly applied. Promote it consciously instead
-   of accumulating state-level `light-dark()` blocks.
-2. **No machine-readable source or CI validation.** Tokens are
-   hand-maintained CSS. A DTCG JSON source that generates the CSS, plus
-   CI checks (reference direction, unused ramps, `semantic.css` ↔
-   `fallback.css` parity) would enforce §2 and §6 automatically instead
-   of by review.
-3. **Contrast is asked, not gated.** The Contrast story exists and
-   `@storybook/addon-a11y` is installed; the documented text/bg pairings
-   should be asserted in CI rather than checked by eye (§5).
+1. **Component overrides are a habit, not a rule.** Other systems make
+   component-specific tokens a formal third group. Cosmoz gets the same
+   effect with the CSS-property pattern from section 1 — it works, it
+   is just used unevenly. Use it on purpose instead of collecting
+   copied `light-dark()` blocks.
+2. **Nothing is checked automatically.** The token files are
+   hand-maintained CSS. A machine-readable source (the W3C JSON format)
+   that generates the CSS, plus automatic checks in CI (references
+   point the right way, no unused scales, `semantic.css` and
+   `fallback.css` in sync) would enforce sections 2 and 6 without a
+   reviewer catching mistakes.
+3. **Readability is checked by eye.** The Contrast story exists and the
+   a11y addon is installed; the text/background pairs listed in section
+   5 should be tested automatically in CI instead.
