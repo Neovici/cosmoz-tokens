@@ -69,13 +69,15 @@
 		var(--cz-color-indigo-700),
 		var(--cz-color-indigo-400)
 	);
+	/* Pinned to slate, not brand: links must stay distinct from body text
+	 * even while the brand ramp is neutral gray. */
 	--cz-color-text-brand: light-dark(
-		var(--cz-color-brand-600),
-		var(--cz-color-brand-400)
+		var(--cz-color-slate-600),
+		var(--cz-color-slate-400)
 	);
 	--cz-color-text-brand-hover: light-dark(
-		var(--cz-color-brand-700),
-		var(--cz-color-brand-300)
+		var(--cz-color-slate-700),
+		var(--cz-color-slate-300)
 	);
 	--cz-color-text-on-brand: light-dark(
 		var(--cz-color-white),
@@ -168,15 +170,15 @@
 		var(--cz-color-brand-100),
 		var(--cz-color-brand-600)
 	);
-	/* Solid fills are neutral gray, not brand: a slate fill reads as a lone blue
-	 * patch against the gray surfaces. Brand text and chips stay slate. */
+	/* 700 rather than the usual solid 600: gray-600 is too weak to read as
+	 * the primary action next to secondary buttons. */
 	--cz-color-bg-brand-solid: light-dark(
-		var(--cz-color-gray-700),
-		var(--cz-color-gray-700)
+		var(--cz-color-brand-700),
+		var(--cz-color-brand-700)
 	);
 	--cz-color-bg-brand-solid-hover: light-dark(
-		var(--cz-color-gray-800),
-		var(--cz-color-gray-600)
+		var(--cz-color-brand-800),
+		var(--cz-color-brand-600)
 	);
 	--cz-color-bg-brand-section: light-dark(
 		var(--cz-color-brand-800),
@@ -285,13 +287,15 @@
 		var(--cz-color-error-300),
 		var(--cz-color-error-800)
 	);
+	/* Pinned to slate, not brand: brand hairlines must stay distinct from
+	 * neutral borders even while the brand ramp is neutral gray. */
 	--cz-color-border-brand: light-dark(
-		var(--cz-color-brand-500),
-		var(--cz-color-brand-400)
+		var(--cz-color-slate-500),
+		var(--cz-color-slate-400)
 	);
 	--cz-color-border-brand-subtle: light-dark(
-		var(--cz-color-brand-300),
-		var(--cz-color-brand-800)
+		var(--cz-color-slate-300),
+		var(--cz-color-slate-800)
 	);
 	--cz-color-border-brand-alt: light-dark(
 		var(--cz-color-brand-600),
