@@ -13,34 +13,6 @@
 	--cz-color-alpha-white: rgb(255 255 255);
 	--cz-color-alpha-black: rgb(0 0 0);
 
-	/* Danube colors */
-	--cz-danube-25: rgb(251 252 254);
-	--cz-danube-50: rgb(222 230 246);
-	--cz-danube-100: rgb(195 209 237);
-	--cz-danube-200: rgb(169 189 226);
-	--cz-danube-300: rgb(144 169 215);
-	--cz-danube-400: rgb(120 150 202);
-	--cz-danube-500: rgb(95 129 189);
-	--cz-danube-600: rgb(73 109 172);
-	--cz-danube-700: rgb(64 93 144);
-	--cz-danube-800: rgb(54 76 116);
-	--cz-danube-900: rgb(43 59 89);
-	--cz-danube-950: rgb(31 42 62);
-
-	/* Slate colors */
-	--cz-slate-25: rgb(252 253 254);
-	--cz-slate-50: rgb(248 250 252);
-	--cz-slate-100: rgb(241 245 249);
-	--cz-slate-200: rgb(226 232 240);
-	--cz-slate-300: rgb(203 213 225);
-	--cz-slate-400: rgb(148 163 184);
-	--cz-slate-500: rgb(100 116 139);
-	--cz-slate-600: rgb(71 85 105);
-	--cz-slate-700: rgb(51 65 85);
-	--cz-slate-800: rgb(30 41 59);
-	--cz-slate-900: rgb(15 23 42);
-	--cz-slate-950: rgb(2 6 23);
-
 	/* Brand colors - Gray */
 	--cz-color-brand-25: var(--cz-color-gray-25);
 	--cz-color-brand-50: var(--cz-color-gray-50);
@@ -126,7 +98,7 @@
 	--cz-color-info-950: var(--cz-color-sky-950);
 
 	/* Slate colors (blue-gray neutral) */
-	--cz-color-slate-25: rgb(248 250 252);
+	--cz-color-slate-25: rgb(252 253 254);
 	--cz-color-slate-50: rgb(248 250 252);
 	--cz-color-slate-100: rgb(241 245 249);
 	--cz-color-slate-200: rgb(226 232 240);
