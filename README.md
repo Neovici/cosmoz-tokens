@@ -122,6 +122,7 @@ re-pointing or re-theming anything.
 | ----------------------------- | ------------------------ |
 | `--cz-color-brand-{25-950}`   | Brand color scale (gray) |
 | `--cz-color-gray-{25-950}`    | Gray scale               |
+| `--cz-color-slate-{25-950}`   | Slate scale              |
 | `--cz-color-error-{25-950}`   | Error/danger colors      |
 | `--cz-color-warning-{25-950}` | Warning colors           |
 | `--cz-color-success-{25-950}` | Success colors           |
