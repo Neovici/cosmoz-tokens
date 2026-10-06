@@ -21,6 +21,8 @@
 		--cz-color-text-processing: var(--cz-color-indigo-700);
 		--cz-color-text-brand: var(--cz-color-brand-600);
 		--cz-color-text-brand-hover: var(--cz-color-brand-700);
+		--cz-color-text-link: var(--cz-color-slate-600);
+		--cz-color-text-link-hover: var(--cz-color-slate-700);
 		--cz-color-text-on-brand: var(--cz-color-white);
 		--cz-color-text-on-brand-secondary: var(--cz-color-brand-200);
 		--cz-color-text-info: var(--cz-color-info-700);
@@ -40,8 +42,8 @@
 		--cz-color-bg-brand: var(--cz-color-brand-50);
 		--cz-color-bg-brand-subtle: var(--cz-color-brand-50);
 		--cz-color-bg-brand-secondary: var(--cz-color-brand-100);
-		--cz-color-bg-brand-solid: var(--cz-color-gray-700);
-		--cz-color-bg-brand-solid-hover: var(--cz-color-gray-800);
+		--cz-color-bg-brand-solid: var(--cz-color-brand-700);
+		--cz-color-bg-brand-solid-hover: var(--cz-color-brand-800);
 		--cz-color-bg-brand-section: var(--cz-color-brand-800);
 		--cz-color-bg-error: var(--cz-color-error-50);
 		--cz-color-bg-error-secondary: var(--cz-color-error-100);
@@ -101,7 +103,7 @@
 		--cz-color-fg-info: var(--cz-color-info-600);
 		--cz-color-fg-info-secondary: var(--cz-color-info-500);
 		--cz-focus-ring:
-			inset 0 0 0 1px var(--cz-color-brand-500),
+			inset 0 0 0 1px var(--cz-color-slate-500),
 			inset 0 0 0 2px var(--cz-color-bg-primary);
 		--cz-focus-ring-error:
 			inset 0 0 0 1px var(--cz-color-error-500),
