@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-CZrKJMdV.js";import{s as l}from"./style-DlzeenLG.js";const r={title:"Tokens/Typography"},t={render:()=>a`
+import{b as a}from"./iframe-DmU3gfMS.js";import{s as l}from"./style-BVeaj82e.js";const r={title:"Tokens/Typography"},t={render:()=>a`
         ${l}
         <div class="story-container">
             <h1 class="story-title">Font Families</h1>
