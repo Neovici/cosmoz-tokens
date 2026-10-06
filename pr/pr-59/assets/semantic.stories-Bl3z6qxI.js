@@ -1,4 +1,4 @@
-import{b as c}from"./iframe-lhmvFEmO.js";import{s}from"./style-BytCNJal.js";const g={title:"Tokens/Semantic"},o=r=>c`
+import{b as c}from"./iframe-Dgz5X_FB.js";import{s}from"./style-BKPrYQ1G.js";const g={title:"Tokens/Semantic"},o=r=>c`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${r});"></div>
         <span class="story-label">${r}</span>
@@ -26,6 +26,8 @@ import{b as c}from"./iframe-lhmvFEmO.js";import{s}from"./style-BytCNJal.js";cons
                     ${o("--cz-color-text-success")}
                     ${o("--cz-color-text-processing")}
                     ${o("--cz-color-text-brand")}
+                    ${o("--cz-color-text-link")}
+                    ${o("--cz-color-text-link-hover")}
                     ${o("--cz-color-text-on-brand")}
                     ${o("--cz-color-text-info")}
                     ${o("--cz-color-text-info-hover")}
@@ -204,6 +206,8 @@ document.documentElement.style.colorScheme = 'dark';
                     \${colorRow('--cz-color-text-success')}
                     \${colorRow('--cz-color-text-processing')}
                     \${colorRow('--cz-color-text-brand')}
+                    \${colorRow('--cz-color-text-link')}
+                    \${colorRow('--cz-color-text-link-hover')}
                     \${colorRow('--cz-color-text-on-brand')}
                     \${colorRow('--cz-color-text-info')}
                     \${colorRow('--cz-color-text-info-hover')}
