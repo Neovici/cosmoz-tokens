@@ -74,11 +74,14 @@ What follows from this:
 ## 3. Some tokens skip the brand scale — on purpose
 
 A few tokens must stay slatelike no matter what brand is: link text
-(`text-brand`, `text-brand-hover`), brand hairlines
-(`border-brand`, `border-brand-subtle`) and the focus ring. Why: links
-and focus outlines must stay easy to tell apart from normal text, even
-if the brand color is ever something neutral. (If the brand color is
+(`text-link`, `text-link-hover`) and the focus ring. Why: links and
+focus outlines must stay easy to tell apart from normal text, even if
+the brand color is ever something neutral. (If the brand color is
 neutral, these tokens skip to the nearest still-distinct scale.)
+
+These are never `*-brand` tokens. Every `*-brand` semantic token stays
+on the brand scale; a job that must not follow the brand gets its own
+name instead.
 
 If you make a token skip the brand scale:
 
