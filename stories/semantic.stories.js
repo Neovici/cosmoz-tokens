@@ -43,6 +43,8 @@ export const TextColors = {
 					${colorRow('--cz-color-text-success')}
 					${colorRow('--cz-color-text-processing')}
 					${colorRow('--cz-color-text-brand')}
+					${colorRow('--cz-color-text-link')}
+					${colorRow('--cz-color-text-link-hover')}
 					${colorRow('--cz-color-text-on-brand')}
 					${colorRow('--cz-color-text-info')}
 					${colorRow('--cz-color-text-info-hover')}
