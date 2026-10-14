@@ -178,15 +178,16 @@
 		var(--cz-color-brand-100),
 		var(--cz-color-brand-600)
 	);
-	/* 700 rather than the usual solid 600: gray-600 is too weak to read as
-	 * the primary action next to secondary buttons. */
+	/* Graphite rather than the usual 600: a mid gray is too weak to read as
+	 * the primary action in light mode, and sinks into the page in dark. */
 	--cz-color-bg-brand-solid: light-dark(
-		var(--cz-color-brand-700),
-		var(--cz-color-brand-700)
-	);
-	--cz-color-bg-brand-solid-hover: light-dark(
 		var(--cz-color-brand-800),
 		var(--cz-color-brand-600)
+	);
+	/* 500 would fail AA with text-on-brand in dark mode. */
+	--cz-color-bg-brand-solid-hover: light-dark(
+		var(--cz-color-brand-700),
+		var(--cz-color-brand-700)
 	);
 	--cz-color-bg-brand-section: light-dark(
 		var(--cz-color-brand-800),
