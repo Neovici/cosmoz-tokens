@@ -123,6 +123,10 @@
 		--skeumorphic-color: rgba(255, 255, 255, 0.12);
 		--cz-shadow-pressed-3d: 0px 2px 3px 0px rgba(10, 13, 18, 0.12) inset;
 		--cz-shadow-pressed-3d-solid: 0px 2px 3px 0px rgba(10, 13, 18, 0.2) inset;
+		--cz-shadow-action:
+			inset 0 0 0 1px rgba(10, 13, 18, 0.45),
+			inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(10, 13, 18, 0.12),
+			0 2px 5px -1px rgba(10, 13, 18, 0.12);
 		--cz-color-chart-1: var(--cz-color-brand-400);
 		--cz-color-chart-2: var(--cz-color-orange-400);
 		--cz-color-chart-3: var(--cz-color-info-300);

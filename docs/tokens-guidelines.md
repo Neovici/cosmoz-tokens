@@ -111,6 +111,9 @@ new tokens.
 Primary buttons use the `action` family (`bg-action-solid`,
 `text-on-action`), which is pinned to gray: lavender marks selection and
 accents, so a lavender button would compete with selected rows and tabs.
+Give the button depth with `--cz-shadow-action` as its `box-shadow` and
+`--cz-action-sheen` as its `background-image`, so every primary button is
+raised the same way.
 
 ## 4. Names follow a pattern
 

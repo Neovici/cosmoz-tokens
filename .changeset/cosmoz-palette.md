@@ -15,6 +15,9 @@ Adopt the Cosmoz palette: lavender brand, graphite gray and new status hues
 - New `bg-action-solid`, `bg-action-solid-hover` and `text-on-action` for
   primary buttons (gray in both modes), `bg-highlight` for search/OCR
   highlights, and `chart-1`…`chart-8` for categorical data.
+- New `--cz-shadow-action` and `--cz-action-sheen` give primary buttons
+  an outline, a light top edge and a soft drop shadow, so the graphite
+  fill reads as raised.
 - `--cz-font-display` is now the body font (Geist) and `--cz-font-mono` is
   JetBrains Mono. Apps load the font files themselves.
 - Text/background contrast pairs are now tested in CI (`npm test`).
