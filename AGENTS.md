@@ -19,7 +19,8 @@ changing `src/*.css`. Non-negotiables, in short:
   tokens (see guidelines §2).
 - Pinning a hue (`--cz-color-slate-*`) in a semantic token is a semantic
   claim: only for things that must outlive brand re-themes (link text,
-  focus ring), with a comment saying why (§3).
+  focus ring), with a comment saying why (§3). `*-brand` tokens are
+  never pinned; give the job its own token (`text-link`).
 - Every value change in `semantic.css` is mirrored in `fallback.css`
   and ships with a changeset.
 

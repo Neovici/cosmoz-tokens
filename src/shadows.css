@@ -66,10 +66,12 @@
 	/*
 	 * Focus ring shadows. Inset so overflow can't clip them (#29); the inner
 	 * surface band keeps the ring visible on solid fills of the same hue.
+	 * Pinned to slate, not brand, so focus stays distinct from neutral
+	 * borders even while the brand ramp is neutral gray.
 	 */
 	--cz-color-focus-ring: light-dark(
-		var(--cz-color-brand-500),
-		var(--cz-color-brand-400)
+		var(--cz-color-slate-500),
+		var(--cz-color-slate-400)
 	);
 	--cz-color-focus-ring-error: light-dark(
 		var(--cz-color-error-500),
