@@ -1,7 +1,7 @@
-import{b as o}from"./iframe-BGpMdvqi.js";import{s as e}from"./style-DRRro2S9.js";const y={title:"Tokens/Shadows"},s=(c,n,l="")=>o`
+import{b as o}from"./iframe-C5a52GOu.js";import{s as c}from"./style-Cue08Vsn.js";const y={title:"Tokens/Shadows"},s=(n,e,l="")=>o`
     <div class="story-flex story-flex--col story-gap-2">
-        <div class="story-swatch--shadow" style="box-shadow: var(${n});"></div>
-        <span class="story-label story-label--small">${c}</span>
+        <div class="story-swatch--shadow" style="box-shadow: var(${e});"></div>
+        <span class="story-label story-label--small">${n}</span>
         ${l?o`<span
                     style="font-size: var(--cz-text-xs); color: var(--cz-color-text-tertiary);"
                 >
@@ -9,7 +9,7 @@ import{b as o}from"./iframe-BGpMdvqi.js";import{s as e}from"./style-DRRro2S9.js"
                 </span>`:""}
     </div>
 `,a={render:()=>o`
-        ${e}
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Shadow Scale</h1>
             <div class="story-section">
@@ -25,7 +25,7 @@ import{b as o}from"./iframe-BGpMdvqi.js";import{s as e}from"./style-DRRro2S9.js"
             </div>
         </div>
     `},t={render:()=>o`
-        ${e}
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Skeumorphic Shadows</h1>
             <p class="story-description">
@@ -55,11 +55,22 @@ import{b as o}from"./iframe-BGpMdvqi.js";import{s as e}from"./style-DRRro2S9.js"
                             >--cz-shadow-xs-skeumorphic</span
                         >
                     </div>
+                    <div class="story-flex story-flex--col story-gap-2">
+                        <button
+                            class="story-btn"
+                            style="background: var(--cz-action-sheen), var(--cz-color-bg-action-solid); color: var(--cz-color-text-on-action); box-shadow: var(--cz-shadow-action);"
+                        >
+                            Action
+                        </button>
+                        <span class="story-label story-label--small"
+                            >--cz-shadow-action + --cz-action-sheen</span
+                        >
+                    </div>
                 </div>
             </div>
         </div>
     `},r={render:()=>o`
-        ${e}
+        ${c}
         <div class="story-container">
             <h1 class="story-title">Focus Rings</h1>
             <p class="story-description">
@@ -136,6 +147,17 @@ import{b as o}from"./iframe-BGpMdvqi.js";import{s as e}from"./style-DRRro2S9.js"
                         </button>
                         <span class="story-label story-label--small"
                             >--cz-shadow-xs-skeumorphic</span
+                        >
+                    </div>
+                    <div class="story-flex story-flex--col story-gap-2">
+                        <button
+                            class="story-btn"
+                            style="background: var(--cz-action-sheen), var(--cz-color-bg-action-solid); color: var(--cz-color-text-on-action); box-shadow: var(--cz-shadow-action);"
+                        >
+                            Action
+                        </button>
+                        <span class="story-label story-label--small"
+                            >--cz-shadow-action + --cz-action-sheen</span
                         >
                     </div>
                 </div>
