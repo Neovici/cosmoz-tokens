@@ -51,7 +51,7 @@
 	);
 	--cz-color-text-error: light-dark(
 		var(--cz-color-error-700),
-		var(--cz-color-error-400)
+		var(--cz-color-error-300)
 	);
 	--cz-color-text-error-hover: light-dark(
 		var(--cz-color-error-800),
@@ -59,11 +59,11 @@
 	);
 	--cz-color-text-warning: light-dark(
 		var(--cz-color-warning-700),
-		var(--cz-color-warning-400)
+		var(--cz-color-warning-300)
 	);
 	--cz-color-text-success: light-dark(
 		var(--cz-color-success-700),
-		var(--cz-color-success-400)
+		var(--cz-color-success-300)
 	);
 	--cz-color-text-processing: light-dark(
 		var(--cz-color-indigo-700),
@@ -97,7 +97,7 @@
 	);
 	--cz-color-text-info: light-dark(
 		var(--cz-color-info-700),
-		var(--cz-color-info-400)
+		var(--cz-color-info-300)
 	);
 	--cz-color-text-info-hover: light-dark(
 		var(--cz-color-info-800),
@@ -120,7 +120,7 @@
 	 */
 	--cz-color-bg-primary: light-dark(
 		var(--cz-color-white),
-		var(--cz-color-gray-950)
+		var(--cz-color-gray-900)
 	);
 	--cz-color-bg-primary-hover: light-dark(
 		var(--cz-color-gray-50),
@@ -132,15 +132,15 @@
 	);
 	--cz-color-bg-secondary: light-dark(
 		var(--cz-color-gray-50),
-		var(--cz-color-gray-900)
+		var(--cz-color-gray-950)
 	);
 	--cz-color-bg-secondary-hover: light-dark(
 		var(--cz-color-gray-100),
-		var(--cz-color-gray-800)
+		var(--cz-color-gray-900)
 	);
 	--cz-color-bg-secondary-subtle: light-dark(
 		var(--cz-color-gray-25),
-		var(--cz-color-gray-900)
+		var(--cz-color-gray-950)
 	);
 	--cz-color-bg-tertiary: light-dark(
 		var(--cz-color-gray-100),
@@ -192,6 +192,27 @@
 	--cz-color-bg-brand-section: light-dark(
 		var(--cz-color-brand-800),
 		var(--cz-color-gray-900)
+	);
+	/* Primary action fill (primary buttons). Pinned to gray, not brand: the
+	 * brand hue marks selection and accents, so a filled lavender button would
+	 * compete with selected rows and tabs. Dark mode stays on the gray scale too,
+	 * lighter than the surfaces so the button still reads as the primary action. */
+	--cz-color-bg-action-solid: light-dark(
+		var(--cz-color-gray-700),
+		var(--cz-color-gray-600)
+	);
+	--cz-color-bg-action-solid-hover: light-dark(
+		var(--cz-color-gray-600),
+		var(--cz-color-gray-500)
+	);
+	--cz-color-text-on-action: light-dark(
+		var(--cz-color-white),
+		var(--cz-color-white)
+	);
+	/* Marker highlight for search hits and OCR field focus. Not a status. */
+	--cz-color-bg-highlight: light-dark(
+		var(--cz-color-yellow-200),
+		var(--cz-color-yellow-900)
 	);
 	--cz-color-bg-error: light-dark(
 		var(--cz-color-error-50),
@@ -426,5 +447,40 @@
 	--cz-color-fg-info-secondary: light-dark(
 		var(--cz-color-info-500),
 		var(--cz-color-info-400)
+	);
+
+	/* Categorical data colours, used in this order (charts, OCR fields, groups).
+	 * Not statuses: use the status tokens when a colour means ok/warning/error. */
+	--cz-color-chart-1: light-dark(
+		var(--cz-color-brand-400),
+		var(--cz-color-brand-400)
+	);
+	--cz-color-chart-2: light-dark(
+		var(--cz-color-orange-400),
+		var(--cz-color-orange-400)
+	);
+	--cz-color-chart-3: light-dark(
+		var(--cz-color-info-300),
+		var(--cz-color-info-300)
+	);
+	--cz-color-chart-4: light-dark(
+		var(--cz-color-success-700),
+		var(--cz-color-success-500)
+	);
+	--cz-color-chart-5: light-dark(
+		var(--cz-color-warning-300),
+		var(--cz-color-warning-300)
+	);
+	--cz-color-chart-6: light-dark(
+		var(--cz-color-error-500),
+		var(--cz-color-error-500)
+	);
+	--cz-color-chart-7: light-dark(
+		var(--cz-color-brand-600),
+		var(--cz-color-brand-200)
+	);
+	--cz-color-chart-8: light-dark(
+		var(--cz-color-gray-400),
+		var(--cz-color-gray-600)
 	);
 }

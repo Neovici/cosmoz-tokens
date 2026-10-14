@@ -45,6 +45,10 @@
 		--cz-color-bg-brand-solid: var(--cz-color-brand-800);
 		--cz-color-bg-brand-solid-hover: var(--cz-color-brand-700);
 		--cz-color-bg-brand-section: var(--cz-color-brand-800);
+		--cz-color-bg-action-solid: var(--cz-color-gray-700);
+		--cz-color-bg-action-solid-hover: var(--cz-color-gray-600);
+		--cz-color-text-on-action: var(--cz-color-white);
+		--cz-color-bg-highlight: var(--cz-color-yellow-200);
 		--cz-color-bg-error: var(--cz-color-error-50);
 		--cz-color-bg-error-secondary: var(--cz-color-error-100);
 		--cz-color-bg-error-solid: var(--cz-color-error-600);
@@ -119,5 +123,13 @@
 		--skeumorphic-color: rgba(255, 255, 255, 0.12);
 		--cz-shadow-pressed-3d: 0px 2px 3px 0px rgba(10, 13, 18, 0.12) inset;
 		--cz-shadow-pressed-3d-solid: 0px 2px 3px 0px rgba(10, 13, 18, 0.2) inset;
+		--cz-color-chart-1: var(--cz-color-brand-400);
+		--cz-color-chart-2: var(--cz-color-orange-400);
+		--cz-color-chart-3: var(--cz-color-info-300);
+		--cz-color-chart-4: var(--cz-color-success-700);
+		--cz-color-chart-5: var(--cz-color-warning-300);
+		--cz-color-chart-6: var(--cz-color-error-500);
+		--cz-color-chart-7: var(--cz-color-brand-600);
+		--cz-color-chart-8: var(--cz-color-gray-400);
 	}
 }

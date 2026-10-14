@@ -99,6 +99,19 @@ changes — then half the app follows the new brand and half does not.
 The quick test: if your reason starts with "it looks better as…", do
 not change this one token — change the brand scale instead.
 
+### The Cosmoz palette
+
+The designer-facing palette is 29 colours: gray 50, 200–700, 900, 950;
+lavender (brand) 50, 200, 400, 600; and 50, 300, 500, 700 of error,
+warning, success and sky (info). The other steps exist so every token
+keeps resolving, and are marked `/* derived */` in `primitives.css` —
+interpolated in OKLCH from their core neighbours. Prefer core steps in
+new tokens.
+
+Primary buttons use the `action` family (`bg-action-solid`,
+`text-on-action`), which is pinned to gray: lavender marks selection and
+accents, so a lavender button would compete with selected rows and tabs.
+
 ## 4. Names follow a pattern
 
 `--cz-color-<what it paints>-<situation>[-<extra>]`
@@ -131,6 +144,7 @@ not change this one token — change the brand scale instead.
   | ---------------- | ---------- | --------- |
   | Body text        | 900        | 50        |
   | Secondary text   | 700        | 300       |
+  | Status text      | 700        | 300       |
   | Tertiary text    | 600        | 400       |
   | Tinted surface   | 50         | 950       |
   | Stronger surface | 100/200    | 800/700   |
