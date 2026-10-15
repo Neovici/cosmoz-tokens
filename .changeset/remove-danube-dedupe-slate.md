@@ -1,5 +1,5 @@
 ---
-'@neovici/cosmoz-tokens': major
+'@neovici/cosmoz-tokens': minor
 ---
 
 Remove the unused `--cz-danube-*` and `--cz-slate-*` scales
