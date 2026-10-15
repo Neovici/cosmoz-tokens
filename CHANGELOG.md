@@ -1,5 +1,63 @@
 # @neovici/cosmoz-tokens
 
+## 4.9.0
+
+### Minor Changes
+
+- 363a4bd: Adopt the Cosmoz palette: lavender brand, graphite gray and new status hues
+  - `--cz-color-brand-*` now points at a new `--cz-color-lavender-*` scale
+    (core #AF9BF4). Every `*-brand` token follows.
+  - Gray, error, warning, success and sky (info) scales get new values. The
+    designer-facing palette is 29 core steps; the other steps are derived in
+    OKLCH and marked in `primitives.css`. No step was removed.
+  - Status text in dark mode moves from step 400 to 300.
+  - Dark surfaces are re-layered: `bg-primary` is gray-900 and `bg-secondary`
+    gray-950, so cards lift off the page.
+  - New `bg-action-solid`, `bg-action-solid-hover` and `text-on-action` for
+    primary buttons (gray in both modes), `bg-highlight` for search/OCR
+    highlights, and `chart-1`…`chart-8` for categorical data.
+  - New `--cz-shadow-action` and `--cz-action-sheen` give primary buttons
+    an outline, a light top edge and a soft drop shadow, so the graphite
+    fill reads as raised.
+  - `--cz-font-display` is now the body font (Geist) and `--cz-font-mono` is
+    JetBrains Mono. Apps load the font files themselves.
+  - Text/background contrast pairs are now tested in CI (`npm test`).
+
+- d3f3f08: Make solid brand fills graphite
+
+  `bg-brand-solid` is now brand-800 in light mode and brand-600 in dark mode,
+  so primary buttons, checkboxes and selected tabs read as decisive in light
+  mode and stand out from the page in dark mode. `bg-brand-solid-hover` is
+  brand-700 in both modes.
+
+- 65dcc03: Make the brand ramp gray and add link text tokens
+
+  `--cz-color-brand-{25-950}` now points at the gray scale, so everything on
+  the brand ramp loses its blue cast against the gray surfaces, most visibly
+  in dark mode. `bg-brand-solid` goes back to the brand ramp at step 700,
+  which renders the same gray-700 as before.
+
+  New `--cz-color-text-link` and `--cz-color-text-link-hover` keep links Slate
+  so they stay distinct from body text. `text-brand` and `text-brand-hover`
+  are now gray; switch links to the new tokens. The focus ring stays Slate.
+  Components that read `--cz-color-brand-*` directly (for example button
+  pressed states) now render gray.
+
+- 73a76a1: Make `--cz-color-bg-brand-solid` a neutral gray (gray-700, hover gray-800 light / gray-600 dark)
+
+  Slate-600 fills stood out as the only blue-tinted grey on the page, since every
+  surface, text and border token is gray. Brand text, links, chips and selection
+  surfaces keep the Slate scale, so brand still reads as brand.
+
+- 45bff8e: Remove the unused `--cz-danube-*` and `--cz-slate-*` scales
+
+  Nothing has referenced Danube since the brand ramp moved off it in 4.6.0, and
+  `--cz-slate-*` duplicated `--cz-color-slate-*`. Use `--cz-color-slate-*`
+  instead of `--cz-slate-*`; the values are the same.
+
+  `--cz-color-slate-25` changes from `rgb(248 250 252)` (a copy of step 50) to
+  `rgb(252 253 254)`, the value `--cz-slate-25` had.
+
 ## 4.8.0
 
 ### Minor Changes
