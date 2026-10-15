@@ -43,19 +43,19 @@
 	--cz-color-lavender-900: rgb(54 46 80); /* derived */
 	--cz-color-lavender-950: rgb(36 32 52); /* derived */
 
-	/* Gray colors — graphite, tinted toward lavender. Core: all but 25, 100, 800 */
+	/* Gray colors — graphite, tinted toward lavender; 500–950 lean cool. Core: all but 25, 100, 800 */
 	--cz-color-gray-25: rgb(251 250 251); /* derived */
 	--cz-color-gray-50: rgb(247 246 248);
 	--cz-color-gray-100: rgb(240 239 242); /* derived */
 	--cz-color-gray-200: rgb(227 226 231);
 	--cz-color-gray-300: rgb(209 208 215);
 	--cz-color-gray-400: rgb(161 160 168);
-	--cz-color-gray-500: rgb(116 115 123);
-	--cz-color-gray-600: rgb(88 87 94);
-	--cz-color-gray-700: rgb(66 65 72);
-	--cz-color-gray-800: rgb(45 44 50); /* derived */
-	--cz-color-gray-900: rgb(25 25 29);
-	--cz-color-gray-950: rgb(14 14 17);
+	--cz-color-gray-500: rgb(113 116 126);
+	--cz-color-gray-600: rgb(85 88 97);
+	--cz-color-gray-700: rgb(60 62 71);
+	--cz-color-gray-800: rgb(38 40 47); /* derived */
+	--cz-color-gray-900: rgb(20 21 26);
+	--cz-color-gray-950: rgb(10 11 14);
 
 	/* Error colors. Core: 50, 300, 500, 700 */
 	--cz-color-error-25: rgb(255 248 247); /* derived */
