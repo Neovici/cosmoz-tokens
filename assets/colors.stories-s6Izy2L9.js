@@ -1,4 +1,4 @@
-import{b as l}from"./iframe-beHBT0e4.js";import{s as e}from"./style-G-cQKie-.js";const h={title:"Tokens/Colors"},r=c=>l`
+import{b as l}from"./iframe-C5a52GOu.js";import{s as e}from"./style-Cue08Vsn.js";const h={title:"Tokens/Colors"},r=c=>l`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${c});"></div>
         <span class="story-label">${c}</span>
@@ -19,7 +19,7 @@ import{b as l}from"./iframe-beHBT0e4.js";import{s as e}from"./style-G-cQKie-.js"
         ${e}
         <div class="story-container">
             <h1 class="story-title">Brand Colors</h1>
-            ${o("--cz-color-brand","Brand (Indigo-based)")}
+            ${o("--cz-color-brand","Brand (Lavender)")}
         </div>
     `},a={render:()=>l`
         ${e}
@@ -117,7 +117,7 @@ import{b as l}from"./iframe-beHBT0e4.js";import{s as e}from"./style-G-cQKie-.js"
         \${style}
         <div class="story-container">
             <h1 class="story-title">Brand Colors</h1>
-            \${colorScale('--cz-color-brand', 'Brand (Indigo-based)')}
+            \${colorScale('--cz-color-brand', 'Brand (Lavender)')}
         </div>
     \`
 }`,...s.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{

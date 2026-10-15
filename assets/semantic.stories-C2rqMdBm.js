@@ -1,9 +1,9 @@
-import{b as c}from"./iframe-beHBT0e4.js";import{s}from"./style-G-cQKie-.js";const g={title:"Tokens/Semantic"},o=r=>c`
+import{b as c}from"./iframe-C5a52GOu.js";import{s}from"./style-Cue08Vsn.js";const b={title:"Tokens/Semantic"},o=r=>c`
     <div class="story-row">
         <div class="story-swatch" style="background: var(${r});"></div>
         <span class="story-label">${r}</span>
     </div>
-`,t=()=>{const r=document.documentElement,a=r.style.colorScheme!=="dark";r.style.colorScheme=a?"dark":"light",r.classList.toggle("dark-mode",a)},e={render:()=>c`
+`,t=()=>{const r=document.documentElement,a=r.style.colorScheme!=="dark";r.style.colorScheme=a?"dark":"light",r.classList.toggle("dark-mode",a)},n={render:()=>c`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Text Colors</h1>
@@ -35,7 +35,7 @@ import{b as c}from"./iframe-beHBT0e4.js";import{s}from"./style-G-cQKie-.js";cons
                 </div>
             </div>
         </div>
-    `},n={render:()=>c`
+    `},e={render:()=>c`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Background Colors</h1>
@@ -64,6 +64,15 @@ import{b as c}from"./iframe-beHBT0e4.js";import{s}from"./style-G-cQKie-.js";cons
                     ${o("--cz-color-bg-brand-secondary")}
                     ${o("--cz-color-bg-brand-solid")}
                     ${o("--cz-color-bg-brand-section")}
+                </div>
+            </div>
+            <div class="story-section">
+                <h3 class="story-section-title">Action, highlight and charts</h3>
+                <div class="story-grid story-grid--wide">
+                    ${o("--cz-color-bg-action-solid")}
+                    ${o("--cz-color-bg-action-solid-hover")}
+                    ${o("--cz-color-bg-highlight")}
+                    ${[1,2,3,4,5,6,7,8].map(r=>o(`--cz-color-chart-${r}`))}
                 </div>
             </div>
             <div class="story-section">
@@ -120,7 +129,7 @@ import{b as c}from"./iframe-beHBT0e4.js";import{s}from"./style-G-cQKie-.js";cons
                 </div>
             </div>
         </div>
-    `},d={render:()=>c`
+    `},i={render:()=>c`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Foreground Colors</h1>
@@ -148,7 +157,7 @@ import{b as c}from"./iframe-beHBT0e4.js";import{s}from"./style-G-cQKie-.js";cons
                 </div>
             </div>
         </div>
-    `},i={render:()=>c`
+    `},d={render:()=>c`
         ${s}
         <div class="story-container">
             <h1 class="story-title">Dark Mode Demo</h1>
@@ -182,7 +191,7 @@ document.documentElement.style.colorScheme = 'dark';
                 >
             </div>
         </div>
-    `};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+    `};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -216,7 +225,7 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...e.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -249,6 +258,15 @@ document.documentElement.style.colorScheme = 'dark';
                 </div>
             </div>
             <div class="story-section">
+                <h3 class="story-section-title">Action, highlight and charts</h3>
+                <div class="story-grid story-grid--wide">
+                    \${colorRow('--cz-color-bg-action-solid')}
+                    \${colorRow('--cz-color-bg-action-solid-hover')}
+                    \${colorRow('--cz-color-bg-highlight')}
+                    \${[1, 2, 3, 4, 5, 6, 7, 8].map(n => colorRow(\`--cz-color-chart-\${n}\`))}
+                </div>
+            </div>
+            <div class="story-section">
                 <h3 class="story-section-title">Status</h3>
                 <div class="story-grid story-grid--wide">
                     \${colorRow('--cz-color-bg-error')}
@@ -272,7 +290,7 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...n.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+}`,...e.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -305,7 +323,7 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...l.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+}`,...l.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -335,7 +353,7 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...d.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+}`,...i.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -371,4 +389,4 @@ document.documentElement.style.colorScheme = 'dark';
             </div>
         </div>
     \`
-}`,...i.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{n as BackgroundColors,l as BorderColors,i as DarkModeDemo,d as ForegroundColors,e as TextColors,$ as __namedExportsOrder,g as default};
+}`,...d.parameters?.docs?.source}}};const $=["TextColors","BackgroundColors","BorderColors","ForegroundColors","DarkModeDemo"];export{e as BackgroundColors,l as BorderColors,d as DarkModeDemo,i as ForegroundColors,n as TextColors,$ as __namedExportsOrder,b as default};
