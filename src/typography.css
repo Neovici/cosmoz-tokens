@@ -8,11 +8,12 @@
 	--cz-font-body:
 		var(--font-geist, 'Geist Variable'), 'Geist', -apple-system, 'Segoe UI',
 		Roboto, Arial, sans-serif;
-	--cz-font-display:
-		'DM Sans', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+	/* One family for display and UI; headings get their character from weight and tracking. */
+	--cz-font-display: var(--cz-font-body);
+	/* Machine data only: IDs, amounts in columns, keyboard shortcuts. */
 	--cz-font-mono:
-		ui-monospace, 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas,
-		'Liberation Mono', 'Courier New', monospace;
+		var(--font-jetbrains-mono, 'JetBrains Mono Variable'), 'JetBrains Mono',
+		ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
 	/* Text sizes */
 	--cz-text-xs: 0.75rem;

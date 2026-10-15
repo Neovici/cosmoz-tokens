@@ -88,6 +88,17 @@ export const BackgroundColors = {
 				</div>
 			</div>
 			<div class="story-section">
+				<h3 class="story-section-title">Action, highlight and charts</h3>
+				<div class="story-grid story-grid--wide">
+					${colorRow('--cz-color-bg-action-solid')}
+					${colorRow('--cz-color-bg-action-solid-hover')}
+					${colorRow('--cz-color-bg-highlight')}
+					${[1, 2, 3, 4, 5, 6, 7, 8].map((n) =>
+						colorRow(`--cz-color-chart-${n}`),
+					)}
+				</div>
+			</div>
+			<div class="story-section">
 				<h3 class="story-section-title">Status</h3>
 				<div class="story-grid story-grid--wide">
 					${colorRow('--cz-color-bg-error')}

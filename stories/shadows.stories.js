@@ -71,6 +71,17 @@ export const SkeumorphicShadows = {
 							>--cz-shadow-xs-skeumorphic</span
 						>
 					</div>
+					<div class="story-flex story-flex--col story-gap-2">
+						<button
+							class="story-btn"
+							style="background: var(--cz-action-sheen), var(--cz-color-bg-action-solid); color: var(--cz-color-text-on-action); box-shadow: var(--cz-shadow-action);"
+						>
+							Action
+						</button>
+						<span class="story-label story-label--small"
+							>--cz-shadow-action + --cz-action-sheen</span
+						>
+					</div>
 				</div>
 			</div>
 		</div>

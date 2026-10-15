@@ -58,6 +58,29 @@
 		var(--cz-color-pressed-shade-strong) inset;
 
 	/*
+	 * Primary (action) buttons: an outline, a light top edge and a soft drop,
+	 * so the graphite fill reads as raised instead of flat. Pair with
+	 * --cz-action-sheen as the background-image.
+	 */
+	--cz-color-action-ring: light-dark(
+		rgba(10, 13, 18, 0.45),
+		rgba(255, 255, 255, 0.12)
+	);
+	--cz-color-action-drop: light-dark(
+		rgba(10, 13, 18, 0.12),
+		rgba(0, 0, 0, 0.45)
+	);
+	--cz-shadow-action:
+		inset 0 0 0 1px var(--cz-color-action-ring),
+		inset 0 1px 0 rgba(255, 255, 255, 0.16),
+		0 1px 2px var(--cz-color-action-drop),
+		0 2px 5px -1px var(--cz-color-action-drop);
+	--cz-action-sheen: linear-gradient(
+		rgba(255, 255, 255, 0.12),
+		rgba(255, 255, 255, 0)
+	);
+
+	/*
 	 * Border color for the ::before highlight; light in light mode, off in
 	 * dark mode where it would double up the ring.
 	 */

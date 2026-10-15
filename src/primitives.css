@@ -1,6 +1,8 @@
 /**
  * Cosmoz Design Tokens - Primitives
- * Base color palette extracted from Untitled UI
+ * Base color palette. Gray, lavender, error, warning, success and sky are the
+ * Cosmoz palette (core steps are listed per scale; the rest are derived in OKLCH).
+ * The remaining scales are kept for existing consumers.
  */
 
 :root {
@@ -13,75 +15,89 @@
 	--cz-color-alpha-white: rgb(255 255 255);
 	--cz-color-alpha-black: rgb(0 0 0);
 
-	/* Brand colors - Gray */
-	--cz-color-brand-25: var(--cz-color-gray-25);
-	--cz-color-brand-50: var(--cz-color-gray-50);
-	--cz-color-brand-100: var(--cz-color-gray-100);
-	--cz-color-brand-200: var(--cz-color-gray-200);
-	--cz-color-brand-300: var(--cz-color-gray-300);
-	--cz-color-brand-400: var(--cz-color-gray-400);
-	--cz-color-brand-500: var(--cz-color-gray-500);
-	--cz-color-brand-600: var(--cz-color-gray-600);
-	--cz-color-brand-700: var(--cz-color-gray-700);
-	--cz-color-brand-800: var(--cz-color-gray-800);
-	--cz-color-brand-900: var(--cz-color-gray-900);
-	--cz-color-brand-950: var(--cz-color-gray-950);
+	/* Brand colors - Lavender. The theme switch: re-point these to re-brand. */
+	--cz-color-brand-25: var(--cz-color-lavender-25);
+	--cz-color-brand-50: var(--cz-color-lavender-50);
+	--cz-color-brand-100: var(--cz-color-lavender-100);
+	--cz-color-brand-200: var(--cz-color-lavender-200);
+	--cz-color-brand-300: var(--cz-color-lavender-300);
+	--cz-color-brand-400: var(--cz-color-lavender-400);
+	--cz-color-brand-500: var(--cz-color-lavender-500);
+	--cz-color-brand-600: var(--cz-color-lavender-600);
+	--cz-color-brand-700: var(--cz-color-lavender-700);
+	--cz-color-brand-800: var(--cz-color-lavender-800);
+	--cz-color-brand-900: var(--cz-color-lavender-900);
+	--cz-color-brand-950: var(--cz-color-lavender-950);
 
-	/* Gray colors */
-	--cz-color-gray-25: rgb(253 253 253);
-	--cz-color-gray-50: rgb(250 250 250);
-	--cz-color-gray-100: rgb(245 245 245);
-	--cz-color-gray-200: rgb(233 234 235);
-	--cz-color-gray-300: rgb(213 215 218);
-	--cz-color-gray-400: rgb(164 167 174);
-	--cz-color-gray-500: rgb(113 118 128);
-	--cz-color-gray-600: rgb(83 88 98);
-	--cz-color-gray-700: rgb(65 70 81);
-	--cz-color-gray-800: rgb(37 43 55);
-	--cz-color-gray-900: rgb(24 29 39);
-	--cz-color-gray-950: rgb(10 13 18);
+	/* Lavender colors — the brand hue. Core: 50, 200, 400, 600 */
+	--cz-color-lavender-25: rgb(250 248 255); /* derived */
+	--cz-color-lavender-50: rgb(245 242 255);
+	--cz-color-lavender-100: rgb(236 230 255); /* derived */
+	--cz-color-lavender-200: rgb(219 207 255);
+	--cz-color-lavender-300: rgb(197 181 250); /* derived */
+	--cz-color-lavender-400: rgb(175 155 244);
+	--cz-color-lavender-500: rgb(144 124 210); /* derived */
+	--cz-color-lavender-600: rgb(115 94 177);
+	--cz-color-lavender-700: rgb(94 78 143); /* derived */
+	--cz-color-lavender-800: rgb(73 62 111); /* derived */
+	--cz-color-lavender-900: rgb(54 46 80); /* derived */
+	--cz-color-lavender-950: rgb(36 32 52); /* derived */
 
-	/* Error colors */
-	--cz-color-error-25: rgb(255 251 250);
-	--cz-color-error-50: rgb(254 243 242);
-	--cz-color-error-100: rgb(254 228 226);
-	--cz-color-error-200: rgb(254 205 202);
-	--cz-color-error-300: rgb(253 162 155);
-	--cz-color-error-400: rgb(249 112 102);
-	--cz-color-error-500: rgb(240 68 56);
-	--cz-color-error-600: rgb(217 45 32);
-	--cz-color-error-700: rgb(180 35 24);
-	--cz-color-error-800: rgb(145 32 24);
-	--cz-color-error-900: rgb(122 39 26);
-	--cz-color-error-950: rgb(85 22 12);
+	/* Gray colors — graphite, tinted toward lavender. Core: all but 25, 100, 800 */
+	--cz-color-gray-25: rgb(251 250 251); /* derived */
+	--cz-color-gray-50: rgb(247 246 248);
+	--cz-color-gray-100: rgb(240 239 242); /* derived */
+	--cz-color-gray-200: rgb(227 226 231);
+	--cz-color-gray-300: rgb(209 208 215);
+	--cz-color-gray-400: rgb(161 160 168);
+	--cz-color-gray-500: rgb(116 115 123);
+	--cz-color-gray-600: rgb(88 87 94);
+	--cz-color-gray-700: rgb(66 65 72);
+	--cz-color-gray-800: rgb(45 44 50); /* derived */
+	--cz-color-gray-900: rgb(25 25 29);
+	--cz-color-gray-950: rgb(14 14 17);
 
-	/* Warning colors */
-	--cz-color-warning-25: rgb(255 252 245);
-	--cz-color-warning-50: rgb(255 250 235);
-	--cz-color-warning-100: rgb(254 240 199);
-	--cz-color-warning-200: rgb(254 223 137);
-	--cz-color-warning-300: rgb(254 200 75);
-	--cz-color-warning-400: rgb(253 176 34);
-	--cz-color-warning-500: rgb(247 144 9);
-	--cz-color-warning-600: rgb(220 104 3);
-	--cz-color-warning-700: rgb(181 71 8);
-	--cz-color-warning-800: rgb(147 55 13);
-	--cz-color-warning-900: rgb(122 46 14);
-	--cz-color-warning-950: rgb(78 29 9);
+	/* Error colors. Core: 50, 300, 500, 700 */
+	--cz-color-error-25: rgb(255 248 247); /* derived */
+	--cz-color-error-50: rgb(255 241 240);
+	--cz-color-error-100: rgb(255 225 223); /* derived */
+	--cz-color-error-200: rgb(255 193 189); /* derived */
+	--cz-color-error-300: rgb(255 160 156);
+	--cz-color-error-400: rgb(254 124 122); /* derived */
+	--cz-color-error-500: rgb(251 82 88);
+	--cz-color-error-600: rgb(211 49 61); /* derived */
+	--cz-color-error-700: rgb(172 0 34);
+	--cz-color-error-800: rgb(139 18 33); /* derived */
+	--cz-color-error-900: rgb(108 24 30); /* derived */
+	--cz-color-error-950: rgb(78 24 27); /* derived */
 
-	/* Success colors */
-	--cz-color-success-25: rgb(246 254 249);
-	--cz-color-success-50: rgb(236 253 243);
-	--cz-color-success-100: rgb(220 250 230);
-	--cz-color-success-200: rgb(171 239 198);
-	--cz-color-success-300: rgb(117 224 167);
-	--cz-color-success-400: rgb(71 205 137);
-	--cz-color-success-500: rgb(23 178 106);
-	--cz-color-success-600: rgb(7 148 85);
-	--cz-color-success-700: rgb(6 118 71);
-	--cz-color-success-800: rgb(8 93 58);
-	--cz-color-success-900: rgb(7 77 49);
-	--cz-color-success-950: rgb(5 51 33);
+	/* Warning colors. Core: 50, 300, 500, 700 */
+	--cz-color-warning-25: rgb(255 251 243); /* derived */
+	--cz-color-warning-50: rgb(254 246 230);
+	--cz-color-warning-100: rgb(254 238 206); /* derived */
+	--cz-color-warning-200: rgb(255 221 155); /* derived */
+	--cz-color-warning-300: rgb(255 204 95);
+	--cz-color-warning-400: rgb(225 175 62); /* derived */
+	--cz-color-warning-500: rgb(195 147 18);
+	--cz-color-warning-600: rgb(153 114 7); /* derived */
+	--cz-color-warning-700: rgb(113 82 0);
+	--cz-color-warning-800: rgb(92 68 14); /* derived */
+	--cz-color-warning-900: rgb(72 55 20); /* derived */
+	--cz-color-warning-950: rgb(53 42 21); /* derived */
+
+	/* Success colors. Core: 50, 300, 500, 700 */
+	--cz-color-success-25: rgb(245 252 248); /* derived */
+	--cz-color-success-50: rgb(235 248 242);
+	--cz-color-success-100: rgb(217 240 229); /* derived */
+	--cz-color-success-200: rgb(181 223 203); /* derived */
+	--cz-color-success-300: rgb(143 206 178);
+	--cz-color-success-400: rgb(105 178 147); /* derived */
+	--cz-color-success-500: rgb(64 151 118);
+	--cz-color-success-600: rgb(40 131 99); /* derived */
+	--cz-color-success-700: rgb(5 111 80);
+	--cz-color-success-800: rgb(18 91 67); /* derived */
+	--cz-color-success-900: rgb(22 71 55); /* derived */
+	--cz-color-success-950: rgb(22 53 43); /* derived */
 
 	/* Info colors - Sky */
 	--cz-color-info-25: var(--cz-color-sky-25);
@@ -223,19 +239,19 @@
 	--cz-color-cyan-900: rgb(22 78 99);
 	--cz-color-cyan-950: rgb(8 51 68);
 
-	/* Sky colors */
-	--cz-color-sky-25: rgb(240 249 255);
-	--cz-color-sky-50: rgb(240 249 255);
-	--cz-color-sky-100: rgb(224 242 254);
-	--cz-color-sky-200: rgb(186 230 253);
-	--cz-color-sky-300: rgb(125 211 252);
-	--cz-color-sky-400: rgb(56 189 248);
-	--cz-color-sky-500: rgb(14 165 233);
-	--cz-color-sky-600: rgb(2 132 199);
-	--cz-color-sky-700: rgb(3 105 161);
-	--cz-color-sky-800: rgb(7 89 133);
-	--cz-color-sky-900: rgb(12 74 110);
-	--cz-color-sky-950: rgb(8 47 73);
+	/* Sky colors — the info hue. Core: 50, 300, 500, 700 */
+	--cz-color-sky-25: rgb(245 251 255); /* derived */
+	--cz-color-sky-50: rgb(235 246 255);
+	--cz-color-sky-100: rgb(213 237 255); /* derived */
+	--cz-color-sky-200: rgb(169 218 255); /* derived */
+	--cz-color-sky-300: rgb(121 198 255);
+	--cz-color-sky-400: rgb(92 169 224); /* derived */
+	--cz-color-sky-500: rgb(62 140 194);
+	--cz-color-sky-600: rgb(41 118 169); /* derived */
+	--cz-color-sky-700: rgb(18 96 144);
+	--cz-color-sky-800: rgb(23 79 117); /* derived */
+	--cz-color-sky-900: rgb(24 63 92); /* derived */
+	--cz-color-sky-950: rgb(23 47 67); /* derived */
 
 	/* Blue colors */
 	--cz-color-blue-25: rgb(239 246 255);

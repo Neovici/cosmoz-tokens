@@ -31,7 +31,7 @@ export const BrandColors = {
 		${style}
 		<div class="story-container">
 			<h1 class="story-title">Brand Colors</h1>
-			${colorScale('--cz-color-brand', 'Brand (Indigo-based)')}
+			${colorScale('--cz-color-brand', 'Brand (Lavender)')}
 		</div>
 	`,
 };
