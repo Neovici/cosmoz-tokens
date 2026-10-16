@@ -8,7 +8,7 @@ const luminance = (rgb) => {
 	return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 };
 
-// Paint the brightest point of the sheen over the fill before measuring it.
+// Composite each sheen extreme over the fill and backdrop before measuring it.
 const contrast = (foreground, background, sheen, backdrop) => {
 	const canvas = document.createElement('canvas');
 	canvas.width = canvas.height = 1;
@@ -55,10 +55,20 @@ describe('glass action contrast', () => {
 							probe.style.color = color;
 							return getComputedStyle(probe).color;
 						};
-						const fg = resolve('var(--cz-color-text-on-action)');
+						const fg = resolve(
+							kind === 'action'
+								? 'var(--cz-color-text-on-glass-action)'
+								: 'var(--cz-color-text-on-action)',
+						);
 						const bg = resolve(`var(--cz-color-bg-glass-${kind}${state})`);
 						const sheen = resolve('var(--cz-color-glass-action-highlight)');
-						expect(contrast(fg, bg, sheen, backdrop)).to.be.at.least(4.5);
+						for (const overlay of [
+							sheen,
+							'transparent',
+							resolve('var(--cz-color-glass-shade)'),
+						]) {
+							expect(contrast(fg, bg, overlay, backdrop)).to.be.at.least(4.5);
+						}
 						probe.remove();
 					});
 				}

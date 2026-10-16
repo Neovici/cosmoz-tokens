@@ -82,7 +82,7 @@ export const GlassControls = {
 					kind: 'primary',
 					fill: '-action',
 					sheen: '--cz-glass-action-sheen',
-					text: '--cz-color-text-on-action',
+					text: '--cz-color-text-on-glass-action',
 					shadow: '--cz-shadow-glass-action',
 				},
 				{
