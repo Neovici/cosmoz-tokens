@@ -184,25 +184,22 @@ npm run storybook:build
 
 Apache-2.0
 
-## Glass material
+## Glass buttons
 
-The main stylesheet includes glass tokens for controls and floating panels.
-Use `--cz-glass-sheen` with `--cz-color-bg-glass` for secondary controls,
-`--cz-glass-action-sheen` with `--cz-color-bg-glass-action` for primary actions,
-and `--cz-color-bg-glass-panel` for menus and dialog frames. Primary actions
-use a pale fill with dark labels in light mode and a deeper smoked fill
-with light labels in dark mode. Pair them with
-`--cz-color-text-on-glass-action`. Pair destructive glass
-fills with white text. Use the matching `-hover` fill for each kind of action.
+The main stylesheet includes glass tokens for buttons. Use `--cz-glass-sheen`
+with `--cz-color-bg-glass` for secondary buttons, and `--cz-glass-action-sheen`
+with `--cz-color-bg-glass-action` for primary buttons. Primary buttons use a
+pale fill with dark labels in light mode and a deeper smoked fill with light
+labels in dark mode. Pair them with `--cz-color-text-on-glass-action`.
+Destructive fills use white text. Each fill has a matching `-hover` token.
 
-Pair secondary controls with `--cz-color-border-glass` and `--cz-shadow-glass`.
-Primary actions use `--cz-color-border-glass-action` and
-`--cz-shadow-glass-action`; panels use `--cz-shadow-glass-panel`.
-Floating toolbars use `--cz-color-bg-glass-toolbar`, `--cz-glass-sheen` and
-`--cz-shadow-glass-toolbar` for a more translucent frame. Action fills remain
-dense enough for AA label contrast over both white and black backdrops.
-Apply `--cz-backdrop-filter-glass` only to small floating controls and panels.
-The token resolves to `none` without backdrop-filter support and for reduced
-transparency. Reduced transparency also restores opaque fills. Forced colors
-remove the material effects; components must retain a system-colored border
-and visible focus outline.
+Secondary buttons use `--cz-color-border-glass` and `--cz-shadow-glass`.
+Primary buttons use `--cz-color-border-glass-action` and
+`--cz-shadow-glass-action`. Action fills retain AA label contrast over white
+and black backdrops.
+
+Apply `--cz-backdrop-filter-glass` to button surfaces. It resolves to `none`
+without backdrop-filter support and for reduced transparency. Reduced
+transparency also restores opaque fills. Forced colors remove the material
+effects; components must retain a system-colored border and visible focus
+outline.

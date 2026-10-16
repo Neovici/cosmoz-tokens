@@ -1,4 +1,4 @@
-/** Shared glass material. Opaque fills are the baseline; blur is an enhancement. */
+/** Glass button material. Opaque fills are the baseline; blur is an enhancement. */
 :root {
 	--cz-color-bg-glass: light-dark(
 		var(--cz-color-gray-100),
@@ -7,14 +7,6 @@
 	--cz-color-bg-glass-hover: light-dark(
 		var(--cz-color-gray-200),
 		var(--cz-color-gray-700)
-	);
-	--cz-color-bg-glass-panel: light-dark(
-		var(--cz-color-gray-50),
-		var(--cz-color-gray-900)
-	);
-	--cz-color-bg-glass-toolbar: light-dark(
-		var(--cz-color-gray-100),
-		var(--cz-color-gray-800)
 	);
 	--cz-color-bg-glass-action: light-dark(
 		var(--cz-color-gray-100),
@@ -74,11 +66,6 @@
 		inset 0 1px 0 color-mix(in oklab, var(--cz-color-white) 12%, transparent),
 		0 1px 1px color-mix(in oklab, var(--cz-color-black) 8%, transparent);
 	--cz-shadow-glass-pressed: inset 0 1px 2px var(--cz-color-glass-shade);
-	--cz-shadow-glass-panel:
-		inset 0 1px 0 var(--cz-color-glass-highlight), var(--cz-shadow-lg);
-	--cz-shadow-glass-toolbar:
-		inset 0 1px 0 var(--cz-color-glass-highlight),
-		0 4px 16px color-mix(in oklab, var(--cz-color-black) 8%, transparent);
 	--cz-backdrop-filter-glass: none;
 	--cz-opacity-disabled: 0.45;
 }
@@ -92,14 +79,6 @@
 		--cz-color-bg-glass-hover: light-dark(
 			color-mix(in oklab, var(--cz-color-gray-200) 86%, transparent),
 			color-mix(in oklab, var(--cz-color-gray-500) 38%, transparent)
-		);
-		--cz-color-bg-glass-panel: light-dark(
-			color-mix(in oklab, var(--cz-color-gray-50) 88%, transparent),
-			color-mix(in oklab, var(--cz-color-gray-900) 88%, transparent)
-		);
-		--cz-color-bg-glass-toolbar: light-dark(
-			color-mix(in oklab, var(--cz-color-gray-100) 64%, transparent),
-			color-mix(in oklab, var(--cz-color-gray-800) 36%, transparent)
 		);
 		/* Keep labels readable over both bright and dark backdrops. */
 		--cz-color-bg-glass-action: light-dark(
@@ -124,14 +103,6 @@
 			var(--cz-color-gray-200),
 			var(--cz-color-gray-700)
 		);
-		--cz-color-bg-glass-panel: light-dark(
-			var(--cz-color-gray-50),
-			var(--cz-color-gray-900)
-		);
-		--cz-color-bg-glass-toolbar: light-dark(
-			var(--cz-color-gray-100),
-			var(--cz-color-gray-800)
-		);
 		--cz-color-bg-glass-action: light-dark(
 			var(--cz-color-gray-100),
 			var(--cz-color-gray-800)
@@ -150,8 +121,6 @@
 	:root {
 		--cz-color-bg-glass: ButtonFace;
 		--cz-color-bg-glass-hover: ButtonFace;
-		--cz-color-bg-glass-panel: Canvas;
-		--cz-color-bg-glass-toolbar: Canvas;
 		--cz-color-border-glass-action: ButtonText;
 		--cz-color-text-on-glass-action: ButtonText;
 		--cz-color-bg-glass-action: ButtonFace;
@@ -165,8 +134,6 @@
 		--cz-shadow-glass: none;
 		--cz-shadow-glass-action: none;
 		--cz-shadow-glass-pressed: none;
-		--cz-shadow-glass-panel: none;
-		--cz-shadow-glass-toolbar: none;
 		--cz-backdrop-filter-glass: none;
 	}
 }
