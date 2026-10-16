@@ -54,9 +54,7 @@ describe('glass action contrast', () => {
 					};
 					const fg = resolve('var(--cz-color-text-on-action)');
 					const bg = resolve(`var(--cz-color-bg-glass-${kind}${state})`);
-					const sheen = resolve(
-						'color-mix(in oklab, var(--cz-color-white) 14%, transparent)',
-					);
+					const sheen = resolve('var(--cz-color-glass-action-highlight)');
 					expect(contrast(fg, bg, sheen)).to.be.at.least(4.5);
 					probe.remove();
 				});
