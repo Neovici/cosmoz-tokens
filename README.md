@@ -194,7 +194,11 @@ keep white text on graphite in both color schemes. Pair destructive glass
 fills with white text. Use the matching `-hover` fill for each kind of action.
 
 Pair secondary controls with `--cz-color-border-glass` and `--cz-shadow-glass`.
-Primary actions use `--cz-shadow-glass-action`; panels use `--cz-shadow-glass-panel`.
+Primary actions use `--cz-color-border-glass-action` and
+`--cz-shadow-glass-action`; panels use `--cz-shadow-glass-panel`.
+Floating toolbars use `--cz-color-bg-glass-toolbar`, `--cz-glass-sheen` and
+`--cz-shadow-glass-toolbar` for a more translucent frame. Action fills remain
+dense enough for white-label AA contrast, including over a white backdrop.
 Apply `--cz-backdrop-filter-glass` only to small floating controls and panels.
 The token resolves to `none` without backdrop-filter support and for reduced
 transparency. Reduced transparency also restores opaque fills. Forced colors

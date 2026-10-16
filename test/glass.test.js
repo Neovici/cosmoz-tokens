@@ -9,10 +9,12 @@ const luminance = (rgb) => {
 };
 
 // Paint the brightest point of the sheen over the fill before measuring it.
-const contrast = (foreground, background, sheen) => {
+const contrast = (foreground, background, sheen, backdrop) => {
 	const canvas = document.createElement('canvas');
 	canvas.width = canvas.height = 1;
 	const ctx = canvas.getContext('2d', { willReadFrequently: true });
+	ctx.fillStyle = backdrop;
+	ctx.fillRect(0, 0, 1, 1);
 	ctx.fillStyle = background;
 	ctx.fillRect(0, 0, 1, 1);
 	ctx.fillStyle = sheen;
@@ -43,21 +45,23 @@ describe('glass action contrast', () => {
 	for (const scheme of ['light', 'dark']) {
 		for (const kind of ['action', 'destructive']) {
 			for (const state of ['', '-hover']) {
+				for (const backdrop of ['white', 'black']) {
 
-				it(`${scheme} ${kind}${state} retains AA contrast through the sheen`, () => {
-					const probe = document.createElement('span');
-					probe.style.colorScheme = scheme;
-					document.body.append(probe);
-					const resolve = (color) => {
-						probe.style.color = color;
-						return getComputedStyle(probe).color;
-					};
-					const fg = resolve('var(--cz-color-text-on-action)');
-					const bg = resolve(`var(--cz-color-bg-glass-${kind}${state})`);
-					const sheen = resolve('var(--cz-color-glass-action-highlight)');
-					expect(contrast(fg, bg, sheen)).to.be.at.least(4.5);
-					probe.remove();
-				});
+					it(`${scheme} ${kind}${state} retains AA contrast over ${backdrop} through the sheen`, () => {
+						const probe = document.createElement('span');
+						probe.style.colorScheme = scheme;
+						document.body.append(probe);
+						const resolve = (color) => {
+							probe.style.color = color;
+							return getComputedStyle(probe).color;
+						};
+						const fg = resolve('var(--cz-color-text-on-action)');
+						const bg = resolve(`var(--cz-color-bg-glass-${kind}${state})`);
+						const sheen = resolve('var(--cz-color-glass-action-highlight)');
+						expect(contrast(fg, bg, sheen, backdrop)).to.be.at.least(4.5);
+						probe.remove();
+					});
+				}
 			}
 		}
 	}
