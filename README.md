@@ -183,3 +183,20 @@ npm run storybook:build
 ## License
 
 Apache-2.0
+
+## Glass material
+
+The main stylesheet includes glass tokens for controls and floating panels.
+Use `--cz-glass-sheen` with `--cz-color-bg-glass` for secondary controls,
+`--cz-glass-action-sheen` with `--cz-color-bg-glass-action` for primary actions,
+and `--cz-color-bg-glass-panel` for menus and dialog frames. Primary actions
+keep white text on graphite in both color schemes. Pair destructive glass
+fills with white text. Use the matching `-hover` fill for each kind of action.
+
+Pair secondary controls with `--cz-color-border-glass` and `--cz-shadow-glass`.
+Primary actions use `--cz-shadow-glass-action`; panels use `--cz-shadow-glass-panel`.
+Apply `--cz-backdrop-filter-glass` only to small floating controls and panels.
+The token resolves to `none` without backdrop-filter support and for reduced
+transparency. Reduced transparency also restores opaque fills. Forced colors
+remove the material effects; components must retain a system-colored border
+and visible focus outline.
