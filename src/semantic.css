@@ -236,11 +236,11 @@
 	);
 	--cz-color-bg-warning-secondary: light-dark(
 		var(--cz-color-warning-100),
-		var(--cz-color-warning-600)
+		var(--cz-color-warning-800)
 	);
 	--cz-color-bg-warning-solid: light-dark(
-		var(--cz-color-warning-600),
-		var(--cz-color-warning-600)
+		var(--cz-color-warning-700),
+		var(--cz-color-warning-700)
 	);
 	--cz-color-bg-success: light-dark(
 		var(--cz-color-success-50),
@@ -248,11 +248,11 @@
 	);
 	--cz-color-bg-success-secondary: light-dark(
 		var(--cz-color-success-100),
-		var(--cz-color-success-600)
+		var(--cz-color-success-800)
 	);
 	--cz-color-bg-success-solid: light-dark(
-		var(--cz-color-success-600),
-		var(--cz-color-success-600)
+		var(--cz-color-success-700),
+		var(--cz-color-success-700)
 	);
 	--cz-color-bg-processing: light-dark(
 		var(--cz-color-indigo-50),
