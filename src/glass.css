@@ -29,16 +29,16 @@
 		var(--cz-color-error-800)
 	);
 	--cz-color-border-glass: light-dark(
-		color-mix(in oklab, var(--cz-color-gray-500) 30%, transparent),
-		color-mix(in oklab, var(--cz-color-gray-300) 22%, transparent)
+		color-mix(in oklab, var(--cz-color-gray-500) 22%, transparent),
+		color-mix(in oklab, var(--cz-color-gray-300) 12%, transparent)
 	);
 	--cz-color-glass-highlight: light-dark(
-		color-mix(in oklab, var(--cz-color-white) 32%, transparent),
-		color-mix(in oklab, var(--cz-color-white) 10%, transparent)
+		color-mix(in oklab, var(--cz-color-white) 14%, transparent),
+		color-mix(in oklab, var(--cz-color-white) 3%, transparent)
 	);
 	--cz-color-glass-shade: light-dark(
-		color-mix(in oklab, var(--cz-color-gray-950) 2%, transparent),
-		color-mix(in oklab, var(--cz-color-black) 6%, transparent)
+		color-mix(in oklab, var(--cz-color-gray-950) 1%, transparent),
+		color-mix(in oklab, var(--cz-color-black) 2%, transparent)
 	);
 	--cz-glass-sheen: linear-gradient(
 		180deg in oklab,
@@ -46,14 +46,13 @@
 		transparent 46%,
 		var(--cz-color-glass-shade)
 	);
-	--cz-color-glass-action-highlight: color-mix(
-		in oklab,
-		var(--cz-color-white) 6%,
-		transparent
+	--cz-color-glass-action-highlight: light-dark(
+		color-mix(in oklab, var(--cz-color-white) 3%, transparent),
+		color-mix(in oklab, var(--cz-color-white) 2%, transparent)
 	);
 	--cz-color-border-glass-action: light-dark(
-		color-mix(in oklab, var(--cz-color-gray-500) 28%, transparent),
-		color-mix(in oklab, var(--cz-color-gray-300) 14%, transparent)
+		color-mix(in oklab, var(--cz-color-gray-500) 22%, transparent),
+		color-mix(in oklab, var(--cz-color-gray-300) 12%, transparent)
 	);
 	--cz-glass-action-sheen: linear-gradient(
 		180deg in oklab,
@@ -62,9 +61,7 @@
 		var(--cz-color-glass-shade)
 	);
 	--cz-shadow-glass: inset 0 1px 0 var(--cz-color-glass-highlight);
-	--cz-shadow-glass-action:
-		inset 0 1px 0 color-mix(in oklab, var(--cz-color-white) 12%, transparent),
-		0 1px 1px color-mix(in oklab, var(--cz-color-black) 8%, transparent);
+	--cz-shadow-glass-action: inset 0 1px 0 var(--cz-color-glass-action-highlight);
 	--cz-shadow-glass-pressed: inset 0 1px 2px var(--cz-color-glass-shade);
 	--cz-backdrop-filter-glass: none;
 	--cz-opacity-disabled: 0.45;
@@ -73,23 +70,23 @@
 @supports (backdrop-filter: blur(16px)) {
 	:root {
 		--cz-color-bg-glass: light-dark(
-			color-mix(in oklab, var(--cz-color-gray-100) 68%, transparent),
-			color-mix(in oklab, var(--cz-color-gray-600) 32%, transparent)
+			color-mix(in oklab, var(--cz-color-gray-50) 72%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-700) 24%, transparent)
 		);
 		--cz-color-bg-glass-hover: light-dark(
-			color-mix(in oklab, var(--cz-color-gray-200) 86%, transparent),
-			color-mix(in oklab, var(--cz-color-gray-500) 38%, transparent)
+			color-mix(in oklab, var(--cz-color-gray-100) 82%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-600) 30%, transparent)
 		);
 		/* Keep labels readable over both bright and dark backdrops. */
 		--cz-color-bg-glass-action: light-dark(
-			color-mix(in oklab, var(--cz-color-gray-100) 94%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-50) 92%, transparent),
 			color-mix(in oklab, var(--cz-color-gray-800) 90%, transparent)
 		);
 		--cz-color-bg-glass-action-hover: light-dark(
-			color-mix(in oklab, var(--cz-color-gray-200) 96%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-100) 94%, transparent),
 			color-mix(in oklab, var(--cz-color-gray-700) 92%, transparent)
 		);
-		--cz-backdrop-filter-glass: blur(20px) saturate(1.3);
+		--cz-backdrop-filter-glass: blur(12px) saturate(1.1);
 	}
 }
 
