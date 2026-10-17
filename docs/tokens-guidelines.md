@@ -101,12 +101,15 @@ not change this one token — change the brand scale instead.
 
 ### The Cosmoz palette
 
-The designer-facing palette is 29 colours: gray 50, 200–700, 900, 950;
-lavender (brand) 50, 200, 400, 600; and 50, 300, 500, 700 of error,
-warning, success and sky (info). The other steps exist so every token
-keeps resolving, and are marked `/* derived */` in `primitives.css` —
-interpolated in OKLCH from their core neighbours. Prefer core steps in
-new tokens.
+Violet is the brand scale. Error uses rose red, warning uses amber,
+success uses emerald and info uses sky blue. Gray carries neutral
+surfaces and text; lavender remains available for existing consumers.
+
+Chart colors use stronger steps on light surfaces and brighter steps
+on dark surfaces. Every categorical chart color has at least 3:1
+contrast against `bg-primary`. Status text keeps at least 4.5:1 contrast
+against its matching tinted surface. Use foreground tokens for chart
+marks and icons, and text tokens for labels.
 
 Primary buttons use the `action` family (`bg-action-solid`,
 `text-on-action`), which is pinned to gray: lavender marks selection and

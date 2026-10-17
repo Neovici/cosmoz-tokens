@@ -452,35 +452,35 @@
 	/* Categorical data colours, used in this order (charts, OCR fields, groups).
 	 * Not statuses: use the status tokens when a colour means ok/warning/error. */
 	--cz-color-chart-1: light-dark(
-		var(--cz-color-brand-400),
+		var(--cz-color-brand-500),
 		var(--cz-color-brand-400)
 	);
 	--cz-color-chart-2: light-dark(
-		var(--cz-color-orange-400),
+		var(--cz-color-orange-600),
 		var(--cz-color-orange-400)
 	);
 	--cz-color-chart-3: light-dark(
-		var(--cz-color-info-300),
-		var(--cz-color-info-300)
+		var(--cz-color-info-600),
+		var(--cz-color-info-400)
 	);
 	--cz-color-chart-4: light-dark(
-		var(--cz-color-success-700),
-		var(--cz-color-success-500)
+		var(--cz-color-success-600),
+		var(--cz-color-success-400)
 	);
 	--cz-color-chart-5: light-dark(
-		var(--cz-color-warning-300),
-		var(--cz-color-warning-300)
+		var(--cz-color-warning-600),
+		var(--cz-color-warning-400)
 	);
 	--cz-color-chart-6: light-dark(
 		var(--cz-color-error-500),
-		var(--cz-color-error-500)
+		var(--cz-color-error-400)
 	);
 	--cz-color-chart-7: light-dark(
-		var(--cz-color-brand-600),
+		var(--cz-color-brand-800),
 		var(--cz-color-brand-200)
 	);
 	--cz-color-chart-8: light-dark(
-		var(--cz-color-gray-400),
-		var(--cz-color-gray-600)
+		var(--cz-color-gray-500),
+		var(--cz-color-gray-500)
 	);
 }
