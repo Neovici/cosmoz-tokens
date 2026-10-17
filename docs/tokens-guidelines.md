@@ -161,6 +161,15 @@ raised the same way.
 
 ## 6. Housekeeping
 
+Glass material lives in `glass.css`: fill, edge, highlight, sheen and blur.
+It does not prescribe an interactive role or component geometry.
+`button-glass.css` composes that material with button action colors and
+interaction states. Recipes may reference material tokens to avoid copying
+values; this does not change the semantic-to-primitive rule for
+`semantic.css` and `fallback.css`. Components own their forced-colors roles:
+the generic material uses `Canvas`/`CanvasText`, while buttons use
+`ButtonFace`/`ButtonText`.
+
 - A color scale nobody uses: delete it, or write down why it is kept.
   Never leave it half-decided.
 - Define each scale once — the same values must not ship under two

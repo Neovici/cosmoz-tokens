@@ -38,7 +38,8 @@
     "./truncate": {
       "types": "./src/truncate.css.d.ts",
       "default": "./src/truncate.css.js"
-    }
+    },
+    "./glass": "./src/glass.css"
   },
   "files": [
     "src/"

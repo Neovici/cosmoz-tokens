@@ -1,0 +1,60 @@
+/** Shared glass material. Components choose geometry, content colors and interactions. */
+:root {
+	--cz-color-bg-glass: light-dark(
+		var(--cz-color-gray-100),
+		var(--cz-color-gray-800)
+	);
+	--cz-color-border-glass: light-dark(
+		color-mix(in oklab, var(--cz-color-gray-500) 28%, transparent),
+		color-mix(in oklab, var(--cz-color-gray-300) 12%, transparent)
+	);
+	--cz-color-glass-highlight: light-dark(
+		color-mix(in oklab, var(--cz-color-white) 14%, transparent),
+		color-mix(in oklab, var(--cz-color-white) 3%, transparent)
+	);
+	--cz-color-glass-shade: light-dark(
+		color-mix(in oklab, var(--cz-color-gray-950) 1%, transparent),
+		color-mix(in oklab, var(--cz-color-black) 2%, transparent)
+	);
+	--cz-glass-sheen: linear-gradient(
+		180deg in oklab,
+		var(--cz-color-glass-highlight),
+		transparent 46%,
+		var(--cz-color-glass-shade)
+	);
+	--cz-shadow-glass: inset 0 1px 0 var(--cz-color-glass-highlight);
+	--cz-backdrop-filter-glass: none;
+}
+
+@supports (backdrop-filter: blur(16px)) {
+	:root {
+		--cz-color-bg-glass: light-dark(
+			color-mix(in oklab, var(--cz-color-gray-100) 78%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-700) 24%, transparent)
+		);
+		--cz-backdrop-filter-glass: blur(12px) saturate(1.1);
+	}
+}
+
+@media (prefers-reduced-transparency: reduce) {
+	:root {
+		--cz-color-bg-glass: light-dark(
+			var(--cz-color-gray-100),
+			var(--cz-color-gray-800)
+		);
+		--cz-glass-sheen: none;
+		--cz-backdrop-filter-glass: none;
+	}
+}
+
+@media (forced-colors: active) {
+	:root {
+		--cz-color-bg-glass: Canvas;
+		--cz-color-border-glass: CanvasText;
+		--cz-color-glass-highlight: transparent;
+		--cz-color-glass-shade: transparent;
+		--cz-glass-sheen: none;
+		--cz-shadow-glass: none;
+		--cz-backdrop-filter-glass: none;
+	}
+}

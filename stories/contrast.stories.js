@@ -68,3 +68,52 @@ export const TextOnStatusBackgrounds = {
 		</div>
 	`,
 };
+
+export const GlassControls = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Glass controls</h1>
+			<button class="story-btn story-btn--secondary" @click=${toggleDarkMode}>
+				Toggle dark mode
+			</button>
+			${[
+				{
+					kind: 'primary',
+					fill: '-action',
+					sheen: '--cz-glass-action-sheen',
+					text: '--cz-color-text-on-glass-action',
+					shadow: '--cz-shadow-glass-action',
+				},
+				{
+					kind: 'secondary',
+					fill: '',
+					sheen: '--cz-glass-sheen',
+					text: '--cz-color-text-primary',
+					shadow: '--cz-shadow-glass',
+				},
+				{
+					kind: 'destructive',
+					fill: '-destructive',
+					sheen: '--cz-glass-action-sheen',
+					text: '--cz-color-text-on-action',
+					shadow: '--cz-shadow-glass-action',
+				},
+			].map(
+				({ kind, fill, sheen, text, shadow }) =>
+					html` <button
+						style="
+					margin: 24px 8px; padding: 10px 18px;
+					font: inherit; border-radius: var(--cz-radius-full);
+					border: 1px solid var(--cz-color-border-glass);
+					background: var(${sheen}), var(--cz-color-bg-glass${fill});
+					color: var(${text}); box-shadow: var(${shadow});
+					backdrop-filter: var(--cz-backdrop-filter-glass);
+				"
+					>
+						${kind} action
+					</button>`,
+			)}
+		</div>
+	`,
+};
