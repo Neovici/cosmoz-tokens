@@ -127,13 +127,13 @@
 			inset 0 0 0 1px rgba(10, 13, 18, 0.45),
 			inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(10, 13, 18, 0.12),
 			0 2px 5px -1px rgba(10, 13, 18, 0.12);
-		--cz-color-chart-1: var(--cz-color-brand-400);
-		--cz-color-chart-2: var(--cz-color-orange-400);
-		--cz-color-chart-3: var(--cz-color-info-300);
-		--cz-color-chart-4: var(--cz-color-success-700);
-		--cz-color-chart-5: var(--cz-color-warning-300);
+		--cz-color-chart-1: var(--cz-color-brand-500);
+		--cz-color-chart-2: var(--cz-color-orange-600);
+		--cz-color-chart-3: var(--cz-color-info-600);
+		--cz-color-chart-4: var(--cz-color-success-600);
+		--cz-color-chart-5: var(--cz-color-warning-600);
 		--cz-color-chart-6: var(--cz-color-error-500);
-		--cz-color-chart-7: var(--cz-color-brand-600);
-		--cz-color-chart-8: var(--cz-color-gray-400);
+		--cz-color-chart-7: var(--cz-color-brand-800);
+		--cz-color-chart-8: var(--cz-color-gray-500);
 	}
 }
