@@ -72,32 +72,32 @@
 	--cz-color-error-950: rgb(78 24 27); /* derived */
 
 	/* Warning colors. Core: 50, 300, 500, 700 */
-	--cz-color-warning-25: rgb(255 251 243); /* derived */
-	--cz-color-warning-50: rgb(254 246 230);
-	--cz-color-warning-100: rgb(254 238 206); /* derived */
-	--cz-color-warning-200: rgb(255 221 155); /* derived */
-	--cz-color-warning-300: rgb(255 204 95);
-	--cz-color-warning-400: rgb(225 175 62); /* derived */
-	--cz-color-warning-500: rgb(195 147 18);
-	--cz-color-warning-600: rgb(153 114 7); /* derived */
-	--cz-color-warning-700: rgb(113 82 0);
-	--cz-color-warning-800: rgb(92 68 14); /* derived */
-	--cz-color-warning-900: rgb(72 55 20); /* derived */
-	--cz-color-warning-950: rgb(53 42 21); /* derived */
+	--cz-color-warning-25: rgb(255 251 246); /* derived */
+	--cz-color-warning-50: rgb(255 247 237);
+	--cz-color-warning-100: rgb(255 235 211); /* derived */
+	--cz-color-warning-200: rgb(255 209 158); /* derived */
+	--cz-color-warning-300: rgb(255 182 102);
+	--cz-color-warning-400: rgb(245 145 59); /* derived */
+	--cz-color-warning-500: rgb(233 106 8);
+	--cz-color-warning-600: rgb(207 88 9); /* derived */
+	--cz-color-warning-700: rgb(182 71 8);
+	--cz-color-warning-800: rgb(124 48 8); /* derived */
+	--cz-color-warning-900: rgb(71 26 6); /* derived */
+	--cz-color-warning-950: rgb(47 16 4); /* derived */
 
 	/* Success colors. Core: 50, 300, 500, 700 */
-	--cz-color-success-25: rgb(245 252 248); /* derived */
-	--cz-color-success-50: rgb(235 248 242);
-	--cz-color-success-100: rgb(217 240 229); /* derived */
-	--cz-color-success-200: rgb(181 223 203); /* derived */
-	--cz-color-success-300: rgb(143 206 178);
-	--cz-color-success-400: rgb(105 178 147); /* derived */
-	--cz-color-success-500: rgb(64 151 118);
-	--cz-color-success-600: rgb(40 131 99); /* derived */
-	--cz-color-success-700: rgb(5 111 80);
-	--cz-color-success-800: rgb(18 91 67); /* derived */
-	--cz-color-success-900: rgb(22 71 55); /* derived */
-	--cz-color-success-950: rgb(22 53 43); /* derived */
+	--cz-color-success-25: rgb(246 254 250); /* derived */
+	--cz-color-success-50: rgb(237 252 245);
+	--cz-color-success-100: rgb(213 247 231); /* derived */
+	--cz-color-success-200: rgb(164 235 199); /* derived */
+	--cz-color-success-300: rgb(111 223 165);
+	--cz-color-success-400: rgb(71 193 129); /* derived */
+	--cz-color-success-500: rgb(13 163 94);
+	--cz-color-success-600: rgb(3 143 85); /* derived */
+	--cz-color-success-700: rgb(0 123 75);
+	--cz-color-success-800: rgb(6 83 50); /* derived */
+	--cz-color-success-900: rgb(6 47 27); /* derived */
+	--cz-color-success-950: rgb(4 30 17); /* derived */
 
 	/* Info colors - Sky */
 	--cz-color-info-25: var(--cz-color-sky-25);

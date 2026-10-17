@@ -15,6 +15,13 @@ const PAIRS = [
 	['text-on-action', 'bg-action-solid', 4.5],
 	['text-on-action', 'bg-action-solid-hover', 4.5],
 	['fg-white', 'bg-error-solid', 4.5],
+	...['warning', 'success'].flatMap((s) => [
+		['fg-white', `bg-${s}-solid`, 4.5],
+		[`text-${s}`, `bg-${s}-secondary`, 4.5],
+		[`fg-${s}`, `bg-${s}`, 3],
+		[`fg-${s}-secondary`, `bg-${s}`, 3],
+		[`border-${s}`, 'bg-primary', 3],
+	]),
 	...['error', 'warning', 'success', 'info'].flatMap((s) => [
 		[`text-${s}`, 'bg-primary', 4.5],
 		[`text-${s}`, `bg-${s}`, 4.5],

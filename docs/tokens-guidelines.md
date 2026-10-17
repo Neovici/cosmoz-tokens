@@ -156,6 +156,12 @@ raised the same way.
   | Solid fill       | 600        | 600       |
   | Icon (mid)       | 600/500    | 500/400   |
 
+  Warning and success solid fills use step 700 in both schemes so white
+  text retains at least 4.5:1 contrast on their more saturated ramps.
+  Their 500 steps remain the brighter signal colours for dots and borders.
+  Their secondary tinted surfaces use step 800 in dark mode so the
+  lighter status text remains readable during hover and nesting.
+
   Check your change in Storybook with dark mode on and off, on plain
   gray surfaces and on filled ones.
 
