@@ -1,0 +1,122 @@
+/** Button recipes built on glass.css. Keep interaction and action semantics here. */
+:root {
+	--cz-color-bg-glass-hover: light-dark(
+		var(--cz-color-gray-200),
+		var(--cz-color-gray-700)
+	);
+	--cz-color-bg-glass-action: light-dark(
+		var(--cz-color-gray-100),
+		var(--cz-color-gray-800)
+	);
+	--cz-color-bg-glass-pressed: light-dark(
+		var(--cz-color-gray-200),
+		var(--cz-color-gray-600)
+	);
+	--cz-color-bg-glass-action-pressed: light-dark(
+		var(--cz-color-gray-200),
+		var(--cz-color-gray-600)
+	);
+	--cz-color-bg-glass-action-hover: light-dark(
+		var(--cz-color-gray-200),
+		var(--cz-color-gray-700)
+	);
+	--cz-color-text-on-glass-action: light-dark(
+		var(--cz-color-gray-800),
+		var(--cz-color-gray-50)
+	);
+	--cz-color-bg-glass-destructive: light-dark(
+		var(--cz-color-error-700),
+		var(--cz-color-error-700)
+	);
+	--cz-color-bg-glass-destructive-hover: light-dark(
+		var(--cz-color-error-800),
+		var(--cz-color-error-800)
+	);
+	--cz-color-bg-glass-destructive-pressed: var(--cz-color-error-900);
+	--cz-color-glass-action-highlight: light-dark(
+		color-mix(in oklab, var(--cz-color-white) 3%, transparent),
+		color-mix(in oklab, var(--cz-color-white) 2%, transparent)
+	);
+	--cz-color-border-glass-action: var(--cz-color-border-glass);
+	--cz-glass-action-sheen: linear-gradient(
+		180deg in oklab,
+		var(--cz-color-glass-action-highlight),
+		color-mix(in oklab, var(--cz-color-white) 1%, transparent) 46%,
+		var(--cz-color-glass-shade)
+	);
+	--cz-shadow-glass-action: inset 0 1px 0 var(--cz-color-glass-action-highlight);
+	--cz-shadow-glass-pressed: inset 0 1px 2px
+		light-dark(
+			color-mix(in oklab, var(--cz-color-gray-950) 8%, transparent),
+			color-mix(in oklab, var(--cz-color-black) 20%, transparent)
+		);
+	--cz-opacity-disabled: 0.45;
+}
+
+@supports (backdrop-filter: blur(16px)) {
+	:root {
+		--cz-color-bg-glass-hover: light-dark(
+			color-mix(in oklab, var(--cz-color-gray-100) 82%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-600) 30%, transparent)
+		);
+		--cz-color-bg-glass-pressed: light-dark(
+			color-mix(in oklab, var(--cz-color-gray-200) 90%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-500) 38%, transparent)
+		);
+		--cz-color-bg-glass-action-pressed: light-dark(
+			color-mix(in oklab, var(--cz-color-gray-200) 96%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-600) 94%, transparent)
+		);
+		--cz-color-bg-glass-action: light-dark(
+			color-mix(in oklab, var(--cz-color-gray-50) 92%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-800) 90%, transparent)
+		);
+		--cz-color-bg-glass-action-hover: light-dark(
+			color-mix(in oklab, var(--cz-color-gray-100) 94%, transparent),
+			color-mix(in oklab, var(--cz-color-gray-700) 92%, transparent)
+		);
+	}
+}
+
+@media (prefers-reduced-transparency: reduce) {
+	:root {
+		--cz-color-bg-glass-pressed: light-dark(
+			var(--cz-color-gray-200),
+			var(--cz-color-gray-600)
+		);
+		--cz-color-bg-glass-action-pressed: light-dark(
+			var(--cz-color-gray-200),
+			var(--cz-color-gray-600)
+		);
+		--cz-color-bg-glass-hover: light-dark(
+			var(--cz-color-gray-200),
+			var(--cz-color-gray-700)
+		);
+		--cz-color-bg-glass-action: light-dark(
+			var(--cz-color-gray-100),
+			var(--cz-color-gray-800)
+		);
+		--cz-color-bg-glass-action-hover: light-dark(
+			var(--cz-color-gray-200),
+			var(--cz-color-gray-700)
+		);
+		--cz-glass-action-sheen: none;
+	}
+}
+
+@media (forced-colors: active) {
+	:root {
+		--cz-color-bg-glass-pressed: ButtonFace;
+		--cz-color-bg-glass-action-pressed: ButtonFace;
+		--cz-color-bg-glass-destructive-pressed: ButtonFace;
+		--cz-color-bg-glass-hover: ButtonFace;
+		--cz-color-border-glass-action: ButtonText;
+		--cz-color-text-on-glass-action: ButtonText;
+		--cz-color-bg-glass-action: ButtonFace;
+		--cz-color-bg-glass-action-hover: ButtonFace;
+		--cz-color-glass-action-highlight: transparent;
+		--cz-glass-action-sheen: none;
+		--cz-shadow-glass-action: none;
+		--cz-shadow-glass-pressed: none;
+	}
+}
