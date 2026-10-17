@@ -44,7 +44,7 @@ describe('glass action contrast', () => {
 
 	for (const scheme of ['light', 'dark']) {
 		for (const kind of ['action', 'destructive']) {
-			for (const state of ['', '-hover']) {
+			for (const state of ['', '-hover', '-pressed']) {
 				for (const backdrop of ['white', 'black']) {
 
 					it(`${scheme} ${kind}${state} retains AA contrast over ${backdrop} through the sheen`, () => {

@@ -194,6 +194,12 @@ labels in dark mode. Pair them with `--cz-color-text-on-glass-action`.
 Destructive fills use white text. Each fill has a matching `-hover` token.
 
 Secondary buttons use `--cz-color-border-glass` and `--cz-shadow-glass`.
+
+Held buttons use `--cz-color-bg-glass-pressed`,
+`--cz-color-bg-glass-action-pressed`, or
+`--cz-color-bg-glass-destructive-pressed` with `--cz-shadow-glass-pressed`.
+Remove the sheen while pressed so the surface reads as inset.
+
 Primary buttons use `--cz-color-border-glass-action` and
 `--cz-shadow-glass-action`. Action fills retain AA label contrast over white
 and black backdrops.
