@@ -71,24 +71,19 @@
 	--cz-color-error-900: rgb(136 19 55);
 	--cz-color-error-950: rgb(76 5 25);
 
-	/* Warning colors - shared yellow palette; semantics select contrast-safe steps. */
-	--cz-color-warning-25: var(--cz-color-yellow-25);
-	--cz-color-warning-50: var(--cz-color-yellow-50);
-	--cz-color-warning-100: var(--cz-color-yellow-100);
-	--cz-color-warning-200: var(--cz-color-yellow-200);
-	--cz-color-warning-300: var(--cz-color-yellow-300);
-	--cz-color-warning-400: var(--cz-color-yellow-400);
-	--cz-color-warning-500: var(--cz-color-yellow-500);
-	/* Keep warning icons and chart marks above 3:1 on pale yellow surfaces. */
-	--cz-color-warning-600: color-mix(
-		in srgb,
-		var(--cz-color-yellow-600) 80%,
-		var(--cz-color-yellow-700)
-	);
-	--cz-color-warning-700: var(--cz-color-yellow-700);
-	--cz-color-warning-800: var(--cz-color-yellow-800);
-	--cz-color-warning-900: var(--cz-color-yellow-900);
-	--cz-color-warning-950: var(--cz-color-yellow-950);
+	/* Warning colors - shared amber palette; semantics select contrast-safe steps. */
+	--cz-color-warning-25: var(--cz-color-amber-25);
+	--cz-color-warning-50: var(--cz-color-amber-50);
+	--cz-color-warning-100: var(--cz-color-amber-100);
+	--cz-color-warning-200: var(--cz-color-amber-200);
+	--cz-color-warning-300: var(--cz-color-amber-300);
+	--cz-color-warning-400: var(--cz-color-amber-400);
+	--cz-color-warning-500: var(--cz-color-amber-500);
+	--cz-color-warning-600: var(--cz-color-amber-600);
+	--cz-color-warning-700: var(--cz-color-amber-700);
+	--cz-color-warning-800: var(--cz-color-amber-800);
+	--cz-color-warning-900: var(--cz-color-amber-900);
+	--cz-color-warning-950: var(--cz-color-amber-950);
 
 	/* Success colors — saturated signals, pale surfaces and deep dark-mode surfaces. */
 	--cz-color-success-25: rgb(245 255 249);
