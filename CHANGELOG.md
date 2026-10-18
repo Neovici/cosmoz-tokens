@@ -1,5 +1,18 @@
 # @neovici/cosmoz-tokens
 
+## 4.13.0
+
+### Minor Changes
+
+- 5f83ae2: Alias warning colors to the existing amber scale. Keep foreground accents warmer and less glaring than lemon yellow, retain contrast-safe warning text in both color schemes, and use warning-700 for solid fills with white labels.
+- 5f83ae2: Use the existing muted lavender ramp for brand aliases so selections, dividers, focus states, and accents are less saturated.
+
+  Keep dark selection surfaces at brand-900 and brand-800, and verify normal text contrast on both selection surfaces. Light fallback mappings are unchanged.
+
+### Patch Changes
+
+- 5f83ae2: Use success-700 for solid success backgrounds so white labels remain readable in both themes. Check success foreground contrast on primary and tinted success surfaces.
+
 ## 4.12.0
 
 ### Minor Changes
