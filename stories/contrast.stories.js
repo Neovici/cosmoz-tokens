@@ -102,6 +102,72 @@ export const WarningSurfaces = {
 	`,
 };
 
+export const SuccessSurfaces = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Success colors</h1>
+			<button
+				class="story-btn story-btn--secondary story-mb-6"
+				@click=${toggleDarkMode}
+			>
+				Toggle Dark Mode
+			</button>
+			<div style="display: grid; gap: 24px; max-width: 640px;">
+				<div style="display: flex; align-items: center; gap: 12px;">
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="var(--cz-color-fg-success)"
+						stroke-width="2"
+						aria-hidden="true"
+					>
+						<circle cx="12" cy="12" r="9" />
+						<path d="m7 12 3 3 7-7" />
+					</svg>
+					<span>Invoice matched</span>
+				</div>
+				<div
+					style="background: var(--cz-color-bg-success); color: var(--cz-color-text-success);
+					border: 1px solid var(--cz-color-border-success-subtle); padding: 16px;
+					border-radius: var(--cz-radius-md);"
+				>
+					<strong>Matching complete</strong>
+					<p style="margin: 8px 0 0;">
+						Delivered quantity matches the ordered quantity.
+					</p>
+				</div>
+				<div style="display: flex; gap: 16px; align-items: center;">
+					<span
+						style="background: var(--cz-color-bg-success); color: var(--cz-color-text-success);
+						border: 1px solid var(--cz-color-border-success-subtle); border-radius: var(--cz-radius-full);
+						padding: 4px 12px;"
+						>Completed</span
+					>
+					<button
+						style="background: var(--cz-color-bg-success-solid); color: var(--cz-color-fg-white);
+						border: 0; border-radius: var(--cz-radius-md); padding: 8px 16px; font: inherit;"
+					>
+						Save matches
+					</button>
+				</div>
+				<div style="color: var(--cz-color-text-success);">
+					Delivered 10 of 10
+				</div>
+				<div style="display: flex; gap: 12px; align-items: center;">
+					<span
+						style="width: 80px; height: 12px; border-radius: var(--cz-radius-sm);
+						background: var(--cz-color-fg-success);"
+					></span>
+					Straight through
+				</div>
+			</div>
+		</div>
+	`,
+};
+
 export const TextOnStatusBackgrounds = {
 	render: () => html`
 		${style}

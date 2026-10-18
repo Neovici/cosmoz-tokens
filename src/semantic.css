@@ -250,8 +250,8 @@
 		var(--cz-color-success-600)
 	);
 	--cz-color-bg-success-solid: light-dark(
-		var(--cz-color-success-600),
-		var(--cz-color-success-600)
+		var(--cz-color-success-700),
+		var(--cz-color-success-700)
 	);
 	--cz-color-bg-processing: light-dark(
 		var(--cz-color-indigo-50),

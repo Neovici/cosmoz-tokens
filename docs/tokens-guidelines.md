@@ -109,7 +109,7 @@ Chart colors use stronger steps on light surfaces and brighter steps
 on dark surfaces. Every categorical chart color has at least 3:1
 contrast against `bg-primary`. Status text keeps at least 4.5:1 contrast
 against its matching tinted surface. Use foreground tokens for chart
-marks and icons, and text tokens for labels. Warning solid fills use step 700
+marks and icons, and text tokens for labels. Warning and success solid fills use step 700
 so white labels keep at least 4.5:1 contrast. Warning accents use the amber
 scale; retain the darker text steps for readable labels on pale surfaces.
 
