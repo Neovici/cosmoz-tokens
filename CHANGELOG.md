@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.14.0
+
+### Minor Changes
+
+- 301241a: Add a rem-based 2xs typography step for compact counters.
+
 ## 4.13.0
 
 ### Minor Changes
