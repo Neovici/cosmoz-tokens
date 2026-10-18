@@ -3,6 +3,8 @@ import { expect } from 'chai';
 // [text token, background token, minimum WCAG 2.2 ratio]
 const PAIRS = [
 	['text-primary', 'bg-primary', 4.5],
+	['text-primary', 'bg-brand', 4.5],
+	['text-primary', 'bg-brand-secondary', 4.5],
 	['text-secondary', 'bg-primary', 4.5],
 	['text-tertiary', 'bg-primary', 4.5],
 	['text-quaternary', 'bg-primary', 4.5],

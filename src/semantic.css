@@ -162,12 +162,11 @@
 		var(--cz-color-gray-950),
 		var(--cz-color-gray-800)
 	);
-	/* Exception to the rule above: mid-tone in dark, so it stands out *from* the
-	 * page rather than sitting behind text. This is the selection/highlight/hover
-	 * surface. For a brand chip or callout that carries text, use -subtle. */
+	/* Selection surfaces stay subdued in both schemes. Foreground and border
+	 * tokens provide the stronger brand accent. */
 	--cz-color-bg-brand: light-dark(
 		var(--cz-color-brand-50),
-		var(--cz-color-brand-500)
+		var(--cz-color-brand-900)
 	);
 	/* What bg-<status> is for the other statuses: the surface text sits on. */
 	--cz-color-bg-brand-subtle: light-dark(
@@ -176,7 +175,7 @@
 	);
 	--cz-color-bg-brand-secondary: light-dark(
 		var(--cz-color-brand-100),
-		var(--cz-color-brand-600)
+		var(--cz-color-brand-800)
 	);
 	/* Graphite rather than the usual 600: a mid gray is too weak to read as
 	 * the primary action in light mode, and sinks into the page in dark. */

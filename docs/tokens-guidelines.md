@@ -101,7 +101,7 @@ not change this one token — change the brand scale instead.
 
 ### The Cosmoz palette
 
-Violet is the brand scale. Error uses rose red, warning uses yellow,
+Muted lavender is the brand scale. Error uses rose red, warning uses yellow,
 success uses emerald and info uses sky blue. Gray carries neutral
 surfaces and text; lavender remains available for existing consumers.
 
