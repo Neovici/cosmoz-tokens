@@ -228,14 +228,18 @@ do not cover arbitrary surfaces or content.
 
 ## Glass buttons
 
-The button recipes preserve the existing token names. Use `--cz-glass-sheen`
-with `--cz-color-bg-glass` for secondary buttons, and `--cz-glass-action-sheen`
-with `--cz-color-bg-glass-action` for primary buttons. Primary buttons use a
-pale fill with dark labels in light mode and a deeper smoked fill with light
-labels in dark mode. Pair them with `--cz-color-text-on-glass-action`.
-Destructive fills use white text. Each fill has a matching `-hover` token.
+The button recipes keep neutral glass separate from panel and popover material.
+Secondary buttons use `--cz-glass-button-sheen`, `--cz-color-bg-glass-button`,
+`--cz-color-border-glass-button` and `--cz-shadow-glass-button`. Light mode has
+a translucent white fill, a fine grey edge and a soft outer shadow. Dark mode
+keeps the smoked fill and inset highlight.
 
-Secondary buttons use `--cz-color-border-glass` and `--cz-shadow-glass`.
+Primary buttons use `--cz-glass-button-action-sheen` and
+`--cz-shadow-glass-button-action` with
+`--cz-color-bg-glass-action` and `--cz-color-text-on-glass-action`.
+Destructive buttons retain `--cz-glass-action-sheen` with their saturated
+fills and white text. The destructive highlight stays low-opacity for contrast.
+Each fill has a matching `-hover` token.
 
 Held buttons use `--cz-color-bg-glass-pressed`,
 `--cz-color-bg-glass-action-pressed`, or

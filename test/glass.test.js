@@ -61,7 +61,11 @@ describe('glass action contrast', () => {
 								: 'var(--cz-color-text-on-action)',
 						);
 						const bg = resolve(`var(--cz-color-bg-glass-${kind}${state})`);
-						const sheen = resolve('var(--cz-color-glass-action-highlight)');
+						const sheen = resolve(
+							kind === 'action'
+								? 'var(--cz-color-glass-button-action-highlight)'
+								: 'var(--cz-color-glass-action-highlight)',
+						);
 						for (const overlay of [
 							sheen,
 							'transparent',
