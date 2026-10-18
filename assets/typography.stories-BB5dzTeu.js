@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-Bk8gVLud.js";import{s as l}from"./style-B7Oo1hoh.js";const r={title:"Tokens/Typography"},t={render:()=>a`
+import{b as a}from"./iframe-DOVuHY2a.js";import{s as l}from"./style-CRsHtEPJ.js";const r={title:"Tokens/Typography"},t={render:()=>a`
         ${l}
         <div class="story-container">
             <h1 class="story-title">Font Families</h1>
@@ -39,6 +39,15 @@ import{b as a}from"./iframe-Bk8gVLud.js";import{s as l}from"./style-B7Oo1hoh.js"
             <h1 class="story-title">Text Sizes</h1>
 
             <div class="story-grid story-gap-6">
+                <div class="story-row">
+                    <span class="story-label">--cz-text-2xs (0.6875rem / 11px)</span>
+                    <span
+                        style="font-size: var(--cz-text-2xs); line-height: var(--cz-text-2xs-line-height);"
+                    >
+                        Compact counters: 1 409 166
+                    </span>
+                </div>
+
                 <div class="story-row">
                     <span class="story-label">--cz-text-xs (0.75rem / 12px)</span>
                     <span
@@ -233,6 +242,15 @@ import{b as a}from"./iframe-Bk8gVLud.js";import{s as l}from"./style-B7Oo1hoh.js"
             <h1 class="story-title">Text Sizes</h1>
 
             <div class="story-grid story-gap-6">
+                <div class="story-row">
+                    <span class="story-label">--cz-text-2xs (0.6875rem / 11px)</span>
+                    <span
+                        style="font-size: var(--cz-text-2xs); line-height: var(--cz-text-2xs-line-height);"
+                    >
+                        Compact counters: 1 409 166
+                    </span>
+                </div>
+
                 <div class="story-row">
                     <span class="story-label">--cz-text-xs (0.75rem / 12px)</span>
                     <span
