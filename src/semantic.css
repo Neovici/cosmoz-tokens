@@ -239,8 +239,8 @@
 		var(--cz-color-warning-600)
 	);
 	--cz-color-bg-warning-solid: light-dark(
-		var(--cz-color-warning-600),
-		var(--cz-color-warning-600)
+		var(--cz-color-warning-700),
+		var(--cz-color-warning-700)
 	);
 	--cz-color-bg-success: light-dark(
 		var(--cz-color-success-50),
