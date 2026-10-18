@@ -1,27 +1,27 @@
-import{b as o}from"./iframe-Dl4Ezfdz.js";import{s as l}from"./style-BIyXNgIJ.js";const u={title:"A11y/Contrast"},i=(r,n,s,t)=>o`
+import{b as s}from"./iframe-Bk8gVLud.js";import{s as d}from"./style-B7Oo1hoh.js";const b={title:"A11y/Contrast"},g=(r,o,n,e)=>s`
     <div
         style="
-            background: var(${s});
-            color: var(${n});
+            background: var(${n});
+            color: var(${o});
             padding: 16px 20px;
             border-radius: var(--cz-radius-md);
-            border: 1px solid var(${t});
+            border: 1px solid var(${e});
             margin-bottom: 8px;
         "
     >
         <strong style="font-size: var(--cz-text-base);">${r}</strong>
         <br />
         <span style="font-size: var(--cz-text-sm); opacity: 1;">
-            ${n} on ${s} with ${t} border
+            ${o} on ${n} with ${e} border
         </span>
     </div>
-`,d=()=>{const r=document.documentElement,n=r.style.colorScheme!=="dark";r.style.colorScheme=n?"dark":"light",r.classList.toggle("dark-mode",n)},a={render:()=>o`
-        ${l}
+`,l=()=>{const r=document.documentElement,o=r.style.colorScheme!=="dark";r.style.colorScheme=o?"dark":"light",r.classList.toggle("dark-mode",o)},t={render:()=>s`
+        ${d}
         <div class="story-container">
             <h1 class="story-title">Warning colors</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${d}
+                @click=${l}
             >
                 Toggle Dark Mode
             </button>
@@ -79,43 +79,105 @@ import{b as o}from"./iframe-Dl4Ezfdz.js";import{s as l}from"./style-BIyXNgIJ.js"
                 </div>
             </div>
         </div>
-    `},e={render:()=>o`
-        ${l}
+    `},a={render:()=>s`
+        ${d}
+        <div class="story-container">
+            <h1 class="story-title">Success colors</h1>
+            <button
+                class="story-btn story-btn--secondary story-mb-6"
+                @click=${l}
+            >
+                Toggle Dark Mode
+            </button>
+            <div style="display: grid; gap: 24px; max-width: 640px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="var(--cz-color-fg-success)"
+                        stroke-width="2"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="m7 12 3 3 7-7" />
+                    </svg>
+                    <span>Invoice matched</span>
+                </div>
+                <div
+                    style="background: var(--cz-color-bg-success); color: var(--cz-color-text-success);
+                    border: 1px solid var(--cz-color-border-success-subtle); padding: 16px;
+                    border-radius: var(--cz-radius-md);"
+                >
+                    <strong>Matching complete</strong>
+                    <p style="margin: 8px 0 0;">
+                        Delivered quantity matches the ordered quantity.
+                    </p>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center;">
+                    <span
+                        style="background: var(--cz-color-bg-success); color: var(--cz-color-text-success);
+                        border: 1px solid var(--cz-color-border-success-subtle); border-radius: var(--cz-radius-full);
+                        padding: 4px 12px;"
+                        >Completed</span
+                    >
+                    <button
+                        style="background: var(--cz-color-bg-success-solid); color: var(--cz-color-fg-white);
+                        border: 0; border-radius: var(--cz-radius-md); padding: 8px 16px; font: inherit;"
+                    >
+                        Save matches
+                    </button>
+                </div>
+                <div style="color: var(--cz-color-text-success);">
+                    Delivered 10 of 10
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <span
+                        style="width: 80px; height: 12px; border-radius: var(--cz-radius-sm);
+                        background: var(--cz-color-fg-success);"
+                    ></span>
+                    Straight through
+                </div>
+            </div>
+        </div>
+    `},c={render:()=>s`
+        ${d}
         <div class="story-container">
             <h1 class="story-title">Text on Status Backgrounds</h1>
             <button
                 class="story-btn story-btn--secondary story-mb-6"
-                @click=${d}
+                @click=${l}
             >
                 Toggle Dark Mode
             </button>
             <div class="story-section">
-                ${i("Error text on error bg","--cz-color-text-error","--cz-color-bg-error","--cz-color-error-200")}
-                ${i("Warning text on warning bg","--cz-color-text-warning","--cz-color-bg-warning","--cz-color-warning-200")}
-                ${i("Success text on success bg","--cz-color-text-success","--cz-color-bg-success","--cz-color-success-200")}
+                ${g("Error text on error bg","--cz-color-text-error","--cz-color-bg-error","--cz-color-error-200")}
+                ${g("Warning text on warning bg","--cz-color-text-warning","--cz-color-bg-warning","--cz-color-warning-200")}
+                ${g("Success text on success bg","--cz-color-text-success","--cz-color-bg-success","--cz-color-success-200")}
             </div>
         </div>
-    `},c={render:()=>o`
-        ${l}
+    `},i={render:()=>s`
+        ${d}
         <div class="story-container">
             <h1 class="story-title">Glass controls</h1>
-            <button class="story-btn story-btn--secondary" @click=${d}>
+            <button class="story-btn story-btn--secondary" @click=${l}>
                 Toggle dark mode
             </button>
-            ${[{kind:"primary",fill:"-action",sheen:"--cz-glass-action-sheen",text:"--cz-color-text-on-glass-action",shadow:"--cz-shadow-glass-action"},{kind:"secondary",fill:"",sheen:"--cz-glass-sheen",text:"--cz-color-text-primary",shadow:"--cz-shadow-glass"},{kind:"destructive",fill:"-destructive",sheen:"--cz-glass-action-sheen",text:"--cz-color-text-on-action",shadow:"--cz-shadow-glass-action"}].map(({kind:r,fill:n,sheen:s,text:t,shadow:g})=>o` <button
+            ${[{kind:"primary",fill:"-action",sheen:"--cz-glass-action-sheen",text:"--cz-color-text-on-glass-action",shadow:"--cz-shadow-glass-action"},{kind:"secondary",fill:"",sheen:"--cz-glass-sheen",text:"--cz-color-text-primary",shadow:"--cz-shadow-glass"},{kind:"destructive",fill:"-destructive",sheen:"--cz-glass-action-sheen",text:"--cz-color-text-on-action",shadow:"--cz-shadow-glass-action"}].map(({kind:r,fill:o,sheen:n,text:e,shadow:p})=>s` <button
                         style="
                     margin: 24px 8px; padding: 10px 18px;
                     font: inherit; border-radius: var(--cz-radius-full);
                     border: 1px solid var(--cz-color-border-glass);
-                    background: var(${s}), var(--cz-color-bg-glass${n});
-                    color: var(${t}); box-shadow: var(${g});
+                    background: var(${n}), var(--cz-color-bg-glass${o});
+                    color: var(${e}); box-shadow: var(${p});
                     backdrop-filter: var(--cz-backdrop-filter-glass);
                 "
                     >
                         ${r} action
                     </button>`)}
         </div>
-    `};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+    `};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -181,7 +243,71 @@ import{b as o}from"./iframe-Dl4Ezfdz.js";import{s as l}from"./style-BIyXNgIJ.js"
             </div>
         </div>
     \`
-}`,...a.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+  render: () => html\`
+        \${style}
+        <div class="story-container">
+            <h1 class="story-title">Success colors</h1>
+            <button
+                class="story-btn story-btn--secondary story-mb-6"
+                @click=\${toggleDarkMode}
+            >
+                Toggle Dark Mode
+            </button>
+            <div style="display: grid; gap: 24px; max-width: 640px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="var(--cz-color-fg-success)"
+                        stroke-width="2"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="m7 12 3 3 7-7" />
+                    </svg>
+                    <span>Invoice matched</span>
+                </div>
+                <div
+                    style="background: var(--cz-color-bg-success); color: var(--cz-color-text-success);
+                    border: 1px solid var(--cz-color-border-success-subtle); padding: 16px;
+                    border-radius: var(--cz-radius-md);"
+                >
+                    <strong>Matching complete</strong>
+                    <p style="margin: 8px 0 0;">
+                        Delivered quantity matches the ordered quantity.
+                    </p>
+                </div>
+                <div style="display: flex; gap: 16px; align-items: center;">
+                    <span
+                        style="background: var(--cz-color-bg-success); color: var(--cz-color-text-success);
+                        border: 1px solid var(--cz-color-border-success-subtle); border-radius: var(--cz-radius-full);
+                        padding: 4px 12px;"
+                        >Completed</span
+                    >
+                    <button
+                        style="background: var(--cz-color-bg-success-solid); color: var(--cz-color-fg-white);
+                        border: 0; border-radius: var(--cz-radius-md); padding: 8px 16px; font: inherit;"
+                    >
+                        Save matches
+                    </button>
+                </div>
+                <div style="color: var(--cz-color-text-success);">
+                    Delivered 10 of 10
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <span
+                        style="width: 80px; height: 12px; border-radius: var(--cz-radius-sm);
+                        background: var(--cz-color-fg-success);"
+                    ></span>
+                    Straight through
+                </div>
+            </div>
+        </div>
+    \`
+}`,...a.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -199,7 +325,7 @@ import{b as o}from"./iframe-Dl4Ezfdz.js";import{s as l}from"./style-BIyXNgIJ.js"
             </div>
         </div>
     \`
-}`,...e.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+}`,...c.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -245,4 +371,4 @@ import{b as o}from"./iframe-Dl4Ezfdz.js";import{s as l}from"./style-BIyXNgIJ.js"
                     </button>\`)}
         </div>
     \`
-}`,...c.parameters?.docs?.source}}};const b=["WarningSurfaces","TextOnStatusBackgrounds","GlassControls"];export{c as GlassControls,e as TextOnStatusBackgrounds,a as WarningSurfaces,b as __namedExportsOrder,u as default};
+}`,...i.parameters?.docs?.source}}};const x=["WarningSurfaces","SuccessSurfaces","TextOnStatusBackgrounds","GlassControls"];export{i as GlassControls,a as SuccessSurfaces,c as TextOnStatusBackgrounds,t as WarningSurfaces,x as __namedExportsOrder,b as default};
