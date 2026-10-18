@@ -3,6 +3,8 @@ import { expect } from 'chai';
 // [text token, background token, minimum WCAG 2.2 ratio]
 const PAIRS = [
 	['text-primary', 'bg-primary', 4.5],
+	['text-primary', 'bg-brand', 4.5],
+	['text-primary', 'bg-brand-secondary', 4.5],
 	['text-secondary', 'bg-primary', 4.5],
 	['text-tertiary', 'bg-primary', 4.5],
 	['text-quaternary', 'bg-primary', 4.5],
@@ -15,6 +17,12 @@ const PAIRS = [
 	['text-on-action', 'bg-action-solid', 4.5],
 	['text-on-action', 'bg-action-solid-hover', 4.5],
 	['fg-white', 'bg-error-solid', 4.5],
+	['fg-white', 'bg-warning-solid', 4.5],
+	['fg-white', 'bg-success-solid', 4.5],
+	['fg-success', 'bg-primary', 3],
+	['fg-success', 'bg-success', 3],
+	['fg-warning', 'bg-primary', 3],
+	['fg-warning', 'bg-warning', 3],
 	['text-brand', 'bg-brand-subtle', 4.5],
 	...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => [`chart-${n}`, 'bg-primary', 3]),
 	...['error', 'warning', 'success', 'info'].flatMap((s) => [

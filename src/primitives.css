@@ -1,6 +1,6 @@
 /**
  * Cosmoz Design Tokens - Primitives
- * Base color palette. Violet is the brand hue; rose, amber, emerald and sky
+ * Base color palette. Muted lavender is the brand hue; rose, amber, emerald and sky
  * carry status signals. Gray provides neutral surfaces and text.
  * The remaining scales are kept for existing consumers.
  */
@@ -15,21 +15,21 @@
 	--cz-color-alpha-white: rgb(255 255 255);
 	--cz-color-alpha-black: rgb(0 0 0);
 
-	/* Brand colors - Violet. The theme switch: re-point these to re-brand. */
-	--cz-color-brand-25: var(--cz-color-violet-25);
-	--cz-color-brand-50: var(--cz-color-violet-50);
-	--cz-color-brand-100: var(--cz-color-violet-100);
-	--cz-color-brand-200: var(--cz-color-violet-200);
-	--cz-color-brand-300: var(--cz-color-violet-300);
-	--cz-color-brand-400: var(--cz-color-violet-400);
-	--cz-color-brand-500: var(--cz-color-violet-500);
-	--cz-color-brand-600: var(--cz-color-violet-600);
-	--cz-color-brand-700: var(--cz-color-violet-700);
-	--cz-color-brand-800: var(--cz-color-violet-800);
-	--cz-color-brand-900: var(--cz-color-violet-900);
-	--cz-color-brand-950: var(--cz-color-violet-950);
+	/* Brand colors - Muted lavender. The theme switch: re-point these to re-brand. */
+	--cz-color-brand-25: var(--cz-color-lavender-25);
+	--cz-color-brand-50: var(--cz-color-lavender-50);
+	--cz-color-brand-100: var(--cz-color-lavender-100);
+	--cz-color-brand-200: var(--cz-color-lavender-200);
+	--cz-color-brand-300: var(--cz-color-lavender-300);
+	--cz-color-brand-400: var(--cz-color-lavender-400);
+	--cz-color-brand-500: var(--cz-color-lavender-500);
+	--cz-color-brand-600: var(--cz-color-lavender-600);
+	--cz-color-brand-700: var(--cz-color-lavender-700);
+	--cz-color-brand-800: var(--cz-color-lavender-800);
+	--cz-color-brand-900: var(--cz-color-lavender-900);
+	--cz-color-brand-950: var(--cz-color-lavender-950);
 
-	/* Lavender colors — retained for consumers of the original palette. */
+	/* Lavender colors - the muted brand palette. */
 	--cz-color-lavender-25: rgb(250 248 255); /* derived */
 	--cz-color-lavender-50: rgb(245 242 255);
 	--cz-color-lavender-100: rgb(236 230 255); /* derived */
@@ -71,19 +71,19 @@
 	--cz-color-error-900: rgb(136 19 55);
 	--cz-color-error-950: rgb(76 5 25);
 
-	/* Warning colors — saturated signals, pale surfaces and deep dark-mode surfaces. */
-	--cz-color-warning-25: rgb(255 253 245);
-	--cz-color-warning-50: rgb(255 251 235);
-	--cz-color-warning-100: rgb(254 243 199);
-	--cz-color-warning-200: rgb(253 230 138);
-	--cz-color-warning-300: rgb(252 211 77);
-	--cz-color-warning-400: rgb(251 191 36);
-	--cz-color-warning-500: rgb(245 158 11);
-	--cz-color-warning-600: rgb(217 119 6);
-	--cz-color-warning-700: rgb(180 83 9);
-	--cz-color-warning-800: rgb(146 64 14);
-	--cz-color-warning-900: rgb(120 53 15);
-	--cz-color-warning-950: rgb(69 26 3);
+	/* Warning colors - shared amber palette; semantics select contrast-safe steps. */
+	--cz-color-warning-25: var(--cz-color-amber-25);
+	--cz-color-warning-50: var(--cz-color-amber-50);
+	--cz-color-warning-100: var(--cz-color-amber-100);
+	--cz-color-warning-200: var(--cz-color-amber-200);
+	--cz-color-warning-300: var(--cz-color-amber-300);
+	--cz-color-warning-400: var(--cz-color-amber-400);
+	--cz-color-warning-500: var(--cz-color-amber-500);
+	--cz-color-warning-600: var(--cz-color-amber-600);
+	--cz-color-warning-700: var(--cz-color-amber-700);
+	--cz-color-warning-800: var(--cz-color-amber-800);
+	--cz-color-warning-900: var(--cz-color-amber-900);
+	--cz-color-warning-950: var(--cz-color-amber-950);
 
 	/* Success colors — saturated signals, pale surfaces and deep dark-mode surfaces. */
 	--cz-color-success-25: rgb(245 255 249);

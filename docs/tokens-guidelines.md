@@ -101,7 +101,7 @@ not change this one token — change the brand scale instead.
 
 ### The Cosmoz palette
 
-Violet is the brand scale. Error uses rose red, warning uses amber,
+Muted lavender is the brand scale. Error uses rose red, warning uses amber,
 success uses emerald and info uses sky blue. Gray carries neutral
 surfaces and text; lavender remains available for existing consumers.
 
@@ -109,7 +109,9 @@ Chart colors use stronger steps on light surfaces and brighter steps
 on dark surfaces. Every categorical chart color has at least 3:1
 contrast against `bg-primary`. Status text keeps at least 4.5:1 contrast
 against its matching tinted surface. Use foreground tokens for chart
-marks and icons, and text tokens for labels.
+marks and icons, and text tokens for labels. Warning and success solid fills use step 700
+so white labels keep at least 4.5:1 contrast. Warning accents use the amber
+scale; retain the darker text steps for readable labels on pale surfaces.
 
 Primary buttons use the `action` family (`bg-action-solid`,
 `text-on-action`), which is pinned to gray: lavender marks selection and
