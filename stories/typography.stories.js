@@ -52,6 +52,15 @@ export const TextSizes = {
 
 			<div class="story-grid story-gap-6">
 				<div class="story-row">
+					<span class="story-label">--cz-text-2xs (0.6875rem / 11px)</span>
+					<span
+						style="font-size: var(--cz-text-2xs); line-height: var(--cz-text-2xs-line-height);"
+					>
+						Compact counters: 1 409 166
+					</span>
+				</div>
+
+				<div class="story-row">
 					<span class="story-label">--cz-text-xs (0.75rem / 12px)</span>
 					<span
 						style="font-size: var(--cz-text-xs); line-height: var(--cz-text-xs-line-height);"
