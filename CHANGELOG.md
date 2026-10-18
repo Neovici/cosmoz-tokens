@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.12.0
+
+### Minor Changes
+
+- 46e97a4: Refine light-mode buttons with translucent white fills, a fine edge and soft shadows. Add button-specific secondary recipes so panel glass stays unchanged, and keep destructive sheen separate for contrast. Preserve dark-mode appearance and accessibility fallbacks.
+
 ## 4.11.0
 
 ### Minor Changes
