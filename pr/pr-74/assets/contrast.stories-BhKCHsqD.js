@@ -1,4 +1,4 @@
-import{b as o}from"./iframe-C9Uixrvx.js";import{s as l}from"./style-86ESmPeF.js";const u={title:"A11y/Contrast"},i=(r,n,s,t)=>o`
+import{b as o}from"./iframe-Dl4Ezfdz.js";import{s as l}from"./style-BIyXNgIJ.js";const u={title:"A11y/Contrast"},i=(r,n,s,t)=>o`
     <div
         style="
             background: var(${s});
