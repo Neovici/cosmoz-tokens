@@ -123,7 +123,7 @@
 		var(--cz-color-gray-950)
 	);
 	--cz-color-bg-primary-hover: light-dark(
-		var(--cz-color-gray-50),
+		var(--cz-color-gray-100),
 		var(--cz-color-gray-800)
 	);
 	--cz-color-bg-primary-solid: light-dark(
@@ -135,7 +135,7 @@
 		var(--cz-color-gray-900)
 	);
 	--cz-color-bg-secondary-hover: light-dark(
-		var(--cz-color-gray-100),
+		var(--cz-color-gray-200),
 		var(--cz-color-gray-800)
 	);
 	--cz-color-bg-secondary-subtle: light-dark(
