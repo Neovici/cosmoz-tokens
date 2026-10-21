@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.14.1
+
+### Patch Changes
+
+- 8d93107: Strengthen primary and secondary hover backgrounds in light mode while preserving dark-mode colors.
+
 ## 4.14.0
 
 ### Minor Changes
