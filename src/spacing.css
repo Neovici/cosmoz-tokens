@@ -25,4 +25,12 @@
 	--cz-control-height-md: 2rem;
 	--cz-control-height-lg: 2.25rem;
 	--cz-control-height-xl: 2.5rem;
+
+	/* Tag heights, the content ladder for controls that host tags: a
+	   control renders its tags one size step below and every rung here
+	   equals the matching control height minus 2x spacing of air */
+	--cz-tag-height-xs: 1.25rem; /* 20px */
+	--cz-tag-height-sm: 1.5rem; /* 24px */
+	--cz-tag-height-md: 1.75rem; /* 28px */
+	--cz-tag-height-lg: 2rem; /* 32px */
 }

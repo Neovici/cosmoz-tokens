@@ -88,6 +88,37 @@ const controlHeight = (size, px) => html`
 	</div>
 `;
 
+const tagHeight = (size, px) => html`
+	<div class="story-row">
+		<div
+			style="height: var(--cz-tag-height-${size}); width: 96px; background: var(--cz-color-brand-100); border: 1px solid var(--cz-color-brand-500); border-radius: var(--cz-radius-full); box-sizing: border-box;"
+		></div>
+		<span class="story-label"
+			>--cz-tag-height-${size} (${px / 16}rem / ${px}px)</span
+		>
+	</div>
+`;
+
+export const TagHeight = {
+	render: () => html`
+		${style}
+		<div class="story-container">
+			<h1 class="story-title">Tag Height</h1>
+			<div class="story-section">
+				<p class="story-description">
+					Content ladder for controls that host tags: a control renders its tags
+					one size step below, with about 2x spacing of air. Matches the
+					rendered cosmoz-tag box per size.
+				</p>
+				<div class="story-flex story-flex--col story-gap-2 story-mt-6">
+					${tagHeight('xs', 20)} ${tagHeight('sm', 24)} ${tagHeight('md', 28)}
+					${tagHeight('lg', 32)}
+				</div>
+			</div>
+		</div>
+	`,
+};
+
 export const ControlHeight = {
 	render: () => html`
 		${style}
