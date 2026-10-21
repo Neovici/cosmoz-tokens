@@ -3,6 +3,8 @@ import { expect } from 'chai';
 // [text token, background token, minimum WCAG 2.2 ratio]
 const PAIRS = [
 	['text-primary', 'bg-primary', 4.5],
+	['text-secondary-hover', 'bg-primary-hover', 4.5],
+	['text-secondary-hover', 'bg-secondary-hover', 4.5],
 	['text-primary', 'bg-brand', 4.5],
 	['text-primary', 'bg-brand-secondary', 4.5],
 	['text-secondary', 'bg-primary', 4.5],
@@ -77,6 +79,16 @@ describe('contrast', () => {
 		document.head.append(link);
 		await loaded;
 	});
+
+	// A design regression threshold for visible hover feedback, not a WCAG requirement.
+	for (const surface of ['primary', 'secondary']) {
+
+		it(`light ${surface} hover remains visible against its resting surface`, () => {
+			const resting = resolve('light', `bg-${surface}`);
+			const hovered = resolve('light', `bg-${surface}-hover`);
+			expect(ratio(resting, hovered)).to.be.at.least(1.12);
+		});
+	}
 
 	for (const scheme of ['light', 'dark']) {
 
