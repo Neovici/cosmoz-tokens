@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-Dozc6KJ8.js";import{s as l}from"./style-Nj1gtod-.js";const g={title:"Tokens/Spacing"},r=(s,t)=>a`
+import{b as a}from"./iframe-B6J65rLd.js";import{s as l}from"./style-qHuTw8SU.js";const g={title:"Tokens/Spacing"},r=(s,t)=>a`
     <div class="story-row">
         <div
             class="story-swatch--lg"
@@ -87,8 +87,8 @@ import{b as a}from"./iframe-Dozc6KJ8.js";import{s as l}from"./style-Nj1gtod-.js"
                     rendered cosmoz-tag box per size.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    ${e("xs",20)} ${e("sm",24)} ${e("md",27)}
-                    ${e("lg",31)}
+                    ${e("xs",20)} ${e("sm",24)} ${e("md",28)}
+                    ${e("lg",32)}
                 </div>
             </div>
         </div>
@@ -175,8 +175,8 @@ import{b as a}from"./iframe-Dozc6KJ8.js";import{s as l}from"./style-Nj1gtod-.js"
                     rendered cosmoz-tag box per size.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    \${tagHeight('xs', 20)} \${tagHeight('sm', 24)} \${tagHeight('md', 27)}
-                    \${tagHeight('lg', 31)}
+                    \${tagHeight('xs', 20)} \${tagHeight('sm', 24)} \${tagHeight('md', 28)}
+                    \${tagHeight('lg', 32)}
                 </div>
             </div>
         </div>
