@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.14.2
+
+### Patch Changes
+
+- 33a636c: Improve light-mode button separation on white surfaces with a clearer neutral border, softly shaded fill and edge shadow. Strengthen hover feedback while preserving dark-mode recipes and button geometry.
+
 ## 4.14.1
 
 ### Patch Changes
