@@ -255,3 +255,9 @@ without backdrop-filter support and for reduced transparency. Reduced
 transparency also restores opaque fills. Forced colors remove the material
 effects; components must retain a system-colored border and visible focus
 outline.
+
+## Icon sizes
+
+Use `--cz-icon-size-xs`, `sm`, `md`, `lg` and `xl` for 0.875, 1, 1.125, 1.25 and 1.5rem respectively. At a 16px root these render at 14, 16, 18, 20 and 24px. Keep the SVG viewBox intact; set its CSS width and height to the chosen token. Size the button's hit area separately.
+
+Use xs for compact controls, sm for inline actions, md for navigation, lg for main toolbar actions and xl for larger standalone icons.
