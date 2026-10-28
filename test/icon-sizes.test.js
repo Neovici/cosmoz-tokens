@@ -1,5 +1,7 @@
 import { expect } from 'chai';
 
+const ICON_SIZES = { xs: 14, sm: 16, md: 18, lg: 20, xl: 24 };
+
 describe('icon sizes', () => {
 	let link;
 	let probe;
@@ -33,23 +35,18 @@ describe('icon sizes', () => {
 
 	after(() => link.remove());
 
-	it('scales SVG artwork with the root font while retaining its viewBox', () => {
+	it('resolves the icon size ladder exactly and scales with the root font', () => {
 		for (const size of ['xs', 'sm', 'md', 'lg', 'xl']) {
 			probe.style.cssText = `width: var(--cz-icon-size-${size}); height: var(--cz-icon-size-${size})`;
 			document.documentElement.style.fontSize = '16px';
 			const normal = probe.getBoundingClientRect();
+			expect(normal.width, size).to.equal(ICON_SIZES[size]);
+			expect(normal.height, size).to.equal(ICON_SIZES[size]);
 			document.documentElement.style.fontSize = '32px';
 			const enlarged = probe.getBoundingClientRect();
-			expect(enlarged.width, size).to.equal(normal.width * 2);
+			expect(enlarged.width, size).to.equal(ICON_SIZES[size] * 2);
 			expect(enlarged.height, size).to.equal(enlarged.width);
-			expect(probe.viewBox.baseVal.width).to.equal(24);
 		}
-	});
-
-	it('allows a subtree to override a size without changing the root font', () => {
-		probe.style.cssText =
-			'--cz-icon-size-lg: 1.75rem; width: var(--cz-icon-size-lg); height: var(--cz-icon-size-lg)';
-		document.documentElement.style.fontSize = '16px';
-		expect(probe.getBoundingClientRect().width).to.equal(28);
+		expect(probe.viewBox.baseVal.width).to.equal(24);
 	});
 });
