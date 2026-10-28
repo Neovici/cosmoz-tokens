@@ -258,6 +258,6 @@ outline.
 
 ## Icon sizes
 
-Use `--cz-icon-size-xs`, `sm`, `md`, `lg` and `xl` for 0.875, 1, 1.125, 1.25 and 1.5rem respectively. At a 16px root these render at 14, 16, 18, 20 and 24px. Keep the SVG viewBox intact; set its CSS width and height to the chosen token. Size the button's hit area separately.
+`--cz-icon-size-xs` … `--cz-icon-size-xl` set the size of icons. The scale is rem-based, so icons follow the root font size; current values live in [`src/spacing.css`](src/spacing.css) and render live in Storybook's Tokens/Spacing → "Icon sizes" story. Keep the SVG viewBox intact and set its width and height to the chosen token; the control's hit area stays independent.
 
-Use xs for compact controls, sm for inline actions, md for navigation, lg for main toolbar actions and xl for larger standalone icons.
+Use `xs` for compact controls, `sm` for inline actions, `md` for navigation, `lg` for main toolbar actions and `xl` for larger standalone icons.
