@@ -255,3 +255,9 @@ without backdrop-filter support and for reduced transparency. Reduced
 transparency also restores opaque fills. Forced colors remove the material
 effects; components must retain a system-colored border and visible focus
 outline.
+
+## Icon sizes
+
+`--cz-icon-size-xs` … `--cz-icon-size-xl` set the size of icons. The scale is rem-based, so icons follow the root font size; current values live in [`src/spacing.css`](src/spacing.css) and render live in Storybook's Tokens/Spacing → "Icon sizes" story. Keep the SVG viewBox intact and set its width and height to the chosen token; the control's hit area stays independent.
+
+Use `xs` for compact controls, `sm` for inline actions, `md` for navigation, `lg` for main toolbar actions and `xl` for larger standalone icons.

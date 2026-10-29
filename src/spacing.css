@@ -20,6 +20,13 @@
 	--cz-radius-4xl: 1.5rem;
 	--cz-radius-full: 9999px;
 
+	/* Icon sizes, independent of control hit areas */
+	--cz-icon-size-xs: 0.875rem;
+	--cz-icon-size-sm: 1rem;
+	--cz-icon-size-md: 1.125rem;
+	--cz-icon-size-lg: 1.25rem;
+	--cz-icon-size-xl: 1.5rem;
+
 	/* Control heights, shared by buttons, inputs and other form controls */
 	--cz-control-height-sm: 1.75rem;
 	--cz-control-height-md: 2rem;

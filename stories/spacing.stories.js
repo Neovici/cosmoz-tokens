@@ -106,3 +106,32 @@ export const ControlHeight = {
 		</div>
 	`,
 };
+
+export const IconSizes = {
+	render: () =>
+		html` ${style}
+			<div class="story-container">
+				<h1 class="story-title">Icon sizes</h1>
+				<p class="story-description">
+					Size the artwork separately from its button hit area. The SVG viewBox
+					stays unchanged.
+				</p>
+				${['xs', 'sm', 'md', 'lg', 'xl'].map(
+					(size) =>
+						html` <div class="story-row">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								aria-hidden="true"
+								style="width: var(--cz-icon-size-${size}); height: var(--cz-icon-size-${size}); flex: none;"
+							>
+								<circle cx="12" cy="12" r="9" />
+								<path d="M12 8v8M8 12h8" />
+							</svg>
+							<span class="story-label">--cz-icon-size-${size}</span>
+						</div>`,
+				)}
+			</div>`,
+};
