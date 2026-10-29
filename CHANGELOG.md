@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.15.0
+
+### Minor Changes
+
+- 0976da9: Add a rem-based icon size scale from 14px to 24px, independent of control hit areas.
+
 ## 4.14.2
 
 ### Patch Changes
