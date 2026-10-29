@@ -1,32 +1,32 @@
-import{b as a}from"./iframe-Neh8r5Xu.js";import{s as d}from"./style-BJ2LtcjL.js";const p={title:"Tokens/Spacing"},s=(r,o)=>a`
+import{b as a}from"./iframe-BD5SmqAI.js";import{s as d}from"./style-s-qRzlMk.js";const u={title:"Tokens/Spacing"},r=(s,o)=>a`
     <div class="story-row">
         <div
             class="story-swatch--lg"
             style="border-radius: var(${o}); background: var(--cz-color-brand-100); border: 2px solid var(--cz-color-brand-500);"
         ></div>
-        <span class="story-label">${r}</span>
+        <span class="story-label">${s}</span>
     </div>
-`,c={render:()=>a`
+`,i={render:()=>a`
         ${d}
         <div class="story-container">
             <h1 class="story-title">Border Radius</h1>
             <div class="story-section">
                 <div class="story-grid story-grid--auto">
-                    ${s("--cz-radius-none (0)","--cz-radius-none")}
-                    ${s("--cz-radius-xxs (0.125rem / 2px)","--cz-radius-xxs")}
-                    ${s("--cz-radius-xs (0.25rem / 4px)","--cz-radius-xs")}
-                    ${s("--cz-radius-sm (0.375rem / 6px)","--cz-radius-sm")}
-                    ${s("--cz-radius-md (0.5rem / 8px)","--cz-radius-md")}
-                    ${s("--cz-radius-lg (0.625rem / 10px)","--cz-radius-lg")}
-                    ${s("--cz-radius-xl (0.75rem / 12px)","--cz-radius-xl")}
-                    ${s("--cz-radius-2xl (1rem / 16px)","--cz-radius-2xl")}
-                    ${s("--cz-radius-3xl (1.25rem / 20px)","--cz-radius-3xl")}
-                    ${s("--cz-radius-4xl (1.5rem / 24px)","--cz-radius-4xl")}
-                    ${s("--cz-radius-full (9999px)","--cz-radius-full")}
+                    ${r("--cz-radius-none (0)","--cz-radius-none")}
+                    ${r("--cz-radius-xxs (0.125rem / 2px)","--cz-radius-xxs")}
+                    ${r("--cz-radius-xs (0.25rem / 4px)","--cz-radius-xs")}
+                    ${r("--cz-radius-sm (0.375rem / 6px)","--cz-radius-sm")}
+                    ${r("--cz-radius-md (0.5rem / 8px)","--cz-radius-md")}
+                    ${r("--cz-radius-lg (0.625rem / 10px)","--cz-radius-lg")}
+                    ${r("--cz-radius-xl (0.75rem / 12px)","--cz-radius-xl")}
+                    ${r("--cz-radius-2xl (1rem / 16px)","--cz-radius-2xl")}
+                    ${r("--cz-radius-3xl (1.25rem / 20px)","--cz-radius-3xl")}
+                    ${r("--cz-radius-4xl (1.5rem / 24px)","--cz-radius-4xl")}
+                    ${r("--cz-radius-full (9999px)","--cz-radius-full")}
                 </div>
             </div>
         </div>
-    `},i={render:()=>a`
+    `},t={render:()=>a`
         ${d}
         <div class="story-container">
             <h1 class="story-title">Spacing Unit</h1>
@@ -45,26 +45,26 @@ import{b as a}from"./iframe-Neh8r5Xu.js";import{s as d}from"./style-BJ2LtcjL.js"
                     for consistent spacing.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    ${[1,2,3,4,5,6,8,10,12,16].map(r=>a`
+                    ${[1,2,3,4,5,6,8,10,12,16].map(s=>a`
                             <div class="story-row">
                                 <div
-                                    style="height: 24px; width: calc(var(--cz-spacing) * ${r}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
+                                    style="height: 24px; width: calc(var(--cz-spacing) * ${s}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
                                 ></div>
                                 <span class="story-label"
-                                    >${r}x = ${r*.25}rem / ${r*4}px</span
+                                    >${s}x = ${s*.25}rem / ${s*4}px</span
                                 >
                             </div>
                         `)}
                 </div>
             </div>
         </div>
-    `},t=(r,o)=>a`
+    `},c=(s,o)=>a`
     <div class="story-row">
         <div
-            style="height: var(--cz-control-height-${r}); width: 96px; background: var(--cz-color-brand-100); border: 1px solid var(--cz-color-brand-500); border-radius: var(--cz-radius-md); box-sizing: border-box;"
+            style="height: var(--cz-control-height-${s}); width: 96px; background: var(--cz-color-brand-100); border: 1px solid var(--cz-color-brand-500); border-radius: var(--cz-radius-md); box-sizing: border-box;"
         ></div>
         <span class="story-label"
-            >--cz-control-height-${r} (${o/16}rem / ${o}px)</span
+            >--cz-control-height-${s} (${o/16}rem / ${o}px)</span
         >
     </div>
 `,n={render:()=>a`
@@ -77,12 +77,33 @@ import{b as a}from"./iframe-Neh8r5Xu.js";import{s as d}from"./style-BJ2LtcjL.js"
                     controls of the same size line up.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    ${t("sm",28)} ${t("md",32)}
-                    ${t("lg",36)} ${t("xl",40)}
+                    ${c("sm",28)} ${c("md",32)}
+                    ${c("lg",36)} ${c("xl",40)}
                 </div>
             </div>
         </div>
-    `};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+    `},e={render:()=>a` ${d}
+            <div class="story-container">
+                <h1 class="story-title">Icon sizes</h1>
+                <p class="story-description">
+                    Size the artwork separately from its button hit area. The SVG viewBox
+                    stays unchanged.
+                </p>
+                ${["xs","sm","md","lg","xl"].map(s=>a` <div class="story-row">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                aria-hidden="true"
+                                style="width: var(--cz-icon-size-${s}); height: var(--cz-icon-size-${s}); flex: none;"
+                            >
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 8v8M8 12h8" />
+                            </svg>
+                            <span class="story-label">--cz-icon-size-${s}</span>
+                        </div>`)}
+            </div>`};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -104,7 +125,7 @@ import{b as a}from"./iframe-Neh8r5Xu.js";import{s as d}from"./style-BJ2LtcjL.js"
             </div>
         </div>
     \`
-}`,...c.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+}`,...i.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -138,7 +159,7 @@ import{b as a}from"./iframe-Neh8r5Xu.js";import{s as d}from"./style-BJ2LtcjL.js"
             </div>
         </div>
     \`
-}`,...i.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -155,4 +176,27 @@ import{b as a}from"./iframe-Neh8r5Xu.js";import{s as d}from"./style-BJ2LtcjL.js"
             </div>
         </div>
     \`
-}`,...n.parameters?.docs?.source}}};const u=["BorderRadius","SpacingUnit","ControlHeight"];export{c as BorderRadius,n as ControlHeight,i as SpacingUnit,u as __namedExportsOrder,p as default};
+}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  render: () => html\` \${style}
+            <div class="story-container">
+                <h1 class="story-title">Icon sizes</h1>
+                <p class="story-description">
+                    Size the artwork separately from its button hit area. The SVG viewBox
+                    stays unchanged.
+                </p>
+                \${['xs', 'sm', 'md', 'lg', 'xl'].map(size => html\` <div class="story-row">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                aria-hidden="true"
+                                style="width: var(--cz-icon-size-\${size}); height: var(--cz-icon-size-\${size}); flex: none;"
+                            >
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 8v8M8 12h8" />
+                            </svg>
+                            <span class="story-label">--cz-icon-size-\${size}</span>
+                        </div>\`)}
+            </div>\`
+}`,...e.parameters?.docs?.source}}};const v=["BorderRadius","SpacingUnit","ControlHeight","IconSizes"];export{i as BorderRadius,n as ControlHeight,e as IconSizes,t as SpacingUnit,v as __namedExportsOrder,u as default};
