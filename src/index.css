@@ -10,4 +10,6 @@
 @import './semantic.css';
 @import './fallback.css';
 @import './glass.css';
+@import './surface.css';
+@import './motion.css';
 @import './button-glass.css';

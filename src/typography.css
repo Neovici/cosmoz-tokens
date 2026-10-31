@@ -41,6 +41,11 @@
 	--cz-text-display-sm: 1.875rem;
 	--cz-text-display-sm-line-height: 1.25;
 
+	/* Tracking for titles and figures that don't use a display size. */
+	--cz-letter-spacing-tight: -0.01em;
+	--cz-letter-spacing-tighter: -0.025em;
+	--cz-letter-spacing-tightest: -0.035em;
+
 	--cz-text-display-md: 2.25rem;
 	--cz-text-display-md-line-height: 1.25;
 	--cz-text-display-md-letter-spacing: -0.045rem;

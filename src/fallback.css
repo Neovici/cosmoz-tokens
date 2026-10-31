@@ -129,11 +129,22 @@
 			0 2px 5px -1px rgba(10, 13, 18, 0.12);
 		--cz-color-chart-1: var(--cz-color-brand-500);
 		--cz-color-chart-2: var(--cz-color-orange-600);
-		--cz-color-chart-3: var(--cz-color-info-600);
-		--cz-color-chart-4: var(--cz-color-success-600);
-		--cz-color-chart-5: var(--cz-color-warning-600);
-		--cz-color-chart-6: var(--cz-color-error-500);
-		--cz-color-chart-7: var(--cz-color-brand-800);
-		--cz-color-chart-8: var(--cz-color-gray-500);
+		--cz-color-chart-3: var(--cz-color-sky-800);
+		--cz-color-chart-4: var(--cz-color-pink-800);
+		--cz-color-chart-5: var(--cz-color-cyan-600);
+		--cz-color-chart-6: var(--cz-color-yellow-800);
+		--cz-color-chart-7: var(--cz-color-blue-700);
+		--cz-color-chart-8: var(--cz-color-teal-600);
+		--cz-color-data-cosmoz: var(--cz-color-brand-500);
+		--cz-color-data-person: var(--cz-color-orange-600);
+		--cz-color-data-failed: var(--cz-color-error-500);
+		--cz-color-data-pending: var(--cz-color-gray-400);
+		--cz-color-data-none: var(--cz-color-gray-300);
+		--cz-color-data-overdue-1: var(--cz-color-error-400);
+		--cz-color-data-overdue-2: var(--cz-color-error-600);
+		--cz-color-data-overdue-3: var(--cz-color-error-800);
+		--cz-color-data-due-1: var(--cz-color-slate-600);
+		--cz-color-data-due-2: var(--cz-color-slate-500);
+		--cz-color-data-due-3: var(--cz-color-slate-400);
 	}
 }
