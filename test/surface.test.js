@@ -22,7 +22,11 @@ const load = async (frames, scheme) => {
 				backdrop-filter: var(--cz-backdrop-filter-raised);
 				transition: opacity var(--cz-duration-fast) var(--cz-ease-out);
 			}
+			nav {
+				background: var(--cz-color-bg-shell);
+			}
 		</style>
+		<nav>Shell</nav>
 		<section>Surface content</section>
 	`;
 	document.body.append(frame);
@@ -34,6 +38,7 @@ const load = async (frames, scheme) => {
 		section: win.getComputedStyle(
 			frame.contentDocument.querySelector('section'),
 		),
+		shell: win.getComputedStyle(frame.contentDocument.querySelector('nav')),
 	};
 };
 
@@ -59,18 +64,30 @@ describe('raised surface', () => {
 		});
 	}
 
+	// Paints the colours over each other and returns the lightness sum.
+	const paint = (...colors) => {
+		const ctx = document.createElement('canvas').getContext('2d');
+		colors.forEach((color) => {
+			ctx.fillStyle = color;
+			ctx.fillRect(0, 0, 1, 1);
+		});
+		const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
+		return r + g + b;
+	};
+
+	for (const scheme of ['light', 'dark']) {
+
+		it(`frames the ${scheme} canvas with a darker shell`, async () => {
+			const { body, shell } = await load(frames, scheme);
+			expect(paint(shell.backgroundColor)).to.be.lessThan(
+				paint(body.backgroundColor),
+			);
+		});
+	}
+
 	it('keeps the dark canvas darker than the surfaces on it', async () => {
 		const { body, section } = await load(frames, 'dark');
 		// Paint the canvas, then the surface over it, the way the page does.
-		const ctx = document.createElement('canvas').getContext('2d');
-		const paint = (...colors) => {
-			colors.forEach((color) => {
-				ctx.fillStyle = color;
-				ctx.fillRect(0, 0, 1, 1);
-			});
-			const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
-			return r + g + b;
-		};
 		expect(
 			paint(body.backgroundColor, section.backgroundColor),
 		).to.be.greaterThan(paint(body.backgroundColor));

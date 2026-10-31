@@ -10,6 +10,11 @@
 		var(--cz-color-gray-50),
 		var(--cz-color-gray-950)
 	);
+	/* The app frame around the view panel: navigation sits on it. */
+	--cz-color-bg-shell: light-dark(
+		var(--cz-color-gray-100),
+		color-mix(in oklab, var(--cz-color-gray-950) 55%, black)
+	);
 	/* Light falling on the canvas from above, in the brand hue. */
 	--cz-canvas-light:
 		radial-gradient(
@@ -69,6 +74,7 @@
 @media (forced-colors: active) {
 	:root {
 		--cz-color-bg-canvas: Canvas;
+		--cz-color-bg-shell: Canvas;
 		--cz-canvas-light: none;
 		--cz-color-bg-raised: Canvas;
 		--cz-color-border-raised: CanvasText;
