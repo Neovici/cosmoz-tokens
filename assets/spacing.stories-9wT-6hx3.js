@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-BD5SmqAI.js";import{s as d}from"./style-s-qRzlMk.js";const u={title:"Tokens/Spacing"},r=(s,o)=>a`
+import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js";const u={title:"Tokens/Spacing"},r=(s,o)=>a`
     <div class="story-row">
         <div
             class="story-swatch--lg"
