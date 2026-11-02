@@ -1,0 +1,19 @@
+/**
+ * Motion: short, decelerating, and only on transform, opacity and colour.
+ * Components still switch entrances off under prefers-reduced-motion.
+ */
+:root {
+	/* Fast start, long settle: entrances, reveals, anything arriving. */
+	--cz-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	/* Moves between two resting places. */
+	--cz-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+	/* Hover and press feedback. */
+	--cz-duration-fast: 150ms;
+	/* Small state changes: open, close, expand. */
+	--cz-duration-normal: 250ms;
+	/* Entrances of whole surfaces; paired with --cz-ease-out it feels quick. */
+	--cz-duration-slow: 600ms;
+	/* Delay between siblings entering one after another. */
+	--cz-stagger: 60ms;
+}

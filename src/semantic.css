@@ -449,37 +449,88 @@
 	);
 
 	/* Categorical data colours, used in this order (charts, OCR fields, groups).
-	 * Not statuses: use the status tokens when a colour means ok/warning/error. */
+	 * Not statuses: use the status tokens when a colour means ok/warning/error.
+	 * The order is validated for colour-blind separation of neighbours in both
+	 * modes (OKLab ΔE ≥ 8, normal vision ≥ 15); reordering breaks that. */
 	--cz-color-chart-1: light-dark(
 		var(--cz-color-brand-500),
-		var(--cz-color-brand-400)
+		var(--cz-color-brand-500)
 	);
 	--cz-color-chart-2: light-dark(
 		var(--cz-color-orange-600),
-		var(--cz-color-orange-400)
+		var(--cz-color-orange-600)
 	);
 	--cz-color-chart-3: light-dark(
-		var(--cz-color-info-600),
-		var(--cz-color-info-400)
+		var(--cz-color-sky-800),
+		var(--cz-color-sky-700)
 	);
 	--cz-color-chart-4: light-dark(
-		var(--cz-color-success-600),
-		var(--cz-color-success-400)
+		var(--cz-color-pink-800),
+		var(--cz-color-pink-700)
 	);
 	--cz-color-chart-5: light-dark(
-		var(--cz-color-warning-600),
-		var(--cz-color-warning-400)
+		var(--cz-color-cyan-600),
+		var(--cz-color-cyan-600)
 	);
 	--cz-color-chart-6: light-dark(
+		var(--cz-color-yellow-800),
+		var(--cz-color-yellow-700)
+	);
+	--cz-color-chart-7: light-dark(
+		var(--cz-color-blue-700),
+		var(--cz-color-blue-500)
+	);
+	--cz-color-chart-8: light-dark(
+		var(--cz-color-teal-600),
+		var(--cz-color-teal-600)
+	);
+
+	/* Data roles: what a mark stands for, the same in every chart.
+	 * Who did the work: Cosmoz wears the brand, a person the warm second slot. */
+	--cz-color-data-cosmoz: light-dark(
+		var(--cz-color-brand-500),
+		var(--cz-color-brand-500)
+	);
+	--cz-color-data-person: light-dark(
+		var(--cz-color-orange-600),
+		var(--cz-color-orange-600)
+	);
+	--cz-color-data-failed: light-dark(
 		var(--cz-color-error-500),
 		var(--cz-color-error-400)
 	);
-	--cz-color-chart-7: light-dark(
-		var(--cz-color-brand-800),
-		var(--cz-color-brand-200)
-	);
-	--cz-color-chart-8: light-dark(
-		var(--cz-color-gray-500),
+	--cz-color-data-pending: light-dark(
+		var(--cz-color-gray-400),
 		var(--cz-color-gray-500)
+	);
+	--cz-color-data-none: light-dark(
+		var(--cz-color-gray-300),
+		var(--cz-color-gray-700)
+	);
+	/* Due dates diverge around the due date: overdue deepens with age,
+	 * not-yet-due fades with distance. Step 1 is closest to the due date. */
+	--cz-color-data-overdue-1: light-dark(
+		var(--cz-color-error-400),
+		var(--cz-color-error-700)
+	);
+	--cz-color-data-overdue-2: light-dark(
+		var(--cz-color-error-600),
+		var(--cz-color-error-500)
+	);
+	--cz-color-data-overdue-3: light-dark(
+		var(--cz-color-error-800),
+		var(--cz-color-error-300)
+	);
+	--cz-color-data-due-1: light-dark(
+		var(--cz-color-slate-600),
+		var(--cz-color-slate-400)
+	);
+	--cz-color-data-due-2: light-dark(
+		var(--cz-color-slate-500),
+		var(--cz-color-slate-500)
+	);
+	--cz-color-data-due-3: light-dark(
+		var(--cz-color-slate-400),
+		var(--cz-color-slate-600)
 	);
 }

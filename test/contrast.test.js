@@ -27,6 +27,9 @@ const PAIRS = [
 	['fg-warning', 'bg-warning', 3],
 	['text-brand', 'bg-brand-subtle', 4.5],
 	...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => [`chart-${n}`, 'bg-primary', 3]),
+	...['cosmoz', 'person', 'failed', 'overdue-2', 'overdue-3', 'due-1'].map(
+		(role) => [`data-${role}`, 'bg-primary', 3],
+	),
 	...['error', 'warning', 'success', 'info'].flatMap((s) => [
 		[`text-${s}`, 'bg-primary', 4.5],
 		[`text-${s}`, `bg-${s}`, 4.5],

@@ -30,6 +30,8 @@
     "./typography": "./src/typography.css",
     "./spacing": "./src/spacing.css",
     "./shadows": "./src/shadows.css",
+    "./surface": "./src/surface.css",
+    "./motion": "./src/motion.css",
     "./semantic": "./src/semantic.css",
     "./skeumorphic": {
       "types": "./src/skeumorphic.css.d.ts",
