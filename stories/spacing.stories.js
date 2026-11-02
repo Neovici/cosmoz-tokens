@@ -54,19 +54,19 @@ export const SpacingUnit = {
 				<p style="color: var(--cz-color-text-tertiary);">
 					Use
 					<code style="font-family: var(--cz-font-mono);"
-						>calc(var(--cz-spacing) * N)</code
+						>var(--cz-spacing-N)</code
 					>
 					for consistent spacing.
 				</p>
 				<div class="story-flex story-flex--col story-gap-2 story-mt-6">
-					${[1, 2, 3, 4, 5, 6, 8, 10, 12, 16].map(
+					${[1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20, 24].map(
 						(n) => html`
 							<div class="story-row">
 								<div
-									style="height: 24px; width: calc(var(--cz-spacing) * ${n}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
+									style="height: 24px; width: var(--cz-spacing-${n}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
 								></div>
 								<span class="story-label"
-									>${n}x = ${n * 0.25}rem / ${n * 4}px</span
+									>--cz-spacing-${n} = ${n * 0.25}rem / ${n * 4}px</span
 								>
 							</div>
 						`,

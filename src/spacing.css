@@ -7,6 +7,21 @@
 	/* Base spacing unit */
 	--cz-spacing: 0.25rem;
 
+	/* Spacing scale, multiples of the base unit */
+	--cz-spacing-1: calc(var(--cz-spacing) * 1);
+	--cz-spacing-2: calc(var(--cz-spacing) * 2);
+	--cz-spacing-3: calc(var(--cz-spacing) * 3);
+	--cz-spacing-4: calc(var(--cz-spacing) * 4);
+	--cz-spacing-5: calc(var(--cz-spacing) * 5);
+	--cz-spacing-6: calc(var(--cz-spacing) * 6);
+	--cz-spacing-8: calc(var(--cz-spacing) * 8);
+	--cz-spacing-10: calc(var(--cz-spacing) * 10);
+	--cz-spacing-12: calc(var(--cz-spacing) * 12);
+	--cz-spacing-14: calc(var(--cz-spacing) * 14);
+	--cz-spacing-16: calc(var(--cz-spacing) * 16);
+	--cz-spacing-20: calc(var(--cz-spacing) * 20);
+	--cz-spacing-24: calc(var(--cz-spacing) * 24);
+
 	/* Border radius scale */
 	--cz-radius-none: 0;
 	--cz-radius-xxs: 0.125rem;

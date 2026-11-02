@@ -143,11 +143,12 @@ re-pointing or re-theming anything.
 
 ### Spacing
 
-| Token                         | Description                     |
-| ----------------------------- | ------------------------------- |
-| `--cz-spacing`                | Base spacing unit (4px)         |
-| `--cz-radius-{none-full}`     | Border radius scale             |
-| `--cz-control-height-{sm-xl}` | Control heights (28/32/36/40px) |
+| Token                         | Description                                           |
+| ----------------------------- | ----------------------------------------------------- |
+| `--cz-spacing`                | Base spacing unit (4px)                               |
+| `--cz-spacing-{n}`            | n × the base unit, n = 1–6, 8, 10, 12, 14, 16, 20, 24 |
+| `--cz-radius-{none-full}`     | Border radius scale                                   |
+| `--cz-control-height-{sm-xl}` | Control heights (28/32/36/40px)                       |
 
 ### Shadows
 
