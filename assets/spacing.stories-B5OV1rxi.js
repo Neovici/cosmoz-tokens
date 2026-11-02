@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js";const u={title:"Tokens/Spacing"},r=(s,o)=>a`
+import{b as a}from"./iframe-Bo6ozFIg.js";import{s as d}from"./style-CysRn0cX.js";const u={title:"Tokens/Spacing"},r=(s,o)=>a`
     <div class="story-row">
         <div
             class="story-swatch--lg"
@@ -40,25 +40,25 @@ import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js"
                 <p style="color: var(--cz-color-text-tertiary);">
                     Use
                     <code style="font-family: var(--cz-font-mono);"
-                        >calc(var(--cz-spacing) * N)</code
+                        >var(--cz-spacing-N)</code
                     >
                     for consistent spacing.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    ${[1,2,3,4,5,6,8,10,12,16].map(s=>a`
+                    ${[1,2,3,4,5,6,8,10,12,14,16,20,24].map(s=>a`
                             <div class="story-row">
                                 <div
-                                    style="height: 24px; width: calc(var(--cz-spacing) * ${s}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
+                                    style="height: 24px; width: var(--cz-spacing-${s}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
                                 ></div>
                                 <span class="story-label"
-                                    >${s}x = ${s*.25}rem / ${s*4}px</span
+                                    >--cz-spacing-${s} = ${s*.25}rem / ${s*4}px</span
                                 >
                             </div>
                         `)}
                 </div>
             </div>
         </div>
-    `},c=(s,o)=>a`
+    `},n=(s,o)=>a`
     <div class="story-row">
         <div
             style="height: var(--cz-control-height-${s}); width: 96px; background: var(--cz-color-brand-100); border: 1px solid var(--cz-color-brand-500); border-radius: var(--cz-radius-md); box-sizing: border-box;"
@@ -67,7 +67,7 @@ import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js"
             >--cz-control-height-${s} (${o/16}rem / ${o}px)</span
         >
     </div>
-`,n={render:()=>a`
+`,c={render:()=>a`
         ${d}
         <div class="story-container">
             <h1 class="story-title">Control Height</h1>
@@ -77,8 +77,8 @@ import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js"
                     controls of the same size line up.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    ${c("sm",28)} ${c("md",32)}
-                    ${c("lg",36)} ${c("xl",40)}
+                    ${n("sm",28)} ${n("md",32)}
+                    ${n("lg",36)} ${n("xl",40)}
                 </div>
             </div>
         </div>
@@ -140,18 +140,18 @@ import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js"
                 <p style="color: var(--cz-color-text-tertiary);">
                     Use
                     <code style="font-family: var(--cz-font-mono);"
-                        >calc(var(--cz-spacing) * N)</code
+                        >var(--cz-spacing-N)</code
                     >
                     for consistent spacing.
                 </p>
                 <div class="story-flex story-flex--col story-gap-2 story-mt-6">
-                    \${[1, 2, 3, 4, 5, 6, 8, 10, 12, 16].map(n => html\`
+                    \${[1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20, 24].map(n => html\`
                             <div class="story-row">
                                 <div
-                                    style="height: 24px; width: calc(var(--cz-spacing) * \${n}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
+                                    style="height: 24px; width: var(--cz-spacing-\${n}); background: var(--cz-color-brand-500); border-radius: var(--cz-radius-xs);"
                                 ></div>
                                 <span class="story-label"
-                                    >\${n}x = \${n * 0.25}rem / \${n * 4}px</span
+                                    >--cz-spacing-\${n} = \${n * 0.25}rem / \${n * 4}px</span
                                 >
                             </div>
                         \`)}
@@ -159,7 +159,7 @@ import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js"
             </div>
         </div>
     \`
-}`,...t.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+}`,...t.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
   render: () => html\`
         \${style}
         <div class="story-container">
@@ -176,7 +176,7 @@ import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js"
             </div>
         </div>
     \`
-}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+}`,...c.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => html\` \${style}
             <div class="story-container">
                 <h1 class="story-title">Icon sizes</h1>
@@ -199,4 +199,4 @@ import{b as a}from"./iframe-s_KM3x7P.js";import{s as d}from"./style-BbZOg1K2.js"
                             <span class="story-label">--cz-icon-size-\${size}</span>
                         </div>\`)}
             </div>\`
-}`,...e.parameters?.docs?.source}}};const v=["BorderRadius","SpacingUnit","ControlHeight","IconSizes"];export{i as BorderRadius,n as ControlHeight,e as IconSizes,t as SpacingUnit,v as __namedExportsOrder,u as default};
+}`,...e.parameters?.docs?.source}}};const v=["BorderRadius","SpacingUnit","ControlHeight","IconSizes"];export{i as BorderRadius,c as ControlHeight,e as IconSizes,t as SpacingUnit,v as __namedExportsOrder,u as default};
