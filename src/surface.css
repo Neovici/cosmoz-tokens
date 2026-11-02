@@ -12,8 +12,8 @@
 	);
 	/* The app frame around the view panel: navigation sits on it. */
 	--cz-color-bg-shell: light-dark(
-		var(--cz-color-gray-100),
-		color-mix(in oklab, var(--cz-color-gray-950) 55%, black)
+		var(--cz-color-gray-50),
+		color-mix(in oklab, var(--cz-color-gray-950) 40%, black)
 	);
 	/* Light falling on the canvas from above, in the brand hue. */
 	--cz-canvas-light:
