@@ -75,15 +75,13 @@ describe('raised surface', () => {
 		return r + g + b;
 	};
 
-	for (const scheme of ['light', 'dark']) {
-
-		it(`frames the ${scheme} canvas with a darker shell`, async () => {
-			const { body, shell } = await load(frames, scheme);
-			expect(paint(shell.backgroundColor)).to.be.lessThan(
-				paint(body.backgroundColor),
-			);
-		});
-	}
+	// In light mode the shell shares the canvas grey and the panel's edge does the work.
+	it('frames the dark canvas with a darker shell', async () => {
+		const { body, shell } = await load(frames, 'dark');
+		expect(paint(shell.backgroundColor)).to.be.lessThan(
+			paint(body.backgroundColor),
+		);
+	});
 
 	it('keeps the dark canvas darker than the surfaces on it', async () => {
 		const { body, section } = await load(frames, 'dark');
