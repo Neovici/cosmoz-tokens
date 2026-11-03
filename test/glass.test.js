@@ -42,6 +42,22 @@ describe('glass action contrast', () => {
 		await loaded;
 	});
 
+	// Below ~1.1:1 the button reads as part of a white card until hovered.
+	for (const token of ['button', 'action']) {
+
+		it(`light ${token} fill stands out from a white surface`, () => {
+			const probe = document.createElement('span');
+			probe.style.colorScheme = 'light';
+			probe.style.color = `var(--cz-color-bg-glass-${token})`;
+			document.body.append(probe);
+			const fill = getComputedStyle(probe).color;
+			probe.remove();
+			expect(contrast('white', fill, 'transparent', 'white')).to.be.at.least(
+				1.1,
+			);
+		});
+	}
+
 	for (const scheme of ['light', 'dark']) {
 		for (const kind of ['action', 'destructive']) {
 			for (const state of ['', '-hover', '-pressed']) {
