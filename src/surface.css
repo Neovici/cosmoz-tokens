@@ -19,12 +19,12 @@
 	--cz-canvas-light:
 		radial-gradient(
 			80rem 36rem at 10% -10rem,
-			color-mix(in oklab, var(--cz-color-brand-400) 26%, transparent),
+			color-mix(in oklab, var(--cz-color-brand-400) 13%, transparent),
 			transparent 70%
 		),
 		radial-gradient(
 			56rem 30rem at 100% -10rem,
-			color-mix(in oklab, var(--cz-color-brand-200) 30%, transparent),
+			color-mix(in oklab, var(--cz-color-brand-200) 15%, transparent),
 			transparent 70%
 		);
 	--cz-color-bg-raised: light-dark(
