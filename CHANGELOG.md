@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.16.2
+
+### Patch Changes
+
+- 0a3c3bf: Halve the brand glow in `--cz-canvas-light`, so the canvas and shell read as near-neutral with only a hint of lavender.
+
 ## 4.16.1
 
 ### Patch Changes
