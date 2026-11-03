@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.16.1
+
+### Patch Changes
+
+- 06bc1b8: Make light-mode buttons visible at rest: gray-100 fill, no white sheen, solid gray-300 border, stronger drop shadow and gray-200 hover. Dark mode is unchanged.
+
 ## 4.16.0
 
 ### Minor Changes
