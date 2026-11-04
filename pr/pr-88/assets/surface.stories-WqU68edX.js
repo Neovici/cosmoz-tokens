@@ -1,4 +1,4 @@
-import{b as t}from"./iframe-CQG50itz.js";import{s as o}from"./style-CdGBlmZM.js";const i={title:"Tokens/Surface"},c=()=>{const r=document.documentElement,s=r.style.colorScheme!=="dark";r.style.colorScheme=s?"dark":"light",r.classList.toggle("dark-mode",s)},e=["background: var(--cz-color-bg-raised);","box-shadow: var(--cz-shadow-raised);","backdrop-filter: var(--cz-backdrop-filter-raised);","border-radius: var(--cz-radius-lg);","padding: calc(var(--cz-spacing) * 4);"].join(" "),l="--cz-color-bg-raised: light-dark(var(--cz-color-white), var(--cz-color-gray-900)); --cz-backdrop-filter-raised: none;",a={render:()=>t`
+import{b as t}from"./iframe-BazZbZbV.js";import{s as o}from"./style-CpWv2HgS.js";const i={title:"Tokens/Surface"},c=()=>{const r=document.documentElement,s=r.style.colorScheme!=="dark";r.style.colorScheme=s?"dark":"light",r.classList.toggle("dark-mode",s)},e=["background: var(--cz-color-bg-raised);","box-shadow: var(--cz-shadow-raised);","backdrop-filter: var(--cz-backdrop-filter-raised);","border-radius: var(--cz-radius-lg);","padding: calc(var(--cz-spacing) * 4);"].join(" "),l="--cz-color-bg-raised: light-dark(var(--cz-color-white), var(--cz-color-gray-900)); --cz-backdrop-filter-raised: none;",a={render:()=>t`
         ${o}
         <div class="story-container">
             <h1 class="story-title">Raised Surface</h1>
@@ -52,7 +52,7 @@ import{b as t}from"./iframe-CQG50itz.js";import{s as o}from"./style-CdGBlmZM.js"
                         </div>
                     </div>
                 </div>
-                <div class="story-flex story-flex--wrap story-gap-3 story-mt-6">
+                <div class="story-flex story-flex--col story-gap-2 story-mt-6">
                     <span class="story-label">--cz-color-bg-shell: app frame</span>
                     <span class="story-label"
                         >--cz-color-bg-canvas + --cz-canvas-light: view panel</span
@@ -130,7 +130,7 @@ import{b as t}from"./iframe-CQG50itz.js";import{s as o}from"./style-CdGBlmZM.js"
                         </div>
                     </div>
                 </div>
-                <div class="story-flex story-flex--wrap story-gap-3 story-mt-6">
+                <div class="story-flex story-flex--col story-gap-2 story-mt-6">
                     <span class="story-label">--cz-color-bg-shell: app frame</span>
                     <span class="story-label"
                         >--cz-color-bg-canvas + --cz-canvas-light: view panel</span

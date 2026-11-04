@@ -1,4 +1,4 @@
-import{b as o}from"./iframe-CQG50itz.js";import{s as i}from"./style-CdGBlmZM.js";const m={title:"Tokens/Motion"},c=()=>{const n=document.querySelector(".motion-stagger");if(n){for(const s of n.children)s.style.animation="none";requestAnimationFrame(()=>{for(const s of n.children)s.style.animation=""})}},a=n=>o`
+import{b as o}from"./iframe-BazZbZbV.js";import{s as i}from"./style-CpWv2HgS.js";const m={title:"Tokens/Motion"},c=()=>{const n=document.querySelector(".motion-stagger");if(n){for(const s of n.children)s.style.animation="none";requestAnimationFrame(()=>{for(const s of n.children)s.style.animation=""})}},a=n=>o`
     <div class="motion-lane">
         <div class="motion-dot" style="${n}"></div>
     </div>
