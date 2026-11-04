@@ -78,7 +78,7 @@ export const RaisedSurface = {
 						</div>
 					</div>
 				</div>
-				<div class="story-flex story-flex--wrap story-gap-3 story-mt-6">
+				<div class="story-flex story-flex--col story-gap-2 story-mt-6">
 					<span class="story-label">--cz-color-bg-shell: app frame</span>
 					<span class="story-label"
 						>--cz-color-bg-canvas + --cz-canvas-light: view panel</span
