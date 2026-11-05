@@ -99,8 +99,9 @@ export const ControlHeight = {
 					controls of the same size line up.
 				</p>
 				<div class="story-flex story-flex--col story-gap-2 story-mt-6">
-					${controlHeight('sm', 28)} ${controlHeight('md', 32)}
-					${controlHeight('lg', 36)} ${controlHeight('xl', 40)}
+					${controlHeight('xs', 24)} ${controlHeight('sm', 28)}
+					${controlHeight('md', 32)} ${controlHeight('lg', 36)}
+					${controlHeight('xl', 40)}
 				</div>
 			</div>
 		</div>

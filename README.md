@@ -148,7 +148,7 @@ re-pointing or re-theming anything.
 | `--cz-spacing`                | Base spacing unit (4px)                               |
 | `--cz-spacing-{n}`            | n × the base unit, n = 1–6, 8, 10, 12, 14, 16, 20, 24 |
 | `--cz-radius-{none-full}`     | Border radius scale                                   |
-| `--cz-control-height-{sm-xl}` | Control heights (28/32/36/40px)                       |
+| `--cz-control-height-{xs-xl}` | Control heights (24/28/32/36/40px)                    |
 
 ### Shadows
 
