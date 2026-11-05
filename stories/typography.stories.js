@@ -5,6 +5,13 @@ export default {
 	title: 'Tokens/Typography',
 };
 
+const toggleDarkMode = () => {
+	const root = document.documentElement;
+	const dark = root.style.colorScheme !== 'dark';
+	root.style.colorScheme = dark ? 'dark' : 'light';
+	root.classList.toggle('dark-mode', dark);
+};
+
 export const FontFamilies = {
 	render: () => html`
 		${style}
@@ -169,6 +176,56 @@ export const DisplaySizes = {
 						Display 2XL
 					</p>
 				</div>
+			</div>
+		</div>
+	`,
+};
+
+const trackingRow = (name, value) => html`
+	<div>
+		<p class="story-label">${name} (${value})</p>
+		<p class="tracking-title" style="letter-spacing: var(${name});">
+			Overdue invoices
+		</p>
+		<p class="tracking-figure" style="letter-spacing: var(${name});">
+			1 409 166
+		</p>
+	</div>
+`;
+
+export const Tracking = {
+	render: () => html`
+		${style}
+		<style>
+			.tracking-title {
+				font-family: var(--cz-font-display);
+				font-size: var(--cz-text-xl);
+				line-height: var(--cz-text-xl-line-height);
+				font-weight: var(--cz-font-weight-semibold);
+				margin: 0;
+			}
+			.tracking-figure {
+				font-size: var(--cz-text-xl);
+				font-weight: var(--cz-font-weight-semibold);
+				font-variant-numeric: tabular-nums;
+				margin: 0;
+			}
+		</style>
+		<div class="story-container">
+			<h1 class="story-title">Tracking</h1>
+			<p class="story-description">
+				Letter spacing for titles and figures that don't use a display size.
+			</p>
+			<button
+				class="story-btn story-btn--secondary story-mb-6"
+				@click=${toggleDarkMode}
+			>
+				Toggle Dark Mode
+			</button>
+			<div class="story-grid story-gap-8">
+				${trackingRow('--cz-letter-spacing-tight', '-0.01em')}
+				${trackingRow('--cz-letter-spacing-tighter', '-0.025em')}
+				${trackingRow('--cz-letter-spacing-tightest', '-0.035em')}
 			</div>
 		</div>
 	`,
