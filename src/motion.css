@@ -21,5 +21,5 @@
 	/* Exits are quicker than entrances so leaving never holds the user up. */
 	--cz-duration-exit: 120ms;
 	/* Loading indicators wait this long, so fast loads never flash a spinner. */
-	--cz-delay-indicator: 400ms;
+	--cz-delay-indicator: 1s;
 }
