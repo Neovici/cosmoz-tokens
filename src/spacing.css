@@ -43,6 +43,7 @@
 	--cz-icon-size-xl: 1.5rem;
 
 	/* Control heights, shared by buttons, inputs and other form controls */
+	--cz-control-height-xs: 1.5rem;
 	--cz-control-height-sm: 1.75rem;
 	--cz-control-height-md: 2rem;
 	--cz-control-height-lg: 2.25rem;
