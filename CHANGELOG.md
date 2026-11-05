@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.17.0
+
+### Minor Changes
+
+- 65cc614: Add `--cz-control-height-xs` (24px), one step below `sm`, for compact inline controls such as a copy button beside text.
+
 ## 4.16.3
 
 ### Patch Changes
