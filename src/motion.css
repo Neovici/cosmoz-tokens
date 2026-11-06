@@ -7,6 +7,8 @@
 	--cz-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 	/* Moves between two resting places. */
 	--cz-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+	/* Slow start, fast finish: exits, anything leaving. */
+	--cz-ease-in: cubic-bezier(0.4, 0, 1, 1);
 
 	/* Hover and press feedback. */
 	--cz-duration-fast: 150ms;
@@ -16,4 +18,8 @@
 	--cz-duration-slow: 600ms;
 	/* Delay between siblings entering one after another. */
 	--cz-stagger: 60ms;
+	/* Exits are quicker than entrances so leaving never holds the user up. */
+	--cz-duration-exit: 120ms;
+	/* Loading indicators wait this long, so fast loads never flash a spinner. */
+	--cz-delay-indicator: 1s;
 }
