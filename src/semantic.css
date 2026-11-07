@@ -290,7 +290,7 @@
 	 */
 	--cz-color-border-control-selected: light-dark(
 		color-mix(in oklab, var(--cz-color-gray-500) 72%, var(--cz-color-gray-300)),
-		var(--cz-color-gray-700)
+		color-mix(in oklab, var(--cz-color-gray-300) 12%, transparent)
 	);
 
 	--cz-color-border-primary: light-dark(
