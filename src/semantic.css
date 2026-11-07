@@ -288,6 +288,11 @@
 	 * <status>-subtle  a hairline around a surface that already carries the status;
 	 *                  the partner of --cz-color-bg-<status>
 	 */
+	--cz-color-border-control-selected: light-dark(
+		var(--cz-color-gray-500),
+		var(--cz-color-gray-700)
+	);
+
 	--cz-color-border-primary: light-dark(
 		var(--cz-color-gray-300),
 		var(--cz-color-gray-700)

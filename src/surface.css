@@ -7,12 +7,12 @@
 :root {
 	/* The ground raised surfaces sit on; darker than them in dark mode. */
 	--cz-color-bg-canvas: light-dark(
-		var(--cz-color-gray-50),
+		var(--cz-color-gray-100),
 		var(--cz-color-gray-950)
 	);
 	/* The app frame around the view panel: navigation sits on it. */
 	--cz-color-bg-shell: light-dark(
-		var(--cz-color-gray-50),
+		var(--cz-color-gray-200),
 		color-mix(in oklab, var(--cz-color-gray-950) 40%, black)
 	);
 	/* Light falling on the canvas from above, in the brand hue. */
@@ -32,7 +32,7 @@
 		var(--cz-color-gray-900)
 	);
 	--cz-color-border-raised: light-dark(
-		color-mix(in oklab, var(--cz-color-gray-950) 7%, transparent),
+		color-mix(in oklab, var(--cz-color-gray-950) 6%, transparent),
 		color-mix(in oklab, var(--cz-color-white) 8%, transparent)
 	);
 	--cz-color-raised-highlight: light-dark(
@@ -54,7 +54,7 @@
 @supports (backdrop-filter: blur(1px)) {
 	:root {
 		--cz-color-bg-raised: light-dark(
-			color-mix(in oklab, var(--cz-color-white) 74%, transparent),
+			color-mix(in oklab, var(--cz-color-white) 92%, transparent),
 			color-mix(in oklab, var(--cz-color-gray-900) 66%, transparent)
 		);
 		--cz-backdrop-filter-raised: blur(20px) saturate(1.3);
