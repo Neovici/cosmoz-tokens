@@ -26,7 +26,7 @@ describe('shape roles', () => {
 				surface: 16,
 				control: 12,
 				item: 8,
-				group: 16,
+				group: 12,
 			})) {
 				probe.style.borderRadius = `var(--cz-radius-${role})`;
 				expect(getComputedStyle(probe).borderRadius, role).to.equal(`${px}px`);

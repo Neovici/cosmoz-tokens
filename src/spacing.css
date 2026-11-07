@@ -43,7 +43,7 @@
 	--cz-radius-surface: var(--cz-radius-2xl);
 	--cz-radius-control: var(--cz-radius-xl);
 	--cz-radius-item: var(--cz-radius-md);
-	--cz-radius-group: var(--cz-radius-2xl);
+	--cz-radius-group: var(--cz-radius-xl);
 	--cz-spacing-segment-inset: calc(var(--cz-spacing) * 0.75);
 	/* --cz-radius-segment is an optional override. Components derive the default
 	   at usage so subtree group/inset overrides stay concentric. */

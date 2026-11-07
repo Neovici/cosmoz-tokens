@@ -11,7 +11,7 @@ The defaults are identical in light and dark themes.
 | `--cz-radius-surface`        | 16px    | Card, menu, popover               |
 | `--cz-radius-control`        | 12px    | Button, input, select             |
 | `--cz-radius-item`           | 8px     | Menu/row highlight, compact badge |
-| `--cz-radius-group`          | 16px    | Segmented-control frame           |
+| `--cz-radius-group`          | 12px    | Segmented-control frame           |
 | `--cz-spacing-segment-inset` | 3px     | Inset around segments             |
 
 The defaults use rem values and therefore follow the root font size.
@@ -20,7 +20,7 @@ and square roles.
 
 Closely nested corners should follow their actual inset. Segmented components
 calculate their inner radius from their inherited frame and inset at the point
-of use. This gives 13px by default, and responds to subtree overrides. The inner
+of use. This gives 9px by default, and responds to subtree overrides. The inner
 radius is clamped to zero. `--cz-radius-segment` is an optional explicit override;
 it is deliberately not defined on `:root`, where a derived value would resolve
 before a subtree's group/inset overrides could affect it.
