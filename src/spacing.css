@@ -42,8 +42,12 @@
 	--cz-radius-dialog: var(--cz-radius-4xl);
 	--cz-radius-surface: var(--cz-radius-2xl);
 	--cz-radius-control: var(--cz-radius-xl);
+	--cz-radius-callout: var(--cz-radius-xl);
 	--cz-radius-item: var(--cz-radius-md);
-	--cz-radius-group: var(--cz-radius-2xl);
+	/* Segments are controls; the frame wraps them at the segment inset. */
+	--cz-radius-group: calc(
+		var(--cz-radius-control) + var(--cz-spacing-segment-inset)
+	);
 	--cz-spacing-segment-inset: calc(var(--cz-spacing) * 0.75);
 	/* --cz-radius-segment is an optional override. Components derive the default
 	   at usage so subtree group/inset overrides stay concentric. */
