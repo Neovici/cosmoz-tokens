@@ -37,20 +37,18 @@
 	--cz-radius-full: 9999px;
 
 	/* Shape roles are shared across themes and component sizes. */
-	--cz-radius-shell: var(--cz-radius-4xl);
+	--cz-radius-app-shell: var(--cz-radius-4xl);
 	--cz-radius-sheet: var(--cz-radius-5xl);
 	--cz-radius-dialog: var(--cz-radius-4xl);
-	--cz-radius-surface: var(--cz-radius-2xl);
-	--cz-radius-control: var(--cz-radius-xl);
-	--cz-radius-callout: var(--cz-radius-xl);
-	--cz-radius-item: var(--cz-radius-md);
+	--cz-radius-card: var(--cz-radius-2xl);
+	--cz-radius-control: var(--cz-radius-md);
+	--cz-radius-info-box: var(--cz-radius-xl);
+	--cz-radius-compact: var(--cz-radius-sm);
 	/* Segments are controls; the frame wraps them at the segment inset. */
-	--cz-radius-group: calc(
+	--cz-radius-control-group: calc(
 		var(--cz-radius-control) + var(--cz-spacing-segment-inset)
 	);
 	--cz-spacing-segment-inset: calc(var(--cz-spacing) * 0.75);
-	/* --cz-radius-segment is an optional override. Components derive the default
-	   at usage so subtree group/inset overrides stay concentric. */
 
 	/* Icon sizes, independent of control hit areas */
 	--cz-icon-size-xs: 0.875rem;

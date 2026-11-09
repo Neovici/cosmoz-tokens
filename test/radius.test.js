@@ -20,14 +20,14 @@ describe('shape roles', () => {
 			probe.style.colorScheme = scheme;
 			document.body.append(probe);
 			for (const [role, px] of Object.entries({
-				shell: 24,
+				'app-shell': 24,
 				dialog: 24,
 				sheet: 32,
-				surface: 16,
-				control: 12,
-				callout: 12,
-				item: 8,
-				group: 15,
+				card: 16,
+				control: 8,
+				'info-box': 12,
+				compact: 6,
+				'control-group': 11,
 			})) {
 				probe.style.borderRadius = `var(--cz-radius-${role})`;
 				expect(getComputedStyle(probe).borderRadius, role).to.equal(`${px}px`);
