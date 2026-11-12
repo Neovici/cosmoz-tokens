@@ -5,9 +5,9 @@ The defaults are identical in light and dark themes.
 
 | Token                        | Default | Role                                  |
 | ---------------------------- | ------- | ------------------------------------- |
-| `--cz-radius-app-shell`      | 24px    | Inset app frame                       |
+| `--cz-radius-app-shell`      | 20px    | Inset app frame                       |
 | `--cz-radius-sheet`          | 32px    | Large mobile sheet                    |
-| `--cz-radius-dialog`         | 24px    | Floating dialog                       |
+| `--cz-radius-dialog`         | 20px    | Floating dialog                       |
 | `--cz-radius-card`           | 16px    | Card, menu, popover                   |
 | `--cz-radius-info-box`       | 12px    | Inline info, warning or error box     |
 | `--cz-radius-control`        | 8px     | Button, input, select                 |

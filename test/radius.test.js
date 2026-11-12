@@ -20,8 +20,8 @@ describe('shape roles', () => {
 			probe.style.colorScheme = scheme;
 			document.body.append(probe);
 			for (const [role, px] of Object.entries({
-				'app-shell': 24,
-				dialog: 24,
+				'app-shell': 20,
+				dialog: 20,
 				sheet: 32,
 				card: 16,
 				control: 8,
