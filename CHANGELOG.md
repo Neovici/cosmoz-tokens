@@ -1,5 +1,15 @@
 # @neovici/cosmoz-tokens
 
+## 4.18.0
+
+### Minor Changes
+
+- 8d891a0: Add exit and loading motion tokens: `--cz-ease-in` for exits, `--cz-duration-exit` (120ms) and `--cz-delay-indicator` (1s), the delay before a loading indicator appears: loads under a second show none.
+
+### Patch Changes
+
+- c8b5c16: Give light-mode primary buttons a graphite fill (gray-700, white text) with a subtle glass finish: a 94% fill under the backdrop blur, a soft top-to-bottom sheen, a 1px top highlight, a hairline edge and a two-layer shadow. Hover sits halfway to gray-600 and pressed is gray-800. Primary no longer shares the gray-50 fill of secondary buttons. Dark mode is unchanged.
+
 ## 4.17.0
 
 ### Minor Changes
