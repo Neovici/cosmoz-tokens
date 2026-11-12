@@ -89,6 +89,11 @@ export const BackgroundColors = {
 			</div>
 			<div class="story-section">
 				<h3 class="story-section-title">Action, highlight and charts</h3>
+				<p class="story-description">
+					The chart order is validated by position — colour-blind separation
+					between neighbours (OKLab ΔE ≥ 8, normal vision ≥ 15) in both modes.
+					Do not reorder, append only.
+				</p>
 				<div class="story-grid story-grid--wide">
 					${colorRow('--cz-color-bg-action-solid')}
 					${colorRow('--cz-color-bg-action-solid-hover')}
@@ -96,6 +101,31 @@ export const BackgroundColors = {
 					${[1, 2, 3, 4, 5, 6, 7, 8].map((n) =>
 						colorRow(`--cz-color-chart-${n}`),
 					)}
+				</div>
+			</div>
+			<div class="story-section">
+				<h3 class="story-section-title">Data colors</h3>
+				<p class="story-description">
+					What a mark stands for, the same in every chart. A colour means the
+					same thing here as everywhere else.
+				</p>
+				<div class="story-grid story-grid--wide">
+					${colorRow('--cz-color-data-cosmoz')}
+					${colorRow('--cz-color-data-person')}
+					${colorRow('--cz-color-data-failed')}
+					${colorRow('--cz-color-data-pending')}
+					${colorRow('--cz-color-data-none')}
+				</div>
+			</div>
+			<div class="story-section">
+				<h3 class="story-section-title">Overdue and due ramps</h3>
+				<p class="story-description">
+					Due dates diverge around the due date: overdue deepens with age,
+					not-yet-due fades with distance. Step 1 is closest to the due date.
+				</p>
+				<div class="story-grid story-grid--wide">
+					${[1, 2, 3].map((n) => colorRow(`--cz-color-data-overdue-${n}`))}
+					${[1, 2, 3].map((n) => colorRow(`--cz-color-data-due-${n}`))}
 				</div>
 			</div>
 			<div class="story-section">

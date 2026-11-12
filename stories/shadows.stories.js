@@ -33,8 +33,15 @@ export const ShadowScale = {
 					${shadowSwatch('--cz-shadow-xl', '--cz-shadow-xl', 'X-Large')}
 					${shadowSwatch('--cz-shadow-2xl', '--cz-shadow-2xl', '2X-Large')}
 					${shadowSwatch('--cz-shadow-3xl', '--cz-shadow-3xl', '3X-Large')}
+					${shadowSwatch('--cz-shadow-raised', '--cz-shadow-raised', 'Raised')}
 				</div>
 			</div>
+			<p class="story-description">
+				<code>--cz-shadow-raised</code> pairs with
+				<code>--cz-color-bg-raised</code> and
+				<code>--cz-backdrop-filter-raised</code>. See Tokens/Surface for the
+				material demo.
+			</p>
 		</div>
 	`,
 };
