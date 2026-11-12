@@ -35,6 +35,7 @@
 		var(--cz-color-gray-100),
 		var(--cz-color-gray-700)
 	);
+	/* Light primary is a graphite fill so it stands apart from secondary buttons. */
 	--cz-color-bg-glass-action: light-dark(
 		var(--cz-color-gray-700),
 		var(--cz-color-gray-800)
@@ -44,11 +45,11 @@
 		var(--cz-color-gray-600)
 	);
 	--cz-color-bg-glass-action-pressed: light-dark(
-		var(--cz-color-gray-900),
+		var(--cz-color-gray-800),
 		var(--cz-color-gray-600)
 	);
 	--cz-color-bg-glass-action-hover: light-dark(
-		var(--cz-color-gray-800),
+		color-mix(in oklab, var(--cz-color-gray-700), var(--cz-color-gray-600)),
 		var(--cz-color-gray-700)
 	);
 	--cz-color-text-on-glass-action: light-dark(
@@ -65,27 +66,33 @@
 	);
 	--cz-color-bg-glass-destructive-pressed: var(--cz-color-error-900);
 	--cz-color-glass-button-action-highlight: light-dark(
-		transparent,
+		color-mix(in oklab, var(--cz-color-white) 14%, transparent),
 		color-mix(in oklab, var(--cz-color-white) 2%, transparent)
 	);
 	--cz-color-glass-action-highlight: light-dark(
 		color-mix(in oklab, var(--cz-color-white) 3%, transparent),
 		color-mix(in oklab, var(--cz-color-white) 2%, transparent)
 	);
-	--cz-color-border-glass-action: var(--cz-color-border-glass-button);
+	--cz-color-border-glass-action: light-dark(
+		color-mix(in oklab, var(--cz-color-gray-950) 20%, transparent),
+		color-mix(in oklab, var(--cz-color-gray-300) 12%, transparent)
+	);
 
 	--cz-glass-button-action-sheen: linear-gradient(
 		180deg in oklab,
 		light-dark(
-			transparent,
+			color-mix(in oklab, var(--cz-color-white) 8%, transparent),
 			color-mix(in oklab, var(--cz-color-white) 2%, transparent)
 		),
 		light-dark(
 				transparent,
 				color-mix(in oklab, var(--cz-color-white) 1%, transparent)
 			)
-			46%,
-		light-dark(transparent, var(--cz-color-glass-shade))
+			50%,
+		light-dark(
+			color-mix(in oklab, var(--cz-color-gray-950) 8%, transparent),
+			var(--cz-color-glass-shade)
+		)
 	);
 	--cz-glass-action-sheen: linear-gradient(
 		180deg in oklab,
@@ -97,7 +104,12 @@
 		inset 0 1px 0 var(--cz-color-glass-button-action-highlight),
 		0 1px 2px
 			light-dark(
-				color-mix(in oklab, var(--cz-color-gray-950) 6%, transparent),
+				color-mix(in oklab, var(--cz-color-gray-950) 14%, transparent),
+				transparent
+			),
+		0 2px 6px -2px
+			light-dark(
+				color-mix(in oklab, var(--cz-color-gray-950) 10%, transparent),
 				transparent
 			);
 	--cz-shadow-glass-action: inset 0 1px 0 var(--cz-color-glass-action-highlight);
@@ -124,15 +136,20 @@
 			color-mix(in oklab, var(--cz-color-gray-500) 38%, transparent)
 		);
 		--cz-color-bg-glass-action-pressed: light-dark(
-			var(--cz-color-gray-900),
+			color-mix(in oklab, var(--cz-color-gray-800) 94%, transparent),
 			color-mix(in oklab, var(--cz-color-gray-600) 94%, transparent)
 		);
 		--cz-color-bg-glass-action: light-dark(
-			var(--cz-color-gray-700),
+			color-mix(in oklab, var(--cz-color-gray-700) 94%, transparent),
 			color-mix(in oklab, var(--cz-color-gray-800) 90%, transparent)
 		);
 		--cz-color-bg-glass-action-hover: light-dark(
-			var(--cz-color-gray-800),
+			color-mix(
+				in oklab,
+				color-mix(in oklab, var(--cz-color-gray-700), var(--cz-color-gray-600))
+					94%,
+				transparent
+			),
 			color-mix(in oklab, var(--cz-color-gray-700) 92%, transparent)
 		);
 	}
@@ -151,7 +168,7 @@
 			var(--cz-color-gray-600)
 		);
 		--cz-color-bg-glass-action-pressed: light-dark(
-			var(--cz-color-gray-900),
+			var(--cz-color-gray-800),
 			var(--cz-color-gray-600)
 		);
 		--cz-color-bg-glass-hover: light-dark(
@@ -163,7 +180,7 @@
 			var(--cz-color-gray-800)
 		);
 		--cz-color-bg-glass-action-hover: light-dark(
-			var(--cz-color-gray-800),
+			color-mix(in oklab, var(--cz-color-gray-700), var(--cz-color-gray-600)),
 			var(--cz-color-gray-700)
 		);
 		--cz-glass-action-sheen: none;

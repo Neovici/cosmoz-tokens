@@ -55,6 +55,17 @@ describe('glass action contrast', () => {
 		);
 	});
 
+	// The primary fill has to read as the main action next to secondary buttons.
+	it('light action fill stands out from a white surface', () => {
+		const probe = document.createElement('span');
+		probe.style.colorScheme = 'light';
+		probe.style.color = 'var(--cz-color-bg-glass-action)';
+		document.body.append(probe);
+		const fill = getComputedStyle(probe).color;
+		probe.remove();
+		expect(contrast(fill, 'white', 'transparent', 'white')).to.be.at.least(3);
+	});
+
 	for (const scheme of ['light', 'dark']) {
 		for (const surface of ['primary', 'secondary', 'raised']) {
 
