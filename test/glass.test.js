@@ -67,6 +67,34 @@ describe('glass action contrast', () => {
 	});
 
 	for (const scheme of ['light', 'dark']) {
+		for (const surface of ['primary', 'secondary', 'raised']) {
+
+			it(`${scheme} selected segment retains AA contrast over ${surface}`, () => {
+				const probe = document.createElement('span');
+				probe.style.colorScheme = scheme;
+				document.body.append(probe);
+				const resolve = (color) => {
+					probe.style.color = color;
+					return getComputedStyle(probe).color;
+				};
+				try {
+					const fg = resolve('var(--cz-color-text-primary)');
+					const bg = resolve('var(--cz-color-bg-segment-selected)');
+					const backdrop = resolve(`var(--cz-color-bg-${surface})`);
+					for (const sheen of [
+						'var(--cz-color-glass-highlight)',
+						'transparent',
+						'var(--cz-color-glass-shade)',
+					]) {
+						expect(contrast(fg, bg, resolve(sheen), backdrop)).to.be.at.least(
+							4.5,
+						);
+					}
+				} finally {
+					probe.remove();
+				}
+			});
+		}
 		for (const kind of ['action', 'destructive']) {
 			for (const state of ['', '-hover', '-pressed']) {
 				for (const backdrop of ['white', 'black']) {

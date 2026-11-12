@@ -66,6 +66,11 @@
 		--cz-color-bg-info-secondary: var(--cz-color-info-100);
 		--cz-color-bg-info-solid: var(--cz-color-info-600);
 		--cz-color-bg-info-solid-hover: var(--cz-color-info-700);
+		--cz-color-border-control-selected: color-mix(
+			in oklab,
+			var(--cz-color-gray-500) 72%,
+			var(--cz-color-gray-300)
+		);
 		--cz-color-border-primary: var(--cz-color-gray-300);
 		--cz-color-border-secondary: var(--cz-color-gray-200);
 		--cz-color-border-tertiary: var(--cz-color-gray-100);

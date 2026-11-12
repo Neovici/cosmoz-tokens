@@ -175,6 +175,19 @@ values; this does not change the semantic-to-primitive rule for
 the generic material uses `Canvas`/`CanvasText`, while buttons use
 `ButtonFace`/`ButtonText`.
 
+`segmented.css` owns the normal selected face for segmented navigation and
+value pickers. Use `--cz-color-bg-segment-selected`,
+`--cz-segment-selected-sheen`, `--cz-shadow-segment-selected-highlight` and
+`--cz-shadow-segment-selected-elevation` together. Compose the selected edge
+from `--cz-color-border-control-selected` inside the component so scoped
+border overrides work. `--cz-shadow-segment-selected` is an optional full
+shadow override, left unset at the root. Pair the recipe
+with primary text and foreground tokens. Use `--cz-color-bg-segment-selected`
+for a scoped selected-face override. The general `bg-primary` role paints
+page and card surfaces independently of the selected face. The face is raised white in light
+mode and glass in dark mode. Warning selections keep their semantic fill
+and omit the normal sheen. Components own geometry and keyboard outlines.
+
 - A color scale nobody uses: delete it, or write down why it is kept.
   Never leave it half-decided.
 - Define each scale once — the same values must not ship under two

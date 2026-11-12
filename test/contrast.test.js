@@ -83,6 +83,33 @@ describe('contrast', () => {
 		await loaded;
 	});
 
+	it('separates the light shell, canvas and raised surfaces', () => {
+		const shell = luminance(resolve('light', 'bg-shell'));
+		const canvas = luminance(resolve('light', 'bg-canvas'));
+		const raised = luminance(resolve('light', 'bg-raised'));
+		expect(canvas).to.be.greaterThan(shell);
+		expect(raised).to.be.greaterThan(canvas);
+	});
+
+	it('distinguishes the light primary action from secondary controls', () => {
+		const primary = resolve('light', 'bg-glass-action');
+		const secondary = resolve('light', 'bg-glass-button');
+		expect(ratio(primary, secondary)).to.be.at.least(3);
+	});
+
+	it('keeps the light selected control edge distinguishable', () => {
+		const token = getComputedStyle(document.documentElement)
+			.getPropertyValue('--cz-color-border-control-selected')
+			.trim();
+		expect(token).not.to.equal('');
+		expect(
+			ratio(
+				resolve('light', 'border-control-selected'),
+				resolve('light', 'bg-secondary'),
+			),
+		).to.be.at.least(3);
+	});
+
 	// A design regression threshold for visible hover feedback, not a WCAG requirement.
 	for (const surface of ['primary', 'secondary']) {
 
