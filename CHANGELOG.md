@@ -1,5 +1,11 @@
 # @neovici/cosmoz-tokens
 
+## 4.19.0
+
+### Minor Changes
+
+- ec6d2a9: Add semantic shape roles for the app shell, cards, info boxes, controls, compact elements, dialogs, sheets and segmented control groups. Controls default to 8px. The control-group frame derives from the control radius plus its inset, so segments match controls.
+
 ## 4.18.0
 
 ### Minor Changes
