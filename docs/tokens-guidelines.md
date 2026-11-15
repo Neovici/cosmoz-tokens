@@ -113,6 +113,12 @@ marks and icons, and text tokens for labels. Warning and success solid fills use
 so white labels keep at least 4.5:1 contrast. Warning accents use the amber
 scale; retain the darker text steps for readable labels on pale surfaces.
 
+Warning surfaces mix warning-300 with white in light mode and gray-950 in dark mode,
+in sRGB. `bg-warning` uses 22% / 17%, and `bg-warning-secondary` uses 25% / 20%.
+This gives a muted golden surface instead of a red-brown dark panel. Light warning
+marks use step 700 to retain 3:1 contrast on both tints; warning text and solid fills
+keep their existing values. The fallback stylesheet carries the same light recipes.
+
 Primary buttons use the `action` family (`bg-action-solid`,
 `text-on-action`), which is pinned to gray: lavender marks selection and
 accents, so a lavender button would compete with selected rows and tabs.
@@ -203,3 +209,10 @@ order:
 3. **Readability is checked by eye.** The Contrast story exists and the
    a11y addon is installed; the text/background pairs listed in section
    5 should be tested automatically in CI instead.
+
+## 8. Status shape
+
+Status badges use `--cz-radius-status`, which defaults to the compact 6px role.
+Explicit pill badges, counters and circular controls keep `--cz-radius-full`.
+This shared role lets applications change status shape without redefining the
+base radius scale.

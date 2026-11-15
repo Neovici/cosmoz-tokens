@@ -229,13 +229,22 @@
 		var(--cz-color-error-700),
 		var(--cz-color-error-500)
 	);
+	/* Warning surfaces stay golden; dark amber ramp steps otherwise read red-brown. */
 	--cz-color-bg-warning: light-dark(
-		var(--cz-color-warning-50),
-		var(--cz-color-warning-950)
+		color-mix(in srgb, var(--cz-color-warning-300) 22%, var(--cz-color-white)),
+		color-mix(
+			in srgb,
+			var(--cz-color-warning-300) 17%,
+			var(--cz-color-gray-950)
+		)
 	);
 	--cz-color-bg-warning-secondary: light-dark(
-		var(--cz-color-warning-100),
-		var(--cz-color-warning-600)
+		color-mix(in srgb, var(--cz-color-warning-300) 25%, var(--cz-color-white)),
+		color-mix(
+			in srgb,
+			var(--cz-color-warning-300) 20%,
+			var(--cz-color-gray-950)
+		)
 	);
 	--cz-color-bg-warning-solid: light-dark(
 		var(--cz-color-warning-700),
@@ -415,8 +424,9 @@
 		var(--cz-color-error-500),
 		var(--cz-color-error-400)
 	);
+	/* The richer light warning tints need step 700 for 3:1 icon contrast. */
 	--cz-color-fg-warning: light-dark(
-		var(--cz-color-warning-600),
+		var(--cz-color-warning-700),
 		var(--cz-color-warning-500)
 	);
 	--cz-color-fg-warning-secondary: light-dark(

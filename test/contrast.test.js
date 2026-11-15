@@ -25,6 +25,10 @@ const PAIRS = [
 	['fg-success', 'bg-success', 3],
 	['fg-warning', 'bg-primary', 3],
 	['fg-warning', 'bg-warning', 3],
+	['fg-warning', 'bg-warning-secondary', 3],
+	['text-warning', 'bg-warning-secondary', 4.5],
+	['text-tertiary', 'bg-warning', 4.5],
+	['text-tertiary', 'bg-warning-secondary', 4.5],
 	['text-brand', 'bg-brand-subtle', 4.5],
 	...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => [`chart-${n}`, 'bg-primary', 3]),
 	...['cosmoz', 'person', 'failed', 'overdue-2', 'overdue-3', 'due-1'].map(
@@ -104,4 +108,31 @@ describe('contrast', () => {
 			}
 		});
 	}
+
+	for (const [scheme, surface, secondary] of [
+		['light', [254, 245, 216], [254, 244, 211]],
+		['dark', [51, 45, 25], [58, 51, 27]],
+	]) {
+
+		it(`${scheme} warning surfaces retain the approved golden hue`, () => {
+			for (const [token, expected] of [['bg-warning', surface], ['bg-warning-secondary', secondary]]) {
+				const actual = resolve(scheme, token);
+				expected.forEach((channel, index) => expect(actual[index]).to.be.closeTo(channel, 1));
+			}
+		});
+	}
+
+	it('the light fallback resolves to the same warning surface and icon colours', async () => {
+		const css = await (await fetch(new URL('../src/fallback.css', import.meta.url))).text();
+		const style = document.createElement('style');
+		style.textContent = css.replace('@supports not (color: light-dark(red, blue))', '@supports (color: rgb(0 0 0))');
+		document.head.append(style);
+		try {
+			expect(resolve('light', 'bg-warning')).to.deep.equal([254, 245, 216]);
+			expect(resolve('light', 'fg-warning')).to.deep.equal([180, 83, 9]);
+		} finally {
+			style.remove();
+		}
+	});
+
 });
