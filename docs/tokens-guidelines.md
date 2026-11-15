@@ -216,3 +216,11 @@ Status badges use `--cz-radius-status`, which defaults to the compact 6px role.
 Explicit pill badges, counters and circular controls keep `--cz-radius-full`.
 This shared role lets applications change status shape without redefining the
 base radius scale.
+
+## 9. Shared application profile
+
+The `app-theme` entry is opt-in and is generated from the application profile in neovici/design. Public
+names in this profile are unprefixed, for example `--color-fg-processing` and `--radius-status`. Existing
+prefixed names remain compatibility aliases. The default entry and its semantic-to-primitive rules are
+unchanged. Application recipes belong in `themes/app.tokens.json` upstream, not in a second set of local
+overrides. The app profile keeps fully rounded status pills and opaque materials.

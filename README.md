@@ -262,3 +262,28 @@ outline.
 `--cz-icon-size-xs` … `--cz-icon-size-xl` set the size of icons. The scale is rem-based, so icons follow the root font size; current values live in [`src/spacing.css`](src/spacing.css) and render live in Storybook's Tokens/Spacing → "Icon sizes" story. Keep the SVG viewBox intact and set its width and height to the chosen token; the control's hit area stays independent.
 
 Use `xs` for compact controls, `sm` for inline actions, `md` for navigation, `lg` for main toolbar actions and `xl` for larger standalone icons.
+
+## Shared application theme
+
+```css
+@import '@neovici/cosmoz-tokens/app-theme';
+
+.status {
+  color: var(--color-fg-processing);
+  border-radius: var(--radius-status);
+}
+```
+
+This opt-in entry includes the base package and the shared application profile from neovici/design. Public
+tokens are unprefixed. Existing component names remain compatibility aliases. The default package entry
+retains its existing appearance. The app profile uses opaque materials, neutral elevations, Geist Mono,
+120/180/240ms feedback, 16px dialogs and fully rounded status pills. Bundle the Geist font files in the consumer.
+
+After a design change, regenerate and verify the mirror:
+
+```sh
+npm run sync:app-theme -- --design /path/to/design
+npm run sync:app-theme -- --design /path/to/design --check
+```
+
+The mirror owns no independent values; edit `themes/app.tokens.json` in design.

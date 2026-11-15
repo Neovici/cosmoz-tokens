@@ -1,0 +1,5 @@
+/** Shared opaque application theme. Public tokens are unprefixed; existing components keep compatibility aliases. */
+@import './index.css';
+@import './app-primitives.css';
+@import './app-foundation.css';
+@import './app-compatibility.css';
