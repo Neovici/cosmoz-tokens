@@ -1,5 +1,15 @@
 # @neovici/cosmoz-tokens
 
+## 4.20.0
+
+### Minor Changes
+
+- 673197d: Add a shared status-radius role that defaults to the compact 6px radius. Explicit pill variants retain the full radius.
+
+### Patch Changes
+
+- 673197d: Use muted golden warning surfaces in both themes, with a slightly stronger secondary surface. Dark warnings no longer read red-brown. Keep text and solid-fill colours; strengthen the light warning icon to preserve contrast on the richer tint. Mirror the light values in the fallback stylesheet.
+
 ## 4.19.0
 
 ### Minor Changes
