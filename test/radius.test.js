@@ -27,6 +27,7 @@ describe('shape roles', () => {
 				control: 8,
 				'info-box': 12,
 				compact: 6,
+				status: 6,
 				'control-group': 11,
 			})) {
 				probe.style.borderRadius = `var(--cz-radius-${role})`;

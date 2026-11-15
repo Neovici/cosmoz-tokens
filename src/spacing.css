@@ -44,6 +44,7 @@
 	--cz-radius-control: var(--cz-radius-md);
 	--cz-radius-info-box: var(--cz-radius-xl);
 	--cz-radius-compact: var(--cz-radius-sm);
+	--cz-radius-status: var(--cz-radius-compact);
 	/* Segments are controls; the frame wraps them at the segment inset. */
 	--cz-radius-control-group: calc(
 		var(--cz-radius-control) + var(--cz-spacing-segment-inset)

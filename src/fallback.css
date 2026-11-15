@@ -1,7 +1,7 @@
 /**
  * Cosmoz Design Tokens - Fallback
  * Light-theme fallback for browsers without light-dark() support.
- * Values are the pre-light-dark() light theme, frozen.
+ * Keep these light values in sync with semantic.css.
  */
 @supports not (color: light-dark(red, blue)) {
 	:root {
@@ -53,8 +53,16 @@
 		--cz-color-bg-error-secondary: var(--cz-color-error-100);
 		--cz-color-bg-error-solid: var(--cz-color-error-600);
 		--cz-color-bg-error-solid-hover: var(--cz-color-error-700);
-		--cz-color-bg-warning: var(--cz-color-warning-50);
-		--cz-color-bg-warning-secondary: var(--cz-color-warning-100);
+		--cz-color-bg-warning: color-mix(
+			in srgb,
+			var(--cz-color-warning-300) 22%,
+			var(--cz-color-white)
+		);
+		--cz-color-bg-warning-secondary: color-mix(
+			in srgb,
+			var(--cz-color-warning-300) 25%,
+			var(--cz-color-white)
+		);
 		--cz-color-bg-warning-solid: var(--cz-color-warning-700);
 		--cz-color-bg-success: var(--cz-color-success-50);
 		--cz-color-bg-success-secondary: var(--cz-color-success-100);
@@ -98,7 +106,7 @@
 		--cz-color-fg-brand-secondary: var(--cz-color-brand-500);
 		--cz-color-fg-error: var(--cz-color-error-600);
 		--cz-color-fg-error-secondary: var(--cz-color-error-500);
-		--cz-color-fg-warning: var(--cz-color-warning-600);
+		--cz-color-fg-warning: var(--cz-color-warning-700);
 		--cz-color-fg-warning-secondary: var(--cz-color-warning-500);
 		--cz-color-fg-success: var(--cz-color-success-600);
 		--cz-color-fg-success-secondary: var(--cz-color-success-500);

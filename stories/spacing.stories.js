@@ -33,6 +33,10 @@ export const BorderRadius = {
 					${radiusSwatch('--cz-radius-3xl (1.25rem / 20px)', '--cz-radius-3xl')}
 					${radiusSwatch('--cz-radius-4xl (1.5rem / 24px)', '--cz-radius-4xl')}
 					${radiusSwatch('--cz-radius-full (9999px)', '--cz-radius-full')}
+					${radiusSwatch(
+						'--cz-radius-status (compact / 6px)',
+						'--cz-radius-status',
+					)}
 				</div>
 			</div>
 		</div>
